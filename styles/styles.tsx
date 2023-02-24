@@ -6,3 +6,11 @@ export const sectionCss = css`
     max-width: 100vw;
     margin: 0 auto;
 `
+
+export const buttonResetCss = css`
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    background: none;
+`
