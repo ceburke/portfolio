@@ -52,7 +52,7 @@ const Home: NextPage = () => {
         <div css={css`display: flex; margin-top: 90px;`}>
           <h3 css={css`flex: 0 0 150px; height: 100%; padding-top: 40px;`}>Case Studies</h3>
           <div css={css`width: 100%;`}>
-            <Card size="large" title="Type 1 Meet" subtitle="Community and resource sharing platform for people with chronic disease" image={type1MeetImg} />
+            <Card size="large" title="Type 1 Meet" subtitle="Community and resource sharing platform for people with chronic disease" image={type1MeetImg}><p>bacon ipsum</p></Card>
             <Card size="large"  css={css`margin-top: 35px`} title="Southwest Print Guild" subtitle="Expanding professional networks and community building in a rural region" image={swpgImg} />
           </div>
         </div>
