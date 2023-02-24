@@ -8,6 +8,13 @@ import Card from '../components/Card'
 import NavBar from '../components/NavBar'
 import { COLORS } from '../constants'
 import { sectionCss } from '../styles/styles'
+import type1MeetImg from '../public/assets/work/type1meet.png'
+import swpgImg from '../public/assets/work/swpg.png'
+import stravaImg from '../public/assets/work/logos/strava.png'
+import googleMapsImg from '../public/assets/work/logos/googlemaps.png'
+import justTheTipImg from '../public/assets/work/just-the-tip.jpg'
+import solvedInMotionImg from '../public/assets/work/solved-in-motion.jpeg'
+
 
 const Home: NextPage = () => {
   return (
@@ -45,24 +52,24 @@ const Home: NextPage = () => {
         <div css={css`display: flex; margin-top: 90px;`}>
           <h3 css={css`flex: 0 0 150px; height: 100%; padding-top: 40px;`}>Case Studies</h3>
           <div css={css`width: 100%;`}>
-            <Card size="large" title="Type 1 Meet" subtitle="Community and resource sharing platform for people with chronic disease" />
-            <Card size="large"  css={css`margin-top: 35px`} title="Southwest Print Guild" subtitle="Expanding professional networks and community building in a rural region" />
+            <Card size="large" title="Type 1 Meet" subtitle="Community and resource sharing platform for people with chronic disease" image={type1MeetImg} />
+            <Card size="large"  css={css`margin-top: 35px`} title="Southwest Print Guild" subtitle="Expanding professional networks and community building in a rural region" image={swpgImg} />
           </div>
         </div>
 
         <div css={css`display: flex; margin-top: 90px;`}>
           <h3 css={css`flex: 0 0 150px; height: 100%; padding-top: 40px;`}>Optimization</h3>
           <div css={css`display: flex; gap: 35px; flex: 1 1 100%;`}>
-            <Card size="medium" title="Strava" subtitle="Integrating trail conditions reporting with activities and heat maps" />
-            <Card size="medium" title="Google Maps" subtitle="user flow for planned trips with custom alarms and live conditions" />
+            <Card size="medium" title="Strava" subtitle="Integrating trail conditions reporting with activities and heat maps" image={stravaImg} />
+            <Card size="medium" title="Google Maps" subtitle="User flow for planned trips with custom alarms and live conditions" image={googleMapsImg} />
           </div>
         </div>
 
         <div css={css`display: flex; margin-top: 90px; width: 100%;`}>
           <h3 css={css`flex: 0 0 150px; height: 100%; padding-top: 40px;`}>Design</h3>
           <div css={css`display: flex; gap: 35px; width: 100%;`}>
-            <Card size="medium" title="Book Covers" subtitle="A series of imaginary book covers inspired by a love of reading and design" />
-            <Card size="medium" title="Solved in motion" subtitle="Immersive art installation featuring a local trail system" />
+            <Card size="medium" title="Book Covers" subtitle="A series of imaginary book covers inspired by a love of reading and design" image={justTheTipImg} imageType="cover" />
+            <Card size="medium" title="Solved in motion" subtitle="Immersive art installation featuring a local trail system" image={solvedInMotionImg} imageType="cover"  />
           </div>
         </div>
       </section>
