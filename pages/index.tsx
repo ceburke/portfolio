@@ -2,6 +2,7 @@ import {css} from "@emotion/react";
 import type {NextPage} from "next";
 import Head from "next/head";
 import Image from "next/image";
+import {useEffect} from "react";
 import Card from "../components/Card";
 import NavBar from "../components/NavBar";
 import {COLORS} from "../constants";
@@ -25,6 +26,20 @@ import {sectionCss} from "../styles/styles";
 const toolIcons = [figmaImg, xdImg, vsImg, githubImg, idImg, aiImg, psImg, gsuiteImg, msImg];
 
 const Home: NextPage = () => {
+  // adjust CSS scroll variable on window scroll, used for hero "parallax"
+  useEffect(() => {
+    const onScroll = () => {
+      document.body.style.setProperty(
+        "--scroll",
+        `${window.pageYOffset / (document.body.offsetHeight - window.innerHeight)}`
+      );
+    };
+    window.addEventListener("scroll", onScroll, false);
+    return () => {
+      window.removeEventListener("scroll", onScroll, false);
+    };
+  }, []);
+
   return (
     <div>
       <Head>
@@ -127,10 +142,11 @@ const Home: NextPage = () => {
             max-width: 95vw;
             height: 450px;
             top: 100px;
+            background: url(/assets/work/hero.jpg);
+            background-size: cover;
+            background-position-y: calc(-200px - 2000px * var(--scroll));
           `}
-        >
-          <Image src="/rocks.png" alt="Red rock canyon landscape" layout="fill" />
-        </div>
+        />
       </div>
 
       <section
