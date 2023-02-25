@@ -3,10 +3,10 @@ import type {NextPage} from "next";
 import Head from "next/head";
 import Image from "next/image";
 import {useEffect} from "react";
+import BookCoversCard from "../components/BookCoversCard";
 import Card from "../components/Card";
 import NavBar from "../components/NavBar";
 import {COLORS} from "../constants";
-import justTheTipImg from "../public/assets/work/just-the-tip.jpg";
 import aiImg from "../public/assets/work/logos/ai.png";
 import figmaImg from "../public/assets/work/logos/figma.png";
 import githubImg from "../public/assets/work/logos/github.png";
@@ -222,6 +222,7 @@ const Home: NextPage = () => {
               title="Type 1 Meet"
               subtitle="Community and resource sharing platform for people with chronic disease"
               image={type1MeetImg}
+              modalTitle="Case Study | Type 1 Meet"
             >
               <p>bacon ipsum</p>
             </Card>
@@ -299,13 +300,7 @@ const Home: NextPage = () => {
               width: 100%;
             `}
           >
-            <Card
-              size="medium"
-              title="Book Covers"
-              subtitle="A series of imaginary book covers inspired by a love of reading and design"
-              image={justTheTipImg}
-              imageType="cover"
-            />
+            <BookCoversCard />
             <Card
               size="medium"
               title="Solved in motion"
