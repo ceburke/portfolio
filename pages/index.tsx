@@ -52,12 +52,13 @@ const Home: NextPage = () => {
         <NavBar />
         <div css={css`z-index: -1; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: ${COLORS.primary}`}></div>
         <section css={sectionCss}>
-        <h1>
+        <h1 css={css`font-size: 36px; font-weight: 400; line-height: 42px; margin-top: 100px;`}>
           Hi there, I’m Claire,<br />
-          a <span css={css`color: ${COLORS.secondary}`}>product designer</span> with an eye for<br />
-          <span css={css`color: ${COLORS.secondary}`}>creating community</span> and a passion for <span css={css`color: ${COLORS.secondary}`}>outdoor recreation</span>
+          a <span css={css`font-weight: bold; color: ${COLORS.secondary}`}>product designer</span> with an eye for<br />
+          <span css={css`font-weight: bold; color: ${COLORS.secondary}`}>creating community</span> and a <br />
+          passion for <span css={css`font-weight: bold; color: ${COLORS.secondary}`}>outdoor recreation</span>
         </h1>
-        <p>
+        <p css={css`font-size: 20px;`}>
           I am a designer by way of scientific communication, environmental consulting and printmaking.<br/> 
           My experience gives me a fresh approach to UX/UI and an insatiable curiosity for learning. <Link href="/about" >Read More</Link>
         </p>
@@ -68,10 +69,10 @@ const Home: NextPage = () => {
       </div>
 
       <section css={[sectionCss, css`margin: 90px auto;`]}>
-        <h2>What I've Done</h2>
-        <p>My work is a collection of self-led and created projects. The case studies, optimizations and design work represent my willingness to learn and passion for enabling users to reach their goals.</p>
+        <h2 css={css`font-weight: bold; font-size: 40px;`}>What I've Done</h2>
+        <p css={css`font-size: 20px;`}>My work is a collection of self-led and created projects. The case studies, optimizations and design work represent my willingness to learn and passion for enabling users to reach their goals.</p>
         <div css={css`display: flex; margin-top: 90px;`}>
-          <h3 css={css`flex: 0 0 150px; height: 100%; padding-top: 40px;`}>Case Studies</h3>
+          <h3 css={css`flex: 0 0 200px; height: 100%; padding-top: 40px; font-size: 24px;`}>Case Studies</h3>
           <div css={css`width: 100%;`}>
             <Card size="large" title="Type 1 Meet" subtitle="Community and resource sharing platform for people with chronic disease" image={type1MeetImg}><p>bacon ipsum</p></Card>
             <Card size="large"  css={css`margin-top: 35px`} title="Southwest Print Guild" subtitle="Expanding professional networks and community building in a rural region" image={swpgImg} />
@@ -79,7 +80,7 @@ const Home: NextPage = () => {
         </div>
 
         <div css={css`display: flex; margin-top: 90px;`}>
-          <h3 css={css`flex: 0 0 150px; height: 100%; padding-top: 40px;`}>Optimization</h3>
+          <h3 css={css`flex: 0 0 200px; height: 100%; padding-top: 40px; font-size: 24px;`}>Optimization</h3>
           <div css={css`display: flex; gap: 35px; flex: 1 1 100%;`}>
             <Card size="medium" title="Strava" subtitle="Integrating trail conditions reporting with activities and heat maps" image={stravaImg} />
             <Card size="medium" title="Google Maps" subtitle="User flow for planned trips with custom alarms and live conditions" image={googleMapsImg} />
@@ -87,7 +88,7 @@ const Home: NextPage = () => {
         </div>
 
         <div css={css`display: flex; margin-top: 90px; width: 100%;`}>
-          <h3 css={css`flex: 0 0 150px; height: 100%; padding-top: 40px;`}>Design</h3>
+          <h3 css={css`flex: 0 0 200px; height: 100%; padding-top: 40px; font-size: 24px;`}>Design</h3>
           <div css={css`display: flex; gap: 35px; width: 100%;`}>
             <Card size="medium" title="Book Covers" subtitle="A series of imaginary book covers inspired by a love of reading and design" image={justTheTipImg} imageType="cover" />
             <Card size="medium" title="Solved in motion" subtitle="Immersive art installation featuring a local trail system" image={solvedInMotionImg} imageType="cover"  />
@@ -98,12 +99,12 @@ const Home: NextPage = () => {
       <div css={css`background: ${COLORS.primary}; padding: 50px 0 100px 0;`}>
       <section css={[sectionCss, css`color: #fff; `]}>
         <div css={css`height: 12px; width: 175px; background: ${COLORS.secondary}; margin-bottom: 50px;`} />
-        <h2>Tool Kit</h2>
-        <p>I taught myself Figma, Adobe XD, HTML and CSS with the help of online learning platforms. I have years of professional experience in Adobe programs such as Photoshop, Illustrator and InDesign. I have worked in Google Suite and Microsoft Office team environments. I am eager to learn new tools and deepen my knowledge.</p>
+        <h2 css={css`font-weight: bold; font-size: 40px;`}>Tool Kit</h2>
+        <p css={css`font-size: 20px;`}>I taught myself Figma, Adobe XD, HTML and CSS with the help of online learning platforms. I have years of professional experience in Adobe programs such as Photoshop, Illustrator and InDesign. I have worked in Google Suite and Microsoft Office team environments. I am eager to learn new tools and deepen my knowledge.</p>
         <ul css={css`list-style-type: none; padding: none; display: flex; gap: 30px; margin: 90px 0; justify-content: center;`}>{toolIcons.map((toolIcon) => <li><Image src={toolIcon} height={75} width={75} /></li>)}</ul>
 
         <div css={css`display: flex;`}>
-          <h3 css={css`flex: 0 0 150px; height: 100%; padding-top: 40px;`}>Certifications</h3>
+          <h3 css={css`flex: 0 0 200px; height: 100%; padding-top: 40px; font-size: 24px;`}>Certifications</h3>
           <div css={css`display: flex; gap: 35px; flex: 1 1 100%;`}>
             <div css={css`display: flex; flex-direction: column; justify-content: flex-end; background: #fff; height: 200px; border-radius: 35px; padding: 35px;`}>
               <img css={css`margin-bottom: 15px;`} src="/assets/work/logos/codecademy.png" width={157} />
