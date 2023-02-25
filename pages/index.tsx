@@ -321,155 +321,176 @@ const Home: NextPage = () => {
 
       <div
         css={css`
+          position: relative;
           background: ${COLORS.primary};
           padding: 50px 0 100px 0;
+          overflow: hidden;
         `}
       >
-        <section
-          css={[
-            sectionCss,
-            css`
-              color: #fff;
-            `,
-          ]}
+        <div
+          css={css`
+            background: #723c48;
+            height: 600px;
+            width: 600px;
+            filter: blur(200px);
+            position: absolute;
+            right: -200px;
+            top: 300px;
+            z-index: 1;
+          `}
+        />
+        <div
+          css={css`
+            position: relative;
+            z-index: 2;
+          `}
         >
-          <div
-            css={css`
-              height: 12px;
-              width: 175px;
-              background: ${COLORS.secondary};
-              margin-bottom: 50px;
-            `}
-          />
-          <h2
-            css={css`
-              font-weight: bold;
-              font-size: 40px;
-            `}
+          <section
+            css={[
+              sectionCss,
+              css`
+                color: #fff;
+              `,
+            ]}
           >
-            Tool Kit
-          </h2>
-          <p
-            css={css`
-              font-size: 20px;
-            `}
-          >
-            I taught myself Figma, Adobe XD, HTML and CSS with the help of online learning
-            platforms. I have years of professional experience in Adobe programs such as Photoshop,
-            Illustrator and InDesign. I have worked in Google Suite and Microsoft Office team
-            environments. I am eager to learn new tools and deepen my knowledge.
-          </p>
-          <ul
-            css={css`
-              list-style-type: none;
-              padding: none;
-              display: flex;
-              gap: 30px;
-              margin: 90px 0;
-              justify-content: center;
-            `}
-          >
-            {toolIcons.map((toolIcon) => (
-              <li>
-                <Image src={toolIcon} height={75} width={75} />
-              </li>
-            ))}
-          </ul>
-
-          <div
-            css={css`
-              display: flex;
-            `}
-          >
-            <h3
+            <div
               css={css`
-                flex: 0 0 200px;
-                height: 100%;
-                padding-top: 40px;
-                font-size: 24px;
+                height: 12px;
+                width: 175px;
+                background: ${COLORS.secondary};
+                margin-bottom: 50px;
+              `}
+            />
+            <h2
+              css={css`
+                font-weight: bold;
+                font-size: 40px;
               `}
             >
-              Certifications
-            </h3>
+              Tool Kit
+            </h2>
+            <p
+              css={css`
+                font-size: 20px;
+              `}
+            >
+              I taught myself Figma, Adobe XD, HTML and CSS with the help of online learning
+              platforms. I have years of professional experience in Adobe programs such as
+              Photoshop, Illustrator and InDesign. I have worked in Google Suite and Microsoft
+              Office team environments. I am eager to learn new tools and deepen my knowledge.
+            </p>
+            <ul
+              css={css`
+                list-style-type: none;
+                padding: none;
+                display: flex;
+                gap: 30px;
+                margin: 90px 0;
+                justify-content: center;
+              `}
+            >
+              {toolIcons.map((toolIcon) => (
+                <li>
+                  <Image src={toolIcon} height={75} width={75} />
+                </li>
+              ))}
+            </ul>
+
             <div
               css={css`
                 display: flex;
-                gap: 35px;
-                flex: 1 1 100%;
               `}
             >
+              <h3
+                css={css`
+                  flex: 0 0 200px;
+                  height: 100%;
+                  padding-top: 40px;
+                  font-size: 24px;
+                `}
+              >
+                Certifications
+              </h3>
               <div
                 css={css`
                   display: flex;
-                  flex-direction: column;
-                  justify-content: flex-end;
-                  background: #fff;
-                  height: 200px;
-                  border-radius: 35px;
-                  padding: 35px;
+                  gap: 35px;
+                  flex: 1 1 100%;
                 `}
               >
-                <img
+                <div
                   css={css`
-                    margin-bottom: 15px;
-                  `}
-                  src="/assets/work/logos/codecademy.png"
-                  width={157}
-                />
-                <p
-                  css={css`
-                    font-weight: bold;
-                    font-size: 20px;
-                    color: #000;
-                    margin: 2px 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    background: #fff;
+                    height: 200px;
+                    border-radius: 35px;
+                    padding: 35px;
                   `}
                 >
-                  Website Building Skill Path
-                </p>
-                <p
+                  <img
+                    css={css`
+                      margin-bottom: 15px;
+                    `}
+                    src="/assets/work/logos/codecademy.png"
+                    width={157}
+                  />
+                  <p
+                    css={css`
+                      font-weight: bold;
+                      font-size: 20px;
+                      color: #000;
+                      margin: 2px 0;
+                    `}
+                  >
+                    Website Building Skill Path
+                  </p>
+                  <p
+                    css={css`
+                      font-weight: bold;
+                      font-size: 20px;
+                      color: #676767;
+                      margin: 2px 0;
+                    `}
+                  >
+                    HTML, CSS and GitHub
+                  </p>
+                </div>
+                <div
                   css={css`
-                    font-weight: bold;
-                    font-size: 20px;
-                    color: #676767;
-                    margin: 2px 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    background: #fff;
+                    height: 200px;
+                    border-radius: 35px;
+                    padding: 35px;
                   `}
                 >
-                  HTML, CSS and GitHub
-                </p>
-              </div>
-              <div
-                css={css`
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: flex-end;
-                  background: #fff;
-                  height: 200px;
-                  border-radius: 35px;
-                  padding: 35px;
-                `}
-              >
-                <img
-                  css={css`
-                    margin-bottom: 15px;
-                  `}
-                  src="/assets/work/logos/coursera.png"
-                  width={232}
-                />
-                <p
-                  css={css`
-                    font-weight: bold;
-                    font-size: 20px;
-                    margin: 2px 0;
-                    color: #000;
-                    margin-top: 24px;
-                  `}
-                >
-                  Google UX Design Professional Certificate
-                </p>
+                  <img
+                    css={css`
+                      margin-bottom: 15px;
+                    `}
+                    src="/assets/work/logos/coursera.png"
+                    width={232}
+                  />
+                  <p
+                    css={css`
+                      font-weight: bold;
+                      font-size: 20px;
+                      margin: 2px 0;
+                      color: #000;
+                      margin-top: 24px;
+                    `}
+                  >
+                    Google UX Design Professional Certificate
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
     </div>
   );
