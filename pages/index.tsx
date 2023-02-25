@@ -73,8 +73,32 @@ const Home: NextPage = () => {
             right: 0;
             bottom: 0;
             background: ${COLORS.primary};
+            overflow: hidden;
           `}
-        ></div>
+        >
+          <div
+            css={css`
+              background: #3e1732;
+              height: 750px;
+              width: 750px;
+              filter: blur(100px);
+              position: absolute;
+              right: -200px;
+              bottom: -50px;
+            `}
+          />
+          <div
+            css={css`
+              background: #965554;
+              height: 400px;
+              width: 400px;
+              filter: blur(150px);
+              position: absolute;
+              left: -100px;
+              bottom: -50px;
+            `}
+          />
+        </div>
         <section css={sectionCss}>
           <h1
             css={css`
