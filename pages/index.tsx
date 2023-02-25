@@ -49,8 +49,6 @@ const Home: NextPage = () => {
           content="I'm Claire, a product designer with a passion for UI and UX."
         />
         <link rel="icon" href="/favicon.ico" />
-        {/* TODO switch this to local @next/font */}
-        <link rel="stylesheet" href="https://use.typekit.net/eri7ofr.css"></link>
       </Head>
 
       <div
