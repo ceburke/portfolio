@@ -1,4 +1,4 @@
-import {COLORS, SECTION_WIDTH} from "../constants";
+import {BREAKPOINT_SMALL, COLORS, SECTION_WIDTH} from "../constants";
 import {css} from "@emotion/react";
 import {buttonResetCss} from "../styles/styles";
 import Image, {StaticImageData} from "next/image";
@@ -25,16 +25,25 @@ const baseCardCss = css`
   display: flex;
   overflow: hidden;
   position: relative;
+  min-height: 275px;
 `;
 
 const largeCardCss = css`
   flex-direction: row;
   flex: 1 1 100%;
+
+  @media (max-width: ${BREAKPOINT_SMALL}px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const mediumCardCss = css`
   flex-direction: column-reverse;
   flex: 1 1 50%;
+
+  @media (max-width: ${BREAKPOINT_SMALL}px) {
+    flex: 1 1 100%;
+  }
 `;
 
 const baseImageCss = css`
@@ -45,6 +54,12 @@ const baseImageCss = css`
 
 const largeImageCss = css`
   flex: 1 1 50%;
+
+  @media (max-width: ${BREAKPOINT_SMALL}px) {
+    height: 100px;
+    width: 100px;
+    align-self: flex-end;
+  }
 `;
 
 const mediumImageCss = css`
@@ -175,6 +190,10 @@ export default function Card(props: Props): JSX.Element {
                 overflow: hidden;
                 margin: 0;
                 font-size: 40px;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  font-size: 24px;
+                }
               `}
             >
               {modalTitle}

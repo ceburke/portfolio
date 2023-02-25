@@ -5,8 +5,9 @@ import Image from "next/image";
 import {useEffect} from "react";
 import BookCoversCard from "../components/BookCoversCard";
 import Card from "../components/Card";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import {COLORS} from "../constants";
+import {BREAKPOINT_SMALL, COLORS} from "../constants";
 import aiImg from "../public/assets/work/logos/ai.png";
 import figmaImg from "../public/assets/work/logos/figma.png";
 import githubImg from "../public/assets/work/logos/github.png";
@@ -58,7 +59,12 @@ const Home: NextPage = () => {
           align-items: center;
           flex-direction: column;
           color: #fff;
-          margin-bottom: 175px;
+          margin-bottom: 150px;
+
+          @media (max-width: ${BREAKPOINT_SMALL}px) {
+            margin-bottom: 0;
+            padding-bottom: 20px;
+          }
         `}
       >
         <NavBar />
@@ -83,6 +89,12 @@ const Home: NextPage = () => {
               position: absolute;
               right: -200px;
               bottom: -50px;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                height: 200px;
+                width: 200px;
+                right: -100px;
+              }
             `}
           />
           <div
@@ -94,81 +106,157 @@ const Home: NextPage = () => {
               position: absolute;
               left: -100px;
               bottom: -50px;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                height: 300px;
+                width: 300px;
+                filter: blur(150px);
+                left: -150px;
+                bottom: 50px;
+              }
             `}
           />
         </div>
-        <section css={sectionCss}>
-          <h1
-            css={css`
-              font-size: 36px;
-              font-weight: 400;
-              line-height: 42px;
-              margin-top: 100px;
-            `}
-          >
-            Hi there, I’m Claire,
-            <br />a{" "}
-            <span
-              css={css`
-                font-weight: bold;
-                color: ${COLORS.secondary};
-              `}
-            >
-              product designer
-            </span>{" "}
-            with an eye for
-            <br />
-            <span
-              css={css`
-                font-weight: bold;
-                color: ${COLORS.secondary};
-              `}
-            >
-              creating community
-            </span>{" "}
-            and a <br />
-            passion for{" "}
-            <span
-              css={css`
-                font-weight: bold;
-                color: ${COLORS.secondary};
-              `}
-            >
-              outdoor recreation
-            </span>
-          </h1>
-          <p
-            css={css`
-              font-size: 20px;
-            `}
-          >
-            I am a designer by way of scientific communication, environmental consulting and
-            printmaking.
-            <br />
-            My experience gives me a fresh approach to UX/UI and an insatiable curiosity for
-            learning.{" "}
-            <a
-              href="/about"
-              css={css`
-                text-decoration: underline;
-              `}
-            >
-              Read More
-            </a>
-          </p>
-        </section>
+
         <div
           css={css`
-            position: relative;
-            width: 1200px;
-            max-width: 95vw;
-            height: 450px;
-            top: 100px;
-            background: url(/assets/work/hero.jpg);
-            background-size: cover;
-            background-position-y: calc(-200px - 2000px * var(--scroll));
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: ${BREAKPOINT_SMALL}px) {
+              flex-direction: column-reverse;
+            }
           `}
-        />
+        >
+          <section css={sectionCss}>
+            <h1
+              css={css`
+                font-size: 36px;
+                font-weight: 400;
+                line-height: 42px;
+                margin-top: 100px;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  font-size: 24px;
+                  margin-top: 35px;
+                  line-height: 28px;
+                }
+              `}
+            >
+              Hi there, I’m Claire,
+              <br />a{" "}
+              <span
+                css={css`
+                  font-weight: bold;
+                  color: ${COLORS.secondary};
+                `}
+              >
+                product designer{" "}
+                <br
+                  css={css`
+                    @media (min-width: ${BREAKPOINT_SMALL}px) {
+                      display: none;
+                    }
+                  `}
+                />
+              </span>{" "}
+              with an eye for
+              <br />
+              <span
+                css={css`
+                  font-weight: bold;
+                  color: ${COLORS.secondary};
+                `}
+              >
+                creating community
+              </span>{" "}
+              <br
+                css={css`
+                  @media (min-width: ${BREAKPOINT_SMALL}px) {
+                    display: none;
+                  }
+                `}
+              />{" "}
+              and a{" "}
+              <br
+                css={css`
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    display: none;
+                  }
+                `}
+              />
+              passion for{" "}
+              <br
+                css={css`
+                  @media (min-width: ${BREAKPOINT_SMALL}px) {
+                    display: none;
+                  }
+                `}
+              />
+              <span
+                css={css`
+                  font-weight: bold;
+                  color: ${COLORS.secondary};
+                `}
+              >
+                outdoor recreation
+              </span>
+            </h1>
+            <p
+              css={css`
+                font-size: 20px;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  font-size: 16px;
+                }
+              `}
+            >
+              I am a designer by way of scientific communication, environmental consulting and
+              printmaking.{" "}
+              <br
+                css={css`
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    display: none;
+                  }
+                `}
+              />
+              My experience gives me a fresh approach to UX/UI and an insatiable curiosity for
+              learning.{" "}
+              <a
+                href="/about"
+                css={css`
+                  text-decoration: underline;
+                `}
+              >
+                Read More
+              </a>
+            </p>
+          </section>
+
+          {/* hero image */}
+          <div
+            css={css`
+              position: relative;
+              width: 1200px;
+              max-width: 95vw;
+              height: 450px;
+              top: 100px;
+              margin: 0 auto;
+              background: url(/assets/work/hero.jpg);
+              background-size: cover;
+              background-position-y: calc(-200px - 2000px * var(--scroll));
+              background-repeat: no-repeat;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                top: 0;
+                width: 100vw;
+                max-width: none;
+                height: 250px;
+                background-position-y: calc(-20px - 1000px * var(--scroll));
+              }
+            `}
+          />
+        </div>
       </div>
 
       <section
@@ -176,6 +264,10 @@ const Home: NextPage = () => {
           sectionCss,
           css`
             margin: 90px auto;
+
+            @media (max-width: ${BREAKPOINT_SMALL}px) {
+              margin: 35px auto;
+            }
           `,
         ]}
       >
@@ -183,6 +275,10 @@ const Home: NextPage = () => {
           css={css`
             font-weight: bold;
             font-size: 40px;
+
+            @media (max-width: ${BREAKPOINT_SMALL}px) {
+              font-size: 24px;
+            }
           `}
         >
           What I've Done
@@ -190,6 +286,10 @@ const Home: NextPage = () => {
         <p
           css={css`
             font-size: 20px;
+
+            @media (max-width: ${BREAKPOINT_SMALL}px) {
+              font-size: 16px;
+            }
           `}
         >
           My work is a collection of self-led and created projects. The case studies, optimizations
@@ -200,14 +300,25 @@ const Home: NextPage = () => {
           css={css`
             display: flex;
             margin-top: 90px;
+
+            @media (max-width: ${BREAKPOINT_SMALL}px) {
+              flex-direction: column;
+              margin-top: 0;
+            }
           `}
         >
           <h3
             css={css`
-              flex: 0 0 200px;
+              flex: 0 0 auto;
+              width: 200px;
               height: 100%;
               padding-top: 40px;
               font-size: 24px;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                padding-top: 0;
+                font-size: 20px;
+              }
             `}
           >
             Case Studies
@@ -242,14 +353,25 @@ const Home: NextPage = () => {
           css={css`
             display: flex;
             margin-top: 90px;
+
+            @media (max-width: ${BREAKPOINT_SMALL}px) {
+              flex-direction: column;
+              margin-top: 25px;
+            }
           `}
         >
           <h3
             css={css`
-              flex: 0 0 200px;
+              flex: 0 0 auto;
+              width: 200px;
               height: 100%;
               padding-top: 40px;
               font-size: 24px;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                padding-top: 0;
+                font-size: 20px;
+              }
             `}
           >
             Optimization
@@ -259,6 +381,10 @@ const Home: NextPage = () => {
               display: flex;
               gap: 35px;
               flex: 1 1 100%;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                flex-direction: column;
+              }
             `}
           >
             <Card
@@ -281,14 +407,25 @@ const Home: NextPage = () => {
             display: flex;
             margin-top: 90px;
             width: 100%;
+
+            @media (max-width: ${BREAKPOINT_SMALL}px) {
+              flex-direction: column;
+              margin-top: 25px;
+=            }
           `}
         >
           <h3
             css={css`
-              flex: 0 0 200px;
+              flex: 0 0 auto;
+              width: 200px;
               height: 100%;
               padding-top: 40px;
               font-size: 24px;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                padding-top: 0;
+                font-size: 20px;
+              }
             `}
           >
             Design
@@ -298,6 +435,10 @@ const Home: NextPage = () => {
               display: flex;
               gap: 35px;
               width: 100%;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                flex-direction: column;
+              }
             `}
           >
             <BookCoversCard />
@@ -330,6 +471,14 @@ const Home: NextPage = () => {
             right: -200px;
             top: 300px;
             z-index: 1;
+
+            @media (max-width: ${BREAKPOINT_SMALL}px) {
+              width: 300px;
+              height: 300px;
+              top: 600px;
+              right: -100px;
+              filter: blur(100px);
+            }
           `}
         />
         <div
@@ -358,6 +507,10 @@ const Home: NextPage = () => {
               css={css`
                 font-weight: bold;
                 font-size: 40px;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  font-size: 24px;
+                }
               `}
             >
               Tool Kit
@@ -365,6 +518,10 @@ const Home: NextPage = () => {
             <p
               css={css`
                 font-size: 20px;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  font-size: 16px;
+                }
               `}
             >
               I taught myself Figma, Adobe XD, HTML and CSS with the help of online learning
@@ -377,9 +534,16 @@ const Home: NextPage = () => {
                 list-style-type: none;
                 padding: none;
                 display: flex;
+                flex-wrap: wrap;
                 gap: 30px;
-                margin: 90px 0;
+                margin: 90px auto;
+                padding: 0;
                 justify-content: center;
+                align-items: center;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  margin: 30px auto;
+                }
               `}
             >
               {toolIcons.map((toolIcon) => (
@@ -392,14 +556,23 @@ const Home: NextPage = () => {
             <div
               css={css`
                 display: flex;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  flex-direction: column;
+                }
               `}
             >
               <h3
                 css={css`
-                  flex: 0 0 200px;
+                  flex: 0 0 auto;
+                  width: 200px;
                   height: 100%;
                   padding-top: 40px;
                   font-size: 24px;
+
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    padding-top: 0;
+                  }
                 `}
               >
                 Certifications
@@ -409,6 +582,10 @@ const Home: NextPage = () => {
                   display: flex;
                   gap: 35px;
                   flex: 1 1 100%;
+
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    flex-direction: column;
+                  }
                 `}
               >
                 <div
@@ -485,6 +662,7 @@ const Home: NextPage = () => {
           </section>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

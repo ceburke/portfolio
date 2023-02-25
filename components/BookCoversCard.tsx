@@ -2,6 +2,7 @@ import justTheTipImg from "../public/assets/design/book-covers/just-the-tip.jpg"
 import Card from "./Card";
 
 import {css} from "@emotion/react";
+import {BREAKPOINT_SMALL} from "../constants";
 
 const bookCoverImages = [
   "/assets/design/book-covers/wrong-turns-only.jpg",
@@ -26,6 +27,10 @@ export default function BookCoversCard(): JSX.Element {
         css={css`
           margin: 0 25px 50px 25px;
           font-size: 24px;
+
+          @media (max-width: ${BREAKPOINT_SMALL}px) {
+            font-size: 16px;
+          }
         `}
       >
         One of my first interactions with design was as a kid at the library. I created this series
@@ -48,6 +53,7 @@ export default function BookCoversCard(): JSX.Element {
             css={css`
               width: 350px;
               height: 350px;
+              max-width: 100%;
               display: flex;
               align-items: center;
               justify-content: center;
