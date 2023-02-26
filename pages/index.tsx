@@ -4,25 +4,24 @@ import Head from "next/head";
 import Image from "next/image";
 import {useEffect} from "react";
 import BookCoversCard from "../components/cards/BookCoversCard";
-import Card from "../components/Card";
+import GoogleMapsCard from "../components/cards/GoogleMapsCard";
+import SolvedInMotionCard from "../components/cards/SolveInMotionCard";
+import StravaCard from "../components/cards/StravaCard";
+import SWPGCard from "../components/cards/SWPGCard";
+import Type1MeetCard from "../components/cards/Type1MeetCard";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import SolvedInMotionCard from "../components/cards/SolveInMotionCard";
 import {BREAKPOINT_SMALL, COLORS} from "../constants";
 import aiImg from "../public/assets/work/logos/ai.png";
 import figmaImg from "../public/assets/work/logos/figma.png";
 import githubImg from "../public/assets/work/logos/github.png";
-import googleMapsImg from "../public/assets/work/logos/googlemaps.png";
 import gsuiteImg from "../public/assets/work/logos/gsuite.png";
 import idImg from "../public/assets/work/logos/id.png";
 import msImg from "../public/assets/work/logos/ms.png";
 import psImg from "../public/assets/work/logos/ps.png";
 import vsImg from "../public/assets/work/logos/vs.png";
 import xdImg from "../public/assets/work/logos/xd.png";
-import swpgImg from "../public/assets/work/swpg.png";
 import {sectionCss} from "../styles/styles";
-import Type1MeetCard from "../components/cards/Type1MeetCard";
-import StravaCard from "../components/cards/StravaCard";
 
 const toolIcons = [figmaImg, xdImg, vsImg, githubImg, idImg, aiImg, psImg, gsuiteImg, msImg];
 
@@ -329,15 +328,7 @@ const Home: NextPage = () => {
             `}
           >
             <Type1MeetCard />
-            <Card
-              size="large"
-              css={css`
-                margin-top: 35px;
-              `}
-              title="Southwest Print Guild"
-              subtitle="Expanding professional networks and community building in a rural region"
-              image={swpgImg}
-            />
+            <SWPGCard />
           </div>
         </div>
 
@@ -380,12 +371,7 @@ const Home: NextPage = () => {
             `}
           >
             <StravaCard />
-            <Card
-              size="medium"
-              title="Google Maps"
-              subtitle="User flow for planned trips with custom alarms and live conditions"
-              image={googleMapsImg}
-            />
+            <GoogleMapsCard />
           </div>
         </div>
 
@@ -398,7 +384,7 @@ const Home: NextPage = () => {
             @media (max-width: ${BREAKPOINT_SMALL}px) {
               flex-direction: column;
               margin-top: 25px;
-=            }
+            }
           `}
         >
           <h3
