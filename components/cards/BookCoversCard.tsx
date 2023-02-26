@@ -1,8 +1,8 @@
-import justTheTipImg from "../public/assets/design/book-covers/just-the-tip.jpg";
-import Card from "./Card";
+import justTheTipImg from "../../public/assets/design/book-covers/just-the-tip.jpg";
+import Card from "../Card";
 
 import {css} from "@emotion/react";
-import {BREAKPOINT_SMALL} from "../constants";
+import {BREAKPOINT_SMALL} from "../../constants";
 
 const bookCoverImages = [
   "/assets/design/book-covers/wrong-turns-only.jpg",

@@ -1,8 +1,8 @@
 import {css} from "@emotion/react";
 
-import solvedInMotionImg from "../public/assets/work/solved-in-motion.jpeg";
-import {BREAKPOINT_SMALL} from "../constants";
-import Card from "./Card";
+import solvedInMotionImg from "../../public/assets/work/solved-in-motion.jpeg";
+import {BREAKPOINT_SMALL} from "../../constants";
+import Card from "../Card";
 
 export default function SolvedInMotionCard(): JSX.Element {
   return (
