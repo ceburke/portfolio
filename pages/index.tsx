@@ -48,7 +48,7 @@ const Home: NextPage = () => {
           name="description"
           content="I'm Claire, a product designer with a passion for UI and UX."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div
