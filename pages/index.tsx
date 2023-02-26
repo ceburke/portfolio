@@ -17,12 +17,12 @@ import gsuiteImg from "../public/assets/work/logos/gsuite.png";
 import idImg from "../public/assets/work/logos/id.png";
 import msImg from "../public/assets/work/logos/ms.png";
 import psImg from "../public/assets/work/logos/ps.png";
-import stravaImg from "../public/assets/work/logos/strava.png";
 import vsImg from "../public/assets/work/logos/vs.png";
 import xdImg from "../public/assets/work/logos/xd.png";
 import swpgImg from "../public/assets/work/swpg.png";
 import {sectionCss} from "../styles/styles";
 import Type1MeetCard from "../components/cards/Type1MeetCard";
+import StravaCard from "../components/cards/StravaCard";
 
 const toolIcons = [figmaImg, xdImg, vsImg, githubImg, idImg, aiImg, psImg, gsuiteImg, msImg];
 
@@ -379,12 +379,7 @@ const Home: NextPage = () => {
               }
             `}
           >
-            <Card
-              size="medium"
-              title="Strava"
-              subtitle="Integrating trail conditions reporting with activities and heat maps"
-              image={stravaImg}
-            />
+            <StravaCard />
             <Card
               size="medium"
               title="Google Maps"
