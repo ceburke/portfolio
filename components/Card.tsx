@@ -180,6 +180,8 @@ export default function Card(props: Props): JSX.Element {
               padding: 15px 0 10px 25px;
               overflow: hidden;
               width: 100%;
+              z-index: 10;
+              position: relative;
             `}
           >
             <h2
