@@ -26,6 +26,12 @@ const baseCardCss = css`
   overflow: hidden;
   position: relative;
   min-height: 275px;
+  transition: all 300ms ease;
+
+  &:hover {
+    cursor: pointer;
+    background: #f8ddc3;
+  }
 `;
 
 const largeCardCss = css`
