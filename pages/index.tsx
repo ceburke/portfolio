@@ -21,8 +21,8 @@ import stravaImg from "../public/assets/work/logos/strava.png";
 import vsImg from "../public/assets/work/logos/vs.png";
 import xdImg from "../public/assets/work/logos/xd.png";
 import swpgImg from "../public/assets/work/swpg.png";
-import type1MeetImg from "../public/assets/work/type1meet.png";
 import {sectionCss} from "../styles/styles";
+import Type1MeetCard from "../components/cards/Type1MeetCard";
 
 const toolIcons = [figmaImg, xdImg, vsImg, githubImg, idImg, aiImg, psImg, gsuiteImg, msImg];
 
@@ -328,15 +328,7 @@ const Home: NextPage = () => {
               width: 100%;
             `}
           >
-            <Card
-              size="large"
-              title="Type 1 Meet"
-              subtitle="Community and resource sharing platform for people with chronic disease"
-              image={type1MeetImg}
-              modalTitle="Case Study | Type 1 Meet"
-            >
-              <p>bacon ipsum</p>
-            </Card>
+            <Type1MeetCard />
             <Card
               size="large"
               css={css`
