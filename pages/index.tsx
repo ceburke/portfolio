@@ -7,6 +7,7 @@ import BookCoversCard from "../components/BookCoversCard";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import SolvedInMotionCard from "../components/SolveInMotionCard";
 import {BREAKPOINT_SMALL, COLORS} from "../constants";
 import aiImg from "../public/assets/work/logos/ai.png";
 import figmaImg from "../public/assets/work/logos/figma.png";
@@ -19,7 +20,6 @@ import psImg from "../public/assets/work/logos/ps.png";
 import stravaImg from "../public/assets/work/logos/strava.png";
 import vsImg from "../public/assets/work/logos/vs.png";
 import xdImg from "../public/assets/work/logos/xd.png";
-import solvedInMotionImg from "../public/assets/work/solved-in-motion.jpeg";
 import swpgImg from "../public/assets/work/swpg.png";
 import type1MeetImg from "../public/assets/work/type1meet.png";
 import {sectionCss} from "../styles/styles";
@@ -442,13 +442,7 @@ const Home: NextPage = () => {
             `}
           >
             <BookCoversCard />
-            <Card
-              size="medium"
-              title="Solved in motion"
-              subtitle="Immersive art installation featuring a local trail system"
-              image={solvedInMotionImg}
-              imageType="cover"
-            />
+            <SolvedInMotionCard />
           </div>
         </div>
       </section>
