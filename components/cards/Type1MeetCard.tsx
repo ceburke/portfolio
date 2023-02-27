@@ -1,7 +1,7 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 
-import type1MeetImg from "../../public/assets/work/type1meet.png";
-import {BREAKPOINT_SMALL} from "../../constants";
+import type1MeetImg from "../../public/assets/case studies/type1/intro.png";
+import { BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -9,7 +9,7 @@ export default function Type1MeetCard(): JSX.Element {
   return (
     <Card
       size="large"
-      title="Type 1 Meet"
+      title="T1Meet"
       subtitle="Community and resource sharing platform for people with chronic disease"
       image={type1MeetImg}
     >
@@ -56,7 +56,7 @@ export default function Type1MeetCard(): JSX.Element {
                 }
               `}
             >
-              Case Study | Type 1 Meet
+              Case Study | T1Meet
             </h2>
 
             <p
@@ -70,12 +70,12 @@ export default function Type1MeetCard(): JSX.Element {
                 }
               `}
             >
-              Supporting introductory description here, most likely one or two sentences. Typing
-              another sentence here to illustrate possible size requirements.
+              An application to help people with Type 1 diabetes connect, share stories and
+              resources. Created in Figma.
             </p>
           </div>
           <img
-            src="/assets/work/type1meet.png"
+            src="/assets/case studies/type1/intro.gif"
             css={css`
               width: 50%;
               border-radius: 35px;
@@ -114,15 +114,14 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            Living with chronic disease, such as Type 1 diabetes, can be isolating, even from close
+            family and friends. Oftentimes, friends and family who do not have Type 1 struggle to
+            understand. This project premise was inspired by being a wallflower while two friends
+            with Type 1 enthusiastically shared their challenges, successes, tips and tricks.
           </p>
           <div
             css={css`
               display: flex;
-              gap: 45px;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 flex-direction: column;
@@ -132,11 +131,11 @@ export default function Type1MeetCard(): JSX.Element {
           >
             <TextBubble
               title="Problem"
-              content="Description of problem spanning a couple sentences. Here’s another sentence to represent space requirements."
+              content="Connecting with Type 1 people online is dispersed across non-profit sites, social media and medical forums."
             />
             <TextBubble
               title="Objective"
-              content="Description of objective, “allow users to connect with others in their region”. Here’s another sentence to represent space requirements."
+              content="Create a Type 1-specific platform which combines resources, social media and personal growth tracking."
             />
           </div>
         </section>
@@ -168,10 +167,9 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            I pitched the idea for this project to one of my Type 1 friends. She provided insight on
+            the feasibility of the idea and what features would be most useful. From there, I moved
+            on to user personas to identify additional use cases and needs.
           </p>
           <div
             css={css`
@@ -181,7 +179,7 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
+              src="/assets/case studies/type1/personas.png"
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -217,10 +215,9 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            I did a round of brainstorming sketches to get started, moved onto low-fidelity mocks
+            and then prototyping. I had a user test the low-fidelity prototype and acted upon the
+            insights gained from that feedback to create the high-fidelity prototype.
           </p>
           <div
             css={css`
@@ -230,21 +227,21 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
+              src="/assets/case studies/type1/sketches.png"
               css={css`
                 width: 100%;
                 border-radius: 35px;
               `}
             />
             <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
+              src="/assets/case studies/type1/lofi.png"
               css={css`
                 width: 100%;
                 border-radius: 35px;
               `}
             />
             <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
+              src="/assets/case studies/type1/hifi.gif"
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -280,10 +277,9 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            The usability study yielded key improvements related to the characteristics of the user:
+            age, personal journey value and topics of interest. The user illuminated missing pieces
+            that I was unable to foresee - a prime example of the value of testing early.
           </p>
           <div
             css={css`
@@ -298,17 +294,14 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <TextBubble
-              title="1"
-              content="Description spanning one longer sentence, oh like so look at that."
+              title="Age Ranges"
+              content="Ability to select preference for age range in chat hub"
             />
             <TextBubble
-              title="2"
-              content="Description spanning one longer sentence, oh like so look at that."
+              title="Individual Experience"
+              content="Personal journey area with private posts and check-in data"
             />
-            <TextBubble
-              title="3"
-              content="Description spanning one longer sentence, oh like so look at that."
-            />
+            <TextBubble title="Topics" content="More relevant umbrella categories" />
           </div>
           <div
             css={css`
@@ -318,7 +311,7 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
+              src="/assets/case studies/type1/changes.png"
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -373,15 +366,15 @@ export default function Type1MeetCard(): JSX.Element {
           >
             <TextBubble
               title="Challenge"
-              content="Description spanning one longer sentence, oh like so look at that."
+              content="The user was not able to utilize the prototype interactions in Figma due to unclear context and direction. Future usability studies should include explicit introductory information and instructions."
             />
             <TextBubble
               title="Success"
-              content="Description spanning one longer sentence, oh like so look at that."
+              content="User feedback in the low-fidelity stage yielded several large, user-centric improvements."
             />
             <TextBubble
               title="Opportunity"
-              content="Description spanning one longer sentence, oh like so look at that."
+              content="Value to real users. Pitch the project to a Type 1 non-profit with enough resources to make it real. Although T1Meet was made with Type 1 users in mind, but could be applied to other chronic diseases as well.  "
             />
           </div>
         </section>
