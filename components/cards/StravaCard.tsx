@@ -1,7 +1,7 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 
 import stravaImg from "../../public/assets/work/logos/strava.png";
-import {BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from "../../constants";
+import { BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -45,7 +45,7 @@ export default function StravaCard(): JSX.Element {
                 }
               `}
             >
-              Case Study | Type 1 Meet
+              Integrating Trail Conditions into Strava
             </h2>
 
             <p
@@ -59,8 +59,10 @@ export default function StravaCard(): JSX.Element {
                 }
               `}
             >
-              Supporting introductory description here, most likely one or two sentences. Typing
-              another sentence here to illustrate possible size requirements.
+              Trail conditions are a key aspect of any trail-based activity. Many regions,
+              especially the US and Europe, where Strava’s user base is largest, experience seasonal
+              transitions which impact trail surfaces. Trails world-wide are affected by weather
+              events such as rainstorms and windstorms.
             </p>
           </div>
           <img
@@ -106,10 +108,9 @@ export default function StravaCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            Create a trail conditions reporting and viewing user flow which utilizes existing
+            features within the Strava app. Allow users to make informed decisions about trail usage
+            based on fellow user information, or contribute to that knowledge base.
           </p>
           <div
             css={css`
@@ -124,11 +125,11 @@ export default function StravaCard(): JSX.Element {
           >
             <TextBubble
               title="Problem"
-              content="Description of problem spanning a couple sentences. Here’s another sentence to represent space requirements."
+              content="Seasonal changes and weather events can create unenjoyable and/or unsafe trail conditions for users."
             />
             <TextBubble
               title="Objective"
-              content="Description of objective, “allow users to connect with others in their region”. Here’s another sentence to represent space requirements."
+              content="Create a trail condition user flow which helps users plan activities accordingly."
             />
           </div>
         </section>
@@ -160,10 +161,10 @@ export default function StravaCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            Competitors such as Gaia, Trailforks and FarOut have trail reporting features.
+            Trailforks provides basic text input, while Gaia and FarOut allow input of
+            location-specific text, images and in-map conditions. Trail reports for all three
+            competitors show the most recent date, which can be irrelevant if older than a few days.
           </p>
           <div
             css={css`
@@ -237,10 +238,11 @@ export default function StravaCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            Strava’s activity recording could host the conditions reporting aspect of the user flow.
+            To be competitive, trail reporting must include images, text and have a time-scale
+            selector. To avoid privacy issues, trail reports should not be directly linked to
+            activity posts. However, to make the user flow accessible and convenient, reporting
+            should be integrated into the activity recording flow.
           </p>
           <div
             css={css`
@@ -267,10 +269,8 @@ export default function StravaCard(): JSX.Element {
                   }
                 `}
               >
-                Supporting introductory description here, most likely one or two sentence. Typing
-                another sentence here to illustrate possible size requirements. Just in case here’s
-                another sentence, it might be prudent to include some more space here, just in case
-                it runs on a bit.
+                Viewing trail conditions could be added into the maps hub. Trail conditions should
+                be as a layer on the overall map, within segment details and the route planner.
               </p>
             </div>
             <div>
@@ -291,10 +291,8 @@ export default function StravaCard(): JSX.Element {
                   }
                 `}
               >
-                Supporting introductory description here, most likely one or two sentence. Typing
-                another sentence here to illustrate possible size requirements. Just in case here’s
-                another sentence, it might be prudent to include some more space here, just in case
-                it runs on a bit.
+                Implementation would require adjustments to all main user flows, but the value to
+                activity enjoyment, route planning and trail stewardship would be significant.
               </p>
             </div>
           </div>

@@ -56,7 +56,7 @@ export default function Type1MeetCard(): JSX.Element {
                 }
               `}
             >
-              Case Study | T1Meet
+              T1Meet
             </h2>
 
             <p
@@ -370,7 +370,7 @@ export default function Type1MeetCard(): JSX.Element {
             />
             <TextBubble
               title="Success"
-              content="User feedback in the low-fidelity stage yielded several large, user-centric improvements."
+              content="Testing in the low-fidelity stage yielded several large, user-centric improvements."
             />
             <TextBubble
               title="Opportunity"

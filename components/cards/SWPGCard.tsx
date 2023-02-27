@@ -1,7 +1,7 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 
 import swpgImg from "../../public/assets/work/swpg.png";
-import {BREAKPOINT_SMALL} from "../../constants";
+import { BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -59,7 +59,7 @@ export default function SWPGCard(): JSX.Element {
                 }
               `}
             >
-              Case Study | Type 1 Meet
+              Southwest Print Guild
             </h2>
 
             <p
@@ -73,12 +73,12 @@ export default function SWPGCard(): JSX.Element {
                 }
               `}
             >
-              Supporting introductory description here, most likely one or two sentences. Typing
-              another sentence here to illustrate possible size requirements.
+              A website to connect artists working in print media, gallerists and community
+              organizers in a remote region. Created in Adobe XD.
             </p>
           </div>
           <img
-            src="/assets/work/type1meet.png"
+            src="/assets/work/swpg.png"
             css={css`
               width: 50%;
               border-radius: 35px;
@@ -117,10 +117,12 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            The southwest United States is a beautiful and geographically sparse area. Population
+            centers are few and far-flung. When I moved to Durango, Colorado from the east coast, I
+            found connecting with other artists challenging and community organizing around
+            art-making next-to-impossible. The goal of Southwest Print Guild is to build a central
+            connection point for artists and gallerists of all levels in an otherwise unconnected
+            region.
           </p>
           <div
             css={css`
@@ -135,11 +137,11 @@ export default function SWPGCard(): JSX.Element {
           >
             <TextBubble
               title="Problem"
-              content="Description of problem spanning a couple sentences. Here’s another sentence to represent space requirements."
+              content="Small and scattered population centers make in-person or word-of-mouth connections of artists, gallerists and community organizers challenging."
             />
             <TextBubble
               title="Objective"
-              content="Description of objective, “allow users to connect with others in their region”. Here’s another sentence to represent space requirements."
+              content="Create a web platform that connects artists and gallerists and enables community-building and event promotion."
             />
           </div>
         </section>
@@ -171,10 +173,11 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            Users tend to operate in local social media channels and physical signage to advertise
+            workshops, shows and grant opportunities. Creating a virtual bulletin platform - where
+            all announcements live could save users time in finding connections and opportunities.
+            In addition to the bulletin function, I created user personas to identify other needed
+            site functions.
           </p>
           <div
             css={css`
@@ -220,10 +223,9 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            I did a round of brainstorming sketches to get started, moved onto low-fidelity mocks
+            and then prototyping. I had a user test the low-fidelity prototype and acted upon the
+            insights gained from that feedback to create the high-fidelity prototype.
           </p>
           <div
             css={css`
@@ -283,10 +285,12 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            A large portion of my design effort was spent redoing the layout in the high-fidelity
+            phase. The initial layout was bulky and non-intuitive, so I invested time in determining
+            a new design approach prior to testing. After the improved design was implemented, a
+            part-time artist tested the high-fidelity prototype. Themes of the feedback centered
+            around making distinctions in user types and providing monetary perks for member
+            artists.
           </p>
           <div
             css={css`
@@ -301,16 +305,16 @@ export default function SWPGCard(): JSX.Element {
             `}
           >
             <TextBubble
-              title="1"
-              content="Description spanning one longer sentence, oh like so look at that."
+              title="Perks"
+              content="Add member benefits such as discounted materials at local supply businesses and discounted show fees."
             />
             <TextBubble
-              title="2"
-              content="Description spanning one longer sentence, oh like so look at that."
+              title="Monetization of Work"
+              content="Create an in-site gallery which the public can access and member artists can sell work."
             />
             <TextBubble
-              title="3"
-              content="Description spanning one longer sentence, oh like so look at that."
+              title="Member Hierarchy"
+              content="Create tailored account interfaces for hobbyists, professionals and gallerists. Existing account interfaces may be inaccessible or intimidating to beginners or irrelevant to gallerists."
             />
           </div>
           <div
@@ -357,10 +361,11 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            Southwest Print Guild was an important learning experience in terms of my approach to
+            web design. The biggest take-away of this project was recognizing the value of stepping
+            back and looking at the fidelity of design choices early. Sunk-cost fallacy thinking,
+            the commitment to an approach because of time invested, not value, does not work in the
+            UX/UI world.
           </p>
           <div
             css={css`
@@ -376,15 +381,15 @@ export default function SWPGCard(): JSX.Element {
           >
             <TextBubble
               title="Challenge"
-              content="Description spanning one longer sentence, oh like so look at that."
+              content="Creating a design system and implementing an effective web design which meets user expectations."
             />
             <TextBubble
               title="Success"
-              content="Description spanning one longer sentence, oh like so look at that."
+              content="User testing identified that existing features and flows were well-designed and functioned as expected."
             />
             <TextBubble
               title="Opportunity"
-              content="Description spanning one longer sentence, oh like so look at that."
+              content="User testing yielded significant expansion of functions. The site could become a fully-comprehensive tool by addressing multiple user flows in the same virtual space."
             />
           </div>
         </section>
