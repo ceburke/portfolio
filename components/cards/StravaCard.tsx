@@ -59,10 +59,8 @@ export default function StravaCard(): JSX.Element {
                 }
               `}
             >
-              Trail conditions are a key aspect of any trail-based activity. Many regions,
-              especially the US and Europe, where Strava’s user base is largest, experience seasonal
-              transitions which impact trail surfaces. Trails world-wide are affected by weather
-              events such as rainstorms and windstorms.
+              Trail conditions are a key aspect of any trail-based activity. Seasonal transitions
+              and weather events can impact trail surfaces, how and when athletes recreate.
             </p>
           </div>
           <img
@@ -96,7 +94,7 @@ export default function StravaCard(): JSX.Element {
               }
             `}
           >
-            Goal
+            Context
           </h3>
           <p
             css={css`
@@ -108,9 +106,10 @@ export default function StravaCard(): JSX.Element {
               }
             `}
           >
-            Create a trail conditions reporting and viewing user flow which utilizes existing
-            features within the Strava app. Allow users to make informed decisions about trail usage
-            based on fellow user information, or contribute to that knowledge base.
+            Going on a trail run or bike ride during spring mud season can be a slog. It can be hard
+            to predict when trails will be travelable during seasonal transitions or after weather
+            events. Rather than redundant struggles through poor conditions, a trail conditions
+            feature in Strava could make the wisdom of one become many.
           </p>
           <div
             css={css`
@@ -129,7 +128,7 @@ export default function StravaCard(): JSX.Element {
             />
             <TextBubble
               title="Objective"
-              content="Create a trail condition user flow which helps users plan activities accordingly."
+              content="Create a trail condition user flow which helps users plan activities."
             />
           </div>
         </section>

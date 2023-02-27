@@ -1,7 +1,7 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 
 import googleMapsImg from "../../public/assets/work/logos/googlemaps.png";
-import {BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from "../../constants";
+import { BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -45,7 +45,7 @@ export default function GoogleMapsCard(): JSX.Element {
                 }
               `}
             >
-              Case Study | Type 1 Meet
+              Enhancing Planned Trips in Google Maps
             </h2>
 
             <p
@@ -59,8 +59,8 @@ export default function GoogleMapsCard(): JSX.Element {
                 }
               `}
             >
-              Supporting introductory description here, most likely one or two sentences. Typing
-              another sentence here to illustrate possible size requirements.
+              Syncing navigation, traffic, alarms and navigation to reduce stress and increase
+              success rate.
             </p>
           </div>
           <img
@@ -94,7 +94,7 @@ export default function GoogleMapsCard(): JSX.Element {
               }
             `}
           >
-            Goal
+            Context
           </h3>
           <p
             css={css`
@@ -106,10 +106,10 @@ export default function GoogleMapsCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            Dropping a loved one off at the airport can be a stressful experience. What time should
+            you leave? What if there is traffic? How will you know if you are sleeping? Google Maps
+            is the go-to navigation app for millions and has the capacity to help users even more,
+            by taking the guesswork out of planned trips.
           </p>
           <div
             css={css`
@@ -124,11 +124,11 @@ export default function GoogleMapsCard(): JSX.Element {
           >
             <TextBubble
               title="Problem"
-              content="Description of problem spanning a couple sentences. Here’s another sentence to represent space requirements."
+              content="Planned trips can be challenging when time restraints prevent users from updating travel parameters in real time."
             />
             <TextBubble
               title="Objective"
-              content="Description of objective, “allow users to connect with others in their region”. Here’s another sentence to represent space requirements."
+              content="Create a single user flow for navigation, traffic alerts and alarm setting."
             />
           </div>
         </section>
@@ -160,10 +160,9 @@ export default function GoogleMapsCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            Google Maps has an existing user flow to address planned trips. Within the route
+            selection interface, there is a “Remind you to leave on time” option with “Leave by” and
+            “Arrive by” time selector options.
           </p>
           <div
             css={css`
@@ -237,10 +236,9 @@ export default function GoogleMapsCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            Google Maps’ existing flow for trip reminders can be optimized for the busy user’s needs
+            by integrating traffic data and device alarms. A set of simple question prompts help
+            guide the user and complete setup.
           </p>
           <div
             css={css`
@@ -267,10 +265,8 @@ export default function GoogleMapsCard(): JSX.Element {
                   }
                 `}
               >
-                Supporting introductory description here, most likely one or two sentence. Typing
-                another sentence here to illustrate possible size requirements. Just in case here’s
-                another sentence, it might be prudent to include some more space here, just in case
-                it runs on a bit.
+                Integration into the built-in device alarm features allows users to keep one
+                variable of their schedule static.
               </p>
             </div>
             <div>
@@ -291,10 +287,7 @@ export default function GoogleMapsCard(): JSX.Element {
                   }
                 `}
               >
-                Supporting introductory description here, most likely one or two sentence. Typing
-                another sentence here to illustrate possible size requirements. Just in case here’s
-                another sentence, it might be prudent to include some more space here, just in case
-                it runs on a bit.
+                This user flow could be implemented into desktop and Google Home.
               </p>
             </div>
           </div>

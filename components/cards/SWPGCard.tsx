@@ -73,8 +73,8 @@ export default function SWPGCard(): JSX.Element {
                 }
               `}
             >
-              A website to connect artists working in print media, gallerists and community
-              organizers in a remote region. Created in Adobe XD.
+              A website to connect artists, gallerists and community organizers in a remote region.
+              Created in Adobe XD.
             </p>
           </div>
           <img
@@ -105,7 +105,7 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            Goal
+            Context
           </h3>
           <p
             css={css`
@@ -119,10 +119,9 @@ export default function SWPGCard(): JSX.Element {
           >
             The southwest United States is a beautiful and geographically sparse area. Population
             centers are few and far-flung. When I moved to Durango, Colorado from the east coast, I
-            found connecting with other artists challenging and community organizing around
-            art-making next-to-impossible. The goal of Southwest Print Guild is to build a central
-            connection point for artists and gallerists of all levels in an otherwise unconnected
-            region.
+            found connecting with other artists challenging and art-centric community organizing
+            next-to-impossible. The goal of Southwest Print Guild is to build a central connection
+            point for artists and gallerists of all levels in an otherwise unconnected region.
           </p>
           <div
             css={css`

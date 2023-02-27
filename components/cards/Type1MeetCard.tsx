@@ -102,7 +102,7 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            Goal
+            Context
           </h3>
           <p
             css={css`
