@@ -77,13 +77,19 @@ export default function Type1MeetCard(): JSX.Element {
           <img
             src="/assets/case studies/type1/intro.gif"
             css={css`
-              max-height: 400px;
-              width: auto;
+              max-height: 325px;
+              object-fit: cover;
+              object-position: 30px -98px;
               flex: 1 1 50%;
               border-radius: 35px;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 width: 100%;
+                max-height: 150px;
+                object-fit: cover;
+                object-position: 15px -47px;
+                flex: 1 1 50%;
+                border-radius: 20px;
               }
             `}
           />
@@ -181,10 +187,66 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/case studies/type1/personas.png"
+              src="/assets/case studies/type1/personas1.png"
               css={css`
                 width: 100%;
                 border-radius: 35px;
+                margin-bottom: 25px;
+                display: block;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  display: none;
+                }
+              `}
+            />
+
+            <img
+              src="/assets/case studies/type1/personas_1m.svg"
+              css={css`
+                width: 100%;
+                border-radius: 35px;
+                margin-bottom: 25px;
+                display: none;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  border-radius: 20px;
+                  display: block;
+                }
+              `}
+            />
+          </div>
+
+          <div
+            css={css`
+              display: flex;
+              flex-wrap: wrap;
+              gap: 25px;
+            `}
+          >
+            <img
+              src="/assets/case studies/type1/personas2.png"
+              css={css`
+                width: 100%;
+                border-radius: 35px;
+                display: block;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  display: none;
+                }
+              `}
+            />
+
+            <img
+              src="/assets/case studies/type1/personas_2m.svg"
+              css={css`
+                width: 100%;
+                border-radius: 35px;
+                display: none;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  border-radius: 20px;
+                  display: block;
+                }
               `}
             />
           </div>

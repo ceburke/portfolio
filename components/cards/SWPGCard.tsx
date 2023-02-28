@@ -81,10 +81,17 @@ export default function SWPGCard(): JSX.Element {
             src="/assets/work/swpg.png"
             css={css`
               width: 50%;
+              height: 325px;
+              object-position: -30px 10px;
+              object-fit: cover;
               border-radius: 35px;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 width: 100%;
+                max-height: 150px;
+                object-position: 20px -5px;
+                object-fit: cover;
+                border-radius: 20px;
               }
             `}
           />
@@ -186,10 +193,65 @@ export default function SWPGCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
+              src="/assets/case studies/swpg/personas1.png"
               css={css`
                 width: 100%;
                 border-radius: 35px;
+                margin-bottom: 25px;
+                display: block;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  display: none;
+                }
+              `}
+            />
+
+            <img
+              src="/assets/case studies/swpg/personas_1m.svg"
+              css={css`
+                width: 100%;
+                border-radius: 35px;
+                margin-bottom: 25px;
+                display: none;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  border-radius: 20px;
+                  display: block;
+                }
+              `}
+            />
+          </div>
+          <div
+            css={css`
+              display: flex;
+              flex-wrap: wrap;
+              gap: 25px;
+            `}
+          >
+            <img
+              src="/assets/case studies/swpg/personas2.png"
+              css={css`
+                width: 100%;
+                border-radius: 35px;
+                display: block;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  display: none;
+                }
+              `}
+            />
+
+            <img
+              src="/assets/case studies/swpg/personas_2m.svg"
+              css={css`
+                width: 100%;
+                border-radius: 35px;
+                display: none;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  border-radius: 20px;
+                  display: block;
+                }
               `}
             />
           </div>
