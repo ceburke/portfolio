@@ -77,7 +77,9 @@ export default function Type1MeetCard(): JSX.Element {
           <img
             src="/assets/case studies/type1/intro.gif"
             css={css`
-              width: 50%;
+              max-height: 400px;
+              width: auto;
+              flex: 1 1 50%;
               border-radius: 35px;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
@@ -278,8 +280,7 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             The usability study yielded key improvements related to the characteristics of the user:
-            age, personal journey value and topics of interest. The user illuminated missing pieces
-            that I was unable to foresee - a prime example of the value of testing early.
+            age, personal journey value and topics of interest.
           </p>
           <div
             css={css`
@@ -314,7 +315,25 @@ export default function Type1MeetCard(): JSX.Element {
               src="/assets/case studies/type1/changes.png"
               css={css`
                 width: 100%;
+                display: block;
                 border-radius: 35px;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  display: none;
+                }
+              `}
+            />
+
+            <img
+              src="/assets/case studies/type1/changes_mobile.svg"
+              css={css`
+                width: 100%;
+                display: none;
+                border-radius: 35px;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  display: block;
+                }
               `}
             />
           </div>
@@ -347,10 +366,9 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            Supporting introductory description here, most likely one or two sentence. Typing
-            another sentence here to illustrate possible size requirements. Just in case here’s
-            another sentence, it might be prudent to include some more space here, just in case it
-            runs on a bit.
+            T1Meet was made with Type 1 users in mind, but could be applied to other chronic
+            diseases as well. This project helped me understand first-hand how essential user
+            feedback is, and how to incorporate it at multiple stages of the design process.
           </p>
           <div
             css={css`
