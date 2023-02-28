@@ -5,12 +5,12 @@ import { css } from "@emotion/react";
 import { BREAKPOINT_SMALL } from "../../constants";
 
 const bookCoverImages = [
-  "/assets/design/book-covers/wrong-turns-only.jpg",
+  "/assets/design/book-covers/doom.jpg",
   "/assets/design/book-covers/ctrl-chaos.jpg",
   "/assets/design/book-covers/just-the-tip.jpg",
-  "/assets/design/book-covers/great-wide-shut.jpg",
+  "/assets/design/book-covers/wrong-turns-only.jpg",
   "/assets/design/book-covers/yeehaw-or-yeenaw.jpg",
-  "/assets/design/book-covers/placeholder.jpg",
+  "/assets/design/book-covers/chicken.jpg",
 ];
 
 export default function BookCoversCard(): JSX.Element {
