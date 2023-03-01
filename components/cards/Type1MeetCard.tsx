@@ -81,7 +81,7 @@ export default function Type1MeetCard(): JSX.Element {
               object-fit: cover;
               object-position: 30px -98px;
               flex: 1 1 50%;
-              border-radius: 35px;
+              border-radius: 0px;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 width: 100%;
@@ -89,7 +89,7 @@ export default function Type1MeetCard(): JSX.Element {
                 object-fit: cover;
                 object-position: 15px -47px;
                 flex: 1 1 50%;
-                border-radius: 20px;
+                border-radius: 0px;
               }
             `}
           />
@@ -201,7 +201,7 @@ export default function Type1MeetCard(): JSX.Element {
             />
 
             <img
-              src="/assets/case studies/type1/personas_1m.svg"
+              src="/assets/case studies/type1/personas_1m.png"
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -237,7 +237,7 @@ export default function Type1MeetCard(): JSX.Element {
             />
 
             <img
-              src="/assets/case studies/type1/personas_2m.svg"
+              src="/assets/case studies/type1/personas_2m.png"
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -286,31 +286,29 @@ export default function Type1MeetCard(): JSX.Element {
           <div
             css={css`
               display: flex;
-              flex-wrap: wrap;
-              gap: 25px;
+              align-items: center;
+              max-height: 700px;
+              width: auto;
+              overflow: hidden;
+              border-radius: 20px;
             `}
           >
-            <img
-              src="/assets/case studies/type1/sketches.png"
+            <video
+              autoPlay
+              loop
+              controls
               css={css`
+                flex: 1 1 auto;
                 width: 100%;
-                border-radius: 35px;
+                border-radius: 20px;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  width: 100%;
+                }
               `}
-            />
-            <img
-              src="/assets/case studies/type1/lofi.png"
-              css={css`
-                width: 100%;
-                border-radius: 35px;
-              `}
-            />
-            <img
-              src="/assets/case studies/type1/hifi.gif"
-              css={css`
-                width: 100%;
-                border-radius: 35px;
-              `}
-            />
+            >
+              <source src="/assets/case studies/type1/design.mp4" type="video/mp4" />
+            </video>
           </div>
         </section>
 
@@ -387,7 +385,7 @@ export default function Type1MeetCard(): JSX.Element {
             />
 
             <img
-              src="/assets/case studies/type1/changes_mobile.svg"
+              src="/assets/case studies/type1/changes_mobile.png"
               css={css`
                 width: 100%;
                 display: none;
@@ -395,6 +393,7 @@ export default function Type1MeetCard(): JSX.Element {
 
                 @media (max-width: ${BREAKPOINT_SMALL}px) {
                   display: block;
+                  border-radius: 20px;
                 }
               `}
             />
