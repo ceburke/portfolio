@@ -106,8 +106,8 @@ export default function StravaCard(): JSX.Element {
               }
             `}
           >
-            Going on a trail run or bike ride during spring mud season can be a slog. It can be hard
-            to predict when trails will be travelable during seasonal transitions or after weather
+            Going on a trail run or bike ride during mud season can be a slog. It can be hard to
+            predict when trails will be travelable during seasonal transitions or after weather
             events. Rather than redundant struggles through poor conditions, a trail conditions
             feature in Strava could make the wisdom of one become many.
           </p>
@@ -128,7 +128,7 @@ export default function StravaCard(): JSX.Element {
             />
             <TextBubble
               title="Objective"
-              content="Create a trail condition user flow which helps users plan activities."
+              content="Help users “know before they go”, or report their experience."
             />
           </div>
         </section>
@@ -160,10 +160,9 @@ export default function StravaCard(): JSX.Element {
               }
             `}
           >
-            Competitors such as Gaia, Trailforks and FarOut have trail reporting features.
-            Trailforks provides basic text input, while Gaia and FarOut allow input of
-            location-specific text, images and in-map conditions. Trail reports for all three
-            competitors show the most recent date, which can be irrelevant if older than a few days.
+            Competitors such as AllTrails, Trailforks and FarOut have conditions reporting features.
+            All three allow input of location-specific text, images and conditions. Overall, trail
+            reports can be sparse and out-of-date.
           </p>
           <div
             css={css`
@@ -177,33 +176,28 @@ export default function StravaCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
+              src="/assets/optimizations/strava/competitors.png"
               css={css`
                 border-radius: 35px;
-                width: 33%;
+                width: 100%;
+                display: block;
 
-                @media (max-width: ${BREAKPOINT_MEDIUM}px) {
-                  width: 100%;
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  display: none;
+                  border-radius: 20px;
                 }
               `}
             />
             <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
+              src="/assets/optimizations/strava/competitor_mobile.png"
               css={css`
                 border-radius: 35px;
-                width: 33%;
-                @media (max-width: ${BREAKPOINT_MEDIUM}px) {
-                  width: 100%;
-                }
-              `}
-            />
-            <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
-              css={css`
-                border-radius: 35px;
-                width: 33%;
-                @media (max-width: ${BREAKPOINT_MEDIUM}px) {
-                  width: 100%;
+                width: 100%;
+                display: none;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  display: block;
+                  border-radius: 20px;
                 }
               `}
             />
@@ -252,10 +246,31 @@ export default function StravaCard(): JSX.Element {
           >
             <div>
               <img
-                src="/assets/design/solved-in-motion/thesis_full.jpg"
+                src="/assets/optimizations/strava/report.png"
                 css={css`
                   width: 100%;
+                  max-height: 700px;
+                  object-fit: cover;
                   border-radius: 35px;
+                  display: block;
+
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    display: none;
+                    border-radius: 20px;
+                  }
+                `}
+              />
+              <img
+                src="/assets/optimizations/strava/report_m.png"
+                css={css`
+                  border-radius: 35px;
+                  width: 100%;
+                  display: none;
+
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    display: block;
+                    border-radius: 20px;
+                  }
                 `}
               />
               <p
@@ -268,16 +283,37 @@ export default function StravaCard(): JSX.Element {
                   }
                 `}
               >
-                Viewing trail conditions could be added into the maps hub. Trail conditions should
-                be as a layer on the overall map, within segment details and the route planner.
+                Viewing trail conditions could be added into the maps hub. Trail conditions could be
+                viewable as a map layer and per segment.
               </p>
             </div>
             <div>
               <img
-                src="/assets/design/solved-in-motion/thesis_full.jpg"
+                src="/assets/optimizations/strava/view.png"
                 css={css`
                   width: 100%;
+                  max-height: 700px;
+                  object-fit: cover;
                   border-radius: 35px;
+                  display: block;
+
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    display: none;
+                    border-radius: 20px;
+                  }
+                `}
+              />
+              <img
+                src="/assets/optimizations/strava/view_m.png"
+                css={css`
+                  border-radius: 35px;
+                  width: 100%;
+                  display: none;
+
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    display: block;
+                    border-radius: 20px;
+                  }
                 `}
               />
               <p
@@ -290,7 +326,7 @@ export default function StravaCard(): JSX.Element {
                   }
                 `}
               >
-                Implementation would require adjustments to all main user flows, but the value to
+                Implementation would cause adjustments to several main user flows, but the value to
                 activity enjoyment, route planning and trail stewardship would be significant.
               </p>
             </div>

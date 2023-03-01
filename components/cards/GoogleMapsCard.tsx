@@ -107,9 +107,9 @@ export default function GoogleMapsCard(): JSX.Element {
             `}
           >
             Dropping a loved one off at the airport can be a stressful experience. What time should
-            you leave? What if there is traffic? How will you know if you are sleeping? Google Maps
-            is the go-to navigation app for millions and has the capacity to help users even more,
-            by taking the guesswork out of planned trips.
+            you leave? What if there is traffic? Google Maps is the go-to navigation app for
+            millions and has the capacity to help users even more, by taking the guesswork out of
+            planned trips.
           </p>
           <div
             css={css`
