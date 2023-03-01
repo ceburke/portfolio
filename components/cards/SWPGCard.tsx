@@ -81,7 +81,7 @@ export default function SWPGCard(): JSX.Element {
             src="/assets/work/swpg.png"
             css={css`
               width: 50%;
-              height: 325px;
+              height: 350px;
               object-position: -30px 10px;
               object-fit: cover;
               border-radius: 35px;
