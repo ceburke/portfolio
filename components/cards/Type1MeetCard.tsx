@@ -314,7 +314,7 @@ export default function Type1MeetCard(): JSX.Element {
                 }
               `}
             >
-              <source src="/assets/case studies/type1/design.mp4" type="video/mp4" />
+              <source src="/portfolio/assets/case studies/type1/design.mp4" type="video/mp4" />
             </video>
           </div>
         </section>
@@ -391,7 +391,7 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/case studies/type1/changes.png"
+              src="/portfolio/assets/case studies/type1/changes.png"
               css={css`
                 width: 100%;
                 display: block;
