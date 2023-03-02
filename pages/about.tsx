@@ -27,7 +27,9 @@ function ValueSection(): JSX.Element {
       <img
         src={`${BASE_PATH}/assets/about/artshow.jpeg`}
         css={css`
-          height: 275px;
+          height: 469px;
+          width: 390px;
+          object-fit: cover;
 
           @media (max-width: ${BREAKPOINT_SMALL}px) {
             width: 100%;
@@ -163,7 +165,9 @@ function PassionSection(): JSX.Element {
       <img
         src={`${BASE_PATH}/assets/about/engineer.jpeg`}
         css={css`
-          height: 275px;
+          height: 469px;
+          width: 390px;
+          object-fit: cover;
 
           @media (max-width: ${BREAKPOINT_SMALL}px) {
             width: 100%;

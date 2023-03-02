@@ -122,10 +122,10 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            Living with chronic disease, such as Type 1 diabetes, can be isolating, even from close
-            family and friends. Oftentimes, friends and family who do not have Type 1 struggle to
-            understand. This project premise was inspired by being a wallflower while two friends
-            with Type 1 enthusiastically shared their challenges, successes, tips and tricks.
+            Living with chronic disease, such as Type 1 diabetes, can be isolating. Oftentimes,
+            friends and family struggle to understand. This project was inspired by being a
+            wallflower while two friends with Type 1 enthusiastically shared their challenges,
+            successes, tips and tricks.
           </p>
           <div
             css={css`
@@ -143,14 +143,14 @@ export default function Type1MeetCard(): JSX.Element {
                 flex: 0 1 50%;
               `}
               title="Problem"
-              content="Connecting with Type 1 people online is dispersed across non-profit sites, social media and medical forums."
+              content="Connecting with Type 1 people online is dispersed across non-profit sites, social media and medical forums"
             />
             <TextBubble
               css={css`
                 flex: 0 1 50%;
               `}
               title="Objective"
-              content="Create a Type 1-specific platform which combines resources, social media and personal growth tracking."
+              content="Create a Type 1-specific platform which combines resources, social media and personal growth tracking"
             />
           </div>
         </section>
@@ -182,9 +182,9 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            I pitched the idea for this project to one of my Type 1 friends. She provided insight on
-            the feasibility of the idea and what features would be most useful. From there, I moved
-            on to user personas to identify additional use cases and needs.
+            I pitched the direction and initial research for this project to one of my Type 1
+            friends. She provided insight on the feasibility and what features would be most useful.
+            From there, I moved on to user personas to identify additional use cases and needs.
           </p>
           <div
             css={css`
@@ -286,9 +286,9 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            I did a round of brainstorming sketches to get started, moved onto low-fidelity mocks
-            and then prototyping. I had a user test the low-fidelity prototype and acted upon the
-            insights gained from that feedback to create the high-fidelity prototype.
+            I did a round of brainstorming sketches to get started, then moved on to low-fidelity
+            mocks and prototyping. I had a user test the low-fidelity prototype and acted upon the
+            insights gained to create the high-fidelity prototype.
           </p>
           <div
             css={css`
@@ -367,7 +367,7 @@ export default function Type1MeetCard(): JSX.Element {
                 flex: 0 1 33%;
               `}
               title="Age Ranges"
-              content="Ability to select preference for age range in chat hub"
+              content="Ability to select age range preference in chat hub"
             />
             <TextBubble
               css={css`
@@ -448,8 +448,8 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             T1Meet was made with Type 1 users in mind, but could be applied to other chronic
-            diseases as well. This project helped me understand first-hand how essential user
-            feedback is, and how to incorporate it at multiple stages of the design process.
+            diseases. This project helped me understand how essential user feedback is, and how to
+            incorporate it in multiple stages of the design process.
           </p>
           <div
             css={css`
@@ -475,14 +475,14 @@ export default function Type1MeetCard(): JSX.Element {
                 flex: 0 1 33%;
               `}
               title="Success"
-              content="Testing in the low-fidelity stage yielded several large, user-centric improvements."
+              content="Testing in the low-fidelity stage yielded several high-value, user-centric improvements."
             />
             <TextBubble
               css={css`
                 flex: 0 1 33%;
               `}
               title="Opportunity"
-              content="Value to real users. Pitch the project to a Type 1 non-profit with enough resources to make it real. Although T1Meet was made with Type 1 users in mind, but could be applied to other chronic diseases as well.  "
+              content="Value to real users. Pitch the project to a Type 1 non-profit with enough resources to make it real."
             />
           </div>
         </section>

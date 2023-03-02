@@ -10,7 +10,7 @@ export default function StravaCard(): JSX.Element {
     <Card
       size="medium"
       title="Strava"
-      subtitle="Integrating trail conditions reporting and viewing within existing user flows"
+      subtitle="Integrating trail conditions reporting and viewing into existing user flows"
       image={stravaImg}
     >
       <div
@@ -59,8 +59,8 @@ export default function StravaCard(): JSX.Element {
                 }
               `}
             >
-              Trail conditions are a key aspect of any trail-based activity. Seasonal transitions
-              and weather events can impact trail surfaces, how and when athletes recreate.
+              Conditions are a key aspect of any trail-based activity. Seasonal transitions and
+              weather events can impact trail surfaces, how and when athletes recreate.
             </p>
           </div>
           <img
@@ -127,14 +127,14 @@ export default function StravaCard(): JSX.Element {
                 flex: 0 1 50%;
               `}
               title="Problem"
-              content="Seasonal changes and weather events can create unenjoyable and/or unsafe trail conditions for users."
+              content="Seasonal changes and weather events can create unenjoyable and/or unsafe trail conditions for users"
             />
             <TextBubble
               css={css`
                 flex: 0 1 50%;
               `}
               title="Objective"
-              content="Help users “know before they go”, or report their experience."
+              content="Help users “know before they go”, or report their experience to inform others"
             />
           </div>
         </section>
@@ -168,7 +168,7 @@ export default function StravaCard(): JSX.Element {
           >
             Competitors such as AllTrails, Trailforks and FarOut have conditions reporting features.
             All three allow input of location-specific text, images and conditions. Overall, trail
-            reports can be sparse and out-of-date.
+            reports are sparse and out-of-date due to lack of engagement.
           </p>
           <div
             css={css`
@@ -237,11 +237,10 @@ export default function StravaCard(): JSX.Element {
               }
             `}
           >
-            Strava’s activity recording could host the conditions reporting aspect of the user flow.
-            To be competitive, trail reporting must include images, text and have a time-scale
-            selector. To avoid privacy issues, trail reports should not be directly linked to
-            activity posts. However, to make the user flow accessible and convenient, reporting
-            should be integrated into the activity recording flow.
+            Strava’s activity recording could host the conditions reporting user flow. To be
+            competitive, trail reporting must include images, text and a relevant time-scale. To
+            avoid privacy issues, trail reports should not be directly linked to activity posts. The
+            reporting interface must focus on accessibility and convenience to increase engagement.
           </p>
           <div
             css={css`
@@ -281,7 +280,7 @@ export default function StravaCard(): JSX.Element {
               />
               <p
                 css={css`
-                  margin: 10px 0 35px 0;
+                  margin: 20px 0 10px 0;
                   font-size: 24px;
 
                   @media (max-width: ${BREAKPOINT_SMALL}px) {
@@ -289,8 +288,7 @@ export default function StravaCard(): JSX.Element {
                   }
                 `}
               >
-                Viewing trail conditions could be added into the maps hub. Trail conditions could be
-                viewable as a map layer and per segment.
+                Trail conditions are viewable via the maps hub as a map layer and per segment.
               </p>
             </div>
             <div>
@@ -324,7 +322,7 @@ export default function StravaCard(): JSX.Element {
               />
               <p
                 css={css`
-                  margin: 10px 0 35px 0;
+                  margin: 15px 0 35px 0;
                   font-size: 24px;
 
                   @media (max-width: ${BREAKPOINT_SMALL}px) {
@@ -332,8 +330,8 @@ export default function StravaCard(): JSX.Element {
                   }
                 `}
               >
-                Implementation would cause adjustments to several main user flows, but the value to
-                activity enjoyment, route planning and trail stewardship would be significant.
+                Implementation would cause adjustments to several main user flows. Yet, the value to
+                activity enjoyment, route planning and trail stewardship is significant.
               </p>
             </div>
           </div>
