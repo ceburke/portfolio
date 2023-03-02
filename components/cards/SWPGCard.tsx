@@ -142,10 +142,16 @@ export default function SWPGCard(): JSX.Element {
             `}
           >
             <TextBubble
+              css={css`
+                flex: 0 1 50%;
+              `}
               title="Problem"
               content="Small and scattered population centers make in-person or word-of-mouth connections of artists, gallerists and community organizers challenging."
             />
             <TextBubble
+              css={css`
+                flex: 0 1 50%;
+              `}
               title="Objective"
               content="Create a web platform that connects artists and gallerists and enables community-building and event promotion."
             />
@@ -364,14 +370,23 @@ export default function SWPGCard(): JSX.Element {
             `}
           >
             <TextBubble
+              css={css`
+                flex: 0 1 33%;
+              `}
               title="Perks"
               content="Add member benefits such as discounted materials at local supply businesses and discounted show fees."
             />
             <TextBubble
+              css={css`
+                flex: 0 1 33%;
+              `}
               title="Monetization of Work"
               content="Create an in-site gallery which the public can access and member artists can sell work."
             />
             <TextBubble
+              css={css`
+                flex: 0 1 33%;
+              `}
               title="Member Hierarchy"
               content="Create tailored account interfaces for hobbyists, professionals and gallerists. Existing account interfaces may be inaccessible or intimidating to beginners or irrelevant to gallerists."
             />
@@ -458,14 +473,23 @@ export default function SWPGCard(): JSX.Element {
             `}
           >
             <TextBubble
+              css={css`
+                flex: 0 1 30%;
+              `}
               title="Challenge"
               content="Creating a design system and implementing an effective web design which meets user expectations."
             />
             <TextBubble
+              css={css`
+                flex: 0 1 30%;
+              `}
               title="Success"
               content="User testing identified that existing features and flows were well-designed and functioned as expected."
             />
             <TextBubble
+              css={css`
+                flex: 0 1 30%;
+              `}
               title="Opportunity"
               content="User testing yielded significant expansion of functions. The site could become a fully-comprehensive tool by addressing multiple user flows in the same virtual space."
             />

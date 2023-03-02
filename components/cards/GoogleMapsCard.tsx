@@ -123,10 +123,16 @@ export default function GoogleMapsCard(): JSX.Element {
             `}
           >
             <TextBubble
+              css={css`
+                flex: 0 1 50%;
+              `}
               title="Problem"
               content="Planned trips can be challenging when time restraints prevent users from updating travel parameters in real time."
             />
             <TextBubble
+              css={css`
+                flex: 0 1 50%;
+              `}
               title="Objective"
               content="Create a single user flow for navigation, traffic alerts and alarm setting."
             />

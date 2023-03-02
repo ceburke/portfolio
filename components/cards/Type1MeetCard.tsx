@@ -139,10 +139,16 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <TextBubble
+              css={css`
+                flex: 0 1 50%;
+              `}
               title="Problem"
               content="Connecting with Type 1 people online is dispersed across non-profit sites, social media and medical forums."
             />
             <TextBubble
+              css={css`
+                flex: 0 1 50%;
+              `}
               title="Objective"
               content="Create a Type 1-specific platform which combines resources, social media and personal growth tracking."
             />
@@ -356,14 +362,26 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <TextBubble
+              css={css`
+                flex: 0 1 33%;
+              `}
               title="Age Ranges"
               content="Ability to select preference for age range in chat hub"
             />
             <TextBubble
+              css={css`
+                flex: 0 1 33%;
+              `}
               title="Individual Experience"
               content="Personal journey area with private posts and check-in data"
             />
-            <TextBubble title="Topics" content="More relevant umbrella categories" />
+            <TextBubble
+              css={css`
+                flex: 0 1 33%;
+              `}
+              title="Topics"
+              content="More relevant umbrella categories"
+            />
           </div>
           <div
             css={css`
@@ -445,14 +463,23 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <TextBubble
+              css={css`
+                flex: 0 1 33%;
+              `}
               title="Challenge"
               content="The user was not able to utilize the prototype interactions in Figma due to unclear context and direction. Future usability studies should include explicit introductory information and instructions."
             />
             <TextBubble
+              css={css`
+                flex: 0 1 33%;
+              `}
               title="Success"
               content="Testing in the low-fidelity stage yielded several large, user-centric improvements."
             />
             <TextBubble
+              css={css`
+                flex: 0 1 33%;
+              `}
               title="Opportunity"
               content="Value to real users. Pitch the project to a Type 1 non-profit with enough resources to make it real. Although T1Meet was made with Type 1 users in mind, but could be applied to other chronic diseases as well.  "
             />

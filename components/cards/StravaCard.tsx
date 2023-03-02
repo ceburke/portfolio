@@ -123,10 +123,16 @@ export default function StravaCard(): JSX.Element {
             `}
           >
             <TextBubble
+              css={css`
+                flex: 0 1 50%;
+              `}
               title="Problem"
               content="Seasonal changes and weather events can create unenjoyable and/or unsafe trail conditions for users."
             />
             <TextBubble
+              css={css`
+                flex: 0 1 50%;
+              `}
               title="Objective"
               content="Help users “know before they go”, or report their experience."
             />
