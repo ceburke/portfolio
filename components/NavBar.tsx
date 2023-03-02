@@ -4,11 +4,11 @@ import {
   BREAKPOINT_MEDIUM,
   BREAKPOINT_SMALL,
   COLORS,
-} from "../constants";
-import {css} from "@emotion/react";
-import {sectionCss} from "../styles/styles";
-import Image from "next/image";
-import {useRouter} from "next/router";
+} from '../constants';
+import {css} from '@emotion/react';
+import {sectionCss} from '../styles/styles';
+import Image from 'next/image';
+import {useRouter} from 'next/router';
 
 const baseNavItemCss = css`
   display: inline-flex;
@@ -112,13 +112,13 @@ export default function NavBar(): JSX.Element {
           `}
         >
           <a
-            css={[baseNavItemCss, pageNavItemCss, router.pathname === "/" && activeItemCss]}
+            css={[baseNavItemCss, pageNavItemCss, router.pathname === '/' && activeItemCss]}
             href={`${BASE_PATH}/`}
           >
             work
           </a>
           <a
-            css={[baseNavItemCss, pageNavItemCss, router.pathname === "/about" && activeItemCss]}
+            css={[baseNavItemCss, pageNavItemCss, router.pathname === '/about' && activeItemCss]}
             href={`${BASE_PATH}/about`}
           >
             about
@@ -160,7 +160,6 @@ export default function NavBar(): JSX.Element {
               `,
             ]}
             href="mailto:claireburke1130@gmail.com"
-            about="_blank"
           >
             <div
               css={css`
