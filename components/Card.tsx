@@ -182,6 +182,11 @@ export default function Card(props: Props): JSX.Element {
                 background: rgba(255, 255, 255, 0.8);
                 border-radius: 5px;
                 z-index: 100;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  top: 10px;
+                  right: 10px;
+                }
               `,
             ]}
             title="Close"
