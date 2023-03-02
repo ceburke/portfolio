@@ -130,6 +130,7 @@ export default function Type1MeetCard(): JSX.Element {
           <div
             css={css`
               display: flex;
+              gap: 45px;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 flex-direction: column;
