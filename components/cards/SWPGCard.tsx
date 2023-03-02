@@ -1,7 +1,7 @@
-import { css } from "@emotion/react";
+import {css} from "@emotion/react";
 
 import swpgImg from "../../public/assets/work/swpg.png";
-import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
+import {BASE_PATH, BREAKPOINT_SMALL} from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -306,6 +306,7 @@ export default function SWPGCard(): JSX.Element {
           >
             <video
               autoPlay
+              playsInline
               loop
               controls
               css={css`

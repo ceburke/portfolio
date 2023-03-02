@@ -1,7 +1,7 @@
-import { css } from "@emotion/react";
+import {css} from "@emotion/react";
 
 import solvedInMotionImg from "../../public/assets/work/solved-in-motion.jpeg";
-import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
+import {BASE_PATH, BREAKPOINT_SMALL} from "../../constants";
 import Card from "../Card";
 
 export default function SolvedInMotionCard(): JSX.Element {
@@ -62,6 +62,7 @@ export default function SolvedInMotionCard(): JSX.Element {
       >
         <video
           autoPlay
+          playsInline
           loop
           css={css`
             flex: 1 1 auto;

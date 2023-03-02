@@ -1,7 +1,7 @@
-import { css } from "@emotion/react";
+import {css} from "@emotion/react";
 
 import type1MeetImg from "../../public/assets/case studies/type1/intro.png";
-import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
+import {BASE_PATH, BREAKPOINT_SMALL} from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -302,6 +302,7 @@ export default function Type1MeetCard(): JSX.Element {
           >
             <video
               autoPlay
+              playsInline
               loop
               controls
               css={css`
