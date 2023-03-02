@@ -242,7 +242,7 @@ const Home: NextPage = () => {
               height: 450px;
               top: 100px;
               margin: 0 auto;
-              background: url(/assets/work/hero.jpg);
+              background: url(${BASE_PATH}/assets/work/hero.jpg);
               background-size: cover;
               background-position-y: calc(-200px - 2000px * var(--scroll));
               background-repeat: no-repeat;
