@@ -10,7 +10,7 @@ export default function GoogleMapsCard(): JSX.Element {
     <Card
       size="medium"
       title="Google Maps"
-      subtitle="User flow for planned trips with custom alarms and live conditions"
+      subtitle="Improving user flow for planned trips with custom alarms"
       image={googleMapsImg}
     >
       <div

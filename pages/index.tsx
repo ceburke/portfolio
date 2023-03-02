@@ -1,9 +1,9 @@
-import {css} from "@emotion/react";
-import {throttle} from "lodash";
-import type {NextPage} from "next";
+import { css } from "@emotion/react";
+import { throttle } from "lodash";
+import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import {useEffect} from "react";
+import { useEffect } from "react";
 import BookCoversCard from "../components/cards/BookCoversCard";
 import GoogleMapsCard from "../components/cards/GoogleMapsCard";
 import SolvedInMotionCard from "../components/cards/SolveInMotionCard";
@@ -12,7 +12,7 @@ import SWPGCard from "../components/cards/SWPGCard";
 import Type1MeetCard from "../components/cards/Type1MeetCard";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import {BASE_PATH, BREAKPOINT_SMALL, COLORS} from "../constants";
+import { BASE_PATH, BREAKPOINT_SMALL, COLORS } from "../constants";
 import aiImg from "../public/assets/work/logos/ai.png";
 import figmaImg from "../public/assets/work/logos/figma.png";
 import githubImg from "../public/assets/work/logos/github.png";
@@ -22,7 +22,7 @@ import msImg from "../public/assets/work/logos/ms.png";
 import psImg from "../public/assets/work/logos/ps.png";
 import vsImg from "../public/assets/work/logos/vs.png";
 import xdImg from "../public/assets/work/logos/xd.png";
-import {sectionCss} from "../styles/styles";
+import { sectionCss } from "../styles/styles";
 
 const toolIcons = [figmaImg, xdImg, vsImg, githubImg, idImg, aiImg, psImg, gsuiteImg, msImg];
 

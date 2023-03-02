@@ -1,7 +1,7 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 
 import type1MeetImg from "../../public/assets/case studies/type1/intro.png";
-import {BASE_PATH, BREAKPOINT_SMALL} from "../../constants";
+import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -10,7 +10,7 @@ export default function Type1MeetCard(): JSX.Element {
     <Card
       size="large"
       title="T1Meet"
-      subtitle="Community and resource sharing platform for people with chronic disease"
+      subtitle="Social and resource sharing platform for people with chronic disease"
       image={type1MeetImg}
     >
       <div

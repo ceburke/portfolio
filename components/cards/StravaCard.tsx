@@ -10,7 +10,7 @@ export default function StravaCard(): JSX.Element {
     <Card
       size="medium"
       title="Strava"
-      subtitle="Integrating trail conditions reporting with activities and heat maps"
+      subtitle="Integrating trail conditions reporting and viewing within existing user flows"
       image={stravaImg}
     >
       <div

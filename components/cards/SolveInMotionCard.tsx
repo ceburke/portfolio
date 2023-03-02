@@ -1,7 +1,7 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 
 import solvedInMotionImg from "../../public/assets/work/solved-in-motion.jpeg";
-import {BASE_PATH, BREAKPOINT_SMALL} from "../../constants";
+import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 
 export default function SolvedInMotionCard(): JSX.Element {
@@ -45,10 +45,10 @@ export default function SolvedInMotionCard(): JSX.Element {
           Solved in motion
         </span>{" "}
         uses time, light, and motion to construct a space where we are allowed to slow down, while
-        still moving forward. On the wall, the winding animation is crafted from personally recorded
-        GPS data: documenting hikes, runs, and bike rides over several months. From above, a bike
-        wheel mechanism projects the topographic profile of a small, local trail system on a bed of
-        leaves, cut to match the species of the area.
+        still moving forward. On the wall, the winding animation is crafted from GPS-recorded maps
+        of hikes, runs, and bike rides. From above, a bike wheel mechanism projects the topographic
+        profile of a small, local trail system on a bed of leaves, cut to match the species of the
+        area.
       </p>
       <div
         css={css`
@@ -89,9 +89,8 @@ export default function SolvedInMotionCard(): JSX.Element {
           }
         `}
       >
-        Outdoor recreation is an opportunity to observe and explore our surroundings. By slowing
-        down the pace and looking closely, even a humble, hometown trail system can become a
-        universe unto itself.{" "}
+        Outdoor recreation is an opportunity to observe and explore our surroundings. By slowing and
+        looking closely, even a humble, hometown trail system can become a universe unto itself.{" "}
       </p>
     </Card>
   );
