@@ -1,10 +1,10 @@
-import { css } from "@emotion/react";
-import type { NextPage } from "next";
-import Head from "next/head";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
-import { BASE_PATH, BREAKPOINT_SMALL, COLORS } from "../constants";
-import { sectionCss } from "../styles/styles";
+import {css} from '@emotion/react';
+import type {NextPage} from 'next';
+import Head from 'next/head';
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
+import {BASE_PATH, BREAKPOINT_SMALL, COLORS} from '../constants';
+import {sectionCss} from '../styles/styles';
 
 function ValueSection(): JSX.Element {
   return (
@@ -65,7 +65,7 @@ function ValueSection(): JSX.Element {
               color: ${COLORS.secondary};
             `}
           >
-            imagination,{" "}
+            imagination,{' '}
             <br
               css={css`
                 @media (min-width: ${BREAKPOINT_SMALL}px) {
@@ -80,7 +80,7 @@ function ValueSection(): JSX.Element {
                   display: none;
                 }
               `}
-            />{" "}
+            />{' '}
             inclusivity
           </span>
         </h1>
@@ -292,8 +292,16 @@ function PassionSection(): JSX.Element {
             }
           `}
         >
-          I make collages, write articles about bike packing, play piano and plan desert weekends
-          with friends in my free time.
+          I make collages,{' '}
+          <a
+            css={css`
+              text-decoration: underline;
+            `}
+            href="https://thetownbicycle.com/into-the-deep-end-and-back-again-a-cautionary-tale/"
+          >
+            write articles about bike packing
+          </a>
+          , play piano and plan desert weekends with friends in my free time.
         </p>
       </div>
     </section>
