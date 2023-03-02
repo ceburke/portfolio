@@ -59,8 +59,7 @@ export default function GoogleMapsCard(): JSX.Element {
                 }
               `}
             >
-              Syncing navigation, traffic, alarms and navigation to reduce stress and increase
-              success rate.
+              Syncing navigation, traffic and alarms to reduce stress and increase success rate.
             </p>
           </div>
           <img
@@ -108,8 +107,8 @@ export default function GoogleMapsCard(): JSX.Element {
           >
             Dropping a loved one off at the airport can be a stressful experience. What time should
             you leave? What if there is traffic? Google Maps is the go-to navigation app for
-            millions and has the capacity to help users even more, by taking the guesswork out of
-            planned trips.
+            millions of users and has the capacity to help users even more, by taking the guesswork
+            out of planned trips.
           </p>
           <div
             css={css`

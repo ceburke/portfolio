@@ -292,9 +292,9 @@ const Home: NextPage = () => {
             }
           `}
         >
-          My work is a collection of self-led and created projects. The case studies, optimizations
-          and design work represent my willingness to learn and passion for enabling users to reach
-          their goals.
+          My work is a collection of self-directed projects. The case studies, optimizations and
+          design work below represent my willingness to learn and passion for enabling users to
+          reach their goals.
         </p>
         <div
           css={css`
