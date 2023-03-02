@@ -75,7 +75,7 @@ export default function NavBar(): JSX.Element {
             font-size: 40px;
             line-height: 48px;
             text-transform: lowercase;
-            margin-top 15px;
+            margin-top: 15px;
             height: 100%;
 
             @media (max-width: ${BREAKPOINT_SMALL}px) {

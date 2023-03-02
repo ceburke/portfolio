@@ -19,8 +19,11 @@ export default function Footer(): JSX.Element {
   return (
     <footer
       css={css`
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: ${COLORS.primary};
-        padding: 10px;
+        padding: 35px 10px;
 
         @media (min-width: ${BREAKPOINT_SMALL}px) {
           display: none;
@@ -32,6 +35,7 @@ export default function Footer(): JSX.Element {
           display: flex;
           justify-content: center;
           align-items: center;
+          gap: 25px;
         `}
       >
         <a css={navItemCss} href="/assets/ClaireBurke_Resume.pdf" about="_blank">
