@@ -1,7 +1,7 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 
 import solvedInMotionImg from "../../public/assets/work/solved-in-motion.jpeg";
-import {BREAKPOINT_SMALL} from "../../constants";
+import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 
 export default function SolvedInMotionCard(): JSX.Element {
@@ -72,7 +72,10 @@ export default function SolvedInMotionCard(): JSX.Element {
             }
           `}
         >
-          <source src="/assets/design/solved-in-motion/thesis_video.mp4" type="video/mp4" />
+          <source
+            src={`${BASE_PATH}/assets/design/solved-in-motion/thesis_video.mp4`}
+            type="video/mp4"
+          />
         </video>
       </div>
       <p

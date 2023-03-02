@@ -1,7 +1,7 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 
 import stravaImg from "../../public/assets/work/logos/strava.png";
-import {BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from "../../constants";
+import { BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -64,7 +64,7 @@ export default function StravaCard(): JSX.Element {
             </p>
           </div>
           <img
-            src="/assets/work/logos/strava.png"
+            src={`${BASE_PATH}/assets/work/logos/strava.png`}
             css={css`
               text-align: right;
               height: 180px;
@@ -182,7 +182,7 @@ export default function StravaCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/optimizations/strava/competitors.png"
+              src={`${BASE_PATH}/assets/optimizations/strava/competitors.png`}
               css={css`
                 border-radius: 35px;
                 width: 100%;
@@ -195,7 +195,7 @@ export default function StravaCard(): JSX.Element {
               `}
             />
             <img
-              src="/assets/optimizations/strava/competitor_mobile.png"
+              src={`${BASE_PATH}/assets/optimizations/strava/competitor_mobile.png`}
               css={css`
                 border-radius: 35px;
                 width: 100%;
@@ -252,7 +252,7 @@ export default function StravaCard(): JSX.Element {
           >
             <div>
               <img
-                src="/assets/optimizations/strava/report.png"
+                src={`${BASE_PATH}/assets/optimizations/strava/report.png`}
                 css={css`
                   width: 100%;
                   max-height: 700px;
@@ -267,7 +267,7 @@ export default function StravaCard(): JSX.Element {
                 `}
               />
               <img
-                src="/assets/optimizations/strava/report_m.png"
+                src={`${BASE_PATH}/assets/optimizations/strava/report_m.png`}
                 css={css`
                   border-radius: 35px;
                   width: 100%;
@@ -295,7 +295,7 @@ export default function StravaCard(): JSX.Element {
             </div>
             <div>
               <img
-                src="/assets/optimizations/strava/view.png"
+                src={`${BASE_PATH}/assets/optimizations/strava/view.png`}
                 css={css`
                   width: 100%;
                   max-height: 700px;
@@ -310,7 +310,7 @@ export default function StravaCard(): JSX.Element {
                 `}
               />
               <img
-                src="/assets/optimizations/strava/view_m.png"
+                src={`${BASE_PATH}/assets/optimizations/strava/view_m.png`}
                 css={css`
                   border-radius: 35px;
                   width: 100%;

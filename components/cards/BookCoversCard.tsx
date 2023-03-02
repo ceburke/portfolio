@@ -2,15 +2,15 @@ import justTheTipImg from "../../public/assets/design/book-covers/just-the-tip.j
 import Card from "../Card";
 
 import { css } from "@emotion/react";
-import { BREAKPOINT_SMALL } from "../../constants";
+import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
 
 const bookCoverImages = [
-  "/assets/design/book-covers/doom.jpg",
-  "/assets/design/book-covers/ctrl-chaos.jpg",
-  "/assets/design/book-covers/just-the-tip.jpg",
-  "/assets/design/book-covers/wrong-turns-only.jpg",
-  "/assets/design/book-covers/yeehaw-or-yeenaw.jpg",
-  "/assets/design/book-covers/chicken.jpg",
+  `${BASE_PATH}/assets/design/book-covers/doom.jpg`,
+  `${BASE_PATH}/assets/design/book-covers/ctrl-chaos.jpg`,
+  `${BASE_PATH}/assets/design/book-covers/just-the-tip.jpg1`,
+  `${BASE_PATH}/assets/design/book-covers/wrong-turns-only.jpg`,
+  `${BASE_PATH}/assets/design/book-covers/yeehaw-or-yeenaw.jpg`,
+  `${BASE_PATH}/assets/design/book-covers/chicken.jpg`,
 ];
 
 export default function BookCoversCard(): JSX.Element {

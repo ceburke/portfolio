@@ -1,8 +1,14 @@
-import {BREAKPOINT_LARGE, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL, COLORS} from "../constants";
-import {css} from "@emotion/react";
-import {sectionCss} from "../styles/styles";
+import {
+  BASE_PATH,
+  BREAKPOINT_LARGE,
+  BREAKPOINT_MEDIUM,
+  BREAKPOINT_SMALL,
+  COLORS,
+} from "../constants";
+import { css } from "@emotion/react";
+import { sectionCss } from "../styles/styles";
 import Image from "next/image";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 const baseNavItemCss = css`
   display: inline-flex;
@@ -127,7 +133,7 @@ export default function NavBar(): JSX.Element {
                 }
               `,
             ]}
-            href="/assets/ClaireBurke_Resume.pdf"
+            href={`${BASE_PATH}/assets/ClaireBurke_Resume.pdf`}
             about="_blank"
           >
             <div
@@ -139,7 +145,7 @@ export default function NavBar(): JSX.Element {
                 width: 17px;
               `}
             >
-              <Image src="/assets/paperclip.png" layout="fill" />
+              <Image src={`${BASE_PATH}/assets/paperclip.png`} layout="fill" />
             </div>
             resume
           </a>
@@ -165,7 +171,7 @@ export default function NavBar(): JSX.Element {
                 width: 22px;
               `}
             >
-              <Image src="/assets/mail.png" layout="fill" />
+              <Image src={`${BASE_PATH}/assets/mail.png`} layout="fill" />
             </div>
             email
           </a>

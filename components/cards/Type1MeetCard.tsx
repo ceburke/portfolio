@@ -1,7 +1,7 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 
 import type1MeetImg from "../../public/assets/case studies/type1/intro.png";
-import {BREAKPOINT_SMALL} from "../../constants";
+import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -75,7 +75,7 @@ export default function Type1MeetCard(): JSX.Element {
             </p>
           </div>
           <img
-            src="/assets/case studies/type1/intro.gif"
+            src={`${BASE_PATH}/assets/case studies/type1/intro.gif`}
             css={css`
               max-height: 325px;
               object-fit: cover;
@@ -194,7 +194,7 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/case studies/type1/personas1.png"
+              src={`${BASE_PATH}/assets/case studies/type1/personas1.png`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -208,7 +208,7 @@ export default function Type1MeetCard(): JSX.Element {
             />
 
             <img
-              src="/assets/case studies/type1/personas_1m.png"
+              src={`${BASE_PATH}/assets/case studies/type1/personas_1m.png`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -231,7 +231,7 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/case studies/type1/personas2.png"
+              src={`${BASE_PATH}/assets/case studies/type1/personas2.png`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -244,7 +244,7 @@ export default function Type1MeetCard(): JSX.Element {
             />
 
             <img
-              src="/assets/case studies/type1/personas_2m.png"
+              src={`${BASE_PATH}/assets/case studies/type1/personas_2m.png`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -314,7 +314,7 @@ export default function Type1MeetCard(): JSX.Element {
                 }
               `}
             >
-              <source src="/portfolio/assets/case studies/type1/design.mp4" type="video/mp4" />
+              <source src={`${BASE_PATH}/assets/case studies/type1/design.mp4`} type="video/mp4" />
             </video>
           </div>
         </section>
@@ -391,7 +391,7 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <img
-              src="/portfolio/assets/case studies/type1/changes.png"
+              src={`${BASE_PATH}/assets/case studies/type1/changes.png`}
               css={css`
                 width: 100%;
                 display: block;
@@ -404,7 +404,7 @@ export default function Type1MeetCard(): JSX.Element {
             />
 
             <img
-              src="/assets/case studies/type1/changes_mobile.png"
+              src={`${BASE_PATH}/assets/case studies/type1/changes_mobile.png`}
               css={css`
                 width: 100%;
                 display: none;

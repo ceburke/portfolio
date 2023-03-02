@@ -1,7 +1,7 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 
 import googleMapsImg from "../../public/assets/work/logos/googlemaps.png";
-import {BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from "../../constants";
+import { BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -64,7 +64,7 @@ export default function GoogleMapsCard(): JSX.Element {
             </p>
           </div>
           <img
-            src="/assets/work/logos/googlemaps.png"
+            src={`${BASE_PATH}/assets/work/logos/googlemaps.png`}
             css={css`
               text-align: right;
               height: 180px;
@@ -182,7 +182,7 @@ export default function GoogleMapsCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/optimizations/googlemaps/existing.png"
+              src={`${BASE_PATH}/assets/optimizations/googlemaps/existing.png`}
               css={css`
                 border-radius: 35px;
                 width: 100%;
@@ -195,7 +195,7 @@ export default function GoogleMapsCard(): JSX.Element {
               `}
             />
             <img
-              src="/assets/optimizations/googlemaps/existing_mobile.png"
+              src={`${BASE_PATH}"/assets/optimizations/googlemaps/existing_mobile.png`}
               css={css`
                 border-radius: 35px;
                 width: 100%;
@@ -250,7 +250,7 @@ export default function GoogleMapsCard(): JSX.Element {
           >
             <div>
               <img
-                src="/assets/optimizations/googlemaps/update.png"
+                src={`${BASE_PATH}/assets/optimizations/googlemaps/update.png`}
                 css={css`
                   width: 100%;
                   border-radius: 35px;
@@ -263,7 +263,7 @@ export default function GoogleMapsCard(): JSX.Element {
                 `}
               />
               <img
-                src="/assets/optimizations/googlemaps/update_mobile.png"
+                src={`${BASE_PATH}/assets/optimizations/googlemaps/update_mobile.png`}
                 css={css`
                   border-radius: 35px;
                   width: 100%;

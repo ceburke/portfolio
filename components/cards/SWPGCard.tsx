@@ -1,7 +1,7 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 
 import swpgImg from "../../public/assets/work/swpg.png";
-import {BREAKPOINT_SMALL} from "../../constants";
+import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -78,7 +78,7 @@ export default function SWPGCard(): JSX.Element {
             </p>
           </div>
           <img
-            src="/assets/work/swpg.png"
+            src={`${BASE_PATH}/assets/work/swpg.png`}
             css={css`
               width: 50%;
               height: 350px;
@@ -199,7 +199,7 @@ export default function SWPGCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/case studies/swpg/personas1.png"
+              src={`${BASE_PATH}/assets/case studies/swpg/personas1.png`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -213,7 +213,7 @@ export default function SWPGCard(): JSX.Element {
             />
 
             <img
-              src="/assets/case studies/swpg/personas_1m.png"
+              src={`${BASE_PATH}/assets/case studies/swpg/personas_1m.png`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -235,7 +235,7 @@ export default function SWPGCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/case studies/swpg/personas2.png"
+              src={`${BASE_PATH}/assets/case studies/swpg/personas2.png`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -248,7 +248,7 @@ export default function SWPGCard(): JSX.Element {
             />
 
             <img
-              src="/assets/case studies/swpg/personas_2m.png"
+              src={`${BASE_PATH}/assets/case studies/swpg/personas_2m.png`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -318,7 +318,7 @@ export default function SWPGCard(): JSX.Element {
                 }
               `}
             >
-              <source src="/assets/case studies/swpg/design.mp4" type="video/mp4" />
+              <source src={`${BASE_PATH}/assets/case studies/swpg/design.mp4`} type="video/mp4" />
             </video>
           </div>
         </section>
@@ -399,7 +399,7 @@ export default function SWPGCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/case studies/swpg/changes.png"
+              src={`${BASE_PATH}/assets/case studies/swpg/changes.png`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -412,7 +412,7 @@ export default function SWPGCard(): JSX.Element {
             />
 
             <img
-              src="/assets/case studies/swpg/changes_mobile.png"
+              src={`${BASE_PATH}/assets/case studies/swpg/changes_mobile.png`}
               css={css`
                 width: 100%;
                 display: none;

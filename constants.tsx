@@ -13,3 +13,5 @@ export const BREAKPOINT_SMALL = 767;
 export const BREAKPOINT_MEDIUM = 992;
 export const BREAKPOINT_LARGE = 1200;
 export const BREAKPOINT_XLARGE = 1460;
+
+export const BASE_PATH = "/portfolio";

@@ -1,12 +1,12 @@
-import {css} from "@emotion/react";
-import {throttle} from "lodash";
-import {useEffect, useState} from "react";
-import {BREAKPOINT_SMALL} from "../constants";
+import { css } from "@emotion/react";
+import { throttle } from "lodash";
+import { useEffect, useState } from "react";
+import { BASE_PATH, BREAKPOINT_SMALL } from "../constants";
 
 const baseHeroCss = css`
   position: relative;
   margin: 0 auto;
-  background: url(/assets/work/hero.jpg);
+  background: url(${BASE_PATH}/assets/work/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   transition: background-position-y 0.4s linear;
@@ -43,7 +43,7 @@ export default function ParallaxHeroImage(): JSX.Element {
             }
           `,
         ]}
-        style={{backgroundPositionY: `${-200 - 2000 * Math.min(scroll, 0.3)}px`}}
+        style={{ backgroundPositionY: `${-200 - 2000 * Math.min(scroll, 0.3)}px` }}
       />
       <div
         css={[
@@ -59,7 +59,7 @@ export default function ParallaxHeroImage(): JSX.Element {
             }
           `,
         ]}
-        style={{backgroundPositionY: `${-20 - 2000 * Math.min(scroll, 0.15)}px`}}
+        style={{ backgroundPositionY: `${-20 - 2000 * Math.min(scroll, 0.15)}px` }}
       />
     </>
   );

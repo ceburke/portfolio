@@ -1,6 +1,6 @@
-import {css} from "@emotion/react";
+import { css } from "@emotion/react";
 import Image from "next/image";
-import {BREAKPOINT_SMALL, COLORS} from "../constants";
+import { BASE_PATH, BREAKPOINT_SMALL, COLORS } from "../constants";
 
 const navItemCss = css`
   cursor: pointer;
@@ -38,7 +38,7 @@ export default function Footer(): JSX.Element {
           gap: 25px;
         `}
       >
-        <a css={navItemCss} href="/assets/ClaireBurke_Resume.pdf" about="_blank">
+        <a css={navItemCss} href={`${BASE_PATH}/assets/ClaireBurke_Resume.pdf`} about="_blank">
           <div
             css={css`
               display: inline-block;
@@ -48,7 +48,7 @@ export default function Footer(): JSX.Element {
               width: 17px;
             `}
           >
-            <Image src="/assets/paperclip.png" layout="fill" />
+            <Image src={`${BASE_PATH}/assets/paperclip.png`} layout="fill" />
           </div>
           resume
         </a>
@@ -62,7 +62,7 @@ export default function Footer(): JSX.Element {
               width: 22px;
             `}
           >
-            <Image src="/assets/mail.png" layout="fill" />
+            <Image src={`${BASE_PATH}/assets/mail.png`} layout="fill" />
           </div>
           email
         </a>
