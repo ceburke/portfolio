@@ -176,33 +176,28 @@ export default function GoogleMapsCard(): JSX.Element {
             `}
           >
             <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
+              src="/assets/optimizations/googlemaps/existing.png"
               css={css`
                 border-radius: 35px;
-                width: 33%;
+                width: 100%;
+                display: block;
 
-                @media (max-width: ${BREAKPOINT_MEDIUM}px) {
-                  width: 100%;
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  display: none;
+                  border-radius: 20px;
                 }
               `}
             />
             <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
+              src="/assets/optimizations/googlemaps/existing_mobile.png"
               css={css`
                 border-radius: 35px;
-                width: 33%;
-                @media (max-width: ${BREAKPOINT_MEDIUM}px) {
-                  width: 100%;
-                }
-              `}
-            />
-            <img
-              src="/assets/design/solved-in-motion/thesis_full.jpg"
-              css={css`
-                border-radius: 35px;
-                width: 33%;
-                @media (max-width: ${BREAKPOINT_MEDIUM}px) {
-                  width: 100%;
+                width: 100%;
+                display: none;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  display: block;
+                  border-radius: 20px;
                 }
               `}
             />
@@ -249,15 +244,34 @@ export default function GoogleMapsCard(): JSX.Element {
           >
             <div>
               <img
-                src="/assets/design/solved-in-motion/thesis_full.jpg"
+                src="/assets/optimizations/googlemaps/update.png"
                 css={css`
                   width: 100%;
                   border-radius: 35px;
+                  display: block;
+
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    display: none;
+                    border-radius: 20px;
+                  }
+                `}
+              />
+              <img
+                src="/assets/optimizations/googlemaps/update_mobile.png"
+                css={css`
+                  border-radius: 35px;
+                  width: 100%;
+                  display: none;
+
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    display: block;
+                    border-radius: 20px;
+                  }
                 `}
               />
               <p
                 css={css`
-                  margin: 10px 0 35px 0;
+                  margin: 25px 0 0 0;
                   font-size: 24px;
 
                   @media (max-width: ${BREAKPOINT_SMALL}px) {
@@ -266,28 +280,8 @@ export default function GoogleMapsCard(): JSX.Element {
                 `}
               >
                 Integration into the built-in device alarm features allows users to keep one
-                variable of their schedule static.
-              </p>
-            </div>
-            <div>
-              <img
-                src="/assets/design/solved-in-motion/thesis_full.jpg"
-                css={css`
-                  width: 100%;
-                  border-radius: 35px;
-                `}
-              />
-              <p
-                css={css`
-                  margin: 10px 0 35px 0;
-                  font-size: 24px;
-
-                  @media (max-width: ${BREAKPOINT_SMALL}px) {
-                    font-size: 16px;
-                  }
-                `}
-              >
-                This user flow could be implemented into desktop and Google Home.
+                variable of their schedule static. Additionally, the updated user flow could be
+                implemented into desktop and Google Home.
               </p>
             </div>
           </div>
