@@ -49,7 +49,7 @@ const Home: NextPage = () => {
           name="description"
           content="I'm Claire, a product designer with a passion for UI and UX."
         />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href={`${BASE_PATH}/favicon.png`} />
       </Head>
 
       <div
@@ -223,7 +223,7 @@ const Home: NextPage = () => {
               My experience gives me a fresh approach to UX/UI and an insatiable curiosity for
               learning.{" "}
               <a
-                href="/about"
+                href={`${BASE_PATH}/about`}
                 css={css`
                   text-decoration: underline;
                 `}

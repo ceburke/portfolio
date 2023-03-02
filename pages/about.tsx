@@ -309,7 +309,7 @@ const About: NextPage = () => {
           name="description"
           content="I'm Claire, a product designer with a passion for UI and UX."
         />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href={`${BASE_PATH}/favicon.png`} />
       </Head>
 
       <div
