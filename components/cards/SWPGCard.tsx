@@ -1,7 +1,7 @@
-import { css } from "@emotion/react";
+import {css} from "@emotion/react";
 
 import swpgImg from "../../public/assets/work/swpg.png";
-import { BREAKPOINT_SMALL } from "../../constants";
+import {BREAKPOINT_SMALL} from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -18,13 +18,13 @@ export default function SWPGCard(): JSX.Element {
     >
       <div
         css={css`
-          padding: 0 60px 0 35px;
+          padding: 30px 60px 0 35px;
           position: relative;
           top: -35px;
 
           @media (max-width: ${BREAKPOINT_SMALL}px) {
             padding: 0 20px 0 20px;
-            top: -45px;
+            top: 0;
           }
         `}
       >

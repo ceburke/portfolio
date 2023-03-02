@@ -1,7 +1,7 @@
-import { css } from "@emotion/react";
+import {css} from "@emotion/react";
 
 import googleMapsImg from "../../public/assets/work/logos/googlemaps.png";
-import { BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
+import {BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
 
@@ -15,12 +15,12 @@ export default function GoogleMapsCard(): JSX.Element {
     >
       <div
         css={css`
-          padding: 0 60px 0 35px;
+          padding: 25px 60px 0 35px;
           position: relative;
           top: -35px;
 
           @media (max-width: ${BREAKPOINT_SMALL}px) {
-            padding: 0 20px 0 20px;
+            padding: 25px 20px 0 20px;
             top: -45px;
           }
         `}

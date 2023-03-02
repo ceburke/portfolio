@@ -168,64 +168,73 @@ export default function Card(props: Props): JSX.Element {
         </div>
       )}
       <Dialog open={isOpen} onClose={() => setIsOpen(false)} maxWidth={false}>
-        <div
-          css={css`
-            max-width: calc(100vw - 64px);
-            width: ${SECTION_WIDTH}px;
-            max-height: calc(100vw - 64px);
-            min-height: 400px;
-            padding: 10px;
-            overflow-x: hidden;
-          `}
-        >
-          <header
+        <>
+          <button
+            type="button"
+            css={[
+              buttonResetCss,
+              css`
+                margin-left: 20px;
+                font-family: century-gothic;
+                position: absolute;
+                top: 25px;
+                right: 25px;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 5px;
+                z-index: 100;
+              `,
+            ]}
+            title="Close"
+            onClick={(event) => {
+              event.stopPropagation();
+              setIsOpen(false);
+            }}
+          >
+            <CloseIcon fontSize="large"></CloseIcon>
+          </button>
+
+          <div
             css={css`
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              padding: 15px 0 10px 25px;
-              overflow: hidden;
-              width: 100%;
-              z-index: 10;
-              position: relative;
+              max-width: calc(100vw - 64px);
+              width: ${SECTION_WIDTH}px;
+              max-height: calc(100vw - 64px);
+              min-height: 400px;
+              padding: 10px;
+              overflow-x: hidden;
             `}
           >
-            <h2
+            <header
               css={css`
-                flex: 1 1 auto;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 0 10px 25px;
                 overflow: hidden;
-                margin: 0;
-                font-size: 40px;
-
-                @media (max-width: ${BREAKPOINT_SMALL}px) {
-                  font-size: 24px;
-                }
+                width: 100%;
+                z-index: 10;
+                position: relative;
               `}
             >
-              {modalTitle}
-            </h2>
-            <button
-              type="button"
-              css={[
-                buttonResetCss,
-                css`
-                  margin-left: 20px;
-                  font-family: century-gothic;
-                `,
-              ]}
-              title="Close"
-              onClick={(event) => {
-                event.stopPropagation();
-                setIsOpen(false);
-              }}
-            >
-              <CloseIcon fontSize="large"></CloseIcon>
-            </button>
-          </header>
-          {children}
-        </div>
+              <h2
+                css={css`
+                  flex: 1 1 auto;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  margin: 0;
+                  font-size: 40px;
+
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    font-size: 24px;
+                  }
+                `}
+              >
+                {modalTitle}
+              </h2>
+            </header>
+            {children}
+          </div>
+        </>
       </Dialog>
     </div>
   );
