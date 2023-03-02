@@ -7,7 +7,7 @@ import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
 const bookCoverImages = [
   `${BASE_PATH}/assets/design/book-covers/doom.jpg`,
   `${BASE_PATH}/assets/design/book-covers/ctrl-chaos.jpg`,
-  `${BASE_PATH}/assets/design/book-covers/just-the-tip.jpg1`,
+  `${BASE_PATH}/assets/design/book-covers/just-the-tip.jpg`,
   `${BASE_PATH}/assets/design/book-covers/wrong-turns-only.jpg`,
   `${BASE_PATH}/assets/design/book-covers/yeehaw-or-yeenaw.jpg`,
   `${BASE_PATH}/assets/design/book-covers/chicken.jpg`,
