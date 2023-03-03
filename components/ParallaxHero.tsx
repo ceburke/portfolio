@@ -1,45 +1,56 @@
 import {css} from '@emotion/react';
-import {throttle} from 'lodash';
-import {useEffect} from 'react';
+import {useEffect, useRef} from 'react';
 import {BASE_PATH, BREAKPOINT_SMALL} from '../constants';
 
 export default function ParallaxHero(): JSX.Element {
-  // adjust CSS scroll variable on window scroll, used for hero "parallax"
+  const imgRef = useRef<HTMLImageElement>(null);
+
   useEffect(() => {
-    const onScroll = throttle(() => {
-      document.body.style.setProperty(
-        '--scroll',
-        `${window.pageYOffset / (document.body.offsetHeight - window.innerHeight)}`
+    const onScroll = () => {
+      window.requestAnimationFrame(() =>
+        imgRef.current?.style.setProperty(
+          'transform',
+          `translateY(-${Math.min(
+            window.scrollY,
+            imgRef.current.getBoundingClientRect().height / 2
+          )}px)`
+        )
       );
-    }, 1000 / 30);
-    window.addEventListener('scroll', onScroll, false);
+    };
+    window.addEventListener('scroll', onScroll);
+
     return () => {
-      window.removeEventListener('scroll', onScroll, false);
+      window.removeEventListener('scroll', onScroll);
     };
   }, []);
 
   return (
     <div
       css={css`
+        overflow: hidden;
         position: relative;
         width: 1200px;
         max-width: 95vw;
         height: 450px;
         top: 100px;
         margin: 0 auto;
-        background: url(${BASE_PATH}/assets/work/hero.jpg);
-        background-size: cover;
-        background-position-y: calc(-200px - 2000px * var(--scroll));
-        background-repeat: no-repeat;
 
         @media (max-width: ${BREAKPOINT_SMALL}px) {
           top: 0;
           width: 100vw;
           max-width: none;
           height: 250px;
-          background-position-y: calc(-20px - 1000px * var(--scroll));
         }
       `}
-    />
+    >
+      <img
+        ref={imgRef}
+        src={`${BASE_PATH}/assets/work/hero.jpg`}
+        css={css`
+          width: 100%;
+          transition: transform 0.1s linear;
+        `}
+      />
+    </div>
   );
 }
