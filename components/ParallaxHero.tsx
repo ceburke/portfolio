@@ -1,9 +1,11 @@
 import {css} from '@emotion/react';
 import {useEffect, useRef} from 'react';
-import {BASE_PATH, BREAKPOINT_SMALL} from '../constants';
+import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../constants';
+import useWindowSize from '../hooks/useWindowSize';
 
 export default function ParallaxHero(): JSX.Element {
   const imgRef = useRef<HTMLImageElement>(null);
+  const {width} = useWindowSize();
 
   useEffect(() => {
     const onScroll = () => {
@@ -17,12 +19,17 @@ export default function ParallaxHero(): JSX.Element {
         )
       );
     };
-    window.addEventListener('scroll', onScroll);
+
+    if (width > BREAKPOINT_MEDIUM) {
+      window.addEventListener('scroll', onScroll);
+    } else {
+      imgRef.current?.style.setProperty('transform', 'translateY(-50%)');
+    }
 
     return () => {
       window.removeEventListener('scroll', onScroll);
     };
-  }, []);
+  }, [width]);
 
   return (
     <div
