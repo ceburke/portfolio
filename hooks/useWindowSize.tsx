@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 
-const useWindowSize = (initialWidth = Infinity, initialHeight = Infinity) => {
+const useWindowSize = (initialWidth = 0, initialHeight = 0) => {
   const [state, setState] = useState<{width: number; height: number}>({
     width: initialWidth,
     height: initialHeight,
