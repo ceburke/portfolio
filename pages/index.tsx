@@ -1,46 +1,31 @@
-import { css } from "@emotion/react";
-import { throttle } from "lodash";
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import { useEffect } from "react";
-import BookCoversCard from "../components/cards/BookCoversCard";
-import GoogleMapsCard from "../components/cards/GoogleMapsCard";
-import SolvedInMotionCard from "../components/cards/SolveInMotionCard";
-import StravaCard from "../components/cards/StravaCard";
-import SWPGCard from "../components/cards/SWPGCard";
-import Type1MeetCard from "../components/cards/Type1MeetCard";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
-import { BASE_PATH, BREAKPOINT_SMALL, COLORS } from "../constants";
-import aiImg from "../public/assets/work/logos/ai.png";
-import figmaImg from "../public/assets/work/logos/figma.png";
-import githubImg from "../public/assets/work/logos/github.png";
-import gsuiteImg from "../public/assets/work/logos/gsuite.png";
-import idImg from "../public/assets/work/logos/id.png";
-import msImg from "../public/assets/work/logos/ms.png";
-import psImg from "../public/assets/work/logos/ps.png";
-import vsImg from "../public/assets/work/logos/vs.png";
-import xdImg from "../public/assets/work/logos/xd.png";
-import { sectionCss } from "../styles/styles";
+import {css} from '@emotion/react';
+import type {NextPage} from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import BookCoversCard from '../components/cards/BookCoversCard';
+import GoogleMapsCard from '../components/cards/GoogleMapsCard';
+import SolvedInMotionCard from '../components/cards/SolveInMotionCard';
+import StravaCard from '../components/cards/StravaCard';
+import SWPGCard from '../components/cards/SWPGCard';
+import Type1MeetCard from '../components/cards/Type1MeetCard';
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
+import ParallaxHero from '../components/ParallaxHero';
+import {BASE_PATH, BREAKPOINT_SMALL, COLORS} from '../constants';
+import aiImg from '../public/assets/work/logos/ai.png';
+import figmaImg from '../public/assets/work/logos/figma.png';
+import githubImg from '../public/assets/work/logos/github.png';
+import gsuiteImg from '../public/assets/work/logos/gsuite.png';
+import idImg from '../public/assets/work/logos/id.png';
+import msImg from '../public/assets/work/logos/ms.png';
+import psImg from '../public/assets/work/logos/ps.png';
+import vsImg from '../public/assets/work/logos/vs.png';
+import xdImg from '../public/assets/work/logos/xd.png';
+import {sectionCss} from '../styles/styles';
 
 const toolIcons = [figmaImg, xdImg, vsImg, githubImg, idImg, aiImg, psImg, gsuiteImg, msImg];
 
 const Home: NextPage = () => {
-  // adjust CSS scroll variable on window scroll, used for hero "parallax"
-  useEffect(() => {
-    const onScroll = throttle(() => {
-      document.body.style.setProperty(
-        "--scroll",
-        `${window.pageYOffset / (document.body.offsetHeight - window.innerHeight)}`
-      );
-    }, 1000 / 30);
-    window.addEventListener("scroll", onScroll, false);
-    return () => {
-      window.removeEventListener("scroll", onScroll, false);
-    };
-  }, []);
-
   return (
     <div>
       <Head>
@@ -144,14 +129,14 @@ const Home: NextPage = () => {
               `}
             >
               Hi there, I’m Claire,
-              <br />a{" "}
+              <br />a{' '}
               <span
                 css={css`
                   font-weight: bold;
                   color: ${COLORS.secondary};
                 `}
               >
-                product designer{" "}
+                product designer{' '}
                 <br
                   css={css`
                     @media (min-width: ${BREAKPOINT_SMALL}px) {
@@ -159,7 +144,7 @@ const Home: NextPage = () => {
                     }
                   `}
                 />
-              </span>{" "}
+              </span>{' '}
               with an eye for
               <br />
               <span
@@ -169,15 +154,15 @@ const Home: NextPage = () => {
                 `}
               >
                 creating community
-              </span>{" "}
+              </span>{' '}
               <br
                 css={css`
                   @media (min-width: ${BREAKPOINT_SMALL}px) {
                     display: none;
                   }
                 `}
-              />{" "}
-              and a{" "}
+              />{' '}
+              and a{' '}
               <br
                 css={css`
                   @media (max-width: ${BREAKPOINT_SMALL}px) {
@@ -185,7 +170,7 @@ const Home: NextPage = () => {
                   }
                 `}
               />
-              passion for{" "}
+              passion for{' '}
               <br
                 css={css`
                   @media (min-width: ${BREAKPOINT_SMALL}px) {
@@ -212,7 +197,7 @@ const Home: NextPage = () => {
               `}
             >
               I am a designer by way of scientific communication, environmental consulting and
-              printmaking.{" "}
+              printmaking.{' '}
               <br
                 css={css`
                   @media (max-width: ${BREAKPOINT_SMALL}px) {
@@ -221,7 +206,7 @@ const Home: NextPage = () => {
                 `}
               />
               My experience gives me a fresh approach to UX/UI and an insatiable curiosity for
-              learning.{" "}
+              learning.{' '}
               <a
                 href={`${BASE_PATH}/about`}
                 css={css`
@@ -233,29 +218,7 @@ const Home: NextPage = () => {
             </p>
           </section>
 
-          {/* hero image */}
-          <div
-            css={css`
-              position: relative;
-              width: 1200px;
-              max-width: 95vw;
-              height: 450px;
-              top: 100px;
-              margin: 0 auto;
-              background: url(${BASE_PATH}/assets/work/hero.jpg);
-              background-size: cover;
-              background-position-y: calc(-200px - 2000px * var(--scroll));
-              background-repeat: no-repeat;
-
-              @media (max-width: ${BREAKPOINT_SMALL}px) {
-                top: 0;
-                width: 100vw;
-                max-width: none;
-                height: 250px;
-                background-position-y: calc(-20px - 1000px * var(--scroll));
-              }
-            `}
-          />
+          <ParallaxHero />
         </div>
       </div>
 
