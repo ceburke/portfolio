@@ -182,10 +182,10 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            I shared my idea for this project and did some initial research with one of my friends
-            who also has Type 1 diabetes. She helped me figure out what was possible and which
-            features would be most helpful. Following that, I proceeded to develop user personas to
-            gain insights into the needs and behaviors of other users.
+            I did some initial research and then pitched the app idea to one of my friends who has
+            Type 1 diabetes. She helped me figure out what was possible and which features would be
+            most helpful. Following that, I proceeded to develop user personas to gain insights into
+            the needs and behaviors of other users.
           </p>
           <div
             css={css`
