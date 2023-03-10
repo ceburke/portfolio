@@ -59,8 +59,9 @@ export default function StravaCard(): JSX.Element {
                 }
               `}
             >
-              Conditions are a key aspect of any trail-based activity. Seasonal transitions and
-              weather events can impact trail surfaces, how and when athletes recreate.
+              Conditions play a crucial role in any trail-based activity. Seasonal transitions and
+              weather events can significantly affect trail surfaces and impact how and when
+              athletes recreate.
             </p>
           </div>
           <img
@@ -106,10 +107,11 @@ export default function StravaCard(): JSX.Element {
               }
             `}
           >
-            Going on a trail run or bike ride during mud season can be a slog. It can be hard to
-            predict when trails will be travelable during seasonal transitions or after weather
-            events. Rather than redundant struggles through poor conditions, a trail conditions
-            feature in Strava could make the wisdom of one become many.
+            Going on a trail run or bike ride during mud season can be a slog. It is difficult to
+            predict when trails will be travelable during seasonal transitions and after weather
+            events. By incorporating a trail conditions feature, Strava could enable users to share
+            their experiences, allowing others to benefit from their insights and protect trail
+            surfaces from negative wear.
           </p>
           <div
             css={css`
@@ -127,14 +129,14 @@ export default function StravaCard(): JSX.Element {
                 flex: 0 1 50%;
               `}
               title="Problem"
-              content="Seasonal changes and weather events can create unenjoyable and/or unsafe trail conditions for users"
+              content="Seasonal changes and weather events can create unenjoyable and/or unsafe trail conditions for users."
             />
             <TextBubble
               css={css`
                 flex: 0 1 50%;
               `}
               title="Objective"
-              content="Help users “know before they go”, or report their experience to inform others"
+              content="Help users “know before they go”, or report their experience to inform others."
             />
           </div>
         </section>
@@ -167,8 +169,9 @@ export default function StravaCard(): JSX.Element {
             `}
           >
             Competitors such as AllTrails, Trailforks and FarOut have conditions reporting features.
-            All three allow input of location-specific text, images and conditions. Overall, trail
-            reports are sparse and out-of-date due to lack of engagement.
+            While all three platforms allow users to input location-specific text, images, and trail
+            conditions, the trail reports are often sparse and out-of-date due to low user
+            engagement.
           </p>
           <div
             css={css`
@@ -330,8 +333,9 @@ export default function StravaCard(): JSX.Element {
                   }
                 `}
               >
-                Implementation would cause adjustments to several main user flows. Yet, the value to
-                activity enjoyment, route planning and trail stewardship is significant.
+                Although implementing the feature may require adjustments to several main user
+                flows, its potential value in enhancing activity enjoyment, facilitating route
+                planning, and promoting trail stewardship is significant.
               </p>
             </div>
           </div>

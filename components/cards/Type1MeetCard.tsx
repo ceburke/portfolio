@@ -143,14 +143,14 @@ export default function Type1MeetCard(): JSX.Element {
                 flex: 0 1 50%;
               `}
               title="Problem"
-              content="Connecting with Type 1 people online is dispersed across non-profit sites, social media and medical forums"
+              content="Connecting with Type 1 people online is dispersed across non-profit sites, social media and medical forums."
             />
             <TextBubble
               css={css`
                 flex: 0 1 50%;
               `}
               title="Objective"
-              content="Create a Type 1-specific platform which combines resources, social media and personal growth tracking"
+              content="Create a Type 1-specific platform which combines resources, social media and personal growth tracking."
             />
           </div>
         </section>
@@ -182,9 +182,10 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            I pitched the direction and initial research for this project to one of my Type 1
-            friends. She provided insight on the feasibility and what features would be most useful.
-            From there, I moved on to user personas to identify additional use cases and needs.
+            I shared my idea for this project and did some initial research with one of my friends
+            who also has Type 1 diabetes. She helped me figure out what was possible and which
+            features would be most helpful. Following that, I proceeded to develop user personas to
+            gain insights into the needs and behaviors of other users.
           </p>
           <div
             css={css`
@@ -367,21 +368,21 @@ export default function Type1MeetCard(): JSX.Element {
                 flex: 0 1 33%;
               `}
               title="Age Ranges"
-              content="Ability to select age range preference in chat hub"
+              content="Ability to select age range preference in chat hub."
             />
             <TextBubble
               css={css`
                 flex: 0 1 33%;
               `}
               title="Individual Experience"
-              content="Personal journey area with private posts and check-in data"
+              content="Personal journey area with private posts and check-in data."
             />
             <TextBubble
               css={css`
                 flex: 0 1 33%;
               `}
               title="Topics"
-              content="More relevant umbrella categories"
+              content="More relevant umbrella categories."
             />
           </div>
           <div

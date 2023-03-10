@@ -1,10 +1,10 @@
-import {css} from '@emotion/react';
-import type {NextPage} from 'next';
-import Head from 'next/head';
-import Footer from '../components/Footer';
-import NavBar from '../components/NavBar';
-import {BASE_PATH, BREAKPOINT_SMALL, COLORS} from '../constants';
-import {sectionCss} from '../styles/styles';
+import { css } from "@emotion/react";
+import type { NextPage } from "next";
+import Head from "next/head";
+import Footer from "../components/Footer";
+import NavBar from "../components/NavBar";
+import { BASE_PATH, BREAKPOINT_SMALL, COLORS } from "../constants";
+import { sectionCss } from "../styles/styles";
 
 function ValueSection(): JSX.Element {
   return (
@@ -67,7 +67,7 @@ function ValueSection(): JSX.Element {
               color: ${COLORS.secondary};
             `}
           >
-            imagination,{' '}
+            imagination,{" "}
             <br
               css={css`
                 @media (min-width: ${BREAKPOINT_SMALL}px) {
@@ -82,7 +82,7 @@ function ValueSection(): JSX.Element {
                   display: none;
                 }
               `}
-            />{' '}
+            />{" "}
             inclusivity
           </span>
         </h1>
@@ -108,10 +108,11 @@ function ValueSection(): JSX.Element {
             }
           `}
         >
-          I love helping others find new interactions, solve problems and enrich existing
-          experiences. In my past work, learning about people, finding a way to address their needs
-          and creating accessible materials were my favorite tasks. I decided to make the leap to
-          product design, where I can pursue those types of work full-time.
+          I love helping others discover new interactions, solve problems, and enrich their
+          experiences. During my past work experience, I enjoyed learning about people, finding ways
+          to address their needs, and creating accessible materials. I made the decision to
+          transition to product design, where I can fully pursue these passions and tasks on a
+          full-time basis.
         </p>
 
         <h2
@@ -136,7 +137,7 @@ function ValueSection(): JSX.Element {
           `}
         >
           I bring curiosity, great communication skills, humor and quick learning abilities to the
-          table. I am eager to apply my experiences to the field of product design, build skills and
+          table. I am eager to apply my experience to the field of product design, build skills and
           create impactful products.
         </p>
       </div>
@@ -296,7 +297,7 @@ function PassionSection(): JSX.Element {
             }
           `}
         >
-          I make collages,{' '}
+          I make collages,{" "}
           <a
             css={css`
               text-decoration: underline;

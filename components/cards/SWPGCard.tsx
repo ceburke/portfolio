@@ -124,11 +124,13 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            The southwest United States is a beautiful, sparsely populated, spread-out area. When I
-            moved to Durango, Colorado from the east coast, I found connecting with other artists
-            challenging and art-centric community organizing next-to-impossible. The goal of
-            Southwest Print Guild is to build a common connection point for artists and gallerists
-            of all levels in an otherwise detached region.
+            The southwestern region of the United States boasts stunning landscapes, but its sparse
+            population and widespread geography can make it difficult to connect with fellow
+            artists. When I relocated to Durango, Colorado from the east coast, I encountered
+            challenges in finding a community that centered around art and organizing art-centric
+            events. To bridge this gap, the Southwest Print Guild aims to create a hub for artists
+            and gallerists of all levels to come together and build connections in an otherwise
+            isolated region.
           </p>
           <div
             css={css`
@@ -146,14 +148,14 @@ export default function SWPGCard(): JSX.Element {
                 flex: 0 1 50%;
               `}
               title="Problem"
-              content="Small and scattered population centers makes connecting artists, gallerists and community organizers challenging"
+              content="Connecting artists, gallerists, and community organizers can be challenging in regions with dispersed and small population centers."
             />
             <TextBubble
               css={css`
                 flex: 0 1 50%;
               `}
               title="Objective"
-              content="Create a web platform that connects artists and gallerists and enables community-building and event promotion"
+              content="Develop a web-based platform that facilitates connections between artists and gallerists, fostering a sense of community and enabling the promotion of events."
             />
           </div>
         </section>
@@ -185,10 +187,11 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            Users tend to operate in local social media channels and physical signage to communicate
-            events and announcements. Creating a virtual bulletin platform, where all announcements
-            live, could save users time and increase engagement. In addition to the bulletin goal, I
-            created user personas to identify other needed site functions.
+            Typically, users rely on local social media channels and physical signage to share
+            announcements and promote events. However, consolidating all announcements onto a single
+            virtual bulletin platform could save time and increase engagement among users. To
+            identify other necessary site functions, I developed user personas in addition to the
+            primary goal of creating the bulletin platform.
           </p>
           <div
             css={css`
@@ -289,9 +292,10 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            I did a round of brainstorming sketches to get started, moved onto low-fidelity mocks
-            and then prototyping. I had a user test the low-fidelity prototype and acted upon the
-            resultant insights to create the high-fidelity prototype.
+            To begin the design process, I started with a round of brainstorming sketches and
+            creating a logo, followed by low-fidelity mocks, and then prototyping. After creating a
+            high-fidelity prototype, I had a user test it and used their feedback to make
+            improvements that better addressed overall user needs.
           </p>
           <div
             css={css`
@@ -350,12 +354,13 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            A large portion of my design effort was spent iterating the layout approach in the
-            high-fidelity phase. The initial design was bulky and non-intuitive, so I invested time
-            in finding a better approach prior to testing. After the improved design was
-            implemented, a part-time artist tested the high-fidelity prototype. Themes of the
-            feedback centered around making distinctions in user types and providing monetary perks
-            for member artists.
+            During the high-fidelity phase, I spent a significant amount of time refining the layout
+            to make it more intuitive before conducting user testing. Upon adding interactions, I
+            found the initial design was bulky and hard to navigate, so I focused on finding a
+            better approach. After implementing the improved design, a part-time artist tested the
+            high-fidelity prototype and provided feedback that was focused on making distinctions
+            between user types and offering monetary incentives for member artists. I used this
+            feedback to make further improvements to the platform.
           </p>
           <div
             css={css`
@@ -374,21 +379,21 @@ export default function SWPGCard(): JSX.Element {
                 flex: 0 1 33%;
               `}
               title="Perks"
-              content="Add member benefits such as discounted materials at local supply businesses and discounted show fees"
+              content="Add member benefits such as discounted materials at local supply businesses and discounted show fees."
             />
             <TextBubble
               css={css`
                 flex: 0 1 33%;
               `}
               title="Monetization of Work"
-              content="Create an in-site gallery which the public can access and member artists can sell work"
+              content="Create an in-site gallery which the public can access and member artists can sell work."
             />
             <TextBubble
               css={css`
                 flex: 0 1 33%;
               `}
               title="Member Hierarchy"
-              content="Create tailored account interfaces for hobbyists, professionals and gallerists. Existing account interface is intimidating to beginners and irrelevant to gallerists"
+              content="Create tailored account interfaces for hobbyists, professionals and gallerists. Existing account interface is intimidating to beginners and irrelevant to gallerists."
             />
           </div>
           <div
@@ -454,11 +459,14 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            Southwest Print Guild was an important learning experience in terms of my
-            design-thinking process. The biggest take-away of this project was recognizing the value
-            of stepping back and looking at the effectiveness of design choices early and often.
-            Sunk-cost fallacy thinking, the commitment to an approach because of time invested, does
-            not work in the UX/UI world.
+            My work on the Southwest Print Guild project was a crucial learning experience that
+            shaped my design-thinking process. The most significant lesson I learned was the
+            importance of regularly evaluating the effectiveness of design choices throughout the
+            design process. In particular, I realized the potential pitfalls of the "sunk-cost
+            fallacy" mindset, which involves persisting with a suboptimal design due to prior
+            investment of time and resources. In the world of UX/UI design, it's essential to be
+            able to recognize and adapt to changes in user needs and priorities, even if it requires
+            discarding prior work.
           </p>
           <div
             css={css`
@@ -477,21 +485,21 @@ export default function SWPGCard(): JSX.Element {
                 flex: 0 1 30%;
               `}
               title="Challenge"
-              content="Creating a design system and implementing an effective web design which meets user expectations"
+              content="Create a design system and implement an effective web design which meets user expectations."
             />
             <TextBubble
               css={css`
                 flex: 0 1 30%;
               `}
               title="Success"
-              content="User testing identified that existing features and flows were well-designed and functioned as expected"
+              content="User testing identified that existing features and flows were well-designed and functioned as expected."
             />
             <TextBubble
               css={css`
                 flex: 0 1 30%;
               `}
               title="Opportunity"
-              content="User testing yielded significant expansion of functions. The site could expand to accomodate multiple user types"
+              content="User testing yielded significant expansion of functions. The site could expand to accomodate multiple user types."
             />
           </div>
         </section>

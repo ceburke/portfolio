@@ -33,8 +33,9 @@ export default function BookCoversCard(): JSX.Element {
           }
         `}
       >
-        One of my first interactions with design was as a kid at the library. I created this series
-        of imaginary covers to showcase my digital design skill, and as an ode to my love of books.
+        As a child at the library, I had one of my first interactions with design. I created a
+        series of imaginary book covers as a tribute to my love of books and to showcase my digital
+        design skills.
       </p>
       <ul
         css={css`

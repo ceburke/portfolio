@@ -106,9 +106,9 @@ export default function GoogleMapsCard(): JSX.Element {
             `}
           >
             Dropping a loved one off at the airport can be a stressful experience. What time should
-            you leave? What if there is traffic? Google Maps is the go-to navigation app for
-            millions of users and can help them further, by taking the guesswork out of planned
-            trips.
+            you leave? What if there is traffic? Millions of users rely on Google Maps as their
+            go-to navigation app, and it can further enhance their experience by removing the
+            guesswork from planned trips.
           </p>
           <div
             css={css`
@@ -126,14 +126,14 @@ export default function GoogleMapsCard(): JSX.Element {
                 flex: 0 1 50%;
               `}
               title="Problem"
-              content="Planned trips can be challenging when time restraints prevent users from updating travel parameters in real time"
+              content="Planned trips can be challenging when time restraints prevent users from updating travel parameters in real time."
             />
             <TextBubble
               css={css`
                 flex: 0 1 50%;
               `}
               title="Objective"
-              content="Create a single user flow for navigation, traffic alerts and alarm setting"
+              content="Create a single user flow for navigation, traffic alerts and alarm setting."
             />
           </div>
         </section>
@@ -165,9 +165,9 @@ export default function GoogleMapsCard(): JSX.Element {
               }
             `}
           >
-            Google Maps has an existing user flow to address planned trips. Within the route
-            navigation interface, there is a “Remind you to leave on time” feature with “Leave by”
-            and “Arrive by” time selector options.
+            While Google Maps has an existing user flow to address planned trips, it is understated
+            and lacks usability. Within the route navigation interface, there is a 'Remind you to
+            leave on time' feature that includes 'Leave by' and 'Arrive by' time selector options.
           </p>
           <div
             css={css`
@@ -236,9 +236,9 @@ export default function GoogleMapsCard(): JSX.Element {
               }
             `}
           >
-            Google Maps’ existing flow for trip reminders can be optimized for the busy user by
-            integrating traffic data and device alarms. A set of simple questions guide the user to
-            complete the process.
+            To better serve busy users, Google Maps can enhance its trip reminders by incorporating
+            traffic information and device alarms. By utilizing a conversational approach through a
+            series of straightforward questions, the user can easily navigate the process.
           </p>
           <div
             css={css`
@@ -284,11 +284,11 @@ export default function GoogleMapsCard(): JSX.Element {
                   }
                 `}
               >
-                Integration into a built-in device alarm allows users to keep one variable of their
-                schedule constant and familiar. In practice, checking the viability of a connection
-                between device settings and Google Maps would require development input.
-                Additionally, development input could inform cross-platform feasibility, on desktop
-                and Google Home.
+                By integrating with a built-in device alarm, users can maintain a consistent and
+                familiar aspect of their schedule. However, implementing this feature and ensuring
+                compatibility between device settings and Google Maps would require input from
+                developers. Furthermore, their expertise could also help assess the feasibility of
+                cross-platform integration, including desktop and Google Home.
               </p>
             </div>
           </div>
