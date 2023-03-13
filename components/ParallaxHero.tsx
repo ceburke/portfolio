@@ -8,26 +8,33 @@ export default function ParallaxHero(): JSX.Element {
   const {width} = useWindowSize();
 
   useEffect(() => {
-    const onScroll = () => {
-      window.requestAnimationFrame(() =>
+    const handler = () => {
+      window.requestAnimationFrame(() => {
         imgRef.current?.style.setProperty(
           'transform',
           `translateY(-${Math.min(
             window.scrollY,
             imgRef.current.getBoundingClientRect().height / 2
           )}px)`
-        )
-      );
+        );
+      });
     };
 
     if (width > BREAKPOINT_MEDIUM) {
-      window.addEventListener('scroll', onScroll);
+      window.addEventListener('scroll', handler);
+      imgRef.current?.style.setProperty(
+        'transform',
+        `translateY(-${Math.min(
+          window.scrollY,
+          imgRef.current.getBoundingClientRect().height / 2
+        )}px)`
+      );
     } else {
       imgRef.current?.style.setProperty('transform', 'translateY(-50%)');
     }
 
     return () => {
-      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('scroll', handler);
     };
   }, [width]);
 
@@ -56,6 +63,10 @@ export default function ParallaxHero(): JSX.Element {
         css={css`
           width: 100%;
           transition: transform 0.1s linear;
+
+          @media (max-width: ${BREAKPOINT_MEDIUM}px) {
+            transform: translateY(-50%);
+          }
         `}
       />
     </div>
