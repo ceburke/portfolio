@@ -74,9 +74,7 @@ export default function SWPGCard(): JSX.Element {
               `}
             >
               A website to connect artists, gallerists and community organizers in a remote region.
-              <br>
-                Created in Adobe XD in one month. I acted as the researcher, writer and designer.
-              </br>
+              Created in Adobe XD in one month. I acted as the researcher, writer and designer.
             </p>
           </div>
           <img
