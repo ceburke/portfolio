@@ -74,7 +74,9 @@ export default function SWPGCard(): JSX.Element {
               `}
             >
               A website to connect artists, gallerists and community organizers in a remote region.
-              Created in Adobe XD.
+              <br>
+                Created in Adobe XD in one month. I acted as the researcher, writer and designer.
+              </br>
             </p>
           </div>
           <img
@@ -356,11 +358,12 @@ export default function SWPGCard(): JSX.Element {
           >
             During the high-fidelity phase, I spent a significant amount of time refining the layout
             to make it more intuitive before conducting user testing. Upon adding interactions, I
-            found the initial design was bulky and hard to navigate, so I focused on finding a
-            better approach. After implementing the improved design, a part-time artist tested the
-            high-fidelity prototype and provided feedback that was focused on making distinctions
-            between user types and offering monetary incentives for member artists. I used this
-            feedback to make further improvements to the platform.
+            found the initial design was bulky and hard to navigate. The side navigation bar
+            detracted from the main content of the page and minimizing the bar created complex
+            interactions for the layout of the page. A top bar approach was identified as being
+            better for users and development. After implementing the improved design, a part-time
+            artist tested the high-fidelity prototype. Their feedback focused on making distinctions
+            between user types and offering monetary incentives for member artists.
           </p>
           <div
             css={css`
@@ -466,7 +469,8 @@ export default function SWPGCard(): JSX.Element {
             fallacy" mindset, which involves persisting with a suboptimal design due to prior
             investment of time and resources. In the world of UX/UI design, it's essential to be
             able to recognize and adapt to changes in user needs and priorities, even if it requires
-            discarding prior work.
+            discarding prior work. Adjusting the placement and interaction of the nav bar was the
+            key instance which exemplified that realization in the design process.
           </p>
           <div
             css={css`

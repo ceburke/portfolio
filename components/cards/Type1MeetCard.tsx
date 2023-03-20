@@ -10,7 +10,7 @@ export default function Type1MeetCard(): JSX.Element {
     <Card
       size="large"
       title="T1Meet"
-      subtitle="Social and resource sharing platform for people with chronic disease"
+      subtitle="Social and resource sharing platform for people with chronic illness"
       image={type1MeetImg}
     >
       <div
@@ -71,7 +71,10 @@ export default function Type1MeetCard(): JSX.Element {
               `}
             >
               An application to help people with Type 1 diabetes connect, share stories and
-              resources. Created in Figma.
+              resources.
+              <br>
+                Created in Figma in three weeks. I acted as the researcher, writer and designer.
+              </br>
             </p>
           </div>
           <img
@@ -122,7 +125,7 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            Living with chronic disease, such as Type 1 diabetes, can be isolating. Oftentimes,
+            Living with chronic illness, such as Type 1 diabetes, can be isolating. Oftentimes,
             friends and family struggle to understand. This project was inspired by being a
             wallflower while two friends with Type 1 enthusiastically shared their challenges,
             successes, tips and tricks.
@@ -182,10 +185,12 @@ export default function Type1MeetCard(): JSX.Element {
               }
             `}
           >
-            I did some initial research and then pitched the app idea to one of my friends who has
-            Type 1 diabetes. She helped me figure out what was possible and which features would be
-            most helpful. Following that, I proceeded to develop user personas to gain insights into
-            the needs and behaviors of other users.
+            My initial research consisted of reading academic papers about how social connection
+            between peers with chronic illness can decrease negative impacts of the condition over
+            time. I translated my research into an outline-level app design and pitched the idea to
+            one of my friends who has Type 1 diabetes. She helped me figure out what of my research
+            was relevant and which features would be most helpful. Following that, I proceeded to
+            develop user personas to gain insights into the needs and behaviors of other users.
           </p>
           <div
             css={css`
@@ -476,14 +481,14 @@ export default function Type1MeetCard(): JSX.Element {
                 flex: 0 1 33%;
               `}
               title="Success"
-              content="Testing in the low-fidelity stage yielded several high-value, user-centric improvements."
+              content="Testing in the low-fidelity stage yielded several high-value, user-centric improvements including: a personal journey section, data visualization of daily check-ins and chatrooom age preference selectors."
             />
             <TextBubble
               css={css`
                 flex: 0 1 33%;
               `}
               title="Opportunity"
-              content="Value to real users. Pitch the project to a Type 1 non-profit with enough resources to make it real."
+              content="Given more time and access to developers, I would run a larger usability study and adjust the design to account for feasibility feedback from developers. I would also incoporate robust low and no-vision user accessibility into all user flows, as a common complication of Type 1 diabetes is retinopathy."
             />
           </div>
         </section>
