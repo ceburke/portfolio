@@ -1,17 +1,17 @@
-import {css} from '@emotion/react';
-import {useEffect, useRef} from 'react';
-import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../constants';
-import useWindowSize from '../hooks/useWindowSize';
+import { css } from "@emotion/react";
+import { useEffect, useRef } from "react";
+import { BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../constants";
+import useWindowSize from "../hooks/useWindowSize";
 
 export default function ParallaxHero(): JSX.Element {
   const imgRef = useRef<HTMLImageElement>(null);
-  const {width} = useWindowSize();
+  const { width } = useWindowSize();
 
   useEffect(() => {
     const handler = () => {
       window.requestAnimationFrame(() => {
         imgRef.current?.style.setProperty(
-          'transform',
+          "transform",
           `translateY(-${Math.min(
             window.scrollY,
             imgRef.current.getBoundingClientRect().height / 2
@@ -21,20 +21,20 @@ export default function ParallaxHero(): JSX.Element {
     };
 
     if (width > BREAKPOINT_MEDIUM) {
-      window.addEventListener('scroll', handler);
+      window.addEventListener("scroll", handler);
       imgRef.current?.style.setProperty(
-        'transform',
+        "transform",
         `translateY(-${Math.min(
           window.scrollY,
           imgRef.current.getBoundingClientRect().height / 2
         )}px)`
       );
     } else {
-      imgRef.current?.style.setProperty('transform', 'translateY(-50%)');
+      imgRef.current?.style.setProperty("transform", "translateY(-10%)");
     }
 
     return () => {
-      window.removeEventListener('scroll', handler);
+      window.removeEventListener("scroll", handler);
     };
   }, [width]);
 
@@ -53,7 +53,7 @@ export default function ParallaxHero(): JSX.Element {
           top: 0;
           width: 100vw;
           max-width: none;
-          height: 250px;
+          height: 100%;
         }
       `}
     >

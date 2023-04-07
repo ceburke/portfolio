@@ -109,10 +109,9 @@ function ValueSection(): JSX.Element {
           `}
         >
           I love helping others discover new interactions, solve problems, and enrich their
-          experiences. During my past work experience, I enjoyed learning about people, finding ways
-          to address their needs, and creating accessible materials. I made the decision to
-          transition to product design, where I can fully pursue these passions and tasks on a
-          full-time basis.
+          experiences. In my past jobs, I excelled at learning about people, finding ways to address
+          their needs, and creating accessible materials. I made the decision to transition to
+          product design, where I can pursue these passions and tasks on a full-time basis.
         </p>
 
         <h2
@@ -306,7 +305,7 @@ function PassionSection(): JSX.Element {
           >
             write articles about bike packing
           </a>
-          , play piano and plan desert weekends with friends in my free time.
+          , play piano and read epic fantasy in my free time.
         </p>
       </div>
     </section>

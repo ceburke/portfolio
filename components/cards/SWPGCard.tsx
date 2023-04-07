@@ -74,7 +74,21 @@ export default function SWPGCard(): JSX.Element {
               `}
             >
               A website to connect artists, gallerists and community organizers in a remote region.
-              Created in Adobe XD in one month. I acted as the researcher, writer and designer.
+              <span
+                css={css`
+                  font-weight: bold;
+                  font-size: 24px;
+
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    font-size: 12px;
+                    margin-right: 0;
+                  }
+                `}
+              >
+                <br></br>
+                <br></br>
+                Adobe XD | Research, Design, Copy
+              </span>{" "}
             </p>
           </div>
           <img
@@ -148,14 +162,14 @@ export default function SWPGCard(): JSX.Element {
                 flex: 0 1 50%;
               `}
               title="Problem"
-              content="Connecting artists, gallerists, and community organizers can be challenging in regions with dispersed and small population centers."
+              content="Connecting artists, gallerists, and community organizers can be challenging in regions with dispersed, small population centers."
             />
             <TextBubble
               css={css`
                 flex: 0 1 50%;
               `}
               title="Objective"
-              content="Develop a web-based platform that facilitates connections between artists and gallerists, fostering a sense of community and enabling the promotion of events."
+              content="Develop a platform that facilitates connections between artists and gallerists, fostering a sense of community and enabling the promotion of events."
             />
           </div>
         </section>
@@ -189,9 +203,8 @@ export default function SWPGCard(): JSX.Element {
           >
             Typically, users rely on local social media channels and physical signage to share
             announcements and promote events. However, consolidating all announcements onto a single
-            virtual bulletin platform could save time and increase engagement among users. To
-            identify other necessary site functions, I developed user personas in addition to the
-            primary goal of creating the bulletin platform.
+            virtual bulletin platform can save time and increase engagement among users. To identify
+            other needed site functions, I developed user personas.
           </p>
           <div
             css={css`
@@ -295,7 +308,7 @@ export default function SWPGCard(): JSX.Element {
             To begin the design process, I started with a round of brainstorming sketches and
             creating a logo, followed by low-fidelity mocks, and then prototyping. After creating a
             high-fidelity prototype, I had a user test it and used their feedback to make
-            improvements that better addressed overall user needs.
+            improvements.
           </p>
           <div
             css={css`
@@ -354,14 +367,14 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            During the high-fidelity phase, I spent a significant amount of time refining the layout
-            to make it more intuitive before conducting user testing. Upon adding interactions, I
-            found the initial design was bulky and hard to navigate. The side navigation bar
-            detracted from the main content of the page and minimizing the bar created complex
-            interactions for the layout of the page. A top bar approach was identified as being
-            better for users and development. After implementing the improved design, a part-time
-            artist tested the high-fidelity prototype. Their feedback focused on making distinctions
-            between user types and offering monetary incentives for member artists.
+            During the high-fidelity phase, I refined the initial layout to make it more intuitive
+            prior to user testing. My initial design was bulky and hard to navigate. The side
+            navigation bar detracted from the main content of the page and minimizing the bar
+            resulted in overly-complex layout interactions. I decided a top nav bar approach would
+            simplify the layout, interactions and be more familiar to users. After implementing the
+            improved design, a part-time artist tested the high-fidelity prototype. Their feedback
+            focused on making distinctions between user types and offering monetary incentives for
+            member artists. See main themes below:
           </p>
           <div
             css={css`
@@ -460,15 +473,13 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            My work on the Southwest Print Guild project was a crucial learning experience that
-            shaped my design-thinking process. The most significant lesson I learned was the
-            importance of regularly evaluating the effectiveness of design choices throughout the
-            design process. In particular, I realized the potential pitfalls of the "sunk-cost
-            fallacy" mindset, which involves persisting with a suboptimal design due to prior
-            investment of time and resources. In the world of UX/UI design, it's essential to be
-            able to recognize and adapt to changes in user needs and priorities, even if it requires
-            discarding prior work. Adjusting the placement and interaction of the nav bar was the
-            key instance which exemplified that realization in the design process.
+            Southwest Print Guild taught me how to question and improve my design-thinking process.
+            The most significant lesson I learned was the importance following an Agile methodology
+            throughout the design process. In particular, I realized the potential pitfalls of the
+            "sunk-cost fallacy" mindset, which involves persisting with a suboptimal design because
+            of the time already spent. In the world of UX/UI design, adapting to meet user needs is
+            paramount. Adjusting the placement and interaction of the nav bar was the key instance
+            which made me step back and revisit my approach.
           </p>
           <div
             css={css`
@@ -501,7 +512,7 @@ export default function SWPGCard(): JSX.Element {
                 flex: 0 1 30%;
               `}
               title="Opportunity"
-              content="User testing yielded significant expansion of functions. The site could expand to accomodate multiple user types."
+              content="User testing yielded significant expansion of functions. The site could grow to accomodate multiple user types."
             />
           </div>
         </section>

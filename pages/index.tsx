@@ -102,7 +102,6 @@ const Home: NextPage = () => {
             `}
           />
         </div>
-
         <div
           css={css`
             display: flex;
@@ -205,8 +204,7 @@ const Home: NextPage = () => {
                   }
                 `}
               />
-              My experience gives me a fresh approach to UX/UI and an insatiable curiosity for
-              learning.{" "}
+              I love creating sleek design systems and clever interactions.{" "}
               <a
                 href={`${BASE_PATH}/about`}
                 css={css`
@@ -255,40 +253,31 @@ const Home: NextPage = () => {
             }
           `}
         >
-          My work is a collection of self-directed projects. The case studies, optimizations and
-          design work below represent my willingness to learn and passion for enabling users to
-          reach their goals.
+          The case studies, optimizations, and design work below demonstrate my ability to adapt and
+          iterate, as well as my passion for enabling users to achieve their goals.
         </p>
         <div
           css={css`
             display: flex;
-            margin-top: 90px;
+            margin-top: 35px;
+            justify-content: center;
 
             @media (max-width: ${BREAKPOINT_SMALL}px) {
               flex-direction: column;
               margin-top: 0;
+              width: 100%;
             }
           `}
         >
-          <h3
-            css={css`
-              flex: 0 0 auto;
-              width: 200px;
-              height: 100%;
-              padding-top: 40px;
-              font-size: 24px;
-
-              @media (max-width: ${BREAKPOINT_SMALL}px) {
-                padding-top: 0;
-                font-size: 20px;
-              }
-            `}
-          >
-            Case Studies
-          </h3>
           <div
             css={css`
-              width: 100%;
+              width: 80%;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                flex-direction: column;
+                margin-top: 0;
+                width: 100%;
+              }
             `}
           >
             <Type1MeetCard />
@@ -299,38 +288,25 @@ const Home: NextPage = () => {
         <div
           css={css`
             display: flex;
-            margin-top: 90px;
+            margin-top: 35px;
+            justify-content: center;
 
             @media (max-width: ${BREAKPOINT_SMALL}px) {
               flex-direction: column;
               margin-top: 25px;
+              width: 100%;
             }
           `}
         >
-          <h3
-            css={css`
-              flex: 0 0 auto;
-              width: 200px;
-              height: 100%;
-              padding-top: 40px;
-              font-size: 24px;
-
-              @media (max-width: ${BREAKPOINT_SMALL}px) {
-                padding-top: 0;
-                font-size: 20px;
-              }
-            `}
-          >
-            Optimization
-          </h3>
           <div
             css={css`
               display: flex;
               gap: 35px;
-              flex: 1 1 100%;
+              width: 80%;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 flex-direction: column;
+                width: 100%;
               }
             `}
           >
@@ -342,39 +318,27 @@ const Home: NextPage = () => {
         <div
           css={css`
             display: flex;
-            margin-top: 90px;
+            margin-top: 35px;
             width: 100%;
+            justify-content: center;
 
             @media (max-width: ${BREAKPOINT_SMALL}px) {
               flex-direction: column;
               margin-top: 25px;
+              width: 100%;
             }
           `}
         >
-          <h3
-            css={css`
-              flex: 0 0 auto;
-              width: 200px;
-              height: 100%;
-              padding-top: 40px;
-              font-size: 24px;
-
-              @media (max-width: ${BREAKPOINT_SMALL}px) {
-                padding-top: 0;
-                font-size: 20px;
-              }
-            `}
-          >
-            Design
-          </h3>
           <div
             css={css`
               display: flex;
               gap: 35px;
-              width: 100%;
+              width: 80%;
+              justify-content: center;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 flex-direction: column;
+                width: 100%;
               }
             `}
           >
@@ -455,11 +419,9 @@ const Home: NextPage = () => {
                 }
               `}
             >
-              I taught myself Figma, Adobe XD, HTML and CSS with the help of online learning
-              platforms. I have years of professional experience in Adobe programs such as
-              Photoshop, Illustrator and InDesign. I have worked in Google Suite and Microsoft
-              Office team environments. I am enthusiastic about acquiring new tools and expanding my
-              knowledge.
+              Learning is what I do best. Over the years, I have cultivated skills in design,
+              development and beyond (and am always eager to add more to the mix). Here are a few of
+              the programs in my palette:
             </p>
             <ul
               css={css`

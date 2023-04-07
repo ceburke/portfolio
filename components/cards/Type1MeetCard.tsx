@@ -71,8 +71,22 @@ export default function Type1MeetCard(): JSX.Element {
               `}
             >
               An application to help people with Type 1 diabetes connect, share stories and
-              resources. Created in Figma in three weeks. I acted as the researcher, writer and
-              designer.
+              resources.
+              <span
+                css={css`
+                  font-weight: bold;
+                  font-size: 24px;
+
+                  @media (max-width: ${BREAKPOINT_SMALL}px) {
+                    font-size: 12px;
+                    margin-right: 0;
+                  }
+                `}
+              >
+                <br></br>
+                <br></br>
+                Figma | Research, Design, Copy
+              </span>{" "}
             </p>
           </div>
           <img
