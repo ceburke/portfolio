@@ -333,7 +333,7 @@ export default function StravaCard(): JSX.Element {
                   }
                 `}
               >
-                Although implementing the feature may require adjustments to several main user
+                Although implementing the feature would cause adjustments to several main user
                 flows, its potential value in enhancing activity enjoyment, facilitating route
                 planning, and promoting trail stewardship is significant.
               </p>

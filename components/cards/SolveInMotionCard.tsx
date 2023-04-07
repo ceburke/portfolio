@@ -89,8 +89,9 @@ export default function SolvedInMotionCard(): JSX.Element {
           }
         `}
       >
-        Outdoor recreation is an opportunity to observe and explore our surroundings. By slowing and
-        looking closely, even a humble, hometown trail system can become a universe unto itself.{" "}
+        Outdoor recreation is an opportunity to observe and explore our surroundings. By slowing
+        down and looking closely, even a humble, hometown trail system can become a universe unto
+        itself.{" "}
       </p>
     </Card>
   );
