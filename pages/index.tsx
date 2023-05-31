@@ -48,7 +48,6 @@ const Home: NextPage = () => {
 
           @media (max-width: ${BREAKPOINT_SMALL}px) {
             margin-bottom: 0;
-            padding-bottom: 20px;
           }
         `}
       >
@@ -123,60 +122,35 @@ const Home: NextPage = () => {
                 }
               `}
             >
-              Hi there, I'm Claire,
-              <br />a{' '}
+              Hi there, I'm Claire, a{' '}
               <span
                 css={css`
                   font-weight: bold;
                   color: ${COLORS.secondary};
+                  display: inline-block;
+                  white-space: nowrap;
                 `}
               >
-                product designer{' '}
-                <br
-                  css={css`
-                    @media (min-width: ${BREAKPOINT_SMALL}px) {
-                      display: none;
-                    }
-                  `}
-                />
+                product designer
               </span>{' '}
-              with an eye for
-              <br />
+              with an eye for{' '}
               <span
                 css={css`
                   font-weight: bold;
                   color: ${COLORS.secondary};
+                  display: inline-block;
+                  white-space: nowrap;
                 `}
               >
                 creating community
               </span>{' '}
-              <br
-                css={css`
-                  @media (min-width: ${BREAKPOINT_SMALL}px) {
-                    display: none;
-                  }
-                `}
-              />{' '}
-              and a{' '}
-              <br
-                css={css`
-                  @media (max-width: ${BREAKPOINT_SMALL}px) {
-                    display: none;
-                  }
-                `}
-              />
-              passion for{' '}
-              <br
-                css={css`
-                  @media (min-width: ${BREAKPOINT_SMALL}px) {
-                    display: none;
-                  }
-                `}
-              />
+              and a passion for{' '}
               <span
                 css={css`
                   font-weight: bold;
                   color: ${COLORS.secondary};
+                  display: inline-block;
+                  white-space: nowrap;
                 `}
               >
                 outdoor recreation
