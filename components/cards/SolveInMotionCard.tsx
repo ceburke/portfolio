@@ -1,15 +1,13 @@
 import { css } from "@emotion/react";
 
-import solvedInMotionImg from "../../public/assets/work/solved-in-motion.jpeg";
+import solvedInMotionImg from "../../public/assets/work/solved-in-motion.png";
 import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
-
 export default function SolvedInMotionCard(): JSX.Element {
   return (
     <Card
       size="medium"
-      title="Solved in motion"
-      subtitle="Immersive art installation featuring a local trail system"
+      title="Immersive"
       image={solvedInMotionImg}
       imageType="cover"
       modalTitle="Solved in motion"

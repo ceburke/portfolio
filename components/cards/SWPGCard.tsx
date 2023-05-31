@@ -13,7 +13,6 @@ export default function SWPGCard(): JSX.Element {
         margin-top: 35px;
       `}
       title="Southwest Print Guild"
-      subtitle="Expanding professional networks and community building in a rural region"
       image={swpgImg}
     >
       <div

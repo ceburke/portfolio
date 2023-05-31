@@ -7,12 +7,7 @@ import TextBubble from "../TextBubble";
 
 export default function Type1MeetCard(): JSX.Element {
   return (
-    <Card
-      size="large"
-      title="T1Meet"
-      subtitle="Social and resource sharing platform for people with chronic illness"
-      image={type1MeetImg}
-    >
+    <Card size="large" title="1Meet" image={type1MeetImg}>
       <div
         css={css`
           padding: 25px 60px 0 35px;

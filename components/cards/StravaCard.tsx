@@ -7,12 +7,7 @@ import TextBubble from "../TextBubble";
 
 export default function StravaCard(): JSX.Element {
   return (
-    <Card
-      size="medium"
-      title="Strava"
-      subtitle="Integrating trail conditions reporting and viewing into existing user flows"
-      image={stravaImg}
-    >
+    <Card size="medium" title="Strava" image={stravaImg}>
       <div
         css={css`
           padding: 25px 60px 0 35px;

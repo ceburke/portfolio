@@ -7,12 +7,7 @@ import TextBubble from "../TextBubble";
 
 export default function GoogleMapsCard(): JSX.Element {
   return (
-    <Card
-      size="medium"
-      title="Google Maps"
-      subtitle="Improving user flow for planned trips with custom alarms"
-      image={googleMapsImg}
-    >
+    <Card size="medium" title="Google Maps" image={googleMapsImg}>
       <div
         css={css`
           padding: 25px 60px 0 35px;

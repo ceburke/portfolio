@@ -1,9 +1,9 @@
-import {BREAKPOINT_SMALL, COLORS, SECTION_WIDTH} from "../constants";
-import {css} from "@emotion/react";
-import {buttonResetCss} from "../styles/styles";
-import Image, {StaticImageData} from "next/image";
-import {Dialog, IconButton} from "@mui/material";
-import {useState} from "react";
+import { BREAKPOINT_SMALL, COLORS, SECTION_WIDTH } from "../constants";
+import { css } from "@emotion/react";
+import { buttonResetCss } from "../styles/styles";
+import Image, { StaticImageData } from "next/image";
+import { Dialog, IconButton } from "@mui/material";
+import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 
 interface Props {
@@ -75,12 +75,9 @@ const mediumImageCss = css`
 `;
 
 const coverImageCss = css`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 75px;
-  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  align-self: flex-end;
 `;
 
 export default function Card(props: Props): JSX.Element {

@@ -1,4 +1,4 @@
-import justTheTipImg from "../../public/assets/design/book-covers/just-the-tip.jpg";
+import bookCovers from "../../public/assets/work/bookcovers.png";
 import Card from "../Card";
 
 import { css } from "@emotion/react";
@@ -15,14 +15,7 @@ const bookCoverImages = [
 
 export default function BookCoversCard(): JSX.Element {
   return (
-    <Card
-      size="medium"
-      title="Book Covers"
-      subtitle="A series of imaginary book covers inspired by a love of reading and design"
-      image={justTheTipImg}
-      imageType="cover"
-      modalTitle="Book Covers"
-    >
+    <Card size="medium" title="Covers" image={bookCovers} imageType="cover" modalTitle="Covers">
       <p
         css={css`
           margin: 0 25px 50px 25px;
@@ -33,9 +26,7 @@ export default function BookCoversCard(): JSX.Element {
           }
         `}
       >
-        As a child at the library, I had one of my first interactions with design. I created a
-        series of imaginary book covers as a tribute to my love of books and to showcase my digital
-        design skills.
+        A series of imaginary book covers inspired by a love of reading and design.
       </p>
       <ul
         css={css`

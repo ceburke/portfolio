@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         <title>Claire Burke | Portfolio Home</title>
         <meta
           name="description"
-          content="I'm Claire, a product designer with a passion for UI and UX."
+          content="I'm Claire, a product designer with a knack for learning, listening and synthesizing."
         />
         <link rel="icon" href={`${BASE_PATH}/favicon.png`} />
       </Head>
@@ -127,7 +127,7 @@ const Home: NextPage = () => {
                 }
               `}
             >
-              Hi there, I’m Claire,
+              Hi there, I'm Claire,
               <br />a{" "}
               <span
                 css={css`
@@ -204,7 +204,7 @@ const Home: NextPage = () => {
                   }
                 `}
               />
-              I love creating sleek design systems and clever interactions.{" "}
+              I love creating impactful designs and clever interactions.{" "}
               <a
                 href={`${BASE_PATH}/about`}
                 css={css`
@@ -253,8 +253,8 @@ const Home: NextPage = () => {
             }
           `}
         >
-          The case studies, optimizations, and design work below demonstrate my ability to adapt and
-          iterate, as well as my passion for enabling users to achieve their goals.
+          The case studies and design work below demonstrate my technical ability, creative
+          problem-solving and passion for enabling users to achieve their goals.
         </p>
         <div
           css={css`

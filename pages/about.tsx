@@ -108,10 +108,10 @@ function ValueSection(): JSX.Element {
             }
           `}
         >
-          I love helping others discover new interactions, solve problems, and enrich their
-          experiences. In my past jobs, I excelled at learning about people, finding ways to address
-          their needs, and creating accessible materials. I made the decision to transition to
-          product design, where I can pursue these passions and tasks on a full-time basis.
+          I enjoy helping others discover new experiences, solve problems, and enrich their daily
+          lives. In my past jobs, I excelled at learning about people, finding ways to address their
+          needs and making resources accessible. I decided to transition to product design, where I
+          can pursue these passions and tasks on a full-time basis.
         </p>
 
         <h2
@@ -136,8 +136,8 @@ function ValueSection(): JSX.Element {
           `}
         >
           I bring curiosity, great communication skills, humor and quick learning abilities to the
-          table. I am eager to apply my experience to the field of product design, build skills and
-          create impactful products.
+          table. I am eager to apply my experience to the field of product design, further my skills
+          and create impactful products.
         </p>
       </div>
     </section>
@@ -270,7 +270,7 @@ function PassionSection(): JSX.Element {
         >
           I am an outdoor human of the bike-variety. I started with road biking, traversing the U.S.
           from New Hampshire to Washington. Shortly thereafter, I got hooked on mountain biking. I
-          learned how to tango with rock and roots in the Blue Ridge Mountains of Virginia. I have
+          learned how to tango with rocks and roots in the Blue Ridge Mountains of Virginia. I have
           since made my way to Durango, Colorado to explore Southwestern vistas, sedimentary slabs
           and high country traverses.
         </p>
@@ -283,9 +283,9 @@ function PassionSection(): JSX.Element {
             }
           `}
         >
-          When not on the bike, I am often playing ultimate frisbee or running. I have a deep love
-          for ultimate, which I played in college and have found a rich community in Durango
-          through.
+          When not on the bike, I am often playing ultimate frisbee, volleyball or running. I have a
+          deep love for ultimate, which I played in college and have found a rich community in
+          Durango through.
         </p>
         <p
           css={css`
