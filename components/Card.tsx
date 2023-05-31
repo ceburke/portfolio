@@ -76,10 +76,8 @@ const mediumImageCss = css`
 
   @media (max-width: ${BREAKPOINT_TINY}px) {
     top: 0;
-    left: 0;
-    height: 150px;
-    width: 150px;
-    align-self: center;
+    height: 100px;
+    width: 100px;
   }
 `;
 
@@ -91,10 +89,8 @@ const iconImageCss = css`
 
   @media (max-width: ${BREAKPOINT_TINY}px) {
     top: 0;
-    left: 0;
     height: 100px;
     width: 100px;
-    align-self: center;
   }
 `;
 
