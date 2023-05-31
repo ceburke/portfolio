@@ -1,27 +1,27 @@
-import { css } from "@emotion/react";
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import BookCoversCard from "../components/cards/BookCoversCard";
-import GoogleMapsCard from "../components/cards/GoogleMapsCard";
-import SolvedInMotionCard from "../components/cards/SolveInMotionCard";
-import StravaCard from "../components/cards/StravaCard";
-import SWPGCard from "../components/cards/SWPGCard";
-import Type1MeetCard from "../components/cards/Type1MeetCard";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
-import ParallaxHero from "../components/ParallaxHero";
-import { BASE_PATH, BREAKPOINT_SMALL, COLORS } from "../constants";
-import aiImg from "../public/assets/work/logos/ai.png";
-import figmaImg from "../public/assets/work/logos/figma.png";
-import githubImg from "../public/assets/work/logos/github.png";
-import gsuiteImg from "../public/assets/work/logos/gsuite.png";
-import idImg from "../public/assets/work/logos/id.png";
-import msImg from "../public/assets/work/logos/ms.png";
-import psImg from "../public/assets/work/logos/ps.png";
-import vsImg from "../public/assets/work/logos/vs.png";
-import xdImg from "../public/assets/work/logos/xd.png";
-import { sectionCss } from "../styles/styles";
+import {css} from '@emotion/react';
+import type {NextPage} from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import BookCoversCard from '../components/cards/BookCoversCard';
+import GoogleMapsCard from '../components/cards/GoogleMapsCard';
+import SolvedInMotionCard from '../components/cards/SolveInMotionCard';
+import StravaCard from '../components/cards/StravaCard';
+import SWPGCard from '../components/cards/SWPGCard';
+import Type1MeetCard from '../components/cards/Type1MeetCard';
+import Footer from '../components/Footer';
+import NavBar from '../components/NavBar';
+import ParallaxHero from '../components/ParallaxHero';
+import {BASE_PATH, BREAKPOINT_SMALL, COLORS} from '../constants';
+import aiImg from '../public/assets/work/logos/ai.png';
+import figmaImg from '../public/assets/work/logos/figma.png';
+import githubImg from '../public/assets/work/logos/github.png';
+import gsuiteImg from '../public/assets/work/logos/gsuite.png';
+import idImg from '../public/assets/work/logos/id.png';
+import msImg from '../public/assets/work/logos/ms.png';
+import psImg from '../public/assets/work/logos/ps.png';
+import vsImg from '../public/assets/work/logos/vs.png';
+import xdImg from '../public/assets/work/logos/xd.png';
+import {sectionCss} from '../styles/styles';
 
 const toolIcons = [figmaImg, xdImg, vsImg, githubImg, idImg, aiImg, psImg, gsuiteImg, msImg];
 
@@ -106,10 +106,6 @@ const Home: NextPage = () => {
           css={css`
             display: flex;
             flex-direction: column;
-
-            @media (max-width: ${BREAKPOINT_SMALL}px) {
-              flex-direction: column-reverse;
-            }
           `}
         >
           <section css={sectionCss}>
@@ -128,14 +124,14 @@ const Home: NextPage = () => {
               `}
             >
               Hi there, I'm Claire,
-              <br />a{" "}
+              <br />a{' '}
               <span
                 css={css`
                   font-weight: bold;
                   color: ${COLORS.secondary};
                 `}
               >
-                product designer{" "}
+                product designer{' '}
                 <br
                   css={css`
                     @media (min-width: ${BREAKPOINT_SMALL}px) {
@@ -143,7 +139,7 @@ const Home: NextPage = () => {
                     }
                   `}
                 />
-              </span>{" "}
+              </span>{' '}
               with an eye for
               <br />
               <span
@@ -153,15 +149,15 @@ const Home: NextPage = () => {
                 `}
               >
                 creating community
-              </span>{" "}
+              </span>{' '}
               <br
                 css={css`
                   @media (min-width: ${BREAKPOINT_SMALL}px) {
                     display: none;
                   }
                 `}
-              />{" "}
-              and a{" "}
+              />{' '}
+              and a{' '}
               <br
                 css={css`
                   @media (max-width: ${BREAKPOINT_SMALL}px) {
@@ -169,7 +165,7 @@ const Home: NextPage = () => {
                   }
                 `}
               />
-              passion for{" "}
+              passion for{' '}
               <br
                 css={css`
                   @media (min-width: ${BREAKPOINT_SMALL}px) {
@@ -196,7 +192,7 @@ const Home: NextPage = () => {
               `}
             >
               I am a designer by way of scientific communication, environmental consulting and
-              printmaking.{" "}
+              printmaking.{' '}
               <br
                 css={css`
                   @media (max-width: ${BREAKPOINT_SMALL}px) {
@@ -204,7 +200,7 @@ const Home: NextPage = () => {
                   }
                 `}
               />
-              I love creating impactful designs and clever interactions.{" "}
+              I love creating impactful designs and clever interactions.{' '}
               <a
                 href={`${BASE_PATH}/about`}
                 css={css`
