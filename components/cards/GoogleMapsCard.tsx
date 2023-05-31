@@ -1,13 +1,13 @@
-import { css } from "@emotion/react";
+import {css} from '@emotion/react';
 
-import googleMapsImg from "../../public/assets/work/logos/googlemaps.png";
-import { BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
-import Card from "../Card";
-import TextBubble from "../TextBubble";
+import googleMapsImg from '../../public/assets/work/logos/googlemaps.png';
+import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../../constants';
+import Card from '../Card';
+import TextBubble from '../TextBubble';
 
 export default function GoogleMapsCard(): JSX.Element {
   return (
-    <Card size="medium" title="Google Maps" image={googleMapsImg}>
+    <Card size="medium" title="Google Maps" image={googleMapsImg} imageType="icon">
       <div
         css={css`
           padding: 25px 60px 0 35px;

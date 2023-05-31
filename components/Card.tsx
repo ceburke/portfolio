@@ -1,19 +1,19 @@
-import { BREAKPOINT_SMALL, COLORS, SECTION_WIDTH } from "../constants";
-import { css } from "@emotion/react";
-import { buttonResetCss } from "../styles/styles";
-import Image, { StaticImageData } from "next/image";
-import { Dialog, IconButton } from "@mui/material";
-import { useState } from "react";
-import CloseIcon from "@mui/icons-material/Close";
+import {css} from '@emotion/react';
+import CloseIcon from '@mui/icons-material/Close';
+import {Dialog} from '@mui/material';
+import Image, {StaticImageData} from 'next/image';
+import {useState} from 'react';
+import {BREAKPOINT_SMALL, BREAKPOINT_TINY, COLORS, SECTION_WIDTH} from '../constants';
+import {buttonResetCss} from '../styles/styles';
 
 interface Props {
   children?: React.ReactNode;
   className?: string;
-  size?: "large" | "medium";
+  size?: 'large' | 'medium';
   title: string;
   subtitle?: string;
   image?: string | StaticImageData;
-  imageType?: "normal" | "cover";
+  imageType?: 'normal' | 'cover' | 'icon';
   imageAlt?: string;
   modalTitle?: string;
 }
@@ -69,9 +69,33 @@ const largeImageCss = css`
 `;
 
 const mediumImageCss = css`
+  height: 250px;
+  width: 250px;
+  align-self: flex-end;
+  top: 50px;
+
+  @media (max-width: ${BREAKPOINT_TINY}px) {
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    align-self: center;
+  }
+`;
+
+const iconImageCss = css`
   height: 100px;
   width: 100px;
   align-self: flex-end;
+  top: 0;
+
+  @media (max-width: ${BREAKPOINT_TINY}px) {
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+  }
 `;
 
 const coverImageCss = css`
@@ -84,10 +108,10 @@ export default function Card(props: Props): JSX.Element {
   const {
     children,
     className,
-    size = "large",
+    size = 'large',
     image,
     imageType,
-    imageAlt = "",
+    imageAlt = '',
     title,
     subtitle,
     modalTitle,
@@ -97,7 +121,7 @@ export default function Card(props: Props): JSX.Element {
   return (
     <div
       className={className}
-      css={[baseCardCss, size === "large" ? largeCardCss : mediumCardCss]}
+      css={[baseCardCss, size === 'large' ? largeCardCss : mediumCardCss]}
       onClick={() => setIsOpen(true)}
     >
       <div
@@ -149,18 +173,19 @@ export default function Card(props: Props): JSX.Element {
         <div
           css={[
             baseImageCss,
-            size === "large"
+            size === 'large'
               ? largeImageCss
-              : imageType === "cover"
+              : imageType === 'cover'
               ? coverImageCss
               : mediumImageCss,
+            imageType === 'icon' && iconImageCss,
           ]}
         >
           <Image
             layout="fill"
             src={image}
             alt={imageAlt}
-            objectFit={imageType === "cover" ? "cover" : "contain"}
+            objectFit={imageType === 'cover' ? 'cover' : 'contain'}
           />
         </div>
       )}

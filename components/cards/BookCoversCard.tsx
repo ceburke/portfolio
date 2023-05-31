@@ -1,8 +1,8 @@
-import bookCovers from "../../public/assets/work/bookcovers.png";
-import Card from "../Card";
+import bookCovers from '../../public/assets/work/bookcovers.png';
+import Card from '../Card';
 
-import { css } from "@emotion/react";
-import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
+import {css} from '@emotion/react';
+import {BASE_PATH, BREAKPOINT_SMALL} from '../../constants';
 
 const bookCoverImages = [
   `${BASE_PATH}/assets/design/book-covers/doom.jpg`,
@@ -15,7 +15,7 @@ const bookCoverImages = [
 
 export default function BookCoversCard(): JSX.Element {
   return (
-    <Card size="medium" title="Covers" image={bookCovers} imageType="cover" modalTitle="Covers">
+    <Card size="medium" title="Covers" image={bookCovers} modalTitle="Covers">
       <p
         css={css`
           margin: 0 25px 50px 25px;

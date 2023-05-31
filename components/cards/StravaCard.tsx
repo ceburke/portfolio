@@ -1,13 +1,13 @@
-import { css } from "@emotion/react";
+import {css} from '@emotion/react';
 
-import stravaImg from "../../public/assets/work/logos/strava.png";
-import { BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
-import Card from "../Card";
-import TextBubble from "../TextBubble";
+import stravaImg from '../../public/assets/work/logos/strava.png';
+import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../../constants';
+import Card from '../Card';
+import TextBubble from '../TextBubble';
 
 export default function StravaCard(): JSX.Element {
   return (
-    <Card size="medium" title="Strava" image={stravaImg}>
+    <Card size="medium" title="Strava" image={stravaImg} imageType="icon">
       <div
         css={css`
           padding: 25px 60px 0 35px;
