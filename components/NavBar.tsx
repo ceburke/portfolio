@@ -4,11 +4,11 @@ import {
   BREAKPOINT_MEDIUM,
   BREAKPOINT_SMALL,
   COLORS,
-} from "../constants";
-import { css } from "@emotion/react";
-import { sectionCss } from "../styles/styles";
-import Image from "next/image";
-import { useRouter } from "next/router";
+} from '../constants';
+import {css} from '@emotion/react';
+import {sectionCss} from '../styles/styles';
+import Image from 'next/image';
+import {useRouter} from 'next/router';
 
 const baseNavItemCss = css`
   display: inline-flex;
@@ -72,7 +72,7 @@ export default function NavBar(): JSX.Element {
           `,
         ]}
       >
-        <span
+        <a
           css={css`
             display: inline-flex;
             align-items: center;
@@ -89,9 +89,10 @@ export default function NavBar(): JSX.Element {
               margin-left: 10px;
             }
           `}
+          href={`${BASE_PATH || '/'}`}
         >
           Claire Burke
-        </span>
+        </a>
         <nav
           css={css`
             height: 100%;
@@ -112,13 +113,13 @@ export default function NavBar(): JSX.Element {
           `}
         >
           <a
-            css={[baseNavItemCss, pageNavItemCss, router.pathname === "/" && activeItemCss]}
+            css={[baseNavItemCss, pageNavItemCss, router.pathname === '/' && activeItemCss]}
             href={`${BASE_PATH}/`}
           >
             work
           </a>
           <a
-            css={[baseNavItemCss, pageNavItemCss, router.pathname === "/about" && activeItemCss]}
+            css={[baseNavItemCss, pageNavItemCss, router.pathname === '/about' && activeItemCss]}
             href={`${BASE_PATH}/about`}
           >
             about
