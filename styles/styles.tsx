@@ -1,5 +1,5 @@
-import {css} from "@emotion/react";
-import {SECTION_WIDTH} from "../constants";
+import { css } from "@emotion/react";
+import { SECTION_WIDTH } from "../constants";
 
 export const sectionCss = css`
   width: ${SECTION_WIDTH}px;

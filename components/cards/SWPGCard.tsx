@@ -15,6 +15,28 @@ export default function SWPGCard(): JSX.Element {
       title="Southwest Print Guild"
       image={swpgImg}
     >
+      <img
+        src={`${BASE_PATH}/assets/case studies/swpg/intro.png`}
+        css={css`
+          object-fit: cover;
+          position: relative;
+          left: 50px;
+          scale: 90%;
+          top: -50px;
+
+          @media (max-width: ${BREAKPOINT_SMALL}px) {
+            width: 100%;
+            max-height: 250px;
+            position: relative;
+            right: -100px;
+            margin-top: 20px;
+            margin-bottom: -30px;
+            left: 0px;
+            object-fit: cover;
+            border-radius: 0px;
+          }
+        `}
+      />
       <div
         css={css`
           padding: 30px 60px 0 35px;
@@ -50,7 +72,7 @@ export default function SWPGCard(): JSX.Element {
             <h2
               css={css`
                 font-size: 40px;
-                margin-top: 0;
+                margin-top: 0px;
 
                 @media (max-width: ${BREAKPOINT_SMALL}px) {
                   font-size: 20px;
@@ -90,24 +112,6 @@ export default function SWPGCard(): JSX.Element {
               </span>{" "}
             </p>
           </div>
-          <img
-            src={`${BASE_PATH}/assets/work/swpg.png`}
-            css={css`
-              width: 50%;
-              height: 350px;
-              object-position: -30px 10px;
-              object-fit: cover;
-              border-radius: 35px;
-
-              @media (max-width: ${BREAKPOINT_SMALL}px) {
-                width: 100%;
-                max-height: 150px;
-                object-position: 20px -5px;
-                object-fit: cover;
-                border-radius: 20px;
-              }
-            `}
-          />
         </div>
 
         <section
@@ -145,6 +149,7 @@ export default function SWPGCard(): JSX.Element {
             and gallerists of all levels to come together and build connections in an otherwise
             isolated region.
           </p>
+
           <div
             css={css`
               display: flex;
@@ -171,6 +176,22 @@ export default function SWPGCard(): JSX.Element {
               content="Develop a platform that facilitates connections between artists and gallerists, fostering a sense of community and enabling the promotion of events."
             />
           </div>
+          <img
+            src={`${BASE_PATH}/assets/case studies/swpg/trio.png`}
+            css={css`
+              object-fit: cover;
+              position: relative;
+              left: -220px;
+              scale: 80%;
+              top: 25px;
+              margin-bottom: 30px;
+              max-height: 300px;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                display: none;
+              }
+            `}
+          />
         </section>
 
         <section
@@ -182,6 +203,7 @@ export default function SWPGCard(): JSX.Element {
             css={css`
               font-size: 40px;
               margin: 25px 0;
+              margin-top: -20px;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 font-size: 20px;
@@ -514,6 +536,28 @@ export default function SWPGCard(): JSX.Element {
               content="User testing yielded significant expansion of functions. The site could grow to accomodate multiple user types."
             />
           </div>
+          <img
+            src={`${BASE_PATH}/assets/case studies/swpg/highlight.png`}
+            css={css`
+              object-fit: cover;
+              position: relative;
+              left: -190px;
+              scale: 60%;
+              top: -60px;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                width: 100%;
+                max-height: 200px;
+                position: relative;
+                right: -100px;
+                top: -15px;
+                scale: 90%;
+                left: 0px;
+                object-fit: cover;
+                border-radius: 0px;
+              }
+            `}
+          />
         </section>
       </div>
     </Card>

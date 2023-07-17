@@ -52,7 +52,7 @@ function ValueSection(): JSX.Element {
             font-size: 36px;
             font-weight: 400;
             line-height: 42px;
-            margin: 0 0 60px 0;
+            margin: 0 0 40px 0;
 
             @media (max-width: ${BREAKPOINT_SMALL}px) {
               font-size: 32px;

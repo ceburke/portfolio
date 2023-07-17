@@ -1,8 +1,8 @@
-import bookCovers from '../../public/assets/work/bookcovers.png';
-import Card from '../Card';
+import bookCovers from "../../public/assets/work/bookcovers.png";
+import Card from "../Card";
 
-import {css} from '@emotion/react';
-import {BASE_PATH, BREAKPOINT_SMALL} from '../../constants';
+import { css } from "@emotion/react";
+import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
 
 const bookCoverImages = [
   `${BASE_PATH}/assets/design/book-covers/doom.jpg`,

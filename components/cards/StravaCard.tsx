@@ -1,9 +1,9 @@
-import {css} from '@emotion/react';
+import { css } from "@emotion/react";
 
-import stravaImg from '../../public/assets/work/logos/strava.png';
-import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../../constants';
-import Card from '../Card';
-import TextBubble from '../TextBubble';
+import stravaImg from "../../public/assets/work/logos/strava.png";
+import { BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
+import Card from "../Card";
+import TextBubble from "../TextBubble";
 
 export default function StravaCard(): JSX.Element {
   return (
@@ -40,7 +40,7 @@ export default function StravaCard(): JSX.Element {
                 }
               `}
             >
-              Integrating Trail Conditions into Strava
+              Integrating Trail Conditions
             </h2>
 
             <p
@@ -74,6 +74,28 @@ export default function StravaCard(): JSX.Element {
             `}
           />
         </div>
+
+        <img
+          src={`${BASE_PATH}/assets/optimizations/strava/intro.jpeg`}
+          css={css`
+            object-fit: cover;
+            position: relative;
+            left: -100px;
+            max-height: 400px;
+            width: 80vw;
+            object-position: left;
+
+            @media (max-width: ${BREAKPOINT_SMALL}px) {
+              width: 100%;
+              max-height: 200px;
+              position: relative;
+              right: -100px;
+              left: 0px;
+              object-fit: cover;
+              border-radius: 0px;
+            }
+          `}
+        />
 
         <section
           css={css`
@@ -134,6 +156,28 @@ export default function StravaCard(): JSX.Element {
               content="Help users “know before they go”, or report their experience to inform others."
             />
           </div>
+          <img
+            src={`${BASE_PATH}/assets/optimizations/strava/existing.jpeg`}
+            css={css`
+              object-fit: cover;
+              position: relative;
+              left: -100px;
+              margin-top: 30px;
+              max-height: 300px;
+              width: 70vw;
+              object-position: left;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                width: 100%;
+                max-height: 200px;
+                position: relative;
+                right: -100px;
+                left: 0px;
+                object-fit: cover;
+                border-radius: 0px;
+              }
+            `}
+          />
         </section>
 
         <section
@@ -252,10 +296,12 @@ export default function StravaCard(): JSX.Element {
                 src={`${BASE_PATH}/assets/optimizations/strava/report.png`}
                 css={css`
                   width: 100%;
-                  max-height: 700px;
                   object-fit: cover;
                   border-radius: 35px;
                   display: block;
+                  height: 100%;
+                  margin-top: 20px;
+                  margin-bottom: 20px;
 
                   @media (max-width: ${BREAKPOINT_SMALL}px) {
                     display: none;
@@ -294,10 +340,11 @@ export default function StravaCard(): JSX.Element {
                 src={`${BASE_PATH}/assets/optimizations/strava/view.png`}
                 css={css`
                   width: 100%;
-                  max-height: 700px;
+                  max-height: 100%;
                   object-fit: cover;
                   border-radius: 35px;
                   display: block;
+                  margin-top: 100px;
 
                   @media (max-width: ${BREAKPOINT_SMALL}px) {
                     display: none;

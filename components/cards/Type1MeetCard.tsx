@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 
-import type1MeetImg from "../../public/assets/case studies/type1/intro.png";
+import type1MeetImg from "../../public/assets/work/intro.png";
 import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
 import Card from "../Card";
 import TextBubble from "../TextBubble";
@@ -20,6 +20,24 @@ export default function Type1MeetCard(): JSX.Element {
           }
         `}
       >
+        <img
+          src={`${BASE_PATH}/assets/case studies/type1/intro1.png`}
+          css={css`
+            object-fit: cover;
+            position: relative;
+            left: -225px;
+
+            @media (max-width: ${BREAKPOINT_SMALL}px) {
+              width: 100%;
+              max-height: 200px;
+              position: relative;
+              right: -100px;
+              left: 0px;
+              object-fit: cover;
+              border-radius: 0px;
+            }
+          `}
+        />
         <div
           css={css`
             display: flex;
@@ -84,25 +102,6 @@ export default function Type1MeetCard(): JSX.Element {
               </span>{" "}
             </p>
           </div>
-          <img
-            src={`${BASE_PATH}/assets/case studies/type1/intro.gif`}
-            css={css`
-              max-height: 325px;
-              object-fit: cover;
-              object-position: 30px -98px;
-              flex: 1 1 50%;
-              border-radius: 0px;
-
-              @media (max-width: ${BREAKPOINT_SMALL}px) {
-                width: 100%;
-                max-height: 150px;
-                object-fit: cover;
-                object-position: 15px -47px;
-                flex: 1 1 50%;
-                border-radius: 0px;
-              }
-            `}
-          />
         </div>
 
         <section
@@ -163,6 +162,27 @@ export default function Type1MeetCard(): JSX.Element {
               content="Create a Type 1-specific platform which combines resources, social media and personal growth tracking."
             />
           </div>
+
+          <img
+            src={`${BASE_PATH}/assets/case studies/type1/inspiration.png`}
+            css={css`
+              object-fit: cover;
+              position: relative;
+              left: -15px;
+              max-width: 60vw;
+              max-height: 600px;
+              margin-top: 20px;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                width: 100%;
+                max-height: 200px;
+                position: relative;
+                left: 15px;
+                object-fit: cover;
+                border-radius: 0px;
+              }
+            `}
+          />
         </section>
 
         <section
@@ -305,31 +325,53 @@ export default function Type1MeetCard(): JSX.Element {
           </p>
           <div
             css={css`
-              display: flex;
-              align-items: center;
               max-height: 700px;
               width: auto;
-              overflow: hidden;
               border-radius: 20px;
             `}
           >
-            <video
-              autoPlay
-              playsInline
-              loop
-              controls
+            <img
+              src={`${BASE_PATH}/assets/case studies/type1/lofi.png`}
               css={css`
-                flex: 1 1 auto;
-                width: 100%;
-                border-radius: 20px;
+                object-fit: cover;
+                position: relative;
+                left: 20px;
+                max-width: 60vw;
+                max-height: 600px;
+                margin-top: 20px;
 
                 @media (max-width: ${BREAKPOINT_SMALL}px) {
                   width: 100%;
+                  max-height: 150px;
+                  position: relative;
+                  left: 15px;
+                  object-fit: cover;
+                  border-radius: 0px;
+                  margin-top: 0px;
                 }
               `}
-            >
-              <source src={`${BASE_PATH}/assets/case studies/type1/design.mp4`} type="video/mp4" />
-            </video>
+            />
+            <img
+              src={`${BASE_PATH}/assets/case studies/type1/hifi.png`}
+              css={css`
+                object-fit: cover;
+                position: relative;
+                left: 10px;
+                max-width: 60vw;
+                max-height: 500px;
+                margin-top: -100px;
+
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
+                  width: 100%;
+                  max-height: 150px;
+                  position: relative;
+                  left: 15px;
+                  object-fit: cover;
+                  border-radius: 0px;
+                  margin-top: 0px;
+                }
+              `}
+            />
           </div>
         </section>
 
@@ -342,9 +384,11 @@ export default function Type1MeetCard(): JSX.Element {
             css={css`
               font-size: 40px;
               margin: 25px 0;
+              margin-top: 400px;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 font-size: 20px;
+                margin-top: 20px;
               }
             `}
           >
@@ -498,6 +542,28 @@ export default function Type1MeetCard(): JSX.Element {
               content="Given more time and access to developers, I would run a larger usability study and adjust the design to account for feasibility feedback from developers. I would also incoporate robust low and no-vision user accessibility into all user flows, as a common complication of Type 1 diabetes is retinopathy."
             />
           </div>
+
+          <img
+            src={`${BASE_PATH}/assets/case studies/type1/largetext.png`}
+            css={css`
+              object-fit: cover;
+              position: relative;
+              left: 175px;
+              max-width: 60vw;
+              max-height: 500px;
+              margin-top: -100px;
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                width: 100%;
+                max-height: 150px;
+                position: relative;
+                left: 15px;
+                object-fit: cover;
+                border-radius: 0px;
+                margin-top: 0px;
+              }
+            `}
+          />
         </section>
       </div>
     </Card>
