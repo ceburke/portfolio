@@ -1,9 +1,9 @@
-import { css } from "@emotion/react";
+import {css} from '@emotion/react';
 
-import type1MeetImg from "../../public/assets/work/intro.png";
-import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
-import Card from "../Card";
-import TextBubble from "../TextBubble";
+import type1MeetImg from '../../public/assets/work/intro.png';
+import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../../constants';
+import Card from '../Card';
+import TextBubble from '../TextBubble';
 
 export default function Type1MeetCard(): JSX.Element {
   return (
@@ -23,19 +23,7 @@ export default function Type1MeetCard(): JSX.Element {
         <img
           src={`${BASE_PATH}/assets/case studies/type1/intro1.png`}
           css={css`
-            object-fit: cover;
-            position: relative;
-            left: -225px;
-
-            @media (max-width: ${BREAKPOINT_SMALL}px) {
-              width: 100%;
-              max-height: 200px;
-              position: relative;
-              right: -100px;
-              left: 0px;
-              object-fit: cover;
-              border-radius: 0px;
-            }
+            width: 100%;
           `}
         />
         <div
@@ -99,7 +87,7 @@ export default function Type1MeetCard(): JSX.Element {
                 <br></br>
                 <br></br>
                 Figma | Research, Design, Copy
-              </span>{" "}
+              </span>{' '}
             </p>
           </div>
         </div>
@@ -141,6 +129,10 @@ export default function Type1MeetCard(): JSX.Element {
               display: flex;
               gap: 45px;
 
+              @media (max-width: ${BREAKPOINT_MEDIUM}px) {
+                gap: 25px;
+              }
+
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 flex-direction: column;
                 gap: 25px;
@@ -166,21 +158,8 @@ export default function Type1MeetCard(): JSX.Element {
           <img
             src={`${BASE_PATH}/assets/case studies/type1/inspiration.png`}
             css={css`
-              object-fit: cover;
-              position: relative;
-              left: -15px;
-              max-width: 60vw;
-              max-height: 600px;
-              margin-top: 20px;
-
-              @media (max-width: ${BREAKPOINT_SMALL}px) {
-                width: 100%;
-                max-height: 200px;
-                position: relative;
-                left: 15px;
-                object-fit: cover;
-                border-radius: 0px;
-              }
+              width: 100%;
+              margin-top: 35px;
             `}
           />
         </section>
@@ -323,56 +302,19 @@ export default function Type1MeetCard(): JSX.Element {
             mocks and prototyping. I had a user test the low-fidelity prototype and acted upon the
             insights gained to create the high-fidelity prototype.
           </p>
-          <div
+
+          <img
+            src={`${BASE_PATH}/assets/case studies/type1/lofi.png`}
             css={css`
-              max-height: 700px;
-              width: auto;
-              border-radius: 20px;
+              width: 100%;
             `}
-          >
-            <img
-              src={`${BASE_PATH}/assets/case studies/type1/lofi.png`}
-              css={css`
-                object-fit: cover;
-                position: relative;
-                left: 20px;
-                max-width: 60vw;
-                max-height: 600px;
-                margin-top: 20px;
-
-                @media (max-width: ${BREAKPOINT_SMALL}px) {
-                  width: 100%;
-                  max-height: 150px;
-                  position: relative;
-                  left: 15px;
-                  object-fit: cover;
-                  border-radius: 0px;
-                  margin-top: 0px;
-                }
-              `}
-            />
-            <img
-              src={`${BASE_PATH}/assets/case studies/type1/hifi.png`}
-              css={css`
-                object-fit: cover;
-                position: relative;
-                left: 10px;
-                max-width: 60vw;
-                max-height: 500px;
-                margin-top: -100px;
-
-                @media (max-width: ${BREAKPOINT_SMALL}px) {
-                  width: 100%;
-                  max-height: 150px;
-                  position: relative;
-                  left: 15px;
-                  object-fit: cover;
-                  border-radius: 0px;
-                  margin-top: 0px;
-                }
-              `}
-            />
-          </div>
+          />
+          <img
+            src={`${BASE_PATH}/assets/case studies/type1/hifi.png`}
+            css={css`
+              width: 100%;
+            `}
+          />
         </section>
 
         <section
@@ -384,7 +326,6 @@ export default function Type1MeetCard(): JSX.Element {
             css={css`
               font-size: 40px;
               margin: 25px 0;
-              margin-top: 400px;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 font-size: 20px;
@@ -412,6 +353,10 @@ export default function Type1MeetCard(): JSX.Element {
               display: flex;
               gap: 45px;
               margin: 25px 0;
+
+              @media (max-width: ${BREAKPOINT_MEDIUM}px) {
+                gap: 25px;
+              }
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 flex-direction: column;
@@ -514,6 +459,10 @@ export default function Type1MeetCard(): JSX.Element {
               gap: 45px;
               margin: 25px 0;
 
+              @media (max-width: ${BREAKPOINT_MEDIUM}px) {
+                gap: 25px;
+              }
+
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 flex-direction: column;
                 gap: 25px;
@@ -546,22 +495,7 @@ export default function Type1MeetCard(): JSX.Element {
           <img
             src={`${BASE_PATH}/assets/case studies/type1/largetext.png`}
             css={css`
-              object-fit: cover;
-              position: relative;
-              left: 175px;
-              max-width: 60vw;
-              max-height: 500px;
-              margin-top: -100px;
-
-              @media (max-width: ${BREAKPOINT_SMALL}px) {
-                width: 100%;
-                max-height: 150px;
-                position: relative;
-                left: 15px;
-                object-fit: cover;
-                border-radius: 0px;
-                margin-top: 0px;
-              }
+              width: 100%;
             `}
           />
         </section>

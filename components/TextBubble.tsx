@@ -1,5 +1,5 @@
-import {css} from "@emotion/react";
-import {BREAKPOINT_SMALL} from "../constants";
+import {css} from '@emotion/react';
+import {BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../constants';
 
 interface Props {
   className?: string;
@@ -17,6 +17,10 @@ export default function TextBubble(props: Props): JSX.Element {
         background: #f7f7f7;
         padding: 50px;
         border-radius: 35px;
+
+        @media (max-width: ${BREAKPOINT_MEDIUM}px) {
+          padding: 35px;
+        }
 
         @media (max-width: ${BREAKPOINT_SMALL}px) {
           padding: 25px;

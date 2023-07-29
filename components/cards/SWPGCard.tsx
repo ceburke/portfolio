@@ -1,9 +1,9 @@
-import { css } from "@emotion/react";
+import {css} from '@emotion/react';
 
-import swpgImg from "../../public/assets/work/swpg.png";
-import { BASE_PATH, BREAKPOINT_SMALL } from "../../constants";
-import Card from "../Card";
-import TextBubble from "../TextBubble";
+import swpgImg from '../../public/assets/work/swpg.png';
+import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../../constants';
+import Card from '../Card';
+import TextBubble from '../TextBubble';
 
 export default function SWPGCard(): JSX.Element {
   return (
@@ -15,28 +15,22 @@ export default function SWPGCard(): JSX.Element {
       title="Southwest Print Guild"
       image={swpgImg}
     >
-      <img
-        src={`${BASE_PATH}/assets/case studies/swpg/intro.png`}
+      <div
         css={css`
-          object-fit: cover;
-          position: relative;
-          left: 50px;
-          scale: 90%;
-          top: -50px;
-
-          @media (max-width: ${BREAKPOINT_SMALL}px) {
-            width: 100%;
-            max-height: 250px;
-            position: relative;
-            right: -100px;
-            margin-top: 20px;
-            margin-bottom: -30px;
-            left: 0px;
-            object-fit: cover;
-            border-radius: 0px;
-          }
+          width: 100%;
+          text-align: center;
+          margin-bottom: 30px;
         `}
-      />
+      >
+        <img
+          src={`${BASE_PATH}/assets/case studies/swpg/intro.png`}
+          css={css`
+            margin: 0 auto;
+            max-height: 500px;
+            max-width: 100%;
+          `}
+        />
+      </div>
       <div
         css={css`
           padding: 30px 60px 0 35px;
@@ -109,7 +103,7 @@ export default function SWPGCard(): JSX.Element {
                 <br></br>
                 <br></br>
                 Adobe XD | Research, Design, Copy
-              </span>{" "}
+              </span>{' '}
             </p>
           </div>
         </div>
@@ -155,6 +149,10 @@ export default function SWPGCard(): JSX.Element {
               display: flex;
               gap: 45px;
 
+              @media (max-width: ${BREAKPOINT_MEDIUM}px) {
+                gap: 25px;
+              }
+
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 flex-direction: column;
                 gap: 25px;
@@ -179,13 +177,8 @@ export default function SWPGCard(): JSX.Element {
           <img
             src={`${BASE_PATH}/assets/case studies/swpg/trio.png`}
             css={css`
-              object-fit: cover;
-              position: relative;
-              left: -220px;
-              scale: 80%;
-              top: 25px;
-              margin-bottom: 30px;
-              max-height: 300px;
+              width: 100%;
+              margin: 25px 0;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 display: none;
@@ -403,6 +396,10 @@ export default function SWPGCard(): JSX.Element {
               gap: 45px;
               margin: 25px 0;
 
+              @media (max-width: ${BREAKPOINT_MEDIUM}px) {
+                gap: 25px;
+              }
+
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 flex-direction: column;
                 gap: 25px;
@@ -508,6 +505,10 @@ export default function SWPGCard(): JSX.Element {
               gap: 45px;
               margin: 25px 0;
 
+              @media (max-width: ${BREAKPOINT_MEDIUM}px) {
+                gap: 25px;
+              }
+
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 flex-direction: column;
                 gap: 25px;
@@ -539,23 +540,7 @@ export default function SWPGCard(): JSX.Element {
           <img
             src={`${BASE_PATH}/assets/case studies/swpg/highlight.png`}
             css={css`
-              object-fit: cover;
-              position: relative;
-              left: -190px;
-              scale: 60%;
-              top: -60px;
-
-              @media (max-width: ${BREAKPOINT_SMALL}px) {
-                width: 100%;
-                max-height: 200px;
-                position: relative;
-                right: -100px;
-                top: -15px;
-                scale: 90%;
-                left: 0px;
-                object-fit: cover;
-                border-radius: 0px;
-              }
+              width: 100%;
             `}
           />
         </section>

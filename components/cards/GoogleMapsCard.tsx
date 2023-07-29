@@ -1,9 +1,10 @@
-import { css } from "@emotion/react";
+import {css} from '@emotion/react';
 
-import googleMapsImg from "../../public/assets/work/logos/googlemaps.png";
-import { BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
-import Card from "../Card";
-import TextBubble from "../TextBubble";
+import googleMapsImg from '../../public/assets/work/logos/googlemaps.png';
+import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../../constants';
+import Card from '../Card';
+import TextBubble from '../TextBubble';
+import {fullBleedContentCss} from './styles';
 
 export default function GoogleMapsCard(): JSX.Element {
   return (
@@ -72,27 +73,20 @@ export default function GoogleMapsCard(): JSX.Element {
             `}
           />
         </div>
-        <img
-          src={`${BASE_PATH}/assets/optimizations/googlemaps/intro.jpeg`}
-          css={css`
-            object-fit: cover;
-            position: relative;
-            left: -100px;
-            max-height: 500px;
-            width: 80vw;
-            object-position: left;
-
-            @media (max-width: ${BREAKPOINT_SMALL}px) {
+        <div css={fullBleedContentCss}>
+          <img
+            src={`${BASE_PATH}/assets/optimizations/googlemaps/intro.jpeg`}
+            css={css`
+              max-height: 500px;
               width: 100%;
-              max-height: 200px;
-              position: relative;
-              right: -100px;
-              left: 0px;
               object-fit: cover;
-              border-radius: 0px;
-            }
-          `}
-        />
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                max-height: 200px;
+              }
+            `}
+          />
+        </div>
         <section
           css={css`
             margin: 50px 0;

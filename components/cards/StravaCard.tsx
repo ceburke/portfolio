@@ -1,9 +1,10 @@
-import { css } from "@emotion/react";
+import {css} from '@emotion/react';
 
-import stravaImg from "../../public/assets/work/logos/strava.png";
-import { BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
-import Card from "../Card";
-import TextBubble from "../TextBubble";
+import stravaImg from '../../public/assets/work/logos/strava.png';
+import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../../constants';
+import Card from '../Card';
+import TextBubble from '../TextBubble';
+import {fullBleedContentCss} from './styles';
 
 export default function StravaCard(): JSX.Element {
   return (
@@ -64,7 +65,6 @@ export default function StravaCard(): JSX.Element {
             css={css`
               text-align: right;
               height: 180px;
-              height: 180px;
 
               @media (max-width: ${BREAKPOINT_SMALL}px) {
                 width: 75px;
@@ -75,27 +75,20 @@ export default function StravaCard(): JSX.Element {
           />
         </div>
 
-        <img
-          src={`${BASE_PATH}/assets/optimizations/strava/intro.jpeg`}
-          css={css`
-            object-fit: cover;
-            position: relative;
-            left: -100px;
-            max-height: 400px;
-            width: 80vw;
-            object-position: left;
-
-            @media (max-width: ${BREAKPOINT_SMALL}px) {
+        <div css={fullBleedContentCss}>
+          <img
+            src={`${BASE_PATH}/assets/optimizations/strava/intro.jpeg`}
+            css={css`
               width: 100%;
-              max-height: 200px;
-              position: relative;
-              right: -100px;
-              left: 0px;
+              max-height: 400px;
               object-fit: cover;
-              border-radius: 0px;
-            }
-          `}
-        />
+
+              @media (max-width: ${BREAKPOINT_SMALL}px) {
+                max-height: 200px;
+              }
+            `}
+          />
+        </div>
 
         <section
           css={css`
@@ -159,23 +152,7 @@ export default function StravaCard(): JSX.Element {
           <img
             src={`${BASE_PATH}/assets/optimizations/strava/existing.jpeg`}
             css={css`
-              object-fit: cover;
-              position: relative;
-              left: -100px;
-              margin-top: 30px;
-              max-height: 300px;
-              width: 70vw;
-              object-position: left;
-
-              @media (max-width: ${BREAKPOINT_SMALL}px) {
-                width: 100%;
-                max-height: 200px;
-                position: relative;
-                right: -100px;
-                left: 0px;
-                object-fit: cover;
-                border-radius: 0px;
-              }
+              width: 100%;
             `}
           />
         </section>
