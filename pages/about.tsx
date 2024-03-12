@@ -25,7 +25,7 @@ function ValueSection(): JSX.Element {
       ]}
     >
       <img
-        src={`${BASE_PATH}/assets/about/artshow.jpeg`}
+        src={`${BASE_PATH}/assets/about/artshow.jpg`}
         css={css`
           height: 469px;
           width: 390px;
@@ -163,7 +163,7 @@ function PassionSection(): JSX.Element {
       ]}
     >
       <img
-        src={`${BASE_PATH}/assets/about/engineer.jpeg`}
+        src={`${BASE_PATH}/assets/about/engineer.jpg`}
         css={css`
           height: 469px;
           width: 390px;

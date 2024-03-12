@@ -1,10 +1,10 @@
-import {css} from '@emotion/react';
+import { css } from "@emotion/react";
 
-import stravaImg from '../../public/assets/work/logos/strava.png';
-import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../../constants';
-import Card from '../Card';
-import TextBubble from '../TextBubble';
-import {fullBleedContentCss} from './styles';
+import stravaImg from "../../public/assets/work/logos/strava.png";
+import { BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
+import Card from "../Card";
+import TextBubble from "../TextBubble";
+import { fullBleedContentCss } from "./styles";
 
 export default function StravaCard(): JSX.Element {
   return (
