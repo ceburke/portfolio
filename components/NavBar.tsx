@@ -146,7 +146,11 @@ export default function NavBar(): JSX.Element {
                 width: 17px;
               `}
             >
-              <Image src={`${BASE_PATH}/assets/paperclip.png`} layout="fill" />
+              <Image
+                src={`${BASE_PATH}/assets/paperclip.png`}
+                alt="Download resume"
+                layout="fill"
+              />
             </div>
             resume
           </a>
@@ -171,7 +175,7 @@ export default function NavBar(): JSX.Element {
                 width: 22px;
               `}
             >
-              <Image src={`${BASE_PATH}/assets/mail.png`} layout="fill" />
+              <Image src={`${BASE_PATH}/assets/mail.png`} alt="Email" layout="fill" />
             </div>
             email
           </a>
