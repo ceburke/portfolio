@@ -236,24 +236,27 @@ function PassionSection(): JSX.Element {
             `}
           >
             <img
-              src={`${BASE_PATH}/assets/about/biking.png`}
+              src={`${BASE_PATH}/assets/about/running.svg`}
+              css={css`
+                height: 40px;
+                width: 40px;
+                padding-left: 10px;
+              `}
+            />
+            <img
+              src={`${BASE_PATH}/assets/about/biking.svg`}
               css={css`
                 height: 40px;
                 width: 40px;
               `}
             />
+
             <img
-              src={`${BASE_PATH}/assets/about/frisbee.png`}
+              src={`${BASE_PATH}/assets/about/frisbee.svg`}
               css={css`
                 height: 40px;
                 width: 40px;
-              `}
-            />
-            <img
-              src={`${BASE_PATH}/assets/about/running.png`}
-              css={css`
-                height: 40px;
-                width: 40px;
+                padding-left: 3px;
               `}
             />
           </div>

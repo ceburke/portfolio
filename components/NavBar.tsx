@@ -4,11 +4,11 @@ import {
   BREAKPOINT_MEDIUM,
   BREAKPOINT_SMALL,
   COLORS,
-} from '../constants';
-import {css} from '@emotion/react';
-import {sectionCss} from '../styles/styles';
-import Image from 'next/image';
-import {useRouter} from 'next/router';
+} from "../constants";
+import { css } from "@emotion/react";
+import { sectionCss } from "../styles/styles";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
 const baseNavItemCss = css`
   display: inline-flex;
@@ -89,7 +89,7 @@ export default function NavBar(): JSX.Element {
               margin-left: 10px;
             }
           `}
-          href={`${BASE_PATH || '/'}`}
+          href={`${BASE_PATH || "/"}`}
         >
           Claire Burke
         </a>
@@ -113,13 +113,13 @@ export default function NavBar(): JSX.Element {
           `}
         >
           <a
-            css={[baseNavItemCss, pageNavItemCss, router.pathname === '/' && activeItemCss]}
+            css={[baseNavItemCss, pageNavItemCss, router.pathname === "/" && activeItemCss]}
             href={`${BASE_PATH}/`}
           >
             work
           </a>
           <a
-            css={[baseNavItemCss, pageNavItemCss, router.pathname === '/about' && activeItemCss]}
+            css={[baseNavItemCss, pageNavItemCss, router.pathname === "/about" && activeItemCss]}
             href={`${BASE_PATH}/about`}
           >
             about
@@ -147,7 +147,7 @@ export default function NavBar(): JSX.Element {
               `}
             >
               <Image
-                src={`${BASE_PATH}/assets/paperclip.png`}
+                src={`${BASE_PATH}/assets/paperclip.svg`}
                 alt="Download resume"
                 layout="fill"
               />
@@ -175,7 +175,7 @@ export default function NavBar(): JSX.Element {
                 width: 22px;
               `}
             >
-              <Image src={`${BASE_PATH}/assets/mail.png`} alt="Email" layout="fill" />
+              <Image src={`${BASE_PATH}/assets/envelope.svg`} alt="Email" layout="fill" />
             </div>
             email
           </a>

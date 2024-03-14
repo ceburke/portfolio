@@ -10,7 +10,7 @@ const bookCoverImages = [
   `${BASE_PATH}/assets/design/book-covers/just-the-tip.jpg`,
   `${BASE_PATH}/assets/design/book-covers/wrong-turns-only.jpg`,
   `${BASE_PATH}/assets/design/book-covers/yeehaw-or-yeenaw.jpg`,
-  `${BASE_PATH}/assets/design/book-covers/chicken.jpg`,
+  `${BASE_PATH}/assets/design/book-covers/ullr.jpg`,
 ];
 
 export default function BookCoversCard(): JSX.Element {
