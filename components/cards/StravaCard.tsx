@@ -77,7 +77,7 @@ export default function StravaCard(): JSX.Element {
 
         <div css={fullBleedContentCss}>
           <img
-            src={`${BASE_PATH}/assets/optimizations/strava/intro.jpeg`}
+            src={`${BASE_PATH}/assets/optimizations/strava/intro.jpg`}
             css={css`
               width: 100%;
               max-height: 400px;

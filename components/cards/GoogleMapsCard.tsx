@@ -1,10 +1,10 @@
-import {css} from '@emotion/react';
+import { css } from "@emotion/react";
 
-import googleMapsImg from '../../public/assets/work/logos/googlemaps.png';
-import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../../constants';
-import Card from '../Card';
-import TextBubble from '../TextBubble';
-import {fullBleedContentCss} from './styles';
+import googleMapsImg from "../../public/assets/work/logos/googlemaps.png";
+import { BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
+import Card from "../Card";
+import TextBubble from "../TextBubble";
+import { fullBleedContentCss } from "./styles";
 
 export default function GoogleMapsCard(): JSX.Element {
   return (
@@ -75,7 +75,7 @@ export default function GoogleMapsCard(): JSX.Element {
         </div>
         <div css={fullBleedContentCss}>
           <img
-            src={`${BASE_PATH}/assets/optimizations/googlemaps/intro.jpeg`}
+            src={`${BASE_PATH}/assets/optimizations/googlemaps/intro.jpg`}
             css={css`
               max-height: 500px;
               width: 100%;
