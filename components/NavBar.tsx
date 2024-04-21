@@ -134,7 +134,7 @@ export default function NavBar(): JSX.Element {
                 }
               `,
             ]}
-            href={`${BASE_PATH}/assets/ClaireBurke-Resume.pdf`}
+            href={`${BASE_PATH}/assets/ClaireBurkeResume.pdf`}
             about="_blank"
           >
             <div

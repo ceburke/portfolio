@@ -28,7 +28,7 @@ export default function ParallaxHero(): JSX.Element {
     >
       <img
         ref={imgRef}
-        src={`${BASE_PATH}/assets/work/artshow_home.jpg`}
+        src={`${BASE_PATH}/assets/work/artshow_home.png`}
         css={css`
           width: 100%;
           transition: transform 0.1s linear;

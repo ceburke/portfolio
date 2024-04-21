@@ -96,7 +96,7 @@ function ValueSection(): JSX.Element {
             }
           `}
         >
-          Why product design?
+          Why design and development?
         </h2>
         <p
           css={css`
@@ -110,8 +110,8 @@ function ValueSection(): JSX.Element {
         >
           I enjoy helping others discover new experiences, solve problems, and enrich their daily
           lives. In my past jobs, I excelled at learning about people, finding ways to address their
-          needs and making resources accessible. I decided to transition to product design, where I
-          can pursue these passions and tasks on a full-time basis.
+          needs and building accessible solutions. I decided to transition to web design and
+          development, where I can pursue these passions and tasks on a full-time basis.
         </p>
 
         <h2
@@ -135,9 +135,9 @@ function ValueSection(): JSX.Element {
             }
           `}
         >
-          I bring curiosity, great communication skills, humor and quick learning abilities to the
-          table. I am eager to apply my experience to the field of product design, further my skills
-          and create impactful products.
+          I bring curiosity, clear and consistent communication, humor and quick learning abilities
+          to the table. I am always looking to grow my network and skills to create better, more
+          impactful experiences.
         </p>
       </div>
     </section>
