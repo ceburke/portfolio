@@ -1,6 +1,6 @@
-import {css} from '@emotion/react';
-import Image from 'next/image';
-import {BASE_PATH, BREAKPOINT_SMALL, COLORS} from '../constants';
+import { css } from "@emotion/react";
+import Image from "next/image";
+import { BASE_PATH, BREAKPOINT_SMALL, COLORS } from "../constants";
 
 const navItemCss = css`
   cursor: pointer;
@@ -38,7 +38,7 @@ export default function Footer(): JSX.Element {
           gap: 25px;
         `}
       >
-        <a css={navItemCss} href={`${BASE_PATH}/assets/ClaireBurkeResume.pdf`} about="_blank">
+        <a css={navItemCss} href={`${BASE_PATH}/assets/ClaireBurke-Resume.pdf`} about="_blank">
           <div
             css={css`
               display: inline-block;

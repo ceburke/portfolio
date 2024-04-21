@@ -25,7 +25,7 @@ function ValueSection(): JSX.Element {
       ]}
     >
       <img
-        src={`${BASE_PATH}/assets/about/artshow.jpg`}
+        src={`${BASE_PATH}/assets/about/about.png`}
         css={css`
           height: 469px;
           width: 390px;
