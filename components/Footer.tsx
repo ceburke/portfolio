@@ -48,7 +48,7 @@ export default function Footer(): JSX.Element {
               width: 17px;
             `}
           >
-            <Image src={`${BASE_PATH}/assets/paperclip.png`} alt="Download resume" layout="fill" />
+            <Image src={`${BASE_PATH}/assets/paperclip.svg`} alt="Download resume" layout="fill" />
           </div>
           resume
         </a>
@@ -62,7 +62,7 @@ export default function Footer(): JSX.Element {
               width: 22px;
             `}
           >
-            <Image src={`${BASE_PATH}/assets/mail.png`} alt="Email" layout="fill" />
+            <Image src={`${BASE_PATH}/assets/mail.svg`} alt="Email" layout="fill" />
           </div>
           email
         </a>
