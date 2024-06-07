@@ -12,7 +12,7 @@ export default function SWPGCard(): JSX.Element {
       css={css`
         margin-top: 35px;
       `}
-      title="Housing and Dining"
+      title="Housing & Dining"
       image={swpgImg}
     >
       <div
@@ -23,12 +23,11 @@ export default function SWPGCard(): JSX.Element {
         `}
       >
         <img
-          src={`${BASE_PATH}/assets/case studies/swpg/intro.png`}
+          src={`${BASE_PATH}/assets/case studies/swpg/intro.jpg`}
           css={css`
-            margin: 0 auto;
-            max-height: 500px;
-            max-width: 100%;
+            width: 100%;
           `}
+          alt="The Fort Lewis College Housing and Dining homepage"
         />
       </div>
       <div
@@ -74,7 +73,7 @@ export default function SWPGCard(): JSX.Element {
                 }
               `}
             >
-              Southwest Print Guild
+              Housing & Dining
             </h2>
 
             <p
@@ -88,7 +87,8 @@ export default function SWPGCard(): JSX.Element {
                 }
               `}
             >
-              A website to connect artists, gallerists and community organizers in a remote region.
+              Updating the primary outlet for current and prospective students and families looking
+              for information on student housing and dining.
               <span
                 css={css`
                   font-weight: bold;
@@ -102,8 +102,28 @@ export default function SWPGCard(): JSX.Element {
               >
                 <br></br>
                 <br></br>
-                Adobe XD | Research, Design, Copy
+                Fort Lewis College | Agile Lead, Research, Design, Development
               </span>{" "}
+            </p>
+            <p>
+              <a
+                css={css`
+                  color: white;
+                  background-color: #230d1e;
+                  font-size: 16px;
+                  padding: 10px;
+
+                  &:hover {
+                    cursor: pointer;
+                    color: #230d1e;
+                    background: #f8ddc3;
+                  }
+                `}
+                title="Fort Lewis College Housing & Dining"
+                href="https://www.fortlewis.edu/life-at-flc/housing-dining/home"
+              >
+                View the live site
+              </a>
             </p>
           </div>
         </div>
@@ -135,15 +155,11 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            The southwestern region of the United States boasts stunning landscapes, but its sparse
-            population and widespread geography can make it difficult to connect with fellow
-            artists. When I relocated to Durango, Colorado from the east coast, I encountered
-            challenges in finding a community that centered around art and organizing art-centric
-            events. To bridge this gap, the Southwest Print Guild aims to create a hub for artists
-            and gallerists of all levels to come together and build connections in an otherwise
-            isolated region.
+            The student housing department of Fort Lewis College has seen significant turnover in
+            recent years due to the pandemic. New staff were flooded with questions from other
+            department staff, students, and parents. In an effort to mitigate question volume, the
+            new team brought on the Fort Lewis College web team to redesign the housing website.
           </p>
-
           <div
             css={css`
               display: flex;
@@ -164,18 +180,19 @@ export default function SWPGCard(): JSX.Element {
                 flex: 0 1 50%;
               `}
               title="Problem"
-              content="Connecting artists, gallerists, and community organizers can be challenging in regions with dispersed, small population centers."
+              content="Existing web resources were not answering the questions of student and families, causing an overload of requests for housing staff."
             />
             <TextBubble
               css={css`
                 flex: 0 1 50%;
               `}
               title="Objective"
-              content="Develop a platform that facilitates connections between artists and gallerists, fostering a sense of community and enabling the promotion of events."
+              content="Update housing information so that it is accurate and accessible for all site users."
             />
           </div>
           <img
-            src={`${BASE_PATH}/assets/case studies/swpg/trio.png`}
+            alt="Before images of the old housing and dining site's menu and FAQ page."
+            src={`${BASE_PATH}/assets/case studies/swpg/trio.jpg`}
             css={css`
               width: 100%;
               margin: 25px 0;
@@ -215,10 +232,9 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            Typically, users rely on local social media channels and physical signage to share
-            announcements and promote events. However, consolidating all announcements onto a single
-            virtual bulletin platform can save time and increase engagement among users. To identify
-            other needed site functions, I developed user personas.
+            In order to best capture the points of entry and goals of users, I created user personas
+            to guide the redesign process. Creating personas was an essential step to ensure the
+            user journey accounted for the varied audience of the housing and dining site.
           </p>
           <div
             css={css`
@@ -228,7 +244,8 @@ export default function SWPGCard(): JSX.Element {
             `}
           >
             <img
-              src={`${BASE_PATH}/assets/case studies/swpg/personas1.png`}
+              alt="Three personas for the housing and dining site redesign."
+              src={`${BASE_PATH}/assets/case studies/swpg/personas1.jpg`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -242,45 +259,12 @@ export default function SWPGCard(): JSX.Element {
             />
 
             <img
-              src={`${BASE_PATH}/assets/case studies/swpg/personas_1m.png`}
+              alt="Three personas for the housing and dining site redesign."
+              src={`${BASE_PATH}/assets/case studies/swpg/personas1.jpg`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
                 margin-bottom: 25px;
-                display: none;
-
-                @media (max-width: ${BREAKPOINT_SMALL}px) {
-                  border-radius: 20px;
-                  display: block;
-                }
-              `}
-            />
-          </div>
-          <div
-            css={css`
-              display: flex;
-              flex-wrap: wrap;
-              gap: 25px;
-            `}
-          >
-            <img
-              src={`${BASE_PATH}/assets/case studies/swpg/personas2.png`}
-              css={css`
-                width: 100%;
-                border-radius: 35px;
-                display: block;
-
-                @media (max-width: ${BREAKPOINT_SMALL}px) {
-                  display: none;
-                }
-              `}
-            />
-
-            <img
-              src={`${BASE_PATH}/assets/case studies/swpg/personas_2m.png`}
-              css={css`
-                width: 100%;
-                border-radius: 35px;
                 display: none;
 
                 @media (max-width: ${BREAKPOINT_SMALL}px) {
@@ -319,11 +303,13 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            To begin the design process, I started with a round of brainstorming sketches and
-            creating a logo, followed by low-fidelity mocks, and then prototyping. After creating a
-            high-fidelity prototype, I had a user test it and used their feedback to make
-            improvements.
+            The existing housing and dining site was dense with information, much of which was
+            outdated and difficult to navigate. To improve user flow and ensure that critical
+            information was preserved, I led my team in a site mapping exercise. We used the site
+            map, along with user personas, to weigh consider content and design choices throughout
+            the redesign process.
           </p>
+
           <div
             css={css`
               display: flex;
@@ -334,23 +320,18 @@ export default function SWPGCard(): JSX.Element {
               border-radius: 20px;
             `}
           >
-            <video
-              autoPlay
-              playsInline
-              loop
-              controls
+            <img
+              alt="A Figjam sitemap of the Fort Lewis College housing and dining site before and after."
+              src={`${BASE_PATH}/assets/case studies/swpg/design.jpg`}
               css={css`
-                flex: 1 1 auto;
                 width: 100%;
-                border-radius: 20px;
+                margin: 25px 0;
 
                 @media (max-width: ${BREAKPOINT_SMALL}px) {
-                  width: 100%;
+                  display: none;
                 }
               `}
-            >
-              <source src={`${BASE_PATH}/assets/case studies/swpg/design.mp4`} type="video/mp4" />
-            </video>
+            />
           </div>
         </section>
 
@@ -381,14 +362,11 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            During the high-fidelity phase, I refined the initial layout to make it more intuitive
-            prior to user testing. My initial design was bulky and hard to navigate. The side
-            navigation bar detracted from the main content of the page and minimizing the bar
-            resulted in overly-complex layout interactions. I decided a top nav bar approach would
-            simplify the layout, interactions and be more familiar to users. After implementing the
-            improved design, a part-time artist tested the high-fidelity prototype. Their feedback
-            focused on making distinctions between user types and offering monetary incentives for
-            member artists. See main themes below:
+            The redesign timeline was tight due to a major shift in the Housing department's
+            selection process for the spring semester. Given the expedited schedule, I led my team
+            in an iterative rollout using the Agile framework. We worked in sprints to complete
+            pages by priority, allowing us to work efficiently, request information from the
+            department in distinct phases, and launch updates within the existing site framework.
           </p>
           <div
             css={css`
@@ -410,22 +388,22 @@ export default function SWPGCard(): JSX.Element {
               css={css`
                 flex: 0 1 33%;
               `}
-              title="Perks"
-              content="Add member benefits such as discounted materials at local supply businesses and discounted show fees."
+              title="Dining rates"
+              content="Put plan and rates information in a no-frills, consolidated format, allowing users to find their plan and cost without scrolling."
             />
             <TextBubble
               css={css`
                 flex: 0 1 33%;
               `}
-              title="Monetization of Work"
-              content="Create an in-site gallery which the public can access and member artists can sell work."
+              title="Housing options"
+              content="Switched from singular pages per housing option to a shopping-style card format."
             />
             <TextBubble
               css={css`
                 flex: 0 1 33%;
               `}
-              title="Member Hierarchy"
-              content="Create tailored account interfaces for hobbyists, professionals and gallerists. Existing account interface is intimidating to beginners and irrelevant to gallerists."
+              title="Help center"
+              content="Developed a help center to direct users to FAQs, resources, and policies."
             />
           </div>
           <div
@@ -436,7 +414,8 @@ export default function SWPGCard(): JSX.Element {
             `}
           >
             <img
-              src={`${BASE_PATH}/assets/case studies/swpg/changes.png`}
+              alt="The Fort Lewis College housing and dining help center, dining rates, and housing options pages."
+              src={`${BASE_PATH}/assets/case studies/swpg/changes.jpg`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -449,7 +428,8 @@ export default function SWPGCard(): JSX.Element {
             />
 
             <img
-              src={`${BASE_PATH}/assets/case studies/swpg/changes_mobile.png`}
+              alt="The Fort Lewis College housing and dining help center, dining rates, and housing options pages."
+              src={`${BASE_PATH}/assets/case studies/swpg/changes_m.jpg`}
               css={css`
                 width: 100%;
                 display: none;
@@ -491,13 +471,11 @@ export default function SWPGCard(): JSX.Element {
               }
             `}
           >
-            Southwest Print Guild taught me how to question and improve my design-thinking process.
-            The most significant lesson I learned was the importance following an Agile methodology
-            throughout the design process. In particular, I realized the potential pitfalls of the
-            "sunk-cost fallacy" mindset, which involves persisting with a suboptimal design because
-            of the time already spent. In the world of UX/UI design, adapting to meet user needs is
-            paramount. Adjusting the placement and interaction of the nav bar was the key instance
-            which made me step back and revisit my approach.
+            After launch, I sought feedback from the housing and dining team. They were pleased with
+            the site redesign overall, and noted that the volume of questions from parents and
+            families was noticeably less. Their buy-in to the website update request system has
+            increased since the redesign. The web team now collaborates with the housing team to
+            make important updates well in advance of semesterly changes.
           </p>
           <div
             css={css`
@@ -520,25 +498,26 @@ export default function SWPGCard(): JSX.Element {
                 flex: 0 1 30%;
               `}
               title="Challenge"
-              content="Create a design system and implement an effective web design which meets user expectations."
+              content="Web team was unaware of the magnitude of outdated and missing information. Requesting information from housing and dining staff during a busy time of year was difficult."
             />
             <TextBubble
               css={css`
                 flex: 0 1 30%;
               `}
               title="Success"
-              content="User testing identified that existing features and flows were well-designed and functioned as expected."
+              content="Based on site data, success rates increased and bounce rates decreased with the launch of the redesigned site."
             />
             <TextBubble
               css={css`
                 flex: 0 1 30%;
               `}
               title="Opportunity"
-              content="User testing yielded significant expansion of functions. The site could grow to accomodate multiple user types."
+              content="Continue to nurture a healthy working relationship with the housing and dining team. Build important dates into the web team's project workflow."
             />
           </div>
           <img
-            src={`${BASE_PATH}/assets/case studies/swpg/highlight.png`}
+            alt="The important dates pages for Fort Lewis College housing and dining."
+            src={`${BASE_PATH}/assets/case studies/swpg/highlight.jpg`}
             css={css`
               width: 100%;
             `}

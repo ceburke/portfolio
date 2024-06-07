@@ -25,6 +25,7 @@ function ValueSection(): JSX.Element {
       ]}
     >
       <img
+        alt="A photo of Claire Burke smiling in front of a large clocktower and a mountain view."
         src={`${BASE_PATH}/assets/about/about.png`}
         css={css`
           height: 469px;
@@ -163,6 +164,7 @@ function PassionSection(): JSX.Element {
       ]}
     >
       <img
+        alt="A photo of Claire Burke with a bike helmet on sticking their tongue out."
         src={`${BASE_PATH}/assets/about/engineer.jpg`}
         css={css`
           height: 469px;

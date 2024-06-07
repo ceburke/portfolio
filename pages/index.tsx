@@ -222,8 +222,8 @@ const Home: NextPage = () => {
             }
           `}
         >
-          The work and ideas below demonstrate my technical ability, creative problem-solving and
-          passion for enabling users to achieve their goals.
+          The examples of my work and ideas below demonstrate my technical ability, creative
+          problem-solving and passion for enabling users to achieve their goals.
         </p>
         <h2>Projects</h2>
         <div
@@ -473,6 +473,7 @@ const Home: NextPage = () => {
                   `}
                 >
                   <img
+                    alt="Codeacademy logo"
                     css={css`
                       margin-bottom: 15px;
                     `}
@@ -512,6 +513,7 @@ const Home: NextPage = () => {
                   `}
                 >
                   <img
+                    alt="Coursera logo"
                     css={css`
                       margin-bottom: 15px;
                     `}

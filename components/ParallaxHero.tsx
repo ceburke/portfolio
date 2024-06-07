@@ -27,10 +27,12 @@ export default function ParallaxHero(): JSX.Element {
       `}
     >
       <img
+        alt="Claire Burke reading awards off a sheet of paper in front of a projector."
         ref={imgRef}
         src={`${BASE_PATH}/assets/work/artshow_home.png`}
         css={css`
           width: 100%;
+          object-fit: cover;
           transition: transform 0.1s linear;
 
           @media (max-width: ${BREAKPOINT_MEDIUM}px) {
