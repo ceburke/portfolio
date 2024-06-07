@@ -251,7 +251,7 @@ export default function Type1MeetCard(): JSX.Element {
             `}
           >
             <img
-              src={`${BASE_PATH}/assets/case studies/type1/personas1.png`}
+              src={`${BASE_PATH}/assets/case studies/type1/personas1.jpg`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -265,7 +265,7 @@ export default function Type1MeetCard(): JSX.Element {
             />
 
             <img
-              src={`${BASE_PATH}/assets/case studies/type1/personas_1m.png`}
+              src={`${BASE_PATH}/assets/case studies/type1/personas_1m.jpg`}
               css={css`
                 width: 100%;
                 border-radius: 35px;
@@ -316,7 +316,7 @@ export default function Type1MeetCard(): JSX.Element {
             and fresh colors, as they better captured the scope and setting of the Old Fort.
           </p>
           <img
-            src={`${BASE_PATH}/assets/case studies/type1/lofi.png`}
+            src={`${BASE_PATH}/assets/case studies/type1/lofi.jpg`}
             css={css`
               width: 100%;
               margin-bottom: 40px;
