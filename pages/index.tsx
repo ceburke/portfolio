@@ -222,14 +222,16 @@ const Home: NextPage = () => {
             }
           `}
         >
-          The case studies and design work below demonstrate my technical ability, creative
-          problem-solving and passion for enabling users to achieve their goals.
+          The work and ideas below demonstrate my technical ability, creative problem-solving and
+          passion for enabling users to achieve their goals.
         </p>
+        <h2>Projects</h2>
         <div
           css={css`
             display: flex;
             margin-top: 35px;
             justify-content: center;
+            margin-bottom: 40px;
 
             @media (max-width: ${BREAKPOINT_SMALL}px) {
               flex-direction: column;
@@ -253,12 +255,14 @@ const Home: NextPage = () => {
             <SWPGCard />
           </div>
         </div>
-
+        <hr></hr>
+        <h2>Ideas</h2>
         <div
           css={css`
             display: flex;
             margin-top: 35px;
             justify-content: center;
+            margin-bottom: 40px;
 
             @media (max-width: ${BREAKPOINT_SMALL}px) {
               flex-direction: column;
@@ -283,7 +287,8 @@ const Home: NextPage = () => {
             <GoogleMapsCard />
           </div>
         </div>
-
+        <hr></hr>
+        <h2>Visual</h2>
         <div
           css={css`
             display: flex;

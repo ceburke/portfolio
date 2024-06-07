@@ -159,7 +159,7 @@ export default function NavBar(): JSX.Element {
               baseNavItemCss,
               navItemCss,
               css`
-                @media (max-width: ${BREAKPOINT_MEDIUM}px) {
+                @media (max-width: ${BREAKPOINT_SMALL}px) {
                   display: none;
                 }
               `,

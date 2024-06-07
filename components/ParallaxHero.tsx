@@ -34,7 +34,8 @@ export default function ParallaxHero(): JSX.Element {
           transition: transform 0.1s linear;
 
           @media (max-width: ${BREAKPOINT_MEDIUM}px) {
-            transform: translateY(-50%);
+            transform: translateY(-5%);
+            height: 600px;
           }
         `}
       />

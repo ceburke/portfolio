@@ -1,9 +1,9 @@
-import {css} from '@emotion/react';
+import { css } from "@emotion/react";
 
-import swpgImg from '../../public/assets/work/swpg.png';
-import {BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL} from '../../constants';
-import Card from '../Card';
-import TextBubble from '../TextBubble';
+import swpgImg from "../../public/assets/work/swpg.png";
+import { BASE_PATH, BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from "../../constants";
+import Card from "../Card";
+import TextBubble from "../TextBubble";
 
 export default function SWPGCard(): JSX.Element {
   return (
@@ -12,7 +12,7 @@ export default function SWPGCard(): JSX.Element {
       css={css`
         margin-top: 35px;
       `}
-      title="Southwest Print Guild"
+      title="Housing and Dining"
       image={swpgImg}
     >
       <div
@@ -103,7 +103,7 @@ export default function SWPGCard(): JSX.Element {
                 <br></br>
                 <br></br>
                 Adobe XD | Research, Design, Copy
-              </span>{' '}
+              </span>{" "}
             </p>
           </div>
         </div>

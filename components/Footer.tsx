@@ -62,7 +62,7 @@ export default function Footer(): JSX.Element {
               width: 22px;
             `}
           >
-            <Image src={`${BASE_PATH}/assets/mail.svg`} alt="Email" layout="fill" />
+            <Image src={`${BASE_PATH}/assets/envelope.svg`} alt="Email" layout="fill" />
           </div>
           email
         </a>
