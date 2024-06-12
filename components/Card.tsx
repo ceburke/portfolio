@@ -228,7 +228,7 @@ export default function Card(props: Props): JSX.Element {
             css={css`
               max-width: calc(100vw - 64px);
               width: ${SECTION_WIDTH}px;
-              max-height: calc(100vw - 64px);
+              max-height: 100vh;
               min-height: 400px;
               padding: 10px;
               overflow-x: hidden;
