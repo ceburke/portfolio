@@ -58,7 +58,9 @@ export default function About() {
           <ToolsList toolsData={toolsData} />
         </div>
 
-        <div className="my-10"></div>
+        <div className="my-10">
+          <h2 className="text-3xl font-bold mb-8">Personal Projects</h2>
+        </div>
       </main>
       <Footer />
     </div>
