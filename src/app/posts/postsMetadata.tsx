@@ -3,9 +3,12 @@ import PostFLCNews from './postFLCNews/PostFLCNews';
 import PostTalonDesignSystem from './postTalonDesignSystem/PostTalonDesignSystem';
 import PostTemplate from './postTemplate/PostTemplate';
 import flcNewsPreview from './postFLCNews/flc-news-preview.png';
+import flcNewsPreview2 from './postFLCNews/flc-news-preview-2.png';
 import talonPreview from './postTalonDesignSystem/talon-preview.png';
 import theOldFortPreview from './postTheOldFort/the-old-fort-preview.png';
+import theOldFortPreview2 from './postTheOldFort/the-old-fort-preview-2.png';
 import large from './postTemplate/large.png';
+import small from './postTemplate/small.png';
 import PostTheOldFort from './postTheOldFort/PostTheOldFort';
 
 export interface PostMetadata {
@@ -20,7 +23,7 @@ export interface PostMetadata {
 export const postsMetadata: PostMetadata[] = [
   {
     id: 'flc-news-architecture-and-design',
-    previewImg: flcNewsPreview,
+    previewImg: flcNewsPreview2,
     title: 'Information architecture and responsive design',
     subtitle: 'FLC News',
     description:
@@ -29,7 +32,7 @@ export const postsMetadata: PostMetadata[] = [
   },
   {
     id: 'talon-design-system',
-    previewImg: talonPreview,
+    previewImg: small,
     title: 'Building a foundation for the future',
     subtitle: 'Talon Design System',
     description:
@@ -38,7 +41,7 @@ export const postsMetadata: PostMetadata[] = [
   },
   {
     id: 'the-old-fort',
-    previewImg: theOldFortPreview,
+    previewImg: theOldFortPreview2,
     title: 'Organization and identity',
     subtitle: 'The Old Fort',
     description:

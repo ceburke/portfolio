@@ -25,8 +25,14 @@ export default function PostsCarousel({posts}: {posts: PostMetadata[]}) {
   return (
     <div className="w-full overflow-hidden">
       <ul
-        className="flex overflow-visible relative transition-all duration-200 ease-in-out"
-        style={{left: `-${page * postsPerPage * ((1 / postsPerPage) * 100)}%`}}
+        className="flex overflow-visible relative transition-all duration-300 ease-in-out"
+        style={{
+          // keep last page filled with posts
+          left: `-${
+            Math.min(page * postsPerPage, Math.max(0, posts.length - postsPerPage)) *
+            ((1 / postsPerPage) * 100)
+          }%`,
+        }}
       >
         {posts.map((post) => (
           <li key={post.id} className="flex-none" style={{width: `${(1 / postsPerPage) * 100}%`}}>

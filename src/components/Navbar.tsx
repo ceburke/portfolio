@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center sticky top-0 h-20 py-4 px-5 w-full text-center bg-white dark:bg-black dark:text-white">
+    <nav className="flex items-center sticky top-0 z-10 h-20 py-4 px-5 w-full text-center bg-white dark:bg-black dark:text-white">
       <div
         className="flex justify-between items-center mx-auto w-full"
         style={{maxWidth: `${MAX_CONTENT_WIDTH}px`}}
