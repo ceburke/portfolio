@@ -12,7 +12,7 @@ export default function PostPreview({post}: {post: PostMetadata}) {
           alt={post.description}
         />
       </Link>
-      <div className="flex flex-col gap-2 px-10 mt-6">
+      <div className="flex flex-col gap-2 px-5 lg:px-10 mt-6">
         <h2 className="text-2xl font-bold">
           <Link href={`/posts/${post.id}`}>{post.title}</Link>
         </h2>

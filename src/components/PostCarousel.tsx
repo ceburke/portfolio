@@ -40,14 +40,23 @@ export default function PostsCarousel({posts}: {posts: PostMetadata[]}) {
           </li>
         ))}
       </ul>
-      <div className="flex items-center justify-center w-full gap-5">
+      <div className="flex items-center justify-center w-full gap-10 my-10">
         <button
           aria-label="Previous"
           className="text-4xl disabled:dark:text-gray-700 disabled:text-gray-400"
           onClick={() => setPage(page - 1)}
           disabled={page === 0}
         >
-          {'<'}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="size-8"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+          </svg>
         </button>
         <button
           aria-label="Next"
@@ -55,7 +64,16 @@ export default function PostsCarousel({posts}: {posts: PostMetadata[]}) {
           onClick={() => setPage(page + 1)}
           disabled={page === totalPages - 1}
         >
-          {'>'}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="size-8"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
         </button>
       </div>
     </div>
