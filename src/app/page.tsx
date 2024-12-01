@@ -9,16 +9,15 @@ export default function Home() {
   return (
     <div className="dark dark:bg-black dark:text-white items-center justify-items-center min-h-screen">
       <Navbar />
-      <div>
-        I‘m a designer who codes, driven by a passion for accessibility and creating products that
-        make a positive social impact.
-      </div>
+      <p
+        className="text-4xl mt-24 mb-16 px-8 md:px-20 lg:px-36"
+        style={{maxWidth: `${MAX_CONTENT_WIDTH}px`}}
+      >
+        I‘m a <span className="font-bold">designer who codes</span>, driven by a passion for{' '}
+        <span className="font-bold">accessibility</span> and creating products that make a{' '}
+        <span className="font-bold">positive social impact.</span>
+      </p>
       <PostCarousel posts={postsMetadata} />
-      <main style={{maxWidth: `${MAX_CONTENT_WIDTH}px`}}>
-        <Link href="/posts/information-architecture-and-responsive-design">
-          Information architecture and responsive design
-        </Link>
-      </main>
       <Footer />
     </div>
   );
