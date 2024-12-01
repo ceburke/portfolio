@@ -17,6 +17,11 @@ export default function PostTemplate() {
         src={large}
         description="Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences"
       />
+      <PostImage
+        src={small}
+        description="Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences"
+      />
+
       <Heading2>h2 Overview or step #</Heading2>
       <p>
         Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
@@ -26,6 +31,16 @@ export default function PostTemplate() {
         <PostImage src={small} description="Descriptive caption, 1-2 sentences" />
         <PostImage src={tallNarrow} description="Descriptive caption, 1-2 sentences" />
       </Double>
+      <Heading2>h2 Overview or step #</Heading2>
+      <p>
+        Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
+        per h2, but trying to keep it concise.
+      </p>
+      <Triple>
+        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
+        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
+        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
+      </Triple>
       <Heading2>h2 Overview or step #</Heading2>
       <p>
         Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
@@ -47,7 +62,7 @@ export default function PostTemplate() {
         <PostImage src={wideShort} description="Descriptive caption, 1-2 sentences" />
       </Double>
       <Double>
-        <PostImage src={wideShort} description="Descriptive caption, 1-2 sentences" />
+        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
         <section>
           <Heading2>h2 Overview or step #</Heading2>
           <p>
@@ -56,16 +71,17 @@ export default function PostTemplate() {
           </p>
         </section>
       </Double>
+      <Heading2>h2 Overview or step #</Heading2>
       <Double>
-        <section>
-          <Heading3>h2 Overview or step #</Heading3>
+        <section className="h-full">
+          <Heading3>h3</Heading3>
           <p>
             Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two
             paragraphs per h2, but trying to keep it concise.
           </p>
         </section>
-        <section>
-          <Heading3>h2 Overview or step #</Heading3>
+        <section className="h-full">
+          <Heading3>h3</Heading3>
           <p>
             Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two
             paragraphs per h2, but trying to keep it concise.

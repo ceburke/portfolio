@@ -14,11 +14,19 @@ export function Heading3({children}: {children: React.ReactNode}): React.ReactNo
 }
 
 export function Double({children}: {children: React.ReactNode}): React.ReactNode {
-  return <section className="grid grid-cols-2 gap-5">{children}</section>;
+  return (
+    <section className="grid grid-cols-2 gap-5 items-center justify-center min-h-52">
+      {children}
+    </section>
+  );
 }
 
 export function Triple({children}: {children: React.ReactNode}): React.ReactNode {
-  return <section className="grid grid-cols-3 gap-5">{children}</section>;
+  return (
+    <section className="grid grid-cols-3 gap-5 items-center justify-center min-h-52">
+      {children}
+    </section>
+  );
 }
 
 export function PostImage({
@@ -29,9 +37,9 @@ export function PostImage({
   description: string;
 }): React.ReactNode {
   return (
-    <figure>
-      <Image src={src} alt={description} />
-      <figcaption className="italic text-md">{description}</figcaption>
+    <figure className="flex flex-col justify-end h-full">
+      <Image className="mx-auto" src={src} alt={description} />
+      <figcaption className="italic text-md mt-2 flex-none h-28 lg:h-14 ">{description}</figcaption>
     </figure>
   );
 }
