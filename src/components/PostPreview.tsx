@@ -14,7 +14,9 @@ export default function PostPreview({post}: {post: PostMetadata}) {
       </Link>
       <div className="flex flex-col gap-2 px-5 lg:px-10 mt-6">
         <h2 className="text-2xl font-bold">
-          <Link href={`/posts/${post.id}`}>{post.title}</Link>
+          <Link className="hover:underline" href={`/posts/${post.id}`}>
+            {post.title}
+          </Link>
         </h2>
         <h3 className="text-xl font-bold">{post.subtitle}</h3>
         <p>{post.description}</p>
