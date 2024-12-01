@@ -1,5 +1,6 @@
 import PostFLCNews from './PostFLCNews';
 import PostTalonDesignSystem from './PostTalonDesignSystem';
+import PostTemplate from './postTemplate/PostTemplate';
 
 export interface PostMetadata {
   id: string;
@@ -27,3 +28,13 @@ export const postsMetadata: PostMetadata[] = [
     content: <PostTalonDesignSystem />,
   },
 ];
+
+if (process?.env.NODE_ENV === 'development') {
+  postsMetadata.push({
+    id: 'template',
+    title: 'Template Title',
+    subtitle: 'Template Subtitle',
+    description: 'Template Description',
+    content: <PostTemplate />,
+  });
+}

@@ -29,7 +29,9 @@ export default async function Post({params}: {params: Promise<{id: string}>}) {
   return (
     <div className="dark:bg-black dark:text-white">
       <Navbar />
-      <article style={{maxWidth: `${MAX_POST_WIDTH}px`}}>{post.content}</article>
+      <article className="mx-auto p-5 *:my-4" style={{maxWidth: `${MAX_POST_WIDTH}px`}}>
+        {post.content}
+      </article>
       <Footer />
     </div>
   );
