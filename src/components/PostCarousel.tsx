@@ -5,14 +5,18 @@ import {PostMetadata} from '@/app/posts/postsMetadata';
 import PostPreview from './PostPreview';
 
 function useWindowWidth(): number {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(-1);
   useEffect(() => {
+    if (width === -1) {
+      setWidth(window.innerWidth);
+    }
+
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  });
+  }, []);
   return width;
 }
 

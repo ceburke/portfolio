@@ -1,7 +1,6 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import {MAX_CONTENT_WIDTH} from '@/constants';
-import Link from 'next/link';
 import {postsMetadata} from './posts/postsMetadata';
 import PostCarousel from '@/components/PostCarousel';
 
