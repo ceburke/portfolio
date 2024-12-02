@@ -3,7 +3,7 @@ import {MAX_CONTENT_WIDTH} from '@/constants';
 export default function Footer() {
   return (
     <footer className="w-full">
-      <div className="flex">
+      <div className="group flex transition-all ease-in-out duration-700 hover:scale-x-105">
         <div className="border-b-2 border-transparent border-b-black dark:border-b-white w-full" />
         <svg
           className="flex-none"
