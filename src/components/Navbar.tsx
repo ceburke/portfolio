@@ -12,7 +12,7 @@ export default function Navbar() {
           CB
         </Link>
         <ul className="flex items-center gap-4 lg:gap-10 text-lg lg:text-2xl">
-          <li>
+          {/* <li>
             <Link className="flex gap-2 items-center hover:underline" href="/">
               Work
             </Link>
@@ -21,7 +21,7 @@ export default function Navbar() {
             <Link className="flex gap-2 items-center hover:underline" href="/about">
               About
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               className="flex gap-2 items-center hover:underline"
