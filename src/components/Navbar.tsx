@@ -23,7 +23,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className="flex gap-2 items-center hover:underline" href="TODO">
+            <Link
+              className="flex gap-2 items-center hover:underline"
+              href="/assets/ClaireBurkeResume.pdf"
+              about="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
