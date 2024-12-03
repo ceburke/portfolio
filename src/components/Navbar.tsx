@@ -8,7 +8,7 @@ export default function Navbar() {
         className="flex justify-between items-center mx-auto w-full"
         style={{maxWidth: `${MAX_CONTENT_WIDTH}px`}}
       >
-        <Link className="text-2xl font-bold" href="/">
+        <Link className="text-2xl font-bold font-emblema-one" href="/">
           CB
         </Link>
         <ul className="flex items-center gap-4 lg:gap-10 text-lg lg:text-2xl">
