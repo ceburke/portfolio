@@ -10,6 +10,7 @@ import PostTheOldFort from "./postTheOldFort/PostTheOldFort";
 import PostChildrensBook from "./postChildrensBook/postChildrensBook";
 import PreviewChildrens from "./postChildrensBook/previewChildrens.jpg";
 import PostSolvedInMotion from "./postSolvedInMotion/postSolvedInMotion";
+import PreviewSolvedInMotion from "./postSolvedInMotion/previewSolvedInMotion.jpg";
 import PostCollagesAndCovers from "./postCollagesAndCovers/postCollagesAndCovers";
 import PreviewCollage from "./postCollagesAndCovers/previewCollage.jpg";
 
@@ -66,7 +67,7 @@ export const postsData: PostData[] = [
   },
   {
     id: "solved-in-motion",
-    previewImg: flcNewsPreview2,
+    previewImg: PreviewSolvedInMotion,
     title: "Creating immersive experiences",
     subtitle: "Solved in motion",
     group: "personal",

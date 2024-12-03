@@ -25,7 +25,6 @@ export default function About() {
         style={{ maxWidth: `${ABOUT_PAGE_MAX_CONTENT_WIDTH}px` }}
       >
         <div className="flex flex-col md:flex-row items-center justify-start gap-10 md:gap-20">
-          {/* TODO: get higher resolution cropped headshot */}
           <Image src={headshot} alt="Claire headshot" className="object-fit w-[430px]" />
           <div className="flex flex-col gap-5">
             <h1 className="text-4xl font-bold">Background and vision</h1>
@@ -41,8 +40,23 @@ export default function About() {
               Debussy on piano (but playing Joe Haisashi instead), gathering memes, and reading
               fantasy books (currently reading The Wandering Inn).
             </p>
-            <Link className="underline" href="TODO">
-              Learn more about my career path on Linkedin
+            <Link
+              className="flex gap-2 items-center underline hover:font-bold"
+              href="https://www.linkedin.com/in/claire-burke/"
+              title="Claire's LinkedIn profile"
+              target="_blank"
+            >
+              Learn more about my career path on LinkedIn
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="size-4"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
             </Link>
             <div className="mt-5">
               <p className="font-bold">University of Virginia</p>

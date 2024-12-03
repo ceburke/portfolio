@@ -12,8 +12,6 @@ export interface ToolData {
   img: string | StaticImageData;
 }
 
-// TODO: replace with actual data
-// export tool images to be consistent ~200x200 .pngs
 export const toolsData: ToolData[] = [
   {
     label: "Figma",
