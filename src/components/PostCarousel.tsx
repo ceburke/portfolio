@@ -27,7 +27,7 @@ export default function PostsCarousel({posts}: {posts: PostData[]}) {
   const totalPages = Math.ceil(posts.length / postsPerPage);
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden mb-10">
       <ul
         className="flex overflow-visible relative transition-all duration-300 ease-in-out"
         style={{

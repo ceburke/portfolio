@@ -55,14 +55,12 @@ export default function About() {
           </div>
         </div>
 
-        <div className="my-10">
+        <div className="mt-9">
           <h2 className="text-3xl font-bold mb-8">Top Tools</h2>
           <ToolsList toolsData={toolsData} />
         </div>
 
-        <div className="my-10">
-          <h2 className="text-3xl font-bold mb-8">Personal Projects</h2>
-        </div>
+        <h2 className="text-3xl font-bold mt-14 mb-10">Personal Projects</h2>
       </main>
       <PostCarousel posts={postsData.filter((post) => post.group === 'personal')} />
       <Footer />

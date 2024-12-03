@@ -9,7 +9,7 @@ export default function Home() {
     <div className="dark dark:bg-black dark:text-white items-center justify-items-center min-h-screen">
       <Navbar />
       <p
-        className="text-4xl mt-24 mb-16 px-8 md:px-20 lg:px-36"
+        className="text-4xl mt-24 mb-20 px-8 md:px-20 lg:px-36"
         style={{maxWidth: `${MAX_CONTENT_WIDTH}px`}}
       >
         I‘m a <span className="font-bold">designer who codes</span>, driven by a passion for{' '}
