@@ -1,16 +1,16 @@
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
-import type {Metadata} from 'next';
-import Image from 'next/image';
-import headshot from './headshot.png';
-import Link from 'next/link';
-import ToolsList from '@/components/tools/ToolsList';
-import {toolsData} from '@/components/tools/toolsData';
-import PostCarousel from '@/components/PostCarousel';
-import {postsData} from '../posts/postsData';
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import type { Metadata } from "next";
+import Image from "next/image";
+import headshot from "./headshot.jpg";
+import Link from "next/link";
+import ToolsList from "@/components/tools/ToolsList";
+import { toolsData } from "@/components/tools/toolsData";
+import PostCarousel from "@/components/PostCarousel";
+import { postsData } from "../posts/postsData";
 
 export const metadata: Metadata = {
-  title: 'Claire Burke | About',
+  title: "Claire Burke | About",
   description: `I'm Claire, a product designer with a passion for UI and UX.`,
 };
 
@@ -22,7 +22,7 @@ export default function About() {
       <Navbar />
       <main
         className="mx-auto mt-20 px-5 lg:px-0"
-        style={{maxWidth: `${ABOUT_PAGE_MAX_CONTENT_WIDTH}px`}}
+        style={{ maxWidth: `${ABOUT_PAGE_MAX_CONTENT_WIDTH}px` }}
       >
         <div className="flex flex-col md:flex-row items-center justify-start gap-10 md:gap-20">
           {/* TODO: get higher resolution cropped headshot */}
@@ -56,13 +56,13 @@ export default function About() {
         </div>
 
         <div className="mt-9">
-          <h2 className="text-3xl font-bold mb-8">Top Tools</h2>
+          <h2 className="text-3xl font-bold mb-8">Top tools</h2>
           <ToolsList toolsData={toolsData} />
         </div>
 
-        <h2 className="text-3xl font-bold mt-14 mb-10">Personal Projects</h2>
+        <h2 className="text-3xl font-bold mt-14 mb-10">Personal projects</h2>
       </main>
-      <PostCarousel posts={postsData.filter((post) => post.group === 'personal')} />
+      <PostCarousel posts={postsData.filter((post) => post.group === "personal")} />
       <Footer />
     </div>
   );
