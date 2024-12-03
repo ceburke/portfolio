@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import {MAX_CONTENT_WIDTH} from '@/constants';
-import {postsMetadata} from './posts/postsMetadata';
+import {postsData} from './posts/postsData';
 import PostCarousel from '@/components/PostCarousel';
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         <span className="font-bold">accessibility</span> and creating products that make a{' '}
         <span className="font-bold">positive social impact.</span>
       </p>
-      <PostCarousel posts={postsMetadata} />
+      <PostCarousel posts={postsData.filter((post) => post.group === 'work')} />
       <Footer />
     </div>
   );

@@ -6,6 +6,8 @@ import headshot from './headshot.png';
 import Link from 'next/link';
 import ToolsList from '@/components/tools/ToolsList';
 import {toolsData} from '@/components/tools/toolsData';
+import PostCarousel from '@/components/PostCarousel';
+import {postsData} from '../posts/postsData';
 
 export const metadata: Metadata = {
   title: 'Claire Burke | About',
@@ -62,6 +64,7 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-8">Personal Projects</h2>
         </div>
       </main>
+      <PostCarousel posts={postsData.filter((post) => post.group === 'personal')} />
       <Footer />
     </div>
   );

@@ -1,8 +1,9 @@
+import {Heading1} from '../postComponents';
+
 export default function PostFLCNews() {
   return (
     <>
-      <h1>FLC News</h1>
-      <p>pasoijf</p>
+      <Heading1>FLC News</Heading1>
     </>
   );
 }

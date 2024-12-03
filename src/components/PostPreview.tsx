@@ -1,8 +1,8 @@
-import {PostMetadata} from '@/app/posts/postsMetadata';
+import {PostData} from '@/app/posts/postsData';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function PostPreview({post}: {post: PostMetadata}) {
+export default function PostPreview({post}: {post: PostData}) {
   return (
     <div className="w-full">
       <Link className="block overflow-hidden h-[330px]" href={`/posts/${post.id}`}>

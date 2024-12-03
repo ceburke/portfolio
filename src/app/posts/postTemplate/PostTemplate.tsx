@@ -3,15 +3,30 @@ import large from './large.png';
 import small from './small.png';
 import tallNarrow from './tall-narrow.png';
 import wideShort from './wide-short.png';
+import Link from 'next/link';
 
 export default function PostTemplate() {
   return (
     <>
       <Heading1>h1 Heading 2 (36px, bold)</Heading1>
+      <ul>
+        <li>
+          <Link className="underline" href="/posts/the-old-fort">
+            Link to another post
+          </Link>
+        </li>
+        <li>
+          <Link className="underline" href="/about">
+            Link to about page
+          </Link>
+        </li>
+      </ul>
+      <p>Links don't include "/portfolio" because they are relative to next.config.ts#basePath</p>
+
       <Heading2>h2 Overview or step #</Heading2>
       <p>
         Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
-        per h2, but trying to keep it concise.
+        per h2, but trying to keep it concise.{' '}
       </p>
       <PostImage
         src={large}

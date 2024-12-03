@@ -1,17 +1,17 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import {MAX_POST_WIDTH} from '@/constants';
-import {postsMetadata} from '../postsMetadata';
+import {postsData} from '../postsData';
 
 export async function generateStaticParams() {
-  return postsMetadata.map((postMetadata) => ({
-    id: postMetadata.id,
+  return postsData.map((postData) => ({
+    id: postData.id,
   }));
 }
 
 export async function generateMetadata({params}: {params: Promise<{id: string}>}) {
   const {id} = await params;
-  const post = postsMetadata.find((post) => post.id === id);
+  const post = postsData.find((post) => post.id === id);
   return {
     title: post?.title || 'Claire Burke | Posts',
     description: post?.description || 'Collecting my work, thoughts, and passion projects.',
@@ -20,7 +20,7 @@ export async function generateMetadata({params}: {params: Promise<{id: string}>}
 
 export default async function Post({params}: {params: Promise<{id: string}>}) {
   const {id} = await params;
-  const post = postsMetadata.find((post) => post.id === id);
+  const post = postsData.find((post) => post.id === id);
 
   if (!post) {
     return <div>Post not found</div>;

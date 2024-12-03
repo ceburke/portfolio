@@ -1,8 +1,9 @@
+import {Heading1} from '../postComponents';
+
 export default function PostTalonDesignSystem() {
   return (
     <>
-      <h1>Talon Design System</h1>
-      <p>zxzcz</p>
+      <Heading1>Talon Design System</Heading1>
     </>
   );
 }

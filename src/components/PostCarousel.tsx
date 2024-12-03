@@ -1,7 +1,7 @@
 'use client';
 import {useState, useEffect} from 'react';
 
-import {PostMetadata} from '@/app/posts/postsMetadata';
+import {PostData} from '@/app/posts/postsData';
 import PostPreview from './PostPreview';
 
 function useWindowWidth(): number {
@@ -20,7 +20,7 @@ function useWindowWidth(): number {
   return width;
 }
 
-export default function PostsCarousel({posts}: {posts: PostMetadata[]}) {
+export default function PostsCarousel({posts}: {posts: PostData[]}) {
   const width = useWindowWidth();
   const [page, setPage] = useState(0);
   const postsPerPage = width < 640 ? 1 : 3;

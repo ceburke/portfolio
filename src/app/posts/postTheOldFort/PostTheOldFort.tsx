@@ -1,8 +1,9 @@
+import {Heading1} from '../postComponents';
+
 export default function PostTheOldFort() {
   return (
     <>
-      <h1>The Old Fort</h1>
-      <p>zxzcz</p>
+      <Heading1>The Old Fort</Heading1>
     </>
   );
 }
