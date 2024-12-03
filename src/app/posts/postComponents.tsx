@@ -1,3 +1,5 @@
+import {ToolData} from '@/components/tools/toolsData';
+import ToolsList from '@/components/tools/ToolsList';
 import {StaticImport} from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
 
@@ -15,9 +17,7 @@ export function Heading3({children}: {children: React.ReactNode}): React.ReactNo
 
 export function Double({children}: {children: React.ReactNode}): React.ReactNode {
   return (
-    <section className="grid grid-cols-2 gap-5 items-center justify-center min-h-52">
-      {children}
-    </section>
+    <section className="grid grid-cols-2 gap-5 items-center justify-center">{children}</section>
   );
 }
 
@@ -41,5 +41,54 @@ export function PostImage({
       <Image className="mx-auto" src={src} alt={description} />
       <figcaption className="italic text-md mt-2 flex-none h-28 lg:h-14 ">{description}</figcaption>
     </figure>
+  );
+}
+
+export function ExtendedPostTitle({
+  title,
+  description,
+  roles,
+  results,
+  toolsData,
+}: {
+  title: string;
+  description?: React.ReactNode;
+  roles?: React.ReactNode[];
+  results?: React.ReactNode[];
+  toolsData?: ToolData[];
+}): React.ReactNode {
+  return (
+    <div className="flex flex-col justify-center gap-5 pb-10">
+      <Heading1>{title}</Heading1>
+      {!!description && <p>{description}</p>}
+      <Double>
+        {roles && (
+          <section className="h-full">
+            <Heading2>Roles</Heading2>
+            <ul className="mt-5 list-disc pl-6">
+              {roles.map((role, i) => (
+                <li key={i}>{role}</li>
+              ))}
+            </ul>
+          </section>
+        )}
+        {results && (
+          <section className="h-full">
+            <Heading2>Results</Heading2>
+            <ul className="mt-5 list-disc pl-6">
+              {results.map((result, i) => (
+                <li key={i}>{result}</li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </Double>
+      {toolsData && (
+        <>
+          <Heading2>Primary Tools</Heading2>
+          <ToolsList toolsData={toolsData} />
+        </>
+      )}
+    </div>
   );
 }

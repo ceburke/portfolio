@@ -16,28 +16,28 @@ export const toolsData: ToolData[] = [
     img: figma,
   },
   {
-    label: 'Figma1',
-    color: '#FFD3CE',
+    label: 'VSCode',
+    color: '#C8E9FF',
     img: figma,
   },
   {
-    label: 'Figma2',
-    color: '#FFD3CE',
+    label: 'Bootstrap',
+    color: '#DABDFF',
     img: figma,
   },
   {
-    label: 'Figma3',
-    color: '#FFD3CE',
+    label: 'Github',
+    color: '#E0E0E0',
     img: figma,
   },
   {
-    label: 'Figma4',
-    color: '#FFD3CE',
+    label: 'Google Analytics',
+    color: '#D6EFDD',
     img: figma,
   },
   {
-    label: 'Figma5',
-    color: '#FFD3CE',
+    label: 'Adobe Creative Suite',
+    color: '#F2B8FF',
     img: figma,
   },
 ];

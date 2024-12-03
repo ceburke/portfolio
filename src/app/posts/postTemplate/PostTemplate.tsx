@@ -1,4 +1,5 @@
-import {Double, Heading1, Heading2, Heading3, PostImage, Triple} from '../postComponents';
+import {ToolData, toolsData} from '@/components/tools/toolsData';
+import {Double, ExtendedPostTitle, Heading2, Heading3, PostImage, Triple} from '../postComponents';
 import large from './large.png';
 import small from './small.png';
 import tallNarrow from './tall-narrow.png';
@@ -8,7 +9,32 @@ import Link from 'next/link';
 export default function PostTemplate() {
   return (
     <>
-      <Heading1>h1 Heading 2 (36px, bold)</Heading1>
+      <ExtendedPostTitle
+        title="h1 Heading 2 (36px, bold)"
+        description="Brief description in paragraph text, 3-4 sentences (16 px, regular). Lorem ipsum dolor sit amet consectetur. Turpis lacus augue faucibus nibh ac. Volutpat sit egestas neque et. Turpis lacus augue faucibus nibh ac. Turpis lacus augue faucibus nibh ac."
+        roles={[
+          'Information architecture, prototyping, UI design',
+          'Content strategy, art direction',
+          'Production',
+        ]}
+        results={[
+          '2x increase of unique sessions',
+          'Simplified update flow',
+          'Increased discoverability of items XYZ',
+          <>
+            Result with a{' '}
+            <Link className="underline" href="/posts/the-old-fort">
+              link to somewhere.
+            </Link>
+          </>,
+        ]}
+        // toolsData={
+        //   ['Figma', 'Bootstrap']
+        //     .map((toolName) => toolsData.find((tool) => tool.label === toolName))
+        //     .filter(Boolean) as ToolData[]
+        // }
+        toolsData={toolsData}
+      />
       <ul>
         <li>
           <Link className="underline" href="/posts/the-old-fort">
