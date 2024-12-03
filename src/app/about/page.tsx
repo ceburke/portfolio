@@ -37,8 +37,8 @@ export default function About() {
             </p>
             <p>
               Outside of work, I love mountain biking, playing ultimate frisbee, trying to learn
-              Debussy on piano (but playing Joe Haisashi instead), gathering memes, and reading
-              fantasy books (currently reading The Wandering Inn).
+              Debussy on piano, collecting memes, and reading fantasy books (currently reading The
+              Wandering Inn).
             </p>
             <Link
               className="flex gap-2 items-center underline hover:font-bold"
