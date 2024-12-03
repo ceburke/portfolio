@@ -34,7 +34,8 @@ export default function PostTemplate() {
             .filter(Boolean) as ToolData[]
         }
       />
-      <ul>
+      <Heading2>Links</Heading2>
+      <ul className="list-disc pl-5">
         <li>
           <Link className="underline" href="/posts/the-old-fort">
             Link to another post
