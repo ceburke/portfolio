@@ -21,7 +21,7 @@ export default function About() {
     <div>
       <Navbar />
       <main
-        className="mx-auto mt-20 px-5 lg:px-0"
+        className="mx-auto mt-10 px-5 lg:px-0"
         style={{ maxWidth: `${ABOUT_PAGE_MAX_CONTENT_WIDTH}px` }}
       >
         <div className="flex flex-col md:flex-row items-center justify-start gap-10 md:gap-20">

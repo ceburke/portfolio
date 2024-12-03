@@ -8,8 +8,10 @@ import large from "./postTemplate/large.png";
 import small from "./postTemplate/small.png";
 import PostTheOldFort from "./postTheOldFort/PostTheOldFort";
 import PostChildrensBook from "./postChildrensBook/postChildrensBook";
+import PreviewChildrens from "./postChildrensBook/previewChildrens.jpg";
 import PostSolvedInMotion from "./postSolvedInMotion/postSolvedInMotion";
 import PostCollagesAndCovers from "./postCollagesAndCovers/postCollagesAndCovers";
+import PreviewCollage from "./postCollagesAndCovers/previewCollage.jpg";
 
 export interface PostData {
   id: string;
@@ -54,7 +56,7 @@ export const postsData: PostData[] = [
   },
   {
     id: "childrens-book",
-    previewImg: theOldFortPreview2,
+    previewImg: PreviewChildrens,
     title: "Children’s book illustrator",
     subtitle: "The Adventures of Ashe and Cat: The Mountain Bike Flat",
     group: "personal",
@@ -74,7 +76,7 @@ export const postsData: PostData[] = [
   },
   {
     id: "collages-and-covers",
-    previewImg: large,
+    previewImg: PreviewCollage,
     title: "Collages and covers",
     subtitle: "Original artwork",
     group: "personal",
