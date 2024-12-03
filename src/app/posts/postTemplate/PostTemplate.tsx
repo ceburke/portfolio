@@ -28,12 +28,11 @@ export default function PostTemplate() {
             </Link>
           </>,
         ]}
-        // toolsData={
-        //   ['Figma', 'Bootstrap']
-        //     .map((toolName) => toolsData.find((tool) => tool.label === toolName))
-        //     .filter(Boolean) as ToolData[]
-        // }
-        toolsData={toolsData}
+        toolsData={
+          ['Figma', 'Bootstrap']
+            .map((toolName) => toolsData.find((tool) => tool.label === toolName))
+            .filter(Boolean) as ToolData[]
+        }
       />
       <ul>
         <li>

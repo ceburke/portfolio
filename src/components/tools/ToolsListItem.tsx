@@ -7,11 +7,14 @@ export default function ToolsListItem({
   toolData: ToolData;
 }): React.ReactNode {
   return (
-    <div className={`flex items-center gap-3`}>
-      <div className="flex items-center justify-center h-16 w-16" style={{backgroundColor: color}}>
+    <div className={`flex items-center gap-2`}>
+      <div
+        className="flex flex-none items-center justify-center h-16 w-16"
+        style={{backgroundColor: color}}
+      >
         <Image src={img} alt={label} className="h-1/2 w-1/2" />
       </div>
-      <p>{label}</p>
+      <p className="overflow-ellipsis">{label}</p>
     </div>
   );
 }
