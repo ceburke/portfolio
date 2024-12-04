@@ -11,7 +11,7 @@ export default function Navbar() {
         <Link className="text-2xl font-bold" href="/">
           CB
         </Link>
-        <ul className="flex items-center gap-4 lg:gap-10 text-lg lg:text-2xl">
+        <ul className="flex items-center gap-4 lg:gap-10 text-md lg:text-lg">
           <li>
             <Link className="flex gap-2 items-center hover:underline" href="/">
               Work

@@ -2,6 +2,8 @@ import { StaticImageData } from "next/image";
 import PostFLCNews from "./postFLCNews/PostFLCNews";
 import PostTalonDesignSystem from "./postTalonDesignSystem/PostTalonDesignSystem";
 import PostTemplate from "./postTemplate/PostTemplate";
+import PostStrava from "./postStrava/PostStrava";
+import PostMaps from "./postMaps/PostMaps";
 import flcNewsPreview2 from "./postFLCNews/flc-news-preview-2.png";
 import theOldFortPreview2 from "./postTheOldFort/the-old-fort-preview-2.png";
 import large from "./postTemplate/large.png";
@@ -29,10 +31,10 @@ export const postsData: PostData[] = [
     id: "flc-news-architecture-and-design",
     previewImg: flcNewsPreview2,
     title: "Information architecture and responsive design",
-    subtitle: "FLC News",
+    subtitle: "Fort Lewis College News",
     group: "work",
     description:
-      "Redesigning a primary marketing tool with a thousands of posts deep database, and users from every walk of life.",
+      "Transforming thousands of articles into a streamlined, responsive platform. Improved readability, navigation, and accessibility while showcasing strategic initiatives.",
     content: <PostFLCNews />,
   },
   {
@@ -42,7 +44,7 @@ export const postsData: PostData[] = [
     subtitle: "Talon Design System",
     group: "work",
     description:
-      "The do’s and don’ts of pitching, planning, building, and implementation a grassroots design system. The process of bringing a higher ed institution’s digital presence into the modern era.",
+      "Redefining a higher ed institution’s digital presence. From pitching to designing and developing, creating a modern design system that sets the stage for long-term growth.",
     content: <PostTalonDesignSystem />,
   },
   {
@@ -52,27 +54,47 @@ export const postsData: PostData[] = [
     subtitle: "The Old Fort",
     group: "work",
     description:
-      "Breathing new life into a unique, research-based institution. Creating a style that highlights the unique character of the content and users.",
+      "Revitalizing a research-based institution with a tailored visual style and structure that highlights the unique character of its users and content.",
     content: <PostTheOldFort />,
+  },
+  {
+    id: "strava",
+    previewImg: theOldFortPreview2,
+    title: "Keeping pace with the competition",
+    subtitle: "Trail conditions reporting for Strava",
+    group: "work",
+    description:
+      "Exploring a theoretical user flow for reporting trail conditions, and how it could be integrated into the Strava app.",
+    content: <PostStrava />,
+  },
+  {
+    id: "maps",
+    previewImg: theOldFortPreview2,
+    title: "Better late than never",
+    subtitle: "Automatic ETA updates for Google Maps",
+    group: "work",
+    description:
+      "A concept for reducing distractions on the go. Learn how an automatic notification feature could keep travelers informed without pulling them away from the journey.",
+    content: <PostMaps />,
   },
   {
     id: "childrens-book",
     previewImg: PreviewChildrens,
-    title: "Children’s book illustrator",
-    subtitle: "The Adventures of Ashe and Cat: The Mountain Bike Flat",
+    title: "The Adventures of Ashe and Cat",
+    subtitle: "Children's book illustrator",
     group: "personal",
     description:
-      "Illustrated a 30-page children’s book about mountain biking, and how to persevere in the face of challenges.",
+      "An illustrated 34-page children’s book about facing challenges head-on and finding joy on two wheels.",
     content: <PostChildrensBook />,
   },
   {
     id: "solved-in-motion",
     previewImg: PreviewSolvedInMotion,
-    title: "Creating immersive experiences",
-    subtitle: "Solved in motion",
+    title: "Solved in motion",
+    subtitle: "Studio Art thesis exhibition",
     group: "personal",
     description:
-      "My thesis project from the University of Virginia Studio Art. A leap into installation art.",
+      "An exploration of installation art, blending movement and space to create an unforgettable sensory experience.",
     content: <PostSolvedInMotion />,
   },
   {
@@ -82,7 +104,7 @@ export const postsData: PostData[] = [
     subtitle: "Original artwork",
     group: "personal",
     description:
-      "Inspired by a love of reading, occasional boredom, and above-average scissor skills.",
+      "Playful book covers and collage mashups inspired by a love of reading, moments of curiosity, and a knack for creative composition.",
     content: <PostCollagesAndCovers />,
   },
 ];

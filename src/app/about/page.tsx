@@ -30,15 +30,16 @@ export default function About() {
             <h1 className="text-4xl font-bold">Background and vision</h1>
             <p>
               I enjoy helping others discover new experiences, solve problems, and enrich their
-              daily lives. My background as a scientist and graphic designer equipped me with strong
-              skills in understanding people, addressing their needs, and creating accessible
-              solutions. Transitioning into UX/UI design has allowed me to channel those skills into
-              a career where I can continue making meaningful, user-centered impacts.
+              daily lives. My background as an environmental consultant and graphic designer
+              equipped me with strong skills in understanding people, addressing their needs, and
+              creating accessible solutions. Transitioning into UX/UI design has allowed me to
+              channel those skills into a career where I can continue making meaningful,
+              user-centered impacts.
             </p>
             <p>
-              Outside of work, I love mountain biking, playing ultimate frisbee, trying to learn
-              Debussy on piano, collecting memes, and reading fantasy books (currently reading The
-              Wandering Inn).
+              Outside of work, I love mountain biking, playing ultimate frisbee, rekindling my love
+              of piano, collecting memes, and reading fantasy books (current read: The Wandering
+              Inn).
             </p>
             <Link
               className="flex gap-2 items-center underline hover:font-bold"
