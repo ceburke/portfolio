@@ -38,8 +38,9 @@ export default function PostSolvedInMotion() {
         </section>
       </Double>
       <p>
-        This piece was both a bold step into new territory and a deeply personal exploration of
-        movement, iteration, and connection to place.
+        The new skills I learned and the time spent at the local trail sytem made this exhibit a
+        particularly special and impactful experience for me. I would love to do another iteration
+        of this project in the future.
       </p>
       <Triple>
         <PostImage
