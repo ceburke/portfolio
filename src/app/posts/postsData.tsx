@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 import PostFLCNews from "./postFLCNews/PostFLCNews";
 import PostTalon from "./postTalon/PostTalon";
-import previewTalon from "./postTalon/talon0.jpg";
+import PreviewTalon from "./postTalon/talon0.jpeg";
 import PostTemplate from "./postTemplate/PostTemplate";
 import PostStrava from "./postStrava/PostStrava";
 import PostMaps from "./postMaps/PostMaps";
@@ -40,7 +40,7 @@ export const postsData: PostData[] = [
   },
   {
     id: "talon-design-system",
-    previewImg: previewTalon,
+    previewImg: PreviewTalon,
     title: "Building a foundation for the future",
     subtitle: "Talon Design System",
     group: "work",
