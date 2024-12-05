@@ -7,6 +7,7 @@ import {
   PostImage,
   Triple,
 } from "../postComponents";
+import talon1 from "./talon1.jpg";
 import large from "./large.png";
 import small from "./small.png";
 import tallNarrow from "./tall-narrow.png";
@@ -37,26 +38,33 @@ export default function PostTemplate() {
             .filter(Boolean) as ToolData[]
         }
       />
-      <Heading2>Links</Heading2>
-      <ul className="list-disc pl-5">
-        <li>
-          <Link className="underline" href="/posts/the-old-fort">
-            Link to another post
-          </Link>
-        </li>
-        <li>
-          <Link className="underline" href="/about">
-            Link to about page
-          </Link>
-        </li>
-      </ul>
-      <p>Links don't include "/portfolio" because they are relative to next.config.ts#basePath</p>
 
-      <Heading2>h2 Overview or step #</Heading2>
+      <Heading2>Pitching a grassroots design system</Heading2>
       <p>
-        Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
-        per h2, but trying to keep it concise.{" "}
+        The first hurdle in creating the Talon Design System was convincing stakeholders of its
+        necessity. Many were unfamiliar with what a design system entailed or how it could benefit a
+        higher education institution like Fort Lewis College. To overcome this, I crafted a
+        comprehensive proposal that not only explained the concept but also quantified its impact in
+        tangible terms.{" "}
       </p>
+      <Double>
+        <PostImage
+          src={large}
+          description="The section of the FigJam board I used to pitch the value and the reasons why for a Fort Lewis College design system."
+        />
+        <section>
+          <Heading3>Creating connection and value</Heading3>
+          <p>
+            Using an engaging FigJam board, I outlined a clear timeline, areas of application, and
+            team-wide benefits. A key part of the pitch was a value equation that translated hours
+            saved on design and development into direct monetary savings, making the abstract
+            concept of a design system more concrete. By addressing stakeholder concerns head-on and
+            illustrating long-term scalability and accessibility gains, the proposal secured buy-in
+            and funding to move forward.{" "}
+          </p>
+        </section>
+      </Double>
+
       <PostImage
         src={large}
         description="Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences"
