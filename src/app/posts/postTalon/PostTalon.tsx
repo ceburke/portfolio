@@ -17,23 +17,19 @@ export default function PostTemplate() {
   return (
     <>
       <ExtendedPostTitle
-        title="h1 Heading 2 (36px, bold)"
-        description="Brief description in paragraph text, 3-4 sentences (16 px, regular). Lorem ipsum dolor sit amet consectetur. Turpis lacus augue faucibus nibh ac. Volutpat sit egestas neque et. Turpis lacus augue faucibus nibh ac. Turpis lacus augue faucibus nibh ac."
+        title="Talon Design System"
+        description="Fort Lewis College’s website, with over 6,000 pages and an outdated codebase, faced significant challenges in accessibility, usability, and scalability. Decades of inconsistent styles and fragmented structures made it difficult for users to navigate and for content creators to maintain. The Talon Design System was developed to address these pain points, providing a scalable, accessible, and cohesive framework to modernize the college’s digital presence. This ongoing project has involved pitching the initiative, developing a strategy, auditing existing components, designing accessible templates, and partnering with a development vendor to bring the system to life."
         roles={[
-          "Information architecture, prototyping, UI design",
-          "Content strategy, art direction",
-          "Production",
+          "Pitch value, strategy, and process",
+          "Conduct usability research, competitive audits, and design reviews",
+          "Design system architecture, components, templates, and documentation",
+          "Manage vendor relationship and development timeline",
         ]}
         results={[
-          "2x increase of unique sessions",
-          "Simplified update flow",
-          "Increased discoverability of items XYZ",
-          <>
-            Result with a{" "}
-            <Link className="underline" href="/posts/the-old-fort">
-              link to somewhere.
-            </Link>
-          </>,
+          "Secured funding and approval to move forward",
+          "Audited site information architecture and universal components",
+          "Designed new components, templates, and documentation",
+          "Delivered annotated design files and a comprehensive development timeline to the vendor",
         ]}
         toolsData={
           ["Figma", "Bootstrap"]

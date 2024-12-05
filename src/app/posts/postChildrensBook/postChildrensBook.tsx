@@ -1,4 +1,4 @@
-import {Heading1} from '../postComponents';
+import { Heading1 } from "../postComponents";
 
 export default function PostChildrensBook() {
   return (

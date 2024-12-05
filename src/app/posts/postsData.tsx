@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 import PostFLCNews from "./postFLCNews/PostFLCNews";
-import PostTalonDesignSystem from "./postTalonDesignSystem/PostTalonDesignSystem";
+import PostTalon from "./postTalon/PostTalon";
 import PostTemplate from "./postTemplate/PostTemplate";
 import PostStrava from "./postStrava/PostStrava";
 import PostMaps from "./postMaps/PostMaps";
@@ -45,7 +45,7 @@ export const postsData: PostData[] = [
     group: "work",
     description:
       "Redefining a higher ed institution’s digital presence. From pitching to designing and developing, creating a modern design system that sets the stage for long-term growth.",
-    content: <PostTalonDesignSystem />,
+    content: <PostTalon />,
   },
   {
     id: "the-old-fort",
@@ -100,11 +100,11 @@ export const postsData: PostData[] = [
   {
     id: "collages-and-covers",
     previewImg: PreviewCollage,
-    title: "Collages and covers",
+    title: "Covers and collages",
     subtitle: "Original artwork",
     group: "personal",
     description:
-      "Playful book covers and collage mashups inspired by a love of reading, moments of curiosity, and a knack for creative composition.",
+      "Playful book covers and collage mashups inspired by a love of reading, strangeness, and a knack for creative composition.",
     content: <PostCollagesAndCovers />,
   },
 ];
