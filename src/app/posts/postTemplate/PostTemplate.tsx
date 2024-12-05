@@ -47,7 +47,7 @@ export default function PostTemplate() {
           </Link>
         </li>
       </ul>
-      <p>Links don't include "/portfolio" because they are relative to next.config.ts#basePath</p>
+      <p>Links don‘t include “/portfolio“ because they are relative to next.config.ts#basePath</p>
 
       <Heading2>h2 Overview or step #</Heading2>
       <p>
