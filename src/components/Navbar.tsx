@@ -1,5 +1,6 @@
 import {MAX_CONTENT_WIDTH} from '@/constants';
 import Link from 'next/link';
+import Curb from './Curb';
 
 export default function Navbar() {
   return (
@@ -8,9 +9,7 @@ export default function Navbar() {
         className="flex justify-between items-center mx-auto w-full"
         style={{maxWidth: `${MAX_CONTENT_WIDTH}px`}}
       >
-        <Link className="text-2xl font-bold font-emblema-one" href="/">
-          CB
-        </Link>
+        <Curb />
         <ul className="flex items-center gap-4 lg:gap-10 text-lg lg:text-2xl">
           <li>
             <Link className="flex gap-2 items-center hover:underline" href="/">
