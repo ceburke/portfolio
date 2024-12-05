@@ -7,7 +7,11 @@ import {
   PostImage,
   Triple,
 } from "../postComponents";
-import talon1 from "./talon1.jpg";
+import talon1 from "./talon1.jpeg";
+import talon2 from "./talon2.jpg";
+import talon3 from "./talon3.jpg";
+import talon4 from "./talon4.jpg";
+import talon5 from "./talon5.jpg";
 import large from "./large.png";
 import small from "./small.png";
 import tallNarrow from "./tall-narrow.png";
@@ -30,7 +34,7 @@ export default function PostTemplate() {
           "Secured approval and funding",
           "Audited site information architecture and universal components",
           "Designed new components, templates, and documentation",
-          "Delivered design files, expectations, and timeline to the vendor",
+          "Delivered design files, expectations, and timeline to developer",
         ]}
         toolsData={
           ["Figma", "Bootstrap"]
@@ -74,89 +78,95 @@ export default function PostTemplate() {
         them as I went.
       </p>
       <Triple>
-        <PostImage src={wideShort} description="Descriptive caption, 1-2 sentences" />
-        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
-        <PostImage src={small} description="Descriptive caption, 1-2 sentences" />
+        <PostImage src={talon2} description="Icon and factoid workshopping process." />
+        <PostImage
+          src={talon3}
+          description="Iconography documentation on public-facing design system website."
+        />
+        <PostImage
+          src={talon4}
+          description="Developing components, such as testimonials, highlighted the need for modern Bootstrap utilities and clean stylesheets."
+        />
       </Triple>
       <p>
-        However, I quickly ran into significant roadblocks: conflicting stylesheets, outdated
-        dependencies, a lack of developer workflows, and no documentation for the existing setup.
-        These challenges revealed that Fort Lewis College’s digital foundation wasn’t ready to
-        support a robust design system yet. Recognizing the need to pivot, I shifted focus to
-        cleaning up the codebase, with goals like upgrading to Bootstrap 5 and consolidating CSS and
-        SCSS.
+        I quickly ran into significant roadblocks: lack of basic governance and styles, conflicting
+        stylesheets, outdated dependencies, a lack of developer workflows, and no documentation for
+        the existing setup. These challenges revealed that Fort Lewis College’s digital foundation
+        wasn’t ready to support a robust design system yet. Recognizing the need to pivot, I shifted
+        focus to implementing a modern, well-documented codebase, with goals like upgrading to
+        Bootstrap 5 and consolidating CSS and SCSS.
       </p>
       <p>
         This phase taught me that foundational technical improvements are essential for scalability
         and highlighted the importance of flexibility when navigating complex projects.
       </p>
 
-      <PostImage
-        src={large}
-        description="Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences"
-      />
-      <PostImage
-        src={small}
-        description="Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences"
-      />
-
-      <Double>
-        <PostImage src={small} description="Descriptive caption, 1-2 sentences" />
-        <PostImage src={tallNarrow} description="Descriptive caption, 1-2 sentences" />
-      </Double>
-      <Heading2>h2 Overview or step #</Heading2>
+      <Heading2>Building a strong foundation</Heading2>
       <p>
-        Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
-        per h2, but trying to keep it concise.
-      </p>
-      <Triple>
-        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
-        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
-        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
-      </Triple>
-      <Heading2>h2 Overview or step #</Heading2>
-      <p>
-        Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
-        per h2, but trying to keep it concise.
+        With the technical limitations of the codebase clear, I shifted focus to building a strong
+        foundation for the design system. I revisited user research to identify core needs and
+        established accessible typography, color palettes, iconography, and layout standards. Using
+        Figma variables, I streamlined design workflows and ensured scalability. Key universal
+        components, like menus and page layouts, were developed with a holistic approach, balancing
+        stakeholder feedback with modern design principles.
       </p>
 
-      <Double>
-        <section>
-          <Heading2>h2 Overview or step #</Heading2>
-          <p>
-            Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two
-            paragraphs per h2, but trying to keep it concise.
-          </p>
-        </section>
-        <PostImage src={wideShort} description="Descriptive caption, 1-2 sentences" />
-      </Double>
-      <Double>
-        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
-        <section>
-          <Heading2>h2 Overview or step #</Heading2>
-          <p>
-            Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two
-            paragraphs per h2, but trying to keep it concise.
-          </p>
-        </section>
-      </Double>
-      <Heading2>h2 Overview or step #</Heading2>
+      <PostImage
+        src={talon5}
+        description="A sampling of the types of foundational guidelines and components within Talon."
+      />
+
+      <Heading2>Identify a developer and set expectations</Heading2>
+      <p>
+        Recognizing the need for external expertise, I identified a development vendor to help
+        implement the design system. I delivered annotated design files, detailed timelines, and
+        clear process documentation to ensure alignment on expectations. With Fort Lewis College’s
+        limited in-house development resources, I emphasized a collaborative approach that included
+        learning workflows for ongoing updates.
+      </p>
+      <p>
+        A phased implementation strategy focused on high-impact areas like the header, footer,
+        navigation, and homepage to minimize disruption while delivering noticeable improvements.
+        This partnership sets the stage for scalable updates across the college’s sprawling website.
+      </p>
+
       <Double>
         <section className="h-full">
-          <Heading3>h3</Heading3>
+          <Heading3>Implement high-impact updates</Heading3>
           <p>
-            Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two
-            paragraphs per h2, but trying to keep it concise.
+            Focus on phased improvements to the header, footer, navigation, and homepage to maximize
+            immediate usability gains while minimizing disruption.{" "}
           </p>
         </section>
         <section className="h-full">
-          <Heading3>h3</Heading3>
+          <Heading3>Ensure developer alignment</Heading3>
           <p>
             Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two
             paragraphs per h2, but trying to keep it concise.
           </p>
         </section>
       </Double>
+      <Double>
+        <section className="h-full">
+          <Heading3>Establish scalable workflows</Heading3>
+          <p>
+            Create a development workflow that allows Fort Lewis College to maintain and expand the
+            system over time, despite limited in-house resources.
+          </p>{" "}
+        </section>
+        <section className="h-full">
+          <Heading3>Lay the groundwork for full implementation</Heading3>
+          <p>
+            Develop a strategy for integrating the design system across all 6,000+ pages while
+            addressing existing technical limitations.{" "}
+          </p>
+        </section>
+      </Double>
+
+      <p>
+        The design files and process documents are currently being reviewed by the developer. Stay
+        tuned for updates on the Talon Design System as it continues to evolve and transform.
+      </p>
     </>
   );
 }
