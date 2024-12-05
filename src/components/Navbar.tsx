@@ -1,17 +1,18 @@
-import { MAX_CONTENT_WIDTH } from "@/constants";
-import Link from "next/link";
+import {MAX_CONTENT_WIDTH} from '@/constants';
+import Link from 'next/link';
+import {MAX_CONTENT_WIDTH} from '@/constants';
+import Link from 'next/link';
+import Curb from './Curb';
 
 export default function Navbar() {
   return (
     <nav className="flex items-center sticky top-0 z-10 h-20 py-4 px-5 w-full text-center bg-white dark:bg-black dark:text-white">
       <div
         className="flex justify-between items-center mx-auto w-full"
-        style={{ maxWidth: `${MAX_CONTENT_WIDTH}px` }}
+        style={{maxWidth: `${MAX_CONTENT_WIDTH}px`}}
       >
-        <Link className="text-2xl font-bold font-emblema-one" href="/">
-          CB
-        </Link>
-        <ul className="flex items-center gap-4 lg:gap-10 text-md lg:text-lg">
+        <Curb />
+        <ul className="flex items-center gap-4 lg:gap-10 text-lg lg:text-lg">
           <li>
             <Link className="flex gap-2 items-center hover:underline" href="/">
               Work
