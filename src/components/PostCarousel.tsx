@@ -10,7 +10,8 @@ function useWindowWidth(): number {
     if (width === -1) {
       setWidth(window.innerWidth);
     }
-
+  }, [width]);
+  useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
     return () => {
