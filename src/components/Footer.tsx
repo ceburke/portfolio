@@ -3,10 +3,10 @@ import {MAX_CONTENT_WIDTH} from '@/constants';
 export default function Footer() {
   return (
     <footer className="w-full">
-      <div className="group flex transition-all ease-in-out duration-700 hover:scale-x-105">
+      <div className="group flex transition-all ease-in-out duration-700 delay-500 hover:scale-x-105">
         <div className="border-b-2 border-transparent border-b-black dark:border-b-white w-full" />
         <svg
-          className="flex-none"
+          className="flex-none max-w-[95vw]"
           width="331"
           height="59"
           viewBox="0 0 331 59"
