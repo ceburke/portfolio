@@ -1,3 +1,4 @@
+import LightBox from '@/components/Lightbox';
 import {ToolData} from '@/components/tools/toolsData';
 import ToolsList from '@/components/tools/ToolsList';
 import ExportedImage from 'next-image-export-optimizer';
@@ -38,8 +39,15 @@ export function PostImage({
 }): React.ReactNode {
   return (
     <figure className="flex flex-col justify-end h-full">
-      <div className="relative h-auto max-w-full mx-auto">
-        <ExportedImage className="object-contain" src={src} alt={description} sizes="100vw" />
+      <div className="relative h-auto max-w-full max-h-full mx-auto">
+        <LightBox>
+          <ExportedImage
+            className="object-contain max-h-full"
+            src={src}
+            alt={description}
+            sizes="100vw"
+          />
+        </LightBox>
       </div>
       <figcaption className="italic text-md mt-2 flex-none h-28 lg:h-14 ">{description}</figcaption>
     </figure>
