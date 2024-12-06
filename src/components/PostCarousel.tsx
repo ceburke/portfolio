@@ -24,7 +24,7 @@ function useWindowWidth(): number {
 export default function PostsCarousel({posts}: {posts: PostData[]}) {
   const width = useWindowWidth();
   const [page, setPage] = useState(0);
-  const postsPerPage = width < 640 ? 1 : 3;
+  const postsPerPage = width === -1 || width > 640 ? 3 : 1;
   const totalPages = Math.ceil(posts.length / postsPerPage);
 
   return (
