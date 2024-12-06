@@ -69,7 +69,10 @@ export default function PostTemplate() {
         per h2, but trying to keep it concise.
       </p>
       <Double>
-        <PostImage src={small} description="Descriptive caption, 1-2 sentences" />
+        <PostImage
+          src={small}
+          description="Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences"
+        />
         <PostImage src={tallNarrow} description="Descriptive caption, 1-2 sentences" />
       </Double>
       <Heading2>h2 Overview or step #</Heading2>
@@ -78,7 +81,10 @@ export default function PostTemplate() {
         per h2, but trying to keep it concise.
       </p>
       <Triple>
-        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
+        <PostImage
+          src={large}
+          description="Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences."
+        />
         <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
         <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
       </Triple>
