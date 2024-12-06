@@ -1,7 +1,7 @@
 import {ToolData} from '@/components/tools/toolsData';
 import ToolsList from '@/components/tools/ToolsList';
-import {StaticImport} from 'next/dist/shared/lib/get-img-props';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
+import {StaticImageData} from 'next/image';
 
 export function Heading1({children}: {children: React.ReactNode}): React.ReactNode {
   return <h1 className="text-4xl font-bold">{children}</h1>;
@@ -33,12 +33,14 @@ export function PostImage({
   src,
   description,
 }: {
-  src: string | StaticImport;
+  src: string | StaticImageData;
   description: string;
 }): React.ReactNode {
   return (
     <figure className="flex flex-col justify-end h-full">
-      <Image className="mx-auto" src={src} alt={description} />
+      <div className="relative h-auto max-w-full mx-auto">
+        <ExportedImage className="object-contain" src={src} alt={description} sizes="100vw" />
+      </div>
       <figcaption className="italic text-md mt-2 flex-none h-28 lg:h-14 ">{description}</figcaption>
     </figure>
   );

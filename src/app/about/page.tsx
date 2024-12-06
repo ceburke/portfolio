@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import type {Metadata} from 'next';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import headshot from './headshot.png';
 import Link from 'next/link';
 import ToolsList from '@/components/tools/ToolsList';
@@ -26,7 +26,12 @@ export default function About() {
       >
         <div className="flex flex-col md:flex-row items-center justify-start gap-10 md:gap-20">
           {/* TODO: get higher resolution cropped headshot */}
-          <Image src={headshot} alt="Claire headshot" className="object-fit w-[430px]" />
+          <ExportedImage
+            src={headshot}
+            alt="Claire headshot"
+            className="md:w-1/3 md:flex-none"
+            sizes="100vw"
+          />
           <div className="flex flex-col gap-5">
             <h1 className="text-4xl font-bold">Background and vision</h1>
             <p>
