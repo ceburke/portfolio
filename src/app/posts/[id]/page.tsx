@@ -36,7 +36,23 @@ export default async function Post({params}: {params: Promise<{id: string}>}) {
         style={{maxWidth: `${MAX_POST_WIDTH}px`}}
       >
         {post.content}
-        <div className="w-full flex justify-end mt-10">
+        <div className="w-full flex justify-between pt-20">
+          <Link
+            className="group flex items-center hover:underline"
+            href={`./${postsData[postIndex > 0 ? postIndex - 1 : postsData.length - 1].id}`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+              stroke="currentColor"
+              className="size-8 transition-all ease-in-out group-hover:mr-5 group-hover:scale-105 group-active:scale-125"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>{' '}
+            Previous
+          </Link>
           <Link
             className="group flex items-center hover:underline"
             href={`./${postsData[postIndex < postsData.length - 1 ? postIndex + 1 : 0].id}`}
@@ -48,7 +64,7 @@ export default async function Post({params}: {params: Promise<{id: string}>}) {
               viewBox="0 0 24 24"
               strokeWidth={2}
               stroke="currentColor"
-              className="size-8 transition-all ease-in-outgroup-hover:translate-x-10 group-hover:ml-5 group-hover:scale-105 group-active:scale-125"
+              className="size-8 transition-all ease-in-out group-hover:ml-5 group-hover:scale-105 group-active:scale-125"
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg>
