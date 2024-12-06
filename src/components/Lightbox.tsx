@@ -21,7 +21,7 @@ export default function LightBox({children}: {children: React.ReactNode}): React
       {isOpen &&
         createPortal(
           <div
-            className="fixed left-0 top-0 h-[100vh] w-[100vw] z-50 bg-white/90 dark:bg-black/90 flex items-center justify-center cursor-zoom-out overflow-auto"
+            className="fixed inset-0 z-50 bg-white/90 dark:bg-black/90 flex items-center justify-center cursor-zoom-out overflow-auto"
             onClick={() => setIsOpen(false)}
           >
             <button
