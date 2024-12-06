@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 import {ToolData} from './toolsData';
 
 export default function ToolsListItem({
@@ -12,7 +12,7 @@ export default function ToolsListItem({
         className="flex flex-none items-center justify-center h-16 w-16"
         style={{backgroundColor: color}}
       >
-        <Image src={img} alt={label} className="h-1/2 w-1/2" />
+        <ExportedImage src={img} alt={label} className="h-1/2 w-1/2" />
       </div>
       <p className="overflow-ellipsis">{label}</p>
     </div>
