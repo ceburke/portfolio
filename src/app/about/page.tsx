@@ -1,23 +1,13 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-import type {Metadata} from 'next';
-import Image from 'next/image';
-import headshot from './headshot.jpg';
-import Link from 'next/link';
+import PostCarousel from '@/components/PostCarousel';
 import ToolsList from '@/components/tools/ToolsList';
 import {toolsData} from '@/components/tools/toolsData';
-import PostCarousel from '@/components/PostCarousel';
-import {postsData} from '../posts/postsData';
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
 import type {Metadata} from 'next';
 import ExportedImage from 'next-image-export-optimizer';
-import headshot from './headshot.png';
 import Link from 'next/link';
-import ToolsList from '@/components/tools/ToolsList';
-import {toolsData} from '@/components/tools/toolsData';
-import PostCarousel from '@/components/PostCarousel';
 import {postsData} from '../posts/postsData';
+import headshot from './headshot.jpg';
 
 export const metadata: Metadata = {
   title: 'Claire Burke | About',
