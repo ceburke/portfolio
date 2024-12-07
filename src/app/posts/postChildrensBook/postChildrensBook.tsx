@@ -1,7 +1,4 @@
-import {Heading1} from '../postComponents';
-
-import {ToolData, toolsData} from '@/components/tools/toolsData';
-import {Double, ExtendedPostTitle, Heading2, Heading3, PostImage, Triple} from '../postComponents';
+import {Double, ExtendedPostTitle, Heading2, PostImage} from '../postComponents';
 import book1 from './book1.png';
 import book2 from './book2.png';
 import book3 from './book3.png';

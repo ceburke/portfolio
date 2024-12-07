@@ -1,13 +1,5 @@
-import { ToolData, toolsData } from "@/components/tools/toolsData";
-import {
-  Double,
-  ExtendedPostTitle,
-  Heading2,
-  Heading3,
-  PostImage,
-  Triple,
-} from "../postComponents";
-import collage1 from "./collage1.jpg";
+import {ExtendedPostTitle, PostImage} from '../postComponents';
+import collage1 from './collage1.jpg';
 
 export default function PostCollagesAndCovers() {
   return (

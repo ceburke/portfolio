@@ -1,15 +1,7 @@
-import { ToolData, toolsData } from "@/components/tools/toolsData";
-import {
-  Double,
-  ExtendedPostTitle,
-  Heading2,
-  Heading3,
-  PostImage,
-  Triple,
-} from "../postComponents";
-import motion1 from "./motion1.jpg";
-import motion2 from "./motion2.jpg";
-import motion3 from "./motion3.jpg";
+import {Double, ExtendedPostTitle, Heading3, PostImage, Triple} from '../postComponents';
+import motion1 from './motion1.jpg';
+import motion2 from './motion2.jpg';
+import motion3 from './motion3.jpg';
 
 export default function PostSolvedInMotion() {
   return (

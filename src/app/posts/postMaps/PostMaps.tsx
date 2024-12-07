@@ -1,17 +1,10 @@
-import { ToolData, toolsData } from "@/components/tools/toolsData";
-import {
-  Double,
-  ExtendedPostTitle,
-  Heading2,
-  Heading3,
-  PostImage,
-  Triple,
-} from "../postComponents";
-import large from "./large.png";
-import small from "./small.png";
-import tallNarrow from "./tall-narrow.png";
-import wideShort from "./wide-short.png";
-import Link from "next/link";
+import {ToolData, toolsData} from '@/components/tools/toolsData';
+import {Double, ExtendedPostTitle, Heading2, Heading3, PostImage, Triple} from '../postComponents';
+import large from './large.png';
+import small from './small.png';
+import tallNarrow from './tall-narrow.png';
+import wideShort from './wide-short.png';
+import Link from 'next/link';
 
 export default function PostTemplate() {
   return (
@@ -20,23 +13,23 @@ export default function PostTemplate() {
         title="h1 Heading 2 (36px, bold)"
         description="Brief description in paragraph text, 3-4 sentences (16 px, regular). Lorem ipsum dolor sit amet consectetur. Turpis lacus augue faucibus nibh ac. Volutpat sit egestas neque et. Turpis lacus augue faucibus nibh ac. Turpis lacus augue faucibus nibh ac."
         roles={[
-          "Information architecture, prototyping, UI design",
-          "Content strategy, art direction",
-          "Production",
+          'Information architecture, prototyping, UI design',
+          'Content strategy, art direction',
+          'Production',
         ]}
         results={[
-          "2x increase of unique sessions",
-          "Simplified update flow",
-          "Increased discoverability of items XYZ",
+          '2x increase of unique sessions',
+          'Simplified update flow',
+          'Increased discoverability of items XYZ',
           <>
-            Result with a{" "}
+            Result with a{' '}
             <Link className="underline" href="/posts/the-old-fort">
               link to somewhere.
             </Link>
           </>,
         ]}
         toolsData={
-          ["Figma", "Bootstrap"]
+          ['Figma', 'Bootstrap']
             .map((toolName) => toolsData.find((tool) => tool.label === toolName))
             .filter(Boolean) as ToolData[]
         }
@@ -54,12 +47,12 @@ export default function PostTemplate() {
           </Link>
         </li>
       </ul>
-      <p>Links don't include "/portfolio" because they are relative to next.config.ts#basePath</p>
+      <p>Links don‘t include “/portfolio“ because they are relative to next.config.ts#basePath</p>
 
       <Heading2>h2 Overview or step #</Heading2>
       <p>
         Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
-        per h2, but trying to keep it concise.{" "}
+        per h2, but trying to keep it concise.{' '}
       </p>
       <PostImage
         src={large}
