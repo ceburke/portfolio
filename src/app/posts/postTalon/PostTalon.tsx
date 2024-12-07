@@ -106,9 +106,10 @@ export default function PostTemplate() {
         With the technical limitations of the codebase clear, I shifted focus to building a strong
         foundation for the design system. I revisited user research to identify core needs and
         established accessible typography, color palettes, iconography, and layout standards. Using
-        Figma variables, I streamlined design workflows and ensured scalability. Key universal
-        components, like menus and page layouts, were developed with a holistic approach, balancing
-        stakeholder feedback with modern design principles.
+        Figma variables, I streamlined design workflows and ensured scalability. I developed
+        universal components, like menus and page layouts, and CMS-level pane layouts for
+        implementation. My design process balanced stakeholder feedback, technical needs, and modern
+        design principles.
       </p>
 
       <PostImage
@@ -127,7 +128,9 @@ export default function PostTemplate() {
       <p>
         A phased implementation strategy focused on high-impact areas like the header, footer,
         navigation, and homepage to minimize disruption while delivering noticeable improvements.
-        This partnership sets the stage for scalable updates across the college’s sprawling website.
+        The second phase, currently underway, will focus on designing and building accessible
+        content components for the college’s CMS. This partnership sets the stage for scalable
+        updates across the college’s sprawling website.
       </p>
 
       <Double>
@@ -141,8 +144,8 @@ export default function PostTemplate() {
         <section className="h-full">
           <Heading3>Ensure developer alignment</Heading3>
           <p>
-            Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two
-            paragraphs per h2, but trying to keep it concise.
+            Outline technical expectations, knowledge gaps, timelines, and process documentation to
+            ensure a smooth, collaborative process.
           </p>
         </section>
       </Double>
