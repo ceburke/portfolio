@@ -23,17 +23,17 @@ export default function PostTemplate() {
     <>
       <ExtendedPostTitle
         title="Talon Design System"
-        description="Fort Lewis College’s sprawling 6,000-page website, built on an outdated codebase, struggled with accessibility, usability, and scalability. Decades of inconsistent styles created frustrations for both users and content creators. The Talon Design System was designed to solve these challenges by modernizing the digital presence with a scalable, accessible, and cohesive framework. This ongoing project spans pitching the initiative, auditing components, designing accessible templates, and partnering with a vendor to bring the vision to life."
+        description="Fort Lewis College’s sprawling 6,000-page website faced a breaking point: outdated code, inaccessible designs, and a disjointed experience for users and content creators alike. The Talon Design System is built to transform this fragmented digital presence into a scalable, accessible framework. From pitching stakeholders to designing universal components, I’ve led this ongoing effort to modernize and unify the college’s digital assets."
         roles={[
           "Pitch value, strategy, and process",
-          "Conduct usability research, competitive audits, and design reviews",
+          "Conduct competitive audits, best practice research, and design reviews",
           "Design system architecture, components, templates, and documentation",
           "Manage vendor relationship and development timeline",
         ]}
         results={[
           "Secured approval and funding",
           "Audited site information architecture and universal components",
-          "Designed new components, templates, and documentation",
+          "Designed new components and documentation based on Atomic Design",
           "Delivered design files, expectations, and timeline to developer",
         ]}
         toolsData={
@@ -45,11 +45,9 @@ export default function PostTemplate() {
 
       <Heading2>Pitching a grassroots design system</Heading2>
       <p>
-        The first hurdle in creating the Talon Design System was convincing stakeholders of its
-        necessity. Many were unfamiliar with what a design system entailed or how it could benefit a
-        higher education institution like Fort Lewis College. To overcome this, I crafted a
-        comprehensive proposal that not only explained the concept but also quantified its impact in
-        tangible terms.{" "}
+        Stakeholders initially hesitated, unsure how a design system could address the complexity of
+        the FLC website and other digital assets. To build trust, I demonstrated how hours saved
+        through cohesive design could translate into real cost savings.{" "}
       </p>
       <Double>
         <PostImage
@@ -60,11 +58,10 @@ export default function PostTemplate() {
           <Heading3>Creating connection and value</Heading3>
           <p>
             Using an engaging FigJam board, I outlined a clear timeline, areas of application, and
-            team-wide benefits. A key part of the pitch was a value equation that translated hours
-            saved on design and development into direct monetary savings, making the abstract
-            concept of a design system more concrete. By addressing stakeholder concerns head-on and
-            illustrating long-term scalability and accessibility gains, the proposal secured buy-in
-            and funding to move forward.{" "}
+            team-wide benefits. An essential part of the pitch was a return-on-investment (ROI)
+            value equation (from Smashing Magazine) that translated hours saved on design and
+            development into direct monetary savings, putting the abstract concept of a design
+            system into common terms.{" "}
           </p>
         </section>
       </Double>
@@ -89,12 +86,9 @@ export default function PostTemplate() {
         />
       </Triple>
       <p>
-        I quickly ran into significant roadblocks: lack of basic governance and styles, conflicting
-        stylesheets, outdated dependencies, a lack of developer workflows, and no documentation for
-        the existing setup. These challenges revealed that Fort Lewis College’s digital foundation
-        wasn’t ready to support a robust design system yet. Recognizing the need to pivot, I shifted
-        focus to implementing a modern, well-documented codebase, with goals like upgrading to
-        Bootstrap 5 and consolidating CSS and SCSS.
+        Initial efforts revealed critical roadblocks—conflicting stylesheets, outdated dependencies,
+        and undocumented workflows—prompting a pivot to modernize the codebase with Bootstrap 5 and
+        consolidated CSS/SCSS.
       </p>
       <p>
         This phase taught me that foundational technical improvements are essential for scalability
