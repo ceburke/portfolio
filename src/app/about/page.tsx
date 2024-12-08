@@ -35,11 +35,11 @@ export default function About() {
           <div className="flex flex-col gap-5">
             <h1 className="text-4xl font-bold">Background and vision</h1>
             <p>
-              I enjoy helping others discover new experiences, solve problems, and enrich their
-              daily lives. My background as an environmental consultant and graphic designer
-              equipped me with strong skills in understanding people, addressing their needs, and
-              creating accessible solutions. Transitioning into UX/UI design has allowed me to focus
-              these skills on creating meaningful, user-centered experiences.
+              I like helping people discover new experiences, solve problems, and improve their
+              daily lives. My background in environmental consulting and graphic design taught me
+              how to understand people, meet their needs, explain complex ideas clearly, and create
+              accessible solutions.Transitioning into UX/UI design has allowed me to focus these
+              skills on creating meaningful, user-centered experiences.
             </p>
             <p>
               Outside of work, I love mountain biking, playing ultimate frisbee, rekindling my love
