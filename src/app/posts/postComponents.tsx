@@ -12,7 +12,7 @@ export function Heading2({ children }: { children: React.ReactNode }): React.Rea
   return <h2 className="text-2xl font-bold">{children}</h2>;
 }
 
-//TODO add margin below headings, other components//
+//TODO add margin below headings, other//
 export function Heading3({ children }: { children: React.ReactNode }): React.ReactNode {
   return <h3 className="text-xl font-bold">{children}</h3>;
 }

@@ -1,16 +1,17 @@
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
-import PostCarousel from '@/components/PostCarousel';
-import ToolsList from '@/components/tools/ToolsList';
-import {toolsData} from '@/components/tools/toolsData';
-import type {Metadata} from 'next';
-import ExportedImage from 'next-image-export-optimizer';
-import Link from 'next/link';
-import {postsData} from '../posts/postsData';
-import headshot from './headshot.jpg';
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import PostCarousel from "@/components/PostCarousel";
+import ToolsList from "@/components/tools/ToolsList";
+import { toolsData } from "@/components/tools/toolsData";
+import type { Metadata } from "next";
+import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
+import { postsData } from "../posts/postsData";
+import headshot from "./headshot.jpg";
+import { Heading3 } from "../posts/postComponents";
 
 export const metadata: Metadata = {
-  title: 'Claire Burke | About',
+  title: "Claire Burke | About",
   description: `I'm Claire, a product designer with a passion for UI and UX.`,
 };
 
@@ -22,7 +23,7 @@ export default function About() {
       <Navbar />
       <main
         className="mx-auto mt-10 px-5 lg:px-0"
-        style={{maxWidth: `${ABOUT_PAGE_MAX_CONTENT_WIDTH}px`}}
+        style={{ maxWidth: `${ABOUT_PAGE_MAX_CONTENT_WIDTH}px` }}
       >
         <div className="flex flex-col md:flex-row items-center justify-start gap-10 md:gap-20">
           <ExportedImage
@@ -37,41 +38,34 @@ export default function About() {
               I enjoy helping others discover new experiences, solve problems, and enrich their
               daily lives. My background as an environmental consultant and graphic designer
               equipped me with strong skills in understanding people, addressing their needs, and
-              creating accessible solutions. Transitioning into UX/UI design has allowed me to
-              channel those skills into a career where I can continue making meaningful,
-              user-centered impacts.
+              creating accessible solutions. Transitioning into UX/UI design has allowed me to focus
+              these skills on creating meaningful, user-centered experiences.
             </p>
             <p>
               Outside of work, I love mountain biking, playing ultimate frisbee, rekindling my love
-              of piano, collecting memes, and reading fantasy books (current read: The Wandering
-              Inn).
+              of piano, and reading fantasy books (currently reading <i>The Wandering Inn</i>).
             </p>
-            <Link
-              className="flex gap-2 items-center underline hover:font-bold"
-              href="https://www.linkedin.com/in/claire-burke/"
-              title="Claire's LinkedIn profile"
-              target="_blank"
-            >
-              Learn more about my career path on LinkedIn
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="currentColor"
-                className="size-4"
+            <p>
+              Connect with me on&nbsp;
+              <Link
+                className="underline hover:font-bold"
+                href="https://www.linkedin.com/in/claire-burke/"
+                title="Claire's LinkedIn profile"
+                target="_blank"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-            <div className="mt-5">
-              <p className="font-bold">University of Virginia</p>
-              <p> B.A. Environmental Science, B.A. Studio Art</p>
-            </div>
-            <div>
-              <p className="font-bold">Coursera</p>
-              <p>Google UX Design Professional Certificate</p>
-            </div>
+                LinkedIn
+              </Link>
+              &nbsp;to learn more about my career path.
+            </p>
+            <Heading3>Education</Heading3>
+            <p>
+              <span className="font-bold">University of Virginia</span>
+              <br></br>B.A. Environmental Science, B.A. Studio Art
+            </p>
+            <p>
+              <span className="font-bold">Coursera</span>
+              <br></br>Google UX Design Professional Certificate
+            </p>
           </div>
         </div>
 
@@ -82,7 +76,7 @@ export default function About() {
 
         <h2 className="text-3xl font-bold mt-14 mb-10">Personal projects</h2>
       </main>
-      <PostCarousel posts={postsData.filter((post) => post.group === 'personal')} />
+      <PostCarousel posts={postsData.filter((post) => post.group === "personal")} />
       <Footer />
     </div>
   );
