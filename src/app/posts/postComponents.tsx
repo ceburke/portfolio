@@ -1,22 +1,24 @@
-import LightBox from '@/components/Lightbox';
-import {ToolData} from '@/components/tools/toolsData';
-import ToolsList from '@/components/tools/ToolsList';
-import ExportedImage from 'next-image-export-optimizer';
-import {StaticImageData} from 'next/image';
+import LightBox from "@/components/Lightbox";
+import { ToolData } from "@/components/tools/toolsData";
+import ToolsList from "@/components/tools/ToolsList";
+import ExportedImage from "next-image-export-optimizer";
+import { StaticImageData } from "next/image";
 
-export function Heading1({children}: {children: React.ReactNode}): React.ReactNode {
+export function Heading1({ children }: { children: React.ReactNode }): React.ReactNode {
   return <h1 className="text-4xl font-bold">{children}</h1>;
 }
 
-export function Heading2({children}: {children: React.ReactNode}): React.ReactNode {
+export function Heading2({ children }: { children: React.ReactNode }): React.ReactNode {
   return <h2 className="text-2xl font-bold">{children}</h2>;
 }
 
-export function Heading3({children}: {children: React.ReactNode}): React.ReactNode {
+//TODO add margin below headings, other components//
+export function Heading3({ children }: { children: React.ReactNode }): React.ReactNode {
   return <h3 className="text-xl font-bold">{children}</h3>;
 }
 
-export function Double({children}: {children: React.ReactNode}): React.ReactNode {
+//TODO add breakpoint for mobile//
+export function Double({ children }: { children: React.ReactNode }): React.ReactNode {
   return (
     <section className="grid grid-cols-2 gap-2 lg:gap-5 items-center justify-center">
       {children}
@@ -24,7 +26,7 @@ export function Double({children}: {children: React.ReactNode}): React.ReactNode
   );
 }
 
-export function Triple({children}: {children: React.ReactNode}): React.ReactNode {
+export function Triple({ children }: { children: React.ReactNode }): React.ReactNode {
   return (
     <section className="grid grid-cols-3 gap-2 lg:gap-5 items-center justify-center min-h-52">
       {children}

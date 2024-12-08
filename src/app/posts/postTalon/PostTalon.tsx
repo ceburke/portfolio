@@ -1,10 +1,17 @@
-import {ToolData, toolsData} from '@/components/tools/toolsData';
-import {Double, ExtendedPostTitle, Heading2, Heading3, PostImage, Triple} from '../postComponents';
-import talon1 from './talon1.jpeg';
-import talon2 from './talon2.jpg';
-import talon3 from './talon3.jpg';
-import talon4 from './talon4.jpg';
-import talon5 from './talon5.jpg';
+import { ToolData, toolsData } from "@/components/tools/toolsData";
+import {
+  Double,
+  ExtendedPostTitle,
+  Heading2,
+  Heading3,
+  PostImage,
+  Triple,
+} from "../postComponents";
+import talon1 from "./talon1.jpeg";
+import talon2 from "./talon2.jpg";
+import talon3 from "./talon3.jpg";
+import talon4 from "./talon4.jpg";
+import talon5 from "./talon5.jpg";
 
 export default function PostTemplate() {
   return (
@@ -13,19 +20,19 @@ export default function PostTemplate() {
         title="Talon Design System"
         description="Fort Lewis College’s sprawling 6,000-page website faced a breaking point: outdated code, inaccessible designs, and a disjointed experience for users and content creators alike. The Talon Design System is built to transform this fragmented digital presence into a scalable, accessible framework. From pitching stakeholders to designing universal components, I’ve led this ongoing effort to modernize and unify the college’s digital assets."
         roles={[
-          'Pitch value, strategy, and process',
-          'Conduct competitive audits, best practice research, and design reviews',
-          'Design system architecture, components, templates, and documentation',
-          'Manage vendor relationship and development timeline',
+          "Pitch value, strategy, and process",
+          "Conduct competitive audits, best practice research, and design reviews",
+          "Design system architecture, components, templates, and documentation",
+          "Manage vendor relationship and development timeline",
         ]}
         results={[
-          'Secured approval and funding',
-          'Audited site information architecture and universal components',
-          'Designed new components and documentation based on Atomic Design',
-          'Delivered design files, expectations, and timeline to developer',
+          "Secured approval and funding",
+          "Audited site information architecture and universal components",
+          "Designed new components and documentation based on Atomic Design",
+          "Delivered design files, expectations, and timeline to developer",
         ]}
         toolsData={
-          ['Figma', 'Bootstrap']
+          ["Figma", "Bootstrap"]
             .map((toolName) => toolsData.find((tool) => tool.label === toolName))
             .filter(Boolean) as ToolData[]
         }
@@ -35,7 +42,7 @@ export default function PostTemplate() {
       <p>
         Stakeholders initially hesitated, unsure how a design system could address the complexity of
         the FLC website and other digital assets. To build trust, I demonstrated how hours saved
-        through cohesive design could translate into real cost savings.{' '}
+        through cohesive design could translate into real cost savings.{" "}
       </p>
       <Double>
         <PostImage
@@ -49,7 +56,7 @@ export default function PostTemplate() {
             team-wide benefits. An essential part of the pitch was a return-on-investment (ROI)
             value equation (from Smashing Magazine) that translated hours saved on design and
             development into direct monetary savings, putting the abstract concept of a design
-            system into common terms.{' '}
+            system into common terms.{" "}
           </p>
         </section>
       </Double>
@@ -101,18 +108,15 @@ export default function PostTemplate() {
 
       <Heading2>Identify a developer and set expectations</Heading2>
       <p>
-        Recognizing the need for external expertise, I identified a development vendor to help
-        implement the design system. I delivered annotated design files, detailed timelines, and
-        clear process documentation to ensure alignment on expectations. With Fort Lewis College’s
-        limited in-house development resources, I emphasized a collaborative approach that included
-        learning workflows for ongoing updates.
+        To implement the system across a complex website, I partnered with a developer, delivering
+        annotated designs, a phased implementation plan, and workflows to support long-term
+        scalability.
       </p>
       <p>
-        A phased implementation strategy focused on high-impact areas like the header, footer,
-        navigation, and homepage to minimize disruption while delivering noticeable improvements.
-        The second phase, currently underway, will focus on designing and building accessible
-        content components for the college’s CMS. This partnership sets the stage for scalable
-        updates across the college’s sprawling website.
+        A phased implementation strategy prioritizes high-impact areas like the header, footer,
+        navigation, and homepage, with content components to follow. This approach ensures
+        manageable implementation and lays the foundation for scalable updates across the college’s
+        sprawling website.
       </p>
 
       <Double>
@@ -120,7 +124,7 @@ export default function PostTemplate() {
           <Heading3>Implement high-impact updates</Heading3>
           <p>
             Focus on phased improvements to the header, footer, navigation, and homepage to maximize
-            immediate usability gains while minimizing disruption.{' '}
+            immediate usability gains while minimizing disruption.{" "}
           </p>
         </section>
         <section className="h-full">
@@ -137,13 +141,13 @@ export default function PostTemplate() {
           <p>
             Create a development workflow that allows Fort Lewis College to maintain and expand the
             system over time, despite limited in-house resources.
-          </p>{' '}
+          </p>{" "}
         </section>
         <section className="h-full">
           <Heading3>Lay the groundwork for full implementation</Heading3>
           <p>
             Develop a strategy for integrating the design system across all 6,000+ pages while
-            addressing existing technical limitations.{' '}
+            addressing existing technical limitations.{" "}
           </p>
         </section>
       </Double>
