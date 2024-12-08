@@ -36,10 +36,16 @@ export default function About() {
             <h1 className="text-4xl font-bold">Background and vision</h1>
             <p>
               I like helping people discover new experiences, solve problems, and improve their
-              daily lives. My background in environmental consulting and graphic design taught me
-              how to understand people, meet their needs, explain complex ideas clearly, and create
-              accessible solutions.Transitioning into UX/UI design has allowed me to focus these
-              skills on creating meaningful, user-centered experiences.
+              daily lives. At Fort Lewis College, I serve as the sole designer and developer,
+              leading digital transformation projects like the Talon Design System. As the digital
+              accessibility coordinator, I’m also driving compliance efforts to ensure an inclusive
+              experience for all users.{" "}
+            </p>
+            <p>
+              My background in environmental consulting and graphic design taught me how to
+              understand people, meet their needs, and create accessible solutions. Transitioning
+              into UX/UI design has allowed me to focus these skills on creating meaningful,
+              user-centered experiences.{" "}
             </p>
             <p>
               Outside of work, I love mountain biking, playing ultimate frisbee, rekindling my love
@@ -56,15 +62,6 @@ export default function About() {
                 LinkedIn
               </Link>
               &nbsp;to learn more about my career path.
-            </p>
-            <Heading3>Education</Heading3>
-            <p>
-              <span className="font-bold">University of Virginia</span>
-              <br></br>B.A. Environmental Science, B.A. Studio Art
-            </p>
-            <p>
-              <span className="font-bold">Coursera</span>
-              <br></br>Google UX Design Professional Certificate
             </p>
           </div>
         </div>

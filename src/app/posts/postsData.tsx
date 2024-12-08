@@ -3,18 +3,16 @@ import PostChildrensBook from "./postChildrensBook/postChildrensBook";
 import PreviewChildrens from "./postChildrensBook/previewChildrens.jpg";
 import PostCollagesAndCovers from "./postCollagesAndCovers/postCollagesAndCovers";
 import PreviewCollage from "./postCollagesAndCovers/previewCollage.jpg";
-import flcNewsPreview2 from "./postFLCNews/flc-news-preview-2.png";
 import PostFLCNews from "./postFLCNews/PostFLCNews";
-import PostMaps from "./postMaps/PostMaps";
+import PreviewFLCNews from "./postFLCNews/previewFLCNews.jpg";
 import PostSolvedInMotion from "./postSolvedInMotion/postSolvedInMotion";
 import PreviewSolvedInMotion from "./postSolvedInMotion/previewSolvedInMotion.jpg";
-import PostStrava from "./postStrava/PostStrava";
 import PostTalon from "./postTalon/PostTalon";
-import PreviewTalon from "./postTalon/talon0.jpeg";
+import PreviewTalon from "./postTalon/previewTalon.jpg";
 import large from "./postTemplate/large.png";
 import PostTemplate from "./postTemplate/PostTemplate";
 import PostTheOldFort from "./postTheOldFort/PostTheOldFort";
-import theOldFortPreview2 from "./postTheOldFort/the-old-fort-preview-2.png";
+import PreviewTheOldFort from "./postTheOldFort/previewTheOldFort.jpg";
 
 export interface PostData {
   id: string;
@@ -29,7 +27,7 @@ export interface PostData {
 export const postsData: PostData[] = [
   {
     id: "flc-news-architecture-and-design",
-    previewImg: flcNewsPreview2,
+    previewImg: PreviewFLCNews,
     title: "Information architecture and responsive redesign",
     subtitle: "Fort Lewis College News",
     group: "work",
@@ -49,33 +47,13 @@ export const postsData: PostData[] = [
   },
   {
     id: "the-old-fort",
-    previewImg: theOldFortPreview2,
+    previewImg: PreviewTheOldFort,
     title: "Organization and identity",
     subtitle: "The Old Fort",
     group: "work",
     description:
       "Revitalizing a research-based institution with a tailored visual style and structure that highlights the unique character of its users and content.",
     content: <PostTheOldFort />,
-  },
-  {
-    id: "strava",
-    previewImg: theOldFortPreview2,
-    title: "Keeping pace with the competition",
-    subtitle: "Trail conditions reporting for Strava",
-    group: "work",
-    description:
-      "Exploring a theoretical user flow for reporting trail conditions, and how it could be integrated into the Strava app.",
-    content: <PostStrava />,
-  },
-  {
-    id: "maps",
-    previewImg: theOldFortPreview2,
-    title: "Better late than never",
-    subtitle: "Automatic ETA updates for Google Maps",
-    group: "work",
-    description:
-      "A concept for reducing distractions on the go. Learn how an automatic notification feature could keep travelers informed without pulling them away from the journey.",
-    content: <PostMaps />,
   },
   {
     id: "childrens-book",
