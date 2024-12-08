@@ -30,7 +30,7 @@ export const postsData: PostData[] = [
   {
     id: "flc-news-architecture-and-design",
     previewImg: flcNewsPreview2,
-    title: "Information architecture and responsive design",
+    title: "Information architecture and responsive redesign",
     subtitle: "Fort Lewis College News",
     group: "work",
     description:

@@ -26,9 +26,9 @@ export default function PostTemplate() {
           "Manage vendor relationship and development timeline",
         ]}
         results={[
-          "Secured approval and funding",
+          "Secured buy-in and funding to modernize the college's digital presence",
           "Audited site information architecture and universal components",
-          "Designed new components and documentation based on Atomic Design",
+          "Designed new components and documentation based on Atomic Design principles for scalability",
           "Delivered design files, expectations, and timeline to developer",
         ]}
         toolsData={
