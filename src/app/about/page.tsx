@@ -37,9 +37,17 @@ export default function About() {
             <p>
               I like helping people discover new experiences, solve problems, and improve their
               daily lives. At Fort Lewis College, I serve as the sole designer and developer,
-              leading digital transformation projects like the Talon Design System. As the digital
-              accessibility coordinator, I’m also driving compliance efforts to ensure an inclusive
-              experience for all users.{" "}
+              leading digital transformation projects like the{" "}
+              <Link
+                className="underline hover:font-bold"
+                href="https://www.ceburke.portfolio/posts/talon-design-system"
+                title="Claire's LinkedIn profile"
+                target="_blank"
+              >
+                Talon Design System
+              </Link>
+              . As the digital accessibility coordinator, I’m also driving compliance efforts to
+              ensure an inclusive experience for all users.{" "}
             </p>
             <p>
               My background in environmental consulting and graphic design taught me how to
