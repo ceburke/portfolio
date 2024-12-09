@@ -1,7 +1,7 @@
-import {MAX_CONTENT_WIDTH} from '@/constants';
-import Link from 'next/link';
-import Curb from './Curb';
-import HamburgerNav from './HamburgerNav';
+import { MAX_CONTENT_WIDTH } from "@/constants";
+import Link from "next/link";
+import Curb from "./Curb";
+import HamburgerNav from "./HamburgerNav";
 
 export default function Navbar() {
   const links = (
@@ -69,10 +69,10 @@ export default function Navbar() {
     <nav className="flex items-center sticky top-0 z-10 h-20 py-4 px-5 w-full text-center bg-white dark:bg-black dark:text-white">
       <div
         className="flex justify-between items-center mx-auto w-full"
-        style={{maxWidth: `${MAX_CONTENT_WIDTH}px`}}
+        style={{ maxWidth: `${MAX_CONTENT_WIDTH}px` }}
       >
         <Curb />
-        <ul className="items-center hidden sm:flex gap-4 lg:gap-10 text-lg lg:text-2xl">{links}</ul>
+        <ul className="items-center hidden sm:flex gap-4 lg:gap-10 text-lg lg:text-lg">{links}</ul>
         <div className="inline sm:hidden">
           <HamburgerNav>{links}</HamburgerNav>
         </div>

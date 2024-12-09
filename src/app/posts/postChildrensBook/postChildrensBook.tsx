@@ -1,4 +1,4 @@
-import { Double, Triple, ExtendedPostTitle, Heading2, PostImage } from "../postComponents";
+import { Double, Heading1, Heading2, PostImage, Triple } from "../postComponents";
 import book1 from "./book1.png";
 import book2 from "./book2.png";
 import book3 from "./book3.png";
@@ -9,10 +9,15 @@ import book6 from "./book6.png";
 export default function PostChildrensBook() {
   return (
     <>
-      <ExtendedPostTitle
-        title="The Adventures of Ashe and Cat"
-        description="I collaborated with two authors to illustrate a 34-page children’s book, The Adventures of Cat and Ashe: The Mountain Bike Flat, a story about the challenges of mountain biking and the power of resilience. This project was a significant leap from my previous experience, teaching me valuable lessons in digital publishing, expectation setting, and collaborative project management. The book is published and available for purchase through the authors or at Maria’s Bookshop in Durango, Colorado."
-      />
+      <Heading1>Children's book illustrator</Heading1>
+      <p>
+        I collaborated with two authors to illustrate a 34-page children’s book,{" "}
+        <i>The Adventures of Cat and Ashe: The Mountain Bike Flat</i>, a story about the challenges
+        of mountain biking and the power of resilience. This project was a significant leap from my
+        previous experience, teaching me valuable lessons in digital publishing, expectation
+        setting, and collaborative project management. The book is published and available for
+        purchase through the authors or at Maria’s Bookshop in Durango, Colorado.
+      </p>
 
       <Heading2>Color and character development</Heading2>
       <p>

@@ -1,4 +1,4 @@
-import { Double, ExtendedPostTitle, Heading3, PostImage, Triple } from "../postComponents";
+import { Double, Heading1, Heading2, Heading3, PostImage, Triple } from "../postComponents";
 import motion1 from "./motion1.jpg";
 import motion2 from "./motion2.jpg";
 import motion3 from "./motion3.jpg";
@@ -6,10 +6,14 @@ import motion3 from "./motion3.jpg";
 export default function PostSolvedInMotion() {
   return (
     <>
-      <ExtendedPostTitle
-        title="Solved in motion"
-        description="Solved in motion was the culmination of my undergraduate Studio Art major and a significant departure from my printmaking concentration. Despite its novelty, my installation was well-acclaimed by my peers and faculty, and was a pivotal experience in my development as an artist. My determination to execute, learn new skills, and successful divergence from the norm enstilled a life-long confidence to tackle new challenges."
-      />
+      <Heading1>Installation art experience</Heading1>
+      <p>
+        <i>Solved in motion</i> was the culmination of my undergraduate Studio Art major and a
+        significant departure from my printmaking concentration. Despite its novelty, my
+        installation was well-acclaimed by my peers and faculty, and was a pivotal experience in my
+        development as an artist. My determination to execute, learn new skills, and successful
+        divergence from the norm enstilled a life-long confidence to tackle new challenges.
+      </p>
       <Double>
         <iframe
           src="https://drive.google.com/file/d/1xwFl9sTI91waFM_Wtmyjx5PCh9fRt5rs/preview?start=2"
@@ -18,7 +22,7 @@ export default function PostSolvedInMotion() {
           allow="autoplay"
         ></iframe>
         <section>
-          <Heading3>Creating an immersive experience</Heading3>
+          <Heading2>Creating an immersive experience</Heading2>
           <p>
             This installation uses time, light, and motion to construct a space where we are allowed
             to slow down, while still moving forward. On the wall, a winding animation is crafted

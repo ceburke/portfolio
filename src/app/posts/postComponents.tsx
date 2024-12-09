@@ -5,22 +5,20 @@ import ExportedImage from "next-image-export-optimizer";
 import { StaticImageData } from "next/image";
 
 export function Heading1({ children }: { children: React.ReactNode }): React.ReactNode {
-  return <h1 className="text-4xl font-bold">{children}</h1>;
+  return <h1 className="text-4xl font-bold mb-1">{children}</h1>;
 }
 
 export function Heading2({ children }: { children: React.ReactNode }): React.ReactNode {
-  return <h2 className="text-2xl font-bold">{children}</h2>;
+  return <h2 className="text-2xl font-bold mb-1">{children}</h2>;
 }
 
-//TODO add margin below headings, other//
 export function Heading3({ children }: { children: React.ReactNode }): React.ReactNode {
-  return <h3 className="text-xl font-bold">{children}</h3>;
+  return <h3 className="text-xl font-bold mb-1">{children}</h3>;
 }
 
-//TODO add breakpoint for mobile//
 export function Double({ children }: { children: React.ReactNode }): React.ReactNode {
   return (
-    <section className="grid grid-cols-2 gap-2 lg:gap-5 items-center justify-center">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-5 items-center justify-center my-10">
       {children}
     </section>
   );
@@ -28,7 +26,7 @@ export function Double({ children }: { children: React.ReactNode }): React.React
 
 export function Triple({ children }: { children: React.ReactNode }): React.ReactNode {
   return (
-    <section className="grid grid-cols-3 gap-2 lg:gap-5 items-center justify-center min-h-52">
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-5 items-center justify-center min-h-52 my-10">
       {children}
     </section>
   );
@@ -42,7 +40,7 @@ export function PostImage({
   description: string;
 }): React.ReactNode {
   return (
-    <figure className="flex flex-col justify-end h-full">
+    <figure className="flex flex-col justify-start h-full">
       <div className="relative h-auto max-w-full max-h-full mx-auto">
         <LightBox>
           <ExportedImage
@@ -53,7 +51,7 @@ export function PostImage({
           />
         </LightBox>
       </div>
-      <figcaption className="italic text-md mt-2 flex-none h-36 lg:h-24">{description}</figcaption>
+      <figcaption className="italic text-md mt-2 flex-none">{description}</figcaption>
     </figure>
   );
 }
