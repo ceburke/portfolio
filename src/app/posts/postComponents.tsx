@@ -24,6 +24,14 @@ export function Double({ children }: { children: React.ReactNode }): React.React
   );
 }
 
+export function TextDouble({ children }: { children: React.ReactNode }): React.ReactNode {
+  return (
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-5 items-center justify-center my-5">
+      {children}
+    </section>
+  );
+}
+
 export function Triple({ children }: { children: React.ReactNode }): React.ReactNode {
   return (
     <section className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-5 items-center justify-center min-h-52 my-10">
@@ -70,10 +78,10 @@ export function ExtendedPostTitle({
   toolsData?: ToolData[];
 }): React.ReactNode {
   return (
-    <div className="flex flex-col justify-center gap-5 pb-10">
+    <div className="flex flex-col justify-center gap-5 pb-10 my-10">
       <Heading1>{title}</Heading1>
       {!!description && <p>{description}</p>}
-      <Double>
+      <TextDouble>
         {roles && (
           <section className="h-full">
             <Heading2>Roles</Heading2>
@@ -94,7 +102,7 @@ export function ExtendedPostTitle({
             </ul>
           </section>
         )}
-      </Double>
+      </TextDouble>
       {toolsData && (
         <>
           <Heading2>Primary Tools</Heading2>
