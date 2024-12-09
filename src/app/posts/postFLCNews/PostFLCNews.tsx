@@ -25,7 +25,7 @@ export default function PostFLCNews() {
           "Manage content migration and train content owners on new features",
         ]}
         results={[
-          "Increased page views by 180% and time on page by 210% post-redesign",
+          "Increased site views by 180% and conversion rate by 135%",
           "Broadened the use of FLC News in fundraising, outreach, and email campaigns",
           "Improved visibility of strategic initiatives through enhanced layouts and visual storytelling",
           <>
@@ -125,6 +125,17 @@ export default function PostFLCNews() {
           description="The News redesign supported and informed the re-brand of the college's main email campaign, THe Fort Report."
         />
       </Triple>
+
+      <Heading2>Reporting success</Heading2>
+      <p>
+        I used Google Analytics to analyze the site’s performance post-launch. I compared the entire
+        news site domain from launch to present this year versus last year (October 23 - December 8,
+        2024 versus the same timeframe in 2023). During that timeframe, site views increased by 180%
+        and the conversion rate by 135%. Email campaigns to social media coverage from the great
+        marketing team contributed heavily to increase in viewership, which is an overall win.
+        However, the conversion rate, which I calculated from users and events, is a more accurate
+        measure of the success of the UX and design changes.
+      </p>
     </>
   );
 }
