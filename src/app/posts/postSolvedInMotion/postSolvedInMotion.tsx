@@ -8,7 +8,7 @@ export default function PostSolvedInMotion() {
     <>
       <ExtendedPostTitle
         title="Solved in motion"
-        description="Solved in motion was the culmination of my undergraduate Studio Art major and a significant departure from my printmaking concentration. Creating an installation piece required both convincing and risk, as it challenged traditional definitions within the discipline. I defended the work as printmaking by emphasizing its iterative process and conceptual parallels, bridging my existing skills with a new medium. It was well-acclaimed by my peers and faculty, and was a pivotal experience in my development as an artist."
+        description="Solved in motion was the culmination of my undergraduate Studio Art major and a significant departure from my printmaking concentration. Despite its novelty, my installation was well-acclaimed by my peers and faculty, and was a pivotal experience in my development as an artist. My determination to execute, learn new skills, and successful divergence from the norm enstilled a life-long confidence to tackle new challenges."
       />
       <Double>
         <iframe
@@ -20,20 +20,16 @@ export default function PostSolvedInMotion() {
         <section>
           <Heading3>Creating an immersive experience</Heading3>
           <p>
-            This installation uses time, light, and motion to create a space where slowing down and
-            moving forward happen together. A winding animation of GPS maps from hikes, runs, and
-            bike rides flows across the wall. Overhead, a bike wheel projects the topographic
-            profile of a local trail system onto a bed of hand-cut leaves shaped to match native
-            species.
+            This installation uses time, light, and motion to construct a space where we are allowed
+            to slow down, while still moving forward. On the wall, a winding animation is crafted
+            from personally-recorded GPS data of hikes, runs, and bike rides. From above, a bike
+            wheel mechanism projects the topographic profile of a small, local trail system on a bed
+            of leaves, cut to match the species of the area. Moving through any environment is an
+            opportunity to observe and explore our surroundings. By slowing down and looking
+            closely, even a humble, hometown trail system can become a universe unto itself.
           </p>
         </section>
       </Double>
-      <p>
-        The skills I learned while creating this installation, combined with time spent at the local
-        trail system, made this project especially meaningful to me. Every part of the exhibit was
-        borrowed, upcycled, or repurposed after its run. I’d love to revisit and expand on this
-        project in the future.
-      </p>
       <Triple>
         <PostImage
           src={motion1}
@@ -45,7 +41,7 @@ export default function PostSolvedInMotion() {
         />
         <PostImage
           src={motion3}
-          description="An translucent print mounted in the spokes a bike wheel, moved by a custom Arduino-controlled motor."
+          description="An translucent print mounted in the spokes of a bike wheel, moved by a custom Arduino-controlled motor."
         />
       </Triple>
     </>

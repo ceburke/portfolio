@@ -32,7 +32,7 @@ export const postsData: PostData[] = [
     subtitle: "Fort Lewis College News",
     group: "work",
     description:
-      "Transforming thousands of articles into a streamlined, responsive platform. Improved readability, navigation, and accessibility while showcasing strategic initiatives.",
+      "Making a core marketing tool relevant and readable. Transforming thousands of articles into a streamlined, responsive platform.",
     content: <PostFLCNews />,
   },
   {

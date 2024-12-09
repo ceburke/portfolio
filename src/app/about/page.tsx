@@ -36,8 +36,8 @@ export default function About() {
             <h1 className="text-4xl font-bold">Background and vision</h1>
             <p>
               I like helping people discover new experiences, solve problems, and improve their
-              daily lives. At Fort Lewis College, I serve as the sole designer and developer,
-              leading digital transformation projects like the{" "}
+              daily lives. In my current role at Fort Lewis College, I serve as the sole designer
+              and developer, leading digital transformation projects like the{" "}
               <Link
                 className="underline hover:font-bold"
                 href="https://www.ceburke.portfolio/posts/talon-design-system"
