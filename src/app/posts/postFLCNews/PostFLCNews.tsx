@@ -1,4 +1,5 @@
 import { ToolData, toolsData } from "@/components/tools/toolsData";
+import Link from "next/link";
 import {
   Double,
   ExtendedPostTitle,
@@ -9,26 +10,24 @@ import {
 } from "../postComponents";
 import large from "./large.png";
 import small from "./small.png";
-import tallNarrow from "./tall-narrow.png";
-import wideShort from "./wide-short.png";
-import Link from "next/link";
 
 export default function PostFLCNews() {
   return (
     <>
       <ExtendedPostTitle
-        title="Fort Lewis College News Redesign"
-        description="The Fort Lewis College News site is a central marketing and storytelling tool for the college, showcasing events, achievements, and strategic initiatives. However, the outdated, non-branded, and unresponsive design created barriers for users and limited its effectiveness in broader marketing efforts like fundraising, outreach, and email campaigns. This redesign transformed the News site into a modern, responsive platform that aligns with the college’s brand and enhances usability for all audiences."
+        title="FLC News responsive design, development, and migration"
+        description="The Fort Lewis College News site is a central tool for marketing and storytelling, showcasing events, achievements, and strategic initiatives. However, its outdated, non-branded, and unresponsive design created barriers for users and limited its role in broader marketing efforts like fundraising and email campaigns. I led a redesign to transform the site into a modern, responsive platform that aligns with the college’s brand and enhances usability for all audiences."
         roles={[
-          "Audit information architecture, content, and user flows",
-          "Design templates and components in Figma, develop base theme, header, and footers",
-          "Collaborate with a vendor to develop article, category, and page templates in DNN",
-          "Manage content migration and trained the marketing team on new features",
+          "Audit competitors, site information architecture, and user flows",
+          "Design templates and components in Figma",
+          "Develop the base theme, header, and footer using Bootstrap and nvQuickTheme",
+          "Collaborate with a vendor to implement article, category, and page templates in DNN",
+          "Manage content migration and train content owners on new features",
         ]}
         results={[
           "Increased page views by 180% and time on page by 210% post-redesign",
-          "Enabled broader integration of FLC News into fundraising, outreach, and email campaigns",
-          "Highlighted strategic initiatives through enhanced header, and layouts for videos and photography",
+          "Broadened the use of FLC News in fundraising, outreach, and email campaigns",
+          "Improved visibility of strategic initiatives through enhanced layouts and visual storytelling",
           <>
             View the{" "}
             <Link className="underline" href="https://www.fortlewis.edu/fort-lewis-college-news">
@@ -43,92 +42,89 @@ export default function PostFLCNews() {
         }
       />
 
-      <Heading2>h2 Overview or step #</Heading2>
+      <Heading2>Reaching the breaking point</Heading2>
       <p>
-        Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
-        per h2, but trying to keep it concise.{" "}
+        The News site’s outdated design and complex article organization had become a significant
+        pain point for Fort Lewis College’s media relations team. These limitations hindered their
+        ability to showcase stories to broader audiences and gain administrative support for
+        storytelling efforts. After receiving approval to prioritize the redesign, we scoped out the
+        project’s challenges by aligning on goals and identifying key pain points.{" "}
       </p>
       <PostImage
         src={large}
-        description="Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences"
-      />
-      <PostImage
-        src={small}
-        description="Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences"
+        description="A side-by-side comparison of the old versus new sitemaps and homepages. "
       />
 
-      <Heading2>h2 Overview or step #</Heading2>
+      <Heading2>Determining a best approach</Heading2>
       <p>
-        Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
-        per h2, but trying to keep it concise.
+        Initially, I considered building the site on a separate subdomain with limited legacy data
+        migration, focusing on recent articles and developing the theme independently. However,
+        migration tests and competing priorities revealed this approach would delay the project.
+        Working with my director, we secured funding to hire a development vendor, 10 Pound Gorilla,
+        who focused on article templates while I handled base theme development and full-spec design
+        documentation. Ultimately, we decided that building within the existing site was the best
+        way to maintain article history.
       </p>
       <Double>
         <PostImage
           src={small}
-          description="Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences"
+          description="I expanded specs and documentation on design files to better support the vendor developer."
         />
-        <PostImage src={tallNarrow} description="Descriptive caption, 1-2 sentences" />
+        <section>
+          <Heading3>Improving development hand-off</Heading3>
+          <p>
+            Collaborating with the vendor taught me how to refine my Figma documentation. By
+            actively engaging with the developer and addressing feedback through comments, I
+            improved my design files to ensure they were clear and actionable for implementation.
+          </p>
+        </section>
       </Double>
-      <Heading2>h2 Overview or step #</Heading2>
+
+      <Heading2>Focusing on responsive design</Heading2>
       <p>
-        Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
-        per h2, but trying to keep it concise.
+        A competitive audit of higher education sites informed my approach to creating a modern,
+        responsive, and on-brand design. Using nvQuickTheme and Bootstrap, I developed a base theme
+        with updated headers and footers. Paired with the vendor’s article theme, this groundwork
+        supported seamless content migration. For all parts of the updates, I speced out Figma
+        designs per Bootstrap breakpoints, at four device sizes.
+      </p>
+      <PostImage src={large} description="Full spread of Figma mocks at multiple device sizes." />
+      <Double>
+        <section>
+          <Heading2>Tackling article migration</Heading2>
+          <p>
+            To address decades of legacy articles, I worked with the vendor to develop a SQL-driven
+            category migration plan. This approach reorganized categories to simplify future
+            uploads. I conducted thorough QA to ensure the migration met user needs and resolved
+            organizational inefficiencies.
+          </p>
+        </section>
+        <PostImage
+          src={small}
+          description="I determined an category reassigment map and the vendor built out a spreadsheet to capture the paths for the SQL migration."
+        />
+      </Double>
+      <Heading2>Training, documentation, and adoption</Heading2>
+      <p>
+        I created a comprehensive guide for the entire Marketing and Communications team, including
+        the site’s redesign history, category changes, a content map, and step-by-step instructions
+        for uploading articles. This ensured the team could confidently manage the updated site and
+        its features, and appropriatey utilize the new spaces created to higlight their work.
       </p>
       <Triple>
         <PostImage
           src={large}
-          description="Descriptive caption, 1-2 sentences Descriptive caption, 1-2 sentences."
+          description="I crated step-by-step instructions per content type, to help make the site upload process smoother for current and future editors."
         />
-        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
-        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
+        <PostImage
+          src={large}
+          description="The new site features dedicated space for videos and photos."
+        />
+        <PostImage
+          src={large}
+          description="The News redesign supported and informed the re-brand of the college's main email campaign, THe Fort Report."
+        />
       </Triple>
-      <Heading2>h2 Overview or step #</Heading2>
-      <p>
-        Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two paragraphs
-        per h2, but trying to keep it concise.
-      </p>
-      <Triple>
-        <PostImage src={wideShort} description="Descriptive caption, 1-2 sentences" />
-        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
-        <PostImage src={small} description="Descriptive caption, 1-2 sentences" />
-      </Triple>
-      <Double>
-        <section>
-          <Heading2>h2 Overview or step #</Heading2>
-          <p>
-            Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two
-            paragraphs per h2, but trying to keep it concise.
-          </p>
-        </section>
-        <PostImage src={wideShort} description="Descriptive caption, 1-2 sentences" />
-      </Double>
-      <Double>
-        <PostImage src={large} description="Descriptive caption, 1-2 sentences" />
-        <section>
-          <Heading2>h2 Overview or step #</Heading2>
-          <p>
-            Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two
-            paragraphs per h2, but trying to keep it concise.
-          </p>
-        </section>
-      </Double>
-      <Heading2>h2 Overview or step #</Heading2>
-      <Double>
-        <section className="h-full">
-          <Heading3>h3</Heading3>
-          <p>
-            Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two
-            paragraphs per h2, but trying to keep it concise.
-          </p>
-        </section>
-        <section className="h-full">
-          <Heading3>h3</Heading3>
-          <p>
-            Brief description in paragraph text, 3-4 sentences (16 px, regular). Possibly two
-            paragraphs per h2, but trying to keep it concise.
-          </p>
-        </section>
-      </Double>
     </>
   );
 }
