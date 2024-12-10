@@ -27,6 +27,7 @@ export default function PostTheOldFort() {
         roles={[
           "Create a new brand for the Old Fort",
           "Design and build the new site",
+          "Migrate existing content and assets",
           "Primary stakeholder contact and project manager",
         ]}
         results={[
@@ -41,7 +42,7 @@ export default function PostTheOldFort() {
           </>,
         ]}
         toolsData={
-          ["Figma", "Google Analytics", "Adobe Creative Suite", "Bootstrap"]
+          ["Figma", "Bootstrap", "Google Analytics", "Adobe Creative Suite"]
             .map((toolName) => toolsData.find((tool) => tool.label === toolName))
             .filter(Boolean) as ToolData[]
         }

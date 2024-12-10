@@ -109,7 +109,11 @@ export default function PostFLCNews() {
         I created a comprehensive guide for the entire Marketing and Communications team, including
         the site’s redesign history, category changes, a content map, and step-by-step instructions
         for uploading articles. This ensured the team could confidently manage the updated site and
-        its features, and appropriatey utilize the new spaces created to higlight their work.
+        its features, and appropriatey utilize the new spaces created to higlight their work. In
+        addition, I commit my changes to the vendor-developed article templates through a shared
+        repo on GitHub. This approach enables me to extend the template to other use cases on the
+        FLC website while maintaining version control and facilitating collaboration with the vendor
+        for future adjustments.
       </p>
       <Triple>
         <PostImage
@@ -122,19 +126,18 @@ export default function PostFLCNews() {
         />
         <PostImage
           src={large}
-          description="The News redesign supported and informed the re-brand of the college's main email campaign, THe Fort Report."
+          description="The News redesign supported and informed the re-brand of the college's main email campaign, The Fort Report."
         />
       </Triple>
 
       <Heading2>Reporting success</Heading2>
       <p>
-        I used Google Analytics to analyze the site’s performance post-launch. I compared the entire
-        news site domain from launch to present this year versus last year (October 23 - December 8,
-        2024 versus the same timeframe in 2023). During that timeframe, site views increased by 180%
-        and the conversion rate by 135%. Email campaigns to social media coverage from the great
-        marketing team contributed heavily to increase in viewership, which is an overall win.
-        However, the conversion rate, which I calculated from users and events, is a more accurate
-        measure of the success of the UX and design changes.
+        Using Google Analytics, I analyzed the News site’s performance post-launch, comparing data
+        from October 23 to December 8, 2024, against the same period in 2023. During this timeframe,
+        site views increased by 180%, and the conversion rate improved by 135%. While increased
+        viewership was bolstered by email campaigns and social media efforts, the conversion
+        rate—calculated from users and events—offers a clearer measure of the impact of the UX and
+        design changes.
       </p>
     </>
   );

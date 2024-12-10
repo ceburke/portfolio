@@ -12,6 +12,7 @@ import talon2 from "./talon2.jpg";
 import talon3 from "./talon3.jpg";
 import talon4 from "./talon4.jpg";
 import talon5 from "./talon5.jpg";
+import talon6 from "./talon6.jpg";
 
 export default function PostTemplate() {
   return (
@@ -156,6 +157,10 @@ export default function PostTemplate() {
         The design files and process documents are currently being reviewed by the developer. Stay
         tuned for updates on the Talon Design System as it continues to evolve and transform.
       </p>
+      <PostImage
+        src={talon6}
+        description="The final design of a complex secondary navigation component, designed to be flexible and scalable across the FLC website. This component utilizes brand logos to orient the user, and addresses navigation challenges within dense subpages on the current site."
+      />
     </>
   );
 }
