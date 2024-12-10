@@ -8,7 +8,6 @@ import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { postsData } from "../posts/postsData";
 import headshot from "./headshot.jpg";
-import { Heading3 } from "../posts/postComponents";
 
 export const metadata: Metadata = {
   title: "Claire Burke | About",
