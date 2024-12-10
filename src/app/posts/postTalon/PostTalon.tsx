@@ -17,7 +17,7 @@ export default function PostTemplate() {
   return (
     <>
       <ExtendedPostTitle
-        title="Talon Design System"
+        title="Building a foundation for the future"
         description="Fort Lewis College’s sprawling 6,000-page website faced a breaking point: outdated code, inaccessible designs, and a disjointed experience for users and content creators alike. The Talon Design System is built to transform this fragmented digital presence into a scalable, accessible framework. From pitching stakeholders to designing universal components, I’ve led this ongoing effort to modernize and unify the college’s digital assets."
         roles={[
           "Pitch value, strategy, and process",

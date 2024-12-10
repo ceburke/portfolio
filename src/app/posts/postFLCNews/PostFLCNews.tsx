@@ -15,7 +15,7 @@ export default function PostFLCNews() {
   return (
     <>
       <ExtendedPostTitle
-        title="FLC News responsive design, development, and migration"
+        title="Information architecture and responsive redesign"
         description="The Fort Lewis College News site is a central tool for marketing and storytelling, showcasing events, achievements, and strategic initiatives. However, its outdated, non-branded, and unresponsive design created barriers for users and limited its role in broader marketing efforts like fundraising and email campaigns. I led a redesign to transform the site into a modern, responsive platform that aligns with the college’s brand and enhances usability for all audiences."
         roles={[
           "Audit competitors, site information architecture, and user flows",

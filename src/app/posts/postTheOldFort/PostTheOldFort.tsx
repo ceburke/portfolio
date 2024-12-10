@@ -22,7 +22,7 @@ export default function PostTheOldFort() {
   return (
     <>
       <ExtendedPostTitle
-        title="The Old Fort branding, design, and build"
+        title="Organization and identity"
         description="The Old Fort is a unique research institution under Fort Lewis College, with its own distinct mission, audience, and identity. The goal of this project was to create a fresh brand and website that captured the character of the Old Fort while making its deep repository of research and historical resources easier to explore."
         roles={[
           "Create a new brand for the Old Fort",
