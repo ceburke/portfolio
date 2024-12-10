@@ -69,7 +69,7 @@ export default function PostTheOldFort() {
 
       <PostImage
         src={old1}
-        description="I formatted the inherited design and brand elements and my new, additional design option as a high-fidelity desktop and mobiles mocks for stakeholder review. The stakeholders selected my added option."
+        description="I formatted the inherited design and brand elements and my new, additional design option as a high-fidelity wireframes for stakeholder review. I developed a seasonal homepage approach with CSS and JS, to capture the Old Fort's changing landscape and importance of place."
       />
 
       <Heading2>Collecting tools for the job</Heading2>
@@ -105,6 +105,11 @@ export default function PostTheOldFort() {
         src={old5}
         description="Collaborative FigJam board used to develop the updated site map with stakeholders. "
       />
+
+      <PostImage
+        src={old6}
+        description="Collaborative FigJam board used to develop the updated site map with stakeholders. "
+      />
       <Heading2>Migrating and building</Heading2>
       <p>
         I built the site in phases, allowing stakeholders to review sections as I completed them.
@@ -130,7 +135,7 @@ export default function PostTheOldFort() {
       </Double>
       <Double>
         <PostImage
-          src={old6}
+          src={old8}
           description="Old history page sample versus new timeline component (mobile view) and history subpag (desktop view)."
         />
         <section>
@@ -180,7 +185,7 @@ export default function PostTheOldFort() {
             representation of its identity and mission.
           </p>
           <PostImage
-            src={old8}
+            src={old9}
             description="Jennifer Jewell giving a talk about the future of agriculture at the Old Fort, with a screenshot of the website homepage on the introduction slide."
           />
         </section>
