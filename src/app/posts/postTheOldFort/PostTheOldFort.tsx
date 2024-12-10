@@ -8,8 +8,15 @@ import {
   PostImage,
   Triple,
 } from "../postComponents";
-import small from "./small.png";
-import large from "./large.png";
+import old1 from "./old1.jpg";
+import old2 from "./old2.jpg";
+import old3 from "./old3.jpg";
+import old4 from "./old4.jpg";
+import old5 from "./old5.jpg";
+import old6 from "./old6.jpg";
+import old7 from "./old7.jpg";
+import old8 from "./old8.jpg";
+import old9 from "./old9.jpg";
 
 export default function PostTheOldFort() {
   return (
@@ -61,7 +68,7 @@ export default function PostTheOldFort() {
       </Double>
 
       <PostImage
-        src={small}
+        src={old1}
         description="I formatted the inherited design and brand elements and my new, additional design option as a high-fidelity desktop and mobiles mocks for stakeholder review. The stakeholders selected my added option."
       />
 
@@ -73,13 +80,13 @@ export default function PostTheOldFort() {
         collect assets that supported the content with strong visuals.
       </p>
       <Triple>
+        <PostImage src={old2} description="Image collection and optimization in Adobe Photoshop." />
         <PostImage
-          src={small}
-          description="Image collection and optimization in Adobe Lightroom."
+          src={old3}
+          description="Showcasing video content on the history page by updating the video design and adding a lightbox feature."
         />
-        <PostImage src={small} description="Showcasing video content on the history page." />
         <PostImage
-          src={small}
+          src={old4}
           description="Templated components within the Old Fort's DNN theme editing interface."
         />
       </Triple>
@@ -95,7 +102,7 @@ export default function PostTheOldFort() {
         their depth of resources accessible.
       </p>
       <PostImage
-        src={large}
+        src={old5}
         description="Collaborative FigJam board used to develop the updated site map with stakeholders. "
       />
       <Heading2>Migrating and building</Heading2>
@@ -117,13 +124,13 @@ export default function PostTheOldFort() {
           </p>
         </section>
         <PostImage
-          src={small}
+          src={old7}
           description="Old projects view versus the new, searchable projects list."
         />
       </Double>
       <Double>
         <PostImage
-          src={small}
+          src={old6}
           description="Old history page sample versus new timeline component (mobile view) and history subpag (desktop view)."
         />
         <section>
@@ -173,7 +180,7 @@ export default function PostTheOldFort() {
             representation of its identity and mission.
           </p>
           <PostImage
-            src={small}
+            src={old8}
             description="Jennifer Jewell giving a talk about the future of agriculture at the Old Fort, with a screenshot of the website homepage on the introduction slide."
           />
         </section>
