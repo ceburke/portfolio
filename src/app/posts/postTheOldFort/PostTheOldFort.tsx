@@ -53,23 +53,12 @@ export default function PostTheOldFort() {
         College. The project lacked momentum and trust from stakeholders. To rebuild confidence, I
         created an alternative design alongside the inherited proposal, giving stakeholders options
         and demonstrating my commitment to understanding their vision. The main goals as presented
-        by the stakeholders were as follows:{" "}
+        by the stakeholders to <b>make resources accessible</b> and{" "}
+        <b>create a distinct visual identity.</b>{" "}
       </p>
-
-      <Double>
-        <section className="h-full">
-          <Heading3>Make resources accessible</Heading3>
-          <p>Audit site content and clean up information architecture.</p>
-        </section>
-        <section className="h-full">
-          <Heading3>Create a distinct brand</Heading3>
-          <p>Design a compelling visual identity that reflects the Old Fort’s character.</p>
-        </section>
-      </Double>
-
       <PostImage
         src={old1}
-        description="I formatted the inherited design and brand elements and my new, additional design option as a high-fidelity wireframes for stakeholder review. I developed a seasonal homepage approach with CSS and JS, to capture the Old Fort's changing landscape and importance of place."
+        description="I formatted the draft design elements created before my time, and a new, additional design option as a high-fidelity wireframes for stakeholder review. The stakeholders were particularly interested in showcasing the Old Fort's physical setting, so I developed a seasonal homepage approach with CSS and JS, to capture the Old Fort's changing landscape."
       />
 
       <Heading2>Collecting tools for the job</Heading2>
@@ -77,13 +66,13 @@ export default function PostTheOldFort() {
         Given the constraints of building within the DNN framework, I identified a theme package
         that allowed for customization and faster development. To align the visual identity with the
         Old Fort’s mission, I collaborated closely with FLC's photographer and videographer to
-        collect assets that supported the content with strong visuals.
+        collect assets that supported the content with strong visual examples.
       </p>
       <Triple>
         <PostImage src={old2} description="Image collection and optimization in Adobe Photoshop." />
         <PostImage
           src={old3}
-          description="Showcasing video content on the history page by updating the video design and adding a lightbox feature."
+          description="Showcasing video content on the history page by updating the component design and adding a lightbox feature."
         />
         <PostImage
           src={old4}
@@ -93,13 +82,11 @@ export default function PostTheOldFort() {
 
       <Heading2>Creating a sitemap and streamlining content</Heading2>
       <p>
-        I worked with stakeholders and my team's content writer to reorganize and streamline the
-        site’s structure. I used Google Analytics to rank most viewed pages, to help inform the
-        reorganization. Proposing a new sitemap and addressing gaps in the content addressed the
-        lion's share of information accessibility issues. I reviewed the proposed sitemap with
-        stakeholders holistically to ensure the direction was inline with their needs. After
-        identifying the structure, I was able to hone in on user-friendly content formats to make
-        their depth of resources accessible.
+        I collaborated with stakeholders and a content writer to reorganize and streamline the
+        site’s structure. Using Google Analytics to identify the most viewed pages, I proposed a new
+        sitemap that addressed content gaps. After stakeholder review and alignment, I focused on
+        developing user-friendly content formats to make the Old Fort’s extensive resources more
+        accessible and engaging.
       </p>
       <PostImage
         src={old5}
@@ -108,7 +95,7 @@ export default function PostTheOldFort() {
 
       <PostImage
         src={old6}
-        description="Collaborative FigJam board used to develop the updated site map with stakeholders. "
+        description="A side-by-side comparison of the old versus new menu navigation, homepages, and a resource page."
       />
       <Heading2>Migrating and building</Heading2>
       <p>
@@ -134,10 +121,7 @@ export default function PostTheOldFort() {
         />
       </Double>
       <Double>
-        <PostImage
-          src={old8}
-          description="Old history page sample versus new timeline component (mobile view) and history subpag (desktop view)."
-        />
+        <PostImage src={old8} description="Old history page versus new timeline component." />
         <section>
           <Heading2>History</Heading2>
           <p>
