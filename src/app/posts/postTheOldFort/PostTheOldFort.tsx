@@ -8,7 +8,6 @@ import {
   PostImage,
   Triple,
 } from "../postComponents";
-import large from "./large.png";
 import small from "./small.png";
 
 export default function PostTheOldFort() {
@@ -23,8 +22,8 @@ export default function PostTheOldFort() {
           "Primary stakeholder contact and project manager",
         ]}
         results={[
-          "Increased site viewership by 75%",
-          "Streamlined site architecture but 300%",
+          "Increased active users by 31% and tracked events by 330%",
+          "Reduced sitemap size by 65%, streamlining navigation and improving user experience",
           "Rebuilt trust with stakeholders by moving project out of backlog ",
           <>
             Explore{" "}
@@ -87,7 +86,8 @@ export default function PostTheOldFort() {
       <Heading2>Creating a sitemap and streamlining content</Heading2>
       <p>
         I worked with stakeholders and my team's content writer to reorganize and streamline the
-        site’s structure. Proposing a new sitemap and addressing gaps in the content addressed the
+        site’s structure. I used Google Analytics to rank most viewed pages, to help inform the
+        reorganization. Proposing a new sitemap and addressing gaps in the content addressed the
         lion's share of information accessibility issues. I reviewed the proposed sitemap with
         stakeholders holistically to ensure the direction was inline with their needs. After
         identifying the structure, I was able to hone in on user-friendly content formats to make
@@ -142,9 +142,28 @@ export default function PostTheOldFort() {
         <section className="h-full">
           <Heading3>Quantitative</Heading3>
           <p>
-            Using Google Analytics, I was able to gather success data in terms of visitorship, click
-            rate, and time on page. Overall, the post-redesign data show that engagement increased.
+            Using Google Analytics, I analyzed success metrics including views, active users,
+            events, and time on page. To account for the Old Fort’s seasonality, I compared data
+            from the same time period in consecutive years (June 15 to December 1, 2023 for the old
+            site, and 2024 for the redesigned site).
           </p>
+          <ul>
+            <li>
+              Improved user traffic and engagement, as seen by the&nbsp;
+              <b>
+                31% increase in active users, 29% increase in views, and a 330% increase in tracked
+                events
+              </b>
+            </li>
+            <li>
+              Led to a <b>29% increase in page views</b>, demonstrating improved visibility and user
+              interaction without any accompanying marketing campaigns or major program launches
+            </li>
+            <li>
+              Average engagement time per user <b>decreased by 50% </b>, which may indicate a more
+              streamlined site, but warrants further exploration through heatmapping or user testing
+            </li>
+          </ul>
         </section>
         <section className="h-full">
           <Heading3>Qualitative</Heading3>
@@ -152,17 +171,11 @@ export default function PostTheOldFort() {
             The site became a key feature in Old Fort presentations, serving as a visual
             representation of its identity and mission.
           </p>
+          <PostImage
+            src={small}
+            description="Jennifer Jewell giving a talk about the future of agriculture at the Old Fort, with a screenshot of the website homepage on the introduction slide."
+          />
         </section>
-      </Double>
-      <Double>
-        <PostImage
-          src={small}
-          description="A Looker Studio data view created to contextualize the Old Fort redesign outcomes."
-        />
-        <PostImage
-          src={small}
-          description="Jennifer Jewell giving a talk about the future of agriculture at the Old Fort, with a screenshot of the website homepage on the introduction slide."
-        />
       </Double>
     </>
   );

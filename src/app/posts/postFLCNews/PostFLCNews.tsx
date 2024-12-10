@@ -44,11 +44,11 @@ export default function PostFLCNews() {
 
       <Heading2>Reaching the breaking point</Heading2>
       <p>
-        The News site’s outdated design and complex article organization had become a significant
-        pain point for Fort Lewis College’s media relations team. These limitations hindered their
-        ability to showcase stories to broader audiences and gain administrative support for
-        storytelling efforts. After receiving approval to prioritize the redesign, we scoped out the
-        project’s challenges by aligning on goals and identifying key pain points.{" "}
+        The outdated design and disorganized article structure of the News site created major
+        challenges for Fort Lewis College’s media relations team. These issues limited their ability
+        to reach broader audiences and secure administrative support for storytelling. Once the
+        redesign was prioritized, we defined project goals and identified key pain points to
+        address.{" "}
       </p>
       <PostImage
         src={large}
