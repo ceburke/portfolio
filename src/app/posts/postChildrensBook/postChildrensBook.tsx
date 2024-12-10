@@ -1,10 +1,10 @@
 import { Double, Heading1, Heading2, PostImage, Triple } from "../postComponents";
-import book1 from "./book1.png";
-import book2 from "./book2.png";
-import book3 from "./book3.png";
+import book1 from "./book1.jpg";
+import book2 from "./book2.jpg";
+import book3 from "./book3.jpg";
 import book4 from "./book4.jpg";
-import book5 from "./book5.png";
-import book6 from "./book6.png";
+import book5 from "./book5.jpg";
+import book6 from "./book6.jpg";
 
 export default function PostChildrensBook() {
   return (

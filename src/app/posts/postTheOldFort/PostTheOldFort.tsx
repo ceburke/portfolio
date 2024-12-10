@@ -9,6 +9,7 @@ import {
   Triple,
 } from "../postComponents";
 import small from "./small.png";
+import large from "./large.png";
 
 export default function PostTheOldFort() {
   return (
@@ -94,7 +95,7 @@ export default function PostTheOldFort() {
         their depth of resources accessible.
       </p>
       <PostImage
-        src={small}
+        src={large}
         description="Collaborative FigJam board used to develop the updated site map with stakeholders. "
       />
       <Heading2>Migrating and building</Heading2>
