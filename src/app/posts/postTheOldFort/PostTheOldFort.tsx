@@ -28,7 +28,7 @@ export default function PostTheOldFort() {
           "Create a new brand for the Old Fort",
           "Design and build the new site",
           "Migrate existing content and assets",
-          "Primary stakeholder contact and project manager",
+          "Primary stakeholder contact and project management",
         ]}
         results={[
           "Increased active users by 31% and tracked events by 330%",
@@ -51,15 +51,14 @@ export default function PostTheOldFort() {
       <Heading2>Dusting off the cobwebs</Heading2>
       <p>
         The Old Fort redesign had been stalled for nearly three years when I joined Fort Lewis
-        College. The project lacked momentum and trust from stakeholders. To rebuild confidence, I
-        created an alternative design alongside the inherited proposal, giving stakeholders options
-        and demonstrating my commitment to understanding their vision. The main goals as presented
-        by the stakeholders to <b>make resources accessible</b> and{" "}
-        <b>create a distinct visual identity.</b>{" "}
+        College, leaving stakeholders frustrated and disengaged. To rebuild trust, I created an
+        alternative design alongside the inherited proposal, offering options and showing my
+        commitment to their vision. The project focused on two primary goals:{" "}
+        <b>make resources accessible</b> and <b>create a distinct visual identity.</b>{" "}
       </p>
       <PostImage
         src={old1}
-        description="I formatted the draft design elements created before my time, and a new, additional design option as a high-fidelity wireframes for stakeholder review. The stakeholders were particularly interested in showcasing the Old Fort's physical setting, so I developed a seasonal homepage approach with CSS and JS, to capture the Old Fort's changing landscape."
+        description="I formatted the existing draft designs and created an additional high-fidelity wireframe for stakeholder review. To align with their interest in showcasing the Old Fort’s physical setting, I developed a seasonal homepage approach using CSS and JS to reflect the changing landscape."
       />
 
       <Heading2>Collecting tools for the job</Heading2>
@@ -73,7 +72,7 @@ export default function PostTheOldFort() {
         <PostImage src={old2} description="Image collection and optimization in Adobe Photoshop." />
         <PostImage
           src={old3}
-          description="Showcasing video content on the history page by updating the component design and adding a lightbox feature."
+          description="I showcased video content on the history page by updating the component design and adding a lightbox feature."
         />
         <PostImage
           src={old4}
@@ -136,6 +135,7 @@ export default function PostTheOldFort() {
         </section>
       </Double>
       <Heading2>Measuring success</Heading2>
+      {/*TODO Make list style*/}
       <Double>
         <section className="h-full">
           <Heading3>Quantitative</Heading3>
@@ -167,8 +167,10 @@ export default function PostTheOldFort() {
           <Heading3>Qualitative</Heading3>
           <p>
             The site became a key feature in Old Fort presentations, serving as a visual
-            representation of its identity and mission.
+            representation of its identity and mission. The stakeholders were pleased with the new
+            site, and continue to provide regular content updates.
           </p>
+          {/*TODO Image layout not ideal, could change to Double image and add a tour photo if needed.*/}
           <PostImage
             src={old9}
             description="Jennifer Jewell giving a talk about the future of agriculture at the Old Fort, with a screenshot of the website homepage on the introduction slide."
