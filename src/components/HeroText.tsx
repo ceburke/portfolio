@@ -1,6 +1,6 @@
-'use client';
-import {useState} from 'react';
-import {MAX_CONTENT_WIDTH} from '@/constants';
+"use client";
+import { useState } from "react";
+import { MAX_CONTENT_WIDTH } from "@/constants";
 
 export default function HeroText() {
   const [hovered, setHovered] = useState(false);
@@ -8,27 +8,28 @@ export default function HeroText() {
   return (
     <p
       className="group text-4xl mt-24 mb-20 px-8 md:px-20 lg:px-36"
-      style={{maxWidth: `${MAX_CONTENT_WIDTH}px`}}
+      style={{ maxWidth: `${MAX_CONTENT_WIDTH}px` }}
       onMouseEnter={() => setHovered(true)}
     >
-      I‘m a{' '}
+      {/* TODO Hmm yum a fun little easter egg surprise&delight 𓆇𓎥𖡼•ﻌ• */}
+      I‘m a{" "}
       <span
         className="font-bold transition-all ease-in-out duration-500"
-        style={hovered ? {color: '#8CC59C'} : undefined}
+        style={hovered ? { color: "#8CC59C" } : undefined}
       >
         designer who codes
       </span>
-      , driven by a passion for{' '}
+      , driven by a passion for{" "}
       <span
         className="font-bold transition-all ease-in-out duration-500"
-        style={hovered ? {color: '#5164b9'} : undefined}
+        style={hovered ? { color: "#8794CF" } : undefined}
       >
         accessibility
-      </span>{' '}
-      and creating products that make a{' '}
+      </span>{" "}
+      and creating products that make a{" "}
       <span
         className="font-bold transition-all ease-in-out duration-500"
-        style={hovered ? {color: '#F1975A'} : undefined}
+        style={hovered ? { color: "#F1975A" } : undefined}
       >
         positive social impact.
       </span>

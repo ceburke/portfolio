@@ -32,7 +32,7 @@ export default async function Post({params}: {params: Promise<{id: string}>}) {
     <div className="dark:bg-black dark:text-white">
       <Navbar />
       <article
-        className="mx-auto p-5 lg:px-0 *:my-5 w-full"
+        className="mx-auto p-5 lg:px-0 *:my-16 w-full"
         style={{maxWidth: `${MAX_POST_WIDTH}px`}}
       >
         {post.content}

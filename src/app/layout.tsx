@@ -1,5 +1,5 @@
 import type {Metadata} from 'next';
-import {Inter, Emblema_One} from 'next/font/google';
+import {Emblema_One, Inter} from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({

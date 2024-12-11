@@ -1,0 +1,20 @@
+{
+    id: "strava",
+    previewImg: theOldFortPreview2,
+    title: "Keeping pace with the competition",
+    subtitle: "Trail conditions reporting for Strava",
+    group: "work",
+    description:
+      "Exploring a theoretical user flow for reporting trail conditions, and how it could be integrated into the Strava app.",
+    content: <PostStrava />,
+  },
+  {
+    id: "maps",
+    previewImg: theOldFortPreview2,
+    title: "Better late than never",
+    subtitle: "Automatic ETA updates for Google Maps",
+    group: "work",
+    description:
+      "A concept for reducing distractions on the go. Learn how an automatic notification feature could keep travelers informed without pulling them away from the journey.",
+    content: <PostMaps />,
+  },

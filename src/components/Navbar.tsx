@@ -71,7 +71,7 @@ export default function Navbar() {
         style={{maxWidth: `${MAX_CONTENT_WIDTH}px`}}
       >
         <Curb />
-        <ul className="items-center hidden sm:flex gap-4 lg:gap-10 text-lg lg:text-2xl">{links}</ul>
+        <ul className="items-center hidden sm:flex gap-4 lg:gap-10 text-lg lg:text-lg">{links}</ul>
         <div className="inline sm:hidden">
           <HamburgerNav>{links}</HamburgerNav>
         </div>
