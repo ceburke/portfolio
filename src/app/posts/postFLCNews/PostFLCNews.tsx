@@ -73,12 +73,12 @@ export default function PostFLCNews() {
       <Double>
         <PostImage
           src={small}
-          description="I expanded specs and documentation on design files to better support the vendor developer."
+          description="I expanded specs and documentation on design files to better support the developer developer."
         />
         <section>
           <Heading3>Improving development hand-off</Heading3>
           <p>
-            Collaborating with the vendor taught me how to refine my Figma documentation. By
+            Collaborating with the developer taught me how to refine my Figma documentation. By
             actively engaging with the developer and addressing feedback through comments, I
             improved my design files to ensure they were clear and actionable for implementation.
           </p>
@@ -89,7 +89,7 @@ export default function PostFLCNews() {
         <p>
           A competitive audit of higher education sites informed my approach to creating a modern,
           responsive, and on-brand design. Using nvQuickTheme and Bootstrap, I developed a base
-          theme with updated headers and footers. Paired with the vendor’s article theme, this
+          theme with updated headers and footers. Paired with the developer’s article theme, this
           groundwork supported seamless content migration. For all parts of the updates, I speced
           out Figma designs per Bootstrap breakpoints, at four device sizes.
         </p>
@@ -99,15 +99,15 @@ export default function PostFLCNews() {
         <section>
           <Heading2>Tackling article migration</Heading2>
           <p>
-            To address decades of legacy articles, I worked with the vendor to develop a SQL-driven
-            category migration plan. This approach reorganized categories to simplify future
-            uploads. I conducted thorough QA to ensure the migration met user needs and resolved
-            organizational inefficiencies.
+            To address decades of legacy articles, I worked with the developer to develop a
+            SQL-driven category migration plan. This approach reorganized categories to simplify
+            future uploads. I conducted thorough QA to ensure the migration met user needs and
+            resolved organizational inefficiencies.
           </p>
         </section>
         <PostImage
           src={small}
-          description="I determined an category reassigment map and the vendor built out a spreadsheet to capture the paths for the SQL migration."
+          description="I determined an category reassigment map and the developer built out a SQL statement to migrate the articles into new categories."
         />
       </Double>
       <div className="*:my-5">
@@ -117,16 +117,16 @@ export default function PostFLCNews() {
           including the site’s redesign history, category changes, a content map, and step-by-step
           instructions for uploading articles. This ensured the team could confidently manage the
           updated site and its features, and appropriatey utilize the new spaces created to higlight
-          their work. In addition, I commit my changes to the vendor-developed article templates
-          through a shared repo on GitHub. This approach enables me to extend the template to other
-          use cases on the FLC website while maintaining version control and facilitating
-          collaboration with the vendor for future adjustments.
+          their work. In addition, I commit my changes to the article templates through a shared
+          repo on GitHub. This approach enables me to extend the template to other use cases on the
+          FLC website while maintaining version control and facilitating collaboration with the
+          developer for future adjustments.
         </p>
       </div>
       <Triple>
         <PostImage
           src={large}
-          description="I crated step-by-step instructions per content type, to help make the site upload process smoother for current and future editors."
+          description="I authored step-by-step instructions per content type, to help make the site upload process smoother for current and future editors."
         />
         <PostImage
           src={large}
