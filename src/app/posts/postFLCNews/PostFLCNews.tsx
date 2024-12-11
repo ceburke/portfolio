@@ -58,7 +58,7 @@ export default function PostFLCNews() {
         </p>
         <PostImage
           src={news1}
-          description="A side-by-side comparison of the old versus new sitemaps and homepages. "
+          description="A side-by-side comparison of the old versus new FLC News homepages. "
         />
       </div>
 
