@@ -15,12 +15,12 @@ export default function PostSolvedInMotion() {
         project, and successfully stepping outside my comfort zone instilled lasting confidence to
         embrace and overcome new challenges.
       </p>
-      {/* TODO Fix video size and if possible, preview image*/}
+      {/* TODO Fix video size and if possible, preview image. Look up Google Drive embed specs to solve.*/}
       <Double>
         <iframe
           src="https://drive.google.com/file/d/1xwFl9sTI91waFM_Wtmyjx5PCh9fRt5rs/preview?start=2"
           width="100%"
-          height="100%"
+          height="350px"
           allow="autoplay"
         ></iframe>
         <section>

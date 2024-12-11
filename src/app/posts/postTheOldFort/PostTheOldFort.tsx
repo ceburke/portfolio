@@ -145,7 +145,7 @@ export default function PostTheOldFort() {
             from the same time period in consecutive years (June 15 to December 1, 2023 for the old
             site, and 2024 for the redesigned site).
           </p>
-          <ul>
+          <ul className="mt-5 list-disc pl-4">
             <li>
               Improved user traffic and engagement, as seen by the&nbsp;
               <b>

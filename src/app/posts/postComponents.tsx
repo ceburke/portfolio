@@ -18,7 +18,7 @@ export function Heading3({ children }: { children: React.ReactNode }): React.Rea
 
 export function Double({ children }: { children: React.ReactNode }): React.ReactNode {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-5 items-center justify-center my-10">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-5 items-center justify-center my-100">
       {children}
     </section>
   );
@@ -26,7 +26,7 @@ export function Double({ children }: { children: React.ReactNode }): React.React
 
 export function TextDouble({ children }: { children: React.ReactNode }): React.ReactNode {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-5 items-center justify-center my-5">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-5 items-center justify-center my-10">
       {children}
     </section>
   );
@@ -34,7 +34,7 @@ export function TextDouble({ children }: { children: React.ReactNode }): React.R
 
 export function Triple({ children }: { children: React.ReactNode }): React.ReactNode {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-5 items-center justify-center min-h-52 my-10">
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-5 items-center justify-center min-h-52 my-">
       {children}
     </section>
   );
