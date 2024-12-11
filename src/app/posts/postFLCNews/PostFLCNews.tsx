@@ -1,15 +1,8 @@
-import { ToolData, toolsData } from "@/components/tools/toolsData";
-import Link from "next/link";
-import {
-  Double,
-  ExtendedPostTitle,
-  Heading2,
-  Heading3,
-  PostImage,
-  Triple,
-} from "../postComponents";
-import large from "./large.png";
-import small from "./small.png";
+import {ToolData, toolsData} from '@/components/tools/toolsData';
+import Link from 'next/link';
+import {Double, ExtendedPostTitle, Heading2, Heading3, PostImage, Triple} from '../postComponents';
+import large from './large.png';
+import small from './small.png';
 
 export default function PostFLCNews() {
   return (
@@ -18,42 +11,45 @@ export default function PostFLCNews() {
         title="Information architecture and responsive redesign"
         description="The Fort Lewis College News site is a central tool for marketing and storytelling, showcasing events, achievements, and strategic initiatives. However, its outdated, non-branded, and unresponsive design created barriers for users and limited its role in broader marketing efforts like fundraising and email campaigns. I led a redesign to transform the site into a modern, responsive platform that aligns with the college’s brand and enhances usability for all audiences."
         roles={[
-          "Audit competitors, site information architecture, and user flows",
-          "Design templates and components in Figma",
-          "Develop the base theme, header, and footer using Bootstrap and nvQuickTheme",
-          "Collaborate with a vendor to implement article, category, and page templates in DNN",
-          "Manage content migration and train content owners on new features",
+          'Audit competitors, site information architecture, and user flows',
+          'Design templates and components in Figma',
+          'Develop the base theme, header, and footer using Bootstrap and nvQuickTheme',
+          'Collaborate with a vendor to implement article, category, and page templates in DNN',
+          'Manage content migration and train content owners on new features',
         ]}
         results={[
-          "Increased site views by 180% and conversion rate by 135%",
-          "Broadened the use of FLC News in fundraising, outreach, and email campaigns",
-          "Improved visibility of strategic initiatives through enhanced layouts and visual storytelling",
+          'Increased site views by 180% and conversion rate by 135%',
+          'Broadened the use of FLC News in fundraising, outreach, and email campaigns',
+          'Improved visibility of strategic initiatives through enhanced layouts and visual storytelling',
           <>
-            View the{" "}
+            View the{' '}
             <Link className="underline" href="https://www.fortlewis.edu/fort-lewis-college-news">
               FLC News site
             </Link>
           </>,
         ]}
         toolsData={
-          ["Figma", "Bootstrap", "VSCode", "Github"]
+          ['Figma', 'Bootstrap', 'VSCode', 'Github']
             .map((toolName) => toolsData.find((tool) => tool.label === toolName))
             .filter(Boolean) as ToolData[]
         }
       />
 
-      <Heading2>Reaching the breaking point</Heading2>
-      <p>
-        The outdated design and disorganized article structure of the News site created major
-        challenges for Fort Lewis College’s media relations team. These issues limited their ability
-        to reach broader audiences and secure administrative support for storytelling. Once the
-        redesign was prioritized, we defined project goals and identified key pain points to
-        address.{" "}
-      </p>
-      <PostImage
-        src={large}
-        description="A side-by-side comparison of the old versus new sitemaps and homepages. "
-      />
+      {/* TODO update other instances like this that should be wrapped to not inherit article children margin */}
+      <div className="*:my-5">
+        <Heading2>Reaching the breaking point</Heading2>
+        <p>
+          The outdated design and disorganized article structure of the News site created major
+          challenges for Fort Lewis College’s media relations team. These issues limited their
+          ability to reach broader audiences and secure administrative support for storytelling.
+          Once the redesign was prioritized, we defined project goals and identified key pain points
+          to address.{' '}
+        </p>
+        <PostImage
+          src={large}
+          description="A side-by-side comparison of the old versus new sitemaps and homepages. "
+        />
+      </div>
 
       <Heading2>Determining a best approach</Heading2>
       <p>
