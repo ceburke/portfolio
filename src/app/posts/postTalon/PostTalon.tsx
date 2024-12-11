@@ -39,13 +39,14 @@ export default function PostTemplate() {
             .filter(Boolean) as ToolData[]
         }
       />
-
-      <Heading2>Pitching a grassroots design system</Heading2>
-      <p>
-        Stakeholders initially hesitated, unsure how a design system could address the complexity of
-        the FLC website and other digital assets. To build trust, I demonstrated how hours saved
-        through cohesive design could translate into real cost savings.{" "}
-      </p>
+      <div className="*:my-5">
+        <Heading2>Pitching a grassroots design system</Heading2>
+        <p>
+          Stakeholders initially hesitated, unsure how a design system could address the complexity
+          of the FLC website and other digital assets. To build trust, I demonstrated how hours
+          saved through cohesive design could translate into real cost savings.{" "}
+        </p>
+      </div>
       <Double>
         <PostImage
           src={talon1}
@@ -68,15 +69,17 @@ export default function PostTemplate() {
           </p>
         </section>
       </Double>
+      <div className="*:my-5">
+        <Heading2>Learning through iteration</Heading2>
+        <p>
+          Creating the Talon Design System was far from a straightforward process. Early on, I
+          conducted a competitive audit of design systems used by other higher-ed institutions,
+          gaining insight into what was possible and effective. Inspired by these examples, I began
+          workshopping designs with the graphic design team, coding components myself, and
+          documenting them as I went.
+        </p>
+      </div>
 
-      <Heading2>Learning through iteration</Heading2>
-      <p>
-        Creating the Talon Design System was far from a straightforward process. Early on, I
-        conducted a competitive audit of design systems used by other higher-ed institutions,
-        gaining insight into what was possible and effective. Inspired by these examples, I began
-        workshopping designs with the graphic design team, coding components myself, and documenting
-        them as I went.
-      </p>
       <Triple>
         <PostImage src={talon2} description="Icon and factoid workshopping process." />
         <PostImage
@@ -88,43 +91,48 @@ export default function PostTemplate() {
           description="Developing components, such as testimonials, highlighted the need for modern Bootstrap utilities and clean stylesheets."
         />
       </Triple>
-      <p>
-        Initial efforts revealed critical roadblocks, including conflicting stylesheets, outdated
-        dependencies, and undocumented workflows. These challenges prompted a necessary pivot to
-        modernize the codebase with Bootstrap 5 and consolidated CSS/SCSS. This phase underscored
-        the importance of establishing a strong technical foundation for scalability and taught me
-        the value of flexibility when navigating complex projects.
-      </p>
+      <div className="*:my-5">
+        <p>
+          Initial efforts revealed critical roadblocks, including conflicting stylesheets, outdated
+          dependencies, and undocumented workflows. These challenges prompted a necessary pivot to
+          modernize the codebase with Bootstrap 5 and consolidated CSS/SCSS. This phase underscored
+          the importance of establishing a strong technical foundation for scalability and taught me
+          the value of flexibility when navigating complex projects.
+        </p>
 
-      <Heading2>Building a strong foundation</Heading2>
-      <p>
-        With the technical limitations of the codebase clear, I shifted focus to building a strong
-        foundation for the design system. I revisited user research to identify core needs and
-        established accessible typography, color palettes, iconography, and layout standards. Using
-        Figma variables, I streamlined design workflows and ensured scalability. I developed
-        universal components, like menus and page layouts, and CMS-level pane layouts for
-        implementation. My design process balanced stakeholder feedback, technical needs, team
-        capacity, and modern design principles.
-      </p>
+        <Heading2>Building a strong foundation</Heading2>
+        <p>
+          With the technical limitations of the codebase clear, I shifted focus to building a strong
+          foundation for the design system. I revisited user research to identify core needs and
+          established accessible typography, color palettes, iconography, and layout standards.
+          Using Figma variables, I streamlined design workflows and ensured scalability. I developed
+          universal components, like menus and page layouts, and CMS-level pane layouts for
+          implementation. My design process balanced stakeholder feedback, technical needs, team
+          capacity, and modern design principles.
+        </p>
+      </div>
+      {/*TODO Check this was correct wrap*/}
 
       <PostImage
         src={talon5}
         description="A sampling of the types of foundational guidelines and components within Talon."
       />
-
-      <Heading2>Identify a developer and set expectations</Heading2>
-      <p>
-        To implement the system across a complex website, I engaged a developer with experience in
-        DNN. I delivered a comprehensive package of design files, technical expectations, and
-        process documentation to ensure alignment. This package included annotated designs, an
-        implementation plan, and workflows to support long-term scalability.
-      </p>
-      <p>
-        I proposed a phased implementation strategy to prioritize high-impact areas like the header,
-        footer, navigation, and homepage, with content components to follow. This approach ensures
-        manageable implementation and lays the foundation for scalable updates across the college’s
-        sprawling website. Here are the guiding goals of the refined design system approach:
-      </p>
+      <div className="*:my-5">
+        <Heading2>Identify a developer and set expectations</Heading2>
+        <p>
+          To implement the system across a complex website, I engaged a developer with experience in
+          DNN. I delivered a comprehensive package of design files, technical expectations, and
+          process documentation to ensure alignment. This package included annotated designs, an
+          implementation plan, and workflows to support long-term scalability.
+        </p>
+        <p>
+          I proposed a phased implementation strategy to prioritize high-impact areas like the
+          header, footer, navigation, and homepage, with content components to follow. This approach
+          ensures manageable implementation and lays the foundation for scalable updates across the
+          college’s sprawling website. Here are the guiding goals of the refined design system
+          approach:
+        </p>
+      </div>
 
       <Double>
         <section className="h-full">
@@ -158,11 +166,13 @@ export default function PostTemplate() {
           </p>
         </section>
       </Double>
-
-      <p>
-        The design files and process documents are currently being reviewed by the developer. Stay
-        tuned for updates on the Talon Design System as it continues to evolve and transform.
-      </p>
+      <div className="*:my-5">
+        <p>
+          The design files and process documents are currently being reviewed by the developer. Stay
+          tuned for updates on the Talon Design System as it continues to evolve and transform.
+        </p>
+      </div>
+      {/*TODO Check this was correct wrap*/}
       <PostImage
         src={talon6}
         description="The final mock of a complex secondary navigation component, designed to be flexible and scalable across the FLC website. This component utilizes brand logos to orient the user, and addresses navigation challenges within dense subpages on the current site."
