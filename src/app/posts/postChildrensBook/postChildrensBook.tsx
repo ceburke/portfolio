@@ -1,5 +1,5 @@
-import { Double, Heading1, Heading2, PostImage, Triple } from "../postComponents";
 import Link from "next/link";
+import { Double, Heading1, Heading2, PostImage, Triple } from "../postComponents";
 import book1 from "./book1.jpg";
 import book2 from "./book2.jpg";
 import book3 from "./book3.jpg";

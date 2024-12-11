@@ -1,4 +1,4 @@
-import { ExtendedPostTitle, Heading1, PostImage } from "../postComponents";
+import { Heading1, PostImage } from "../postComponents";
 import collage1 from "./collage1.jpg";
 
 export default function PostCollagesAndCovers() {

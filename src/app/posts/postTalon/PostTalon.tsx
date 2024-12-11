@@ -1,4 +1,5 @@
 import { ToolData, toolsData } from "@/components/tools/toolsData";
+import Link from "next/link";
 import {
   Double,
   ExtendedPostTitle,
@@ -24,7 +25,7 @@ export default function PostTemplate() {
           "Pitch value, strategy, and process",
           "Conduct competitive audits, best practice research, and design reviews",
           "Design system architecture, components, templates, and documentation",
-          "Manage vendor relationship and development timeline",
+          "Manage developer relationship and timeline",
         ]}
         results={[
           "Secured buy-in and funding to modernize the college's digital presence",
@@ -55,9 +56,15 @@ export default function PostTemplate() {
           <p>
             Using an engaging FigJam board, I outlined a clear timeline, areas of application, and
             team-wide benefits. An essential part of the pitch was a return-on-investment (ROI)
-            value equation (from Smashing Magazine) that translated hours saved on design and
-            development into direct monetary savings, putting the abstract concept of a design
-            system into common terms.{" "}
+            value equation (
+            <Link
+              className="underline"
+              href="https://www.smashingmagazine.com/2022/09/formula-roi-design-system/"
+            >
+              from Smashing Magazine
+            </Link>
+            ) that translated hours saved on design and development into direct monetary savings,
+            putting the abstract concept of a design system into common terms.{" "}
           </p>
         </section>
       </Double>
@@ -82,13 +89,11 @@ export default function PostTemplate() {
         />
       </Triple>
       <p>
-        Initial efforts revealed critical roadblocks—conflicting stylesheets, outdated dependencies,
-        and undocumented workflows—prompting a pivot to modernize the codebase with Bootstrap 5 and
-        consolidated CSS/SCSS.
-      </p>
-      <p>
-        This phase taught me that foundational technical improvements are essential for scalability
-        and highlighted the importance of flexibility when navigating complex projects.
+        Initial efforts revealed critical roadblocks, including conflicting stylesheets, outdated
+        dependencies, and undocumented workflows. These challenges prompted a necessary pivot to
+        modernize the codebase with Bootstrap 5 and consolidated CSS/SCSS. This phase underscored
+        the importance of establishing a strong technical foundation for scalability and taught me
+        the value of flexibility when navigating complex projects.
       </p>
 
       <Heading2>Building a strong foundation</Heading2>
@@ -98,8 +103,8 @@ export default function PostTemplate() {
         established accessible typography, color palettes, iconography, and layout standards. Using
         Figma variables, I streamlined design workflows and ensured scalability. I developed
         universal components, like menus and page layouts, and CMS-level pane layouts for
-        implementation. My design process balanced stakeholder feedback, technical needs, and modern
-        design principles.
+        implementation. My design process balanced stakeholder feedback, technical needs, team
+        capacity, and modern design principles.
       </p>
 
       <PostImage
@@ -109,15 +114,16 @@ export default function PostTemplate() {
 
       <Heading2>Identify a developer and set expectations</Heading2>
       <p>
-        To implement the system across a complex website, I partnered with a developer, delivering
-        annotated designs, a phased implementation plan, and workflows to support long-term
-        scalability.
+        To implement the system across a complex website, I engaged a developer with experience in
+        DNN. I delivered a comprehensive package of design files, technical expectations, and
+        process documentation to ensure alignment. This package included annotated designs, an
+        implementation plan, and workflows to support long-term scalability.
       </p>
       <p>
-        A phased implementation strategy prioritizes high-impact areas like the header, footer,
-        navigation, and homepage, with content components to follow. This approach ensures
+        I proposed a phased implementation strategy to prioritize high-impact areas like the header,
+        footer, navigation, and homepage, with content components to follow. This approach ensures
         manageable implementation and lays the foundation for scalable updates across the college’s
-        sprawling website.
+        sprawling website. Here are the guiding goals of the refined design system approach:
       </p>
 
       <Double>
@@ -148,7 +154,7 @@ export default function PostTemplate() {
           <Heading3>Lay the groundwork for full implementation</Heading3>
           <p>
             Develop a strategy for integrating the design system across all 6,000+ pages while
-            addressing existing technical limitations.{" "}
+            addressing capacity and content limitations.{" "}
           </p>
         </section>
       </Double>
@@ -159,7 +165,7 @@ export default function PostTemplate() {
       </p>
       <PostImage
         src={talon6}
-        description="The final design of a complex secondary navigation component, designed to be flexible and scalable across the FLC website. This component utilizes brand logos to orient the user, and addresses navigation challenges within dense subpages on the current site."
+        description="The final mock of a complex secondary navigation component, designed to be flexible and scalable across the FLC website. This component utilizes brand logos to orient the user, and addresses navigation challenges within dense subpages on the current site."
       />
     </>
   );
