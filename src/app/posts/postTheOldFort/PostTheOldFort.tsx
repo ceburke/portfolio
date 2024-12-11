@@ -150,7 +150,7 @@ export default function PostTheOldFort() {
             from the same time period in consecutive years (June 15 to December 1, 2023 for the old
             site, and 2024 for the redesigned site).
           </p>
-          <ul className="mt-5 list-disc pl-4">
+          <ul className="mt-5 mb-5 list-disc pl-4">
             <li>
               Improved user traffic and engagement, as seen by the&nbsp;
               <b>
@@ -174,13 +174,11 @@ export default function PostTheOldFort() {
             site, and continue to provide regular content updates.
           </p>
         </section>
-        {/*TODO Image layout not ideal, could change to Double image and add a tour photo if needed.*/}
         <PostImage
           src={old9}
-          description="Jennifer Jewell giving a talk about the future of agriculture at the Old Fort, with a screenshot of the website homepage on the introduction slide."
+          description="Jennifer Jewell giving a talk about the future of agriculture at the Old Fort, with a screenshot of the website homepage as the introduction slide."
         />
       </Double>
-      {/* TODO Check wrap*/}
     </>
   );
 }

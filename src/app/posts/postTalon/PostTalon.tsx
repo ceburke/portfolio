@@ -110,7 +110,6 @@ export default function PostTemplate() {
           capacity, and modern design principles.
         </p>
       </div>
-      {/*TODO Check this was correct wrap*/}
 
       <PostImage
         src={talon5}
@@ -165,17 +164,16 @@ export default function PostTemplate() {
           </p>
         </section>
       </Double>
+      <PostImage
+        src={talon6}
+        description="The final mock of a complex secondary navigation component, designed to be flexible and scalable across the FLC website. This component utilizes brand logos to orient the user, and addresses navigation challenges within dense subpages on the current site."
+      />
       <div className="*:my-5">
         <p>
           The design files and process documents are currently being reviewed by the developer. Stay
           tuned for updates on the Talon Design System as it continues to evolve and transform.
         </p>
       </div>
-      {/*TODO Check this was correct wrap*/}
-      <PostImage
-        src={talon6}
-        description="The final mock of a complex secondary navigation component, designed to be flexible and scalable across the FLC website. This component utilizes brand logos to orient the user, and addresses navigation challenges within dense subpages on the current site."
-      />
     </>
   );
 }
