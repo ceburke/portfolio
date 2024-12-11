@@ -9,7 +9,12 @@ import {
   Triple,
 } from "../postComponents";
 import large from "./large.png";
-import small from "./small.png";
+import news2 from "./news2.png";
+import news3 from "./news3.png";
+import news4 from "./news4.png";
+import news5 from "./news5.png";
+import news6 from "./news6.png";
+import news7 from "./news7.png";
 
 export default function PostFLCNews() {
   return (
@@ -72,7 +77,7 @@ export default function PostFLCNews() {
 
       <Double>
         <PostImage
-          src={small}
+          src={news2}
           description="I expanded specs and documentation on design files to better support the developer developer."
         />
         <section>
@@ -94,7 +99,7 @@ export default function PostFLCNews() {
           out Figma designs per Bootstrap breakpoints, at four device sizes.
         </p>
       </div>
-      <PostImage src={large} description="Full spread of Figma mocks at multiple device sizes." />
+      <PostImage src={news3} description="Full spread of Figma mocks at multiple device sizes." />
       <Double>
         <section>
           <Heading2>Tackling article migration</Heading2>
@@ -106,7 +111,7 @@ export default function PostFLCNews() {
           </p>
         </section>
         <PostImage
-          src={small}
+          src={news4}
           description="I determined an category reassigment map and the developer built out a SQL statement to migrate the articles into new categories."
         />
       </Double>
@@ -125,15 +130,15 @@ export default function PostFLCNews() {
       </div>
       <Triple>
         <PostImage
-          src={large}
+          src={news5}
           description="I authored step-by-step instructions per content type, to help make the site upload process smoother for current and future editors."
         />
         <PostImage
-          src={large}
+          src={news6}
           description="The new site features dedicated space for videos and photos."
         />
         <PostImage
-          src={large}
+          src={news7}
           description="The News redesign supported and informed the re-brand of the college's main email campaign, The Fort Report."
         />
       </Triple>
