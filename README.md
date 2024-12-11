@@ -1,17 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started - Local Development
+## Getting Started
 
-1. Temporarily switch the `BASE_PATH` in constants.tsx to `''`.
-
-1. Run the development server:
+First, run the development server:
 
 ```bash
+# install dependencies
+npm i
+# run the development server
 npm run dev
 ```
 
-1. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000/portfolio](http://localhost:3000/portfolio) with your browser to see the result.
 
-## Deployment
+Most changes will show up automatically although some changes, like adding a new postData, may require re-running `npm run dev`.
 
-Deployment is done manually via Github actions.
+## Deploying
+
+Deployment is done automatically on pushes to main with a github actions workflow. The same workflow can be triggered manually.
