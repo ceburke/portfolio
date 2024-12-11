@@ -78,6 +78,13 @@ export default function PostTemplate() {
           workshopping designs with the graphic design team, coding components myself, and
           documenting them as I went.
         </p>
+        <p>
+          Initial efforts revealed critical roadblocks, including conflicting stylesheets, outdated
+          dependencies, and undocumented workflows. These challenges prompted a necessary pivot to
+          modernize the codebase with Bootstrap 5 and consolidated CSS/SCSS. This phase underscored
+          the importance of establishing a strong technical foundation for scalability and taught me
+          the value of flexibility when navigating complex projects.
+        </p>
       </div>
 
       <Triple>
@@ -92,14 +99,6 @@ export default function PostTemplate() {
         />
       </Triple>
       <div className="*:my-5">
-        <p>
-          Initial efforts revealed critical roadblocks, including conflicting stylesheets, outdated
-          dependencies, and undocumented workflows. These challenges prompted a necessary pivot to
-          modernize the codebase with Bootstrap 5 and consolidated CSS/SCSS. This phase underscored
-          the importance of establishing a strong technical foundation for scalability and taught me
-          the value of flexibility when navigating complex projects.
-        </p>
-
         <Heading2>Building a strong foundation</Heading2>
         <p>
           With the technical limitations of the codebase clear, I shifted focus to building a strong

@@ -42,7 +42,6 @@ export default function PostFLCNews() {
         }
       />
 
-      {/* TODO update other instances like this that should be wrapped to not inherit article children margin */}
       <div className="*:my-5">
         <Heading2>Reaching the breaking point</Heading2>
         <p>

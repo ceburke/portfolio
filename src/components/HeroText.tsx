@@ -11,7 +11,7 @@ export default function HeroText() {
       style={{ maxWidth: `${MAX_CONTENT_WIDTH}px` }}
       onMouseEnter={() => setHovered(true)}
     >
-      {/* TODO Hmm yum a fun little easter egg surprise&delight 𓆇𓎥𖡼•ﻌ• */}
+      {/* Hmm yum a fun little easter egg surprise&delight 𓆇𓎥𖡼•ﻌ• */}
       I‘m a{" "}
       <span
         className="font-bold transition-all ease-in-out duration-500"

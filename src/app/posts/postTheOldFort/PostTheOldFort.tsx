@@ -139,12 +139,10 @@ export default function PostTheOldFort() {
           </p>
         </section>
       </Double>
-      <div className="*:my-5">
-        <Heading2>Measuring success</Heading2>
-      </div>
-      {/* TODO Check wrap*/}
+
       <Double>
-        <section className="h-full">
+        <section>
+          <Heading2>Measuring success</Heading2>
           <Heading3>Quantitative</Heading3>
           <p>
             Using Google Analytics, I analyzed success metrics including views, active users,
@@ -169,21 +167,20 @@ export default function PostTheOldFort() {
               streamlined site, but warrants further exploration through heatmapping or user testing
             </li>
           </ul>
-        </section>
-        <section className="h-full">
           <Heading3>Qualitative</Heading3>
           <p>
             The site became a key feature in Old Fort presentations, serving as a visual
             representation of its identity and mission. The stakeholders were pleased with the new
             site, and continue to provide regular content updates.
           </p>
-          {/*TODO Image layout not ideal, could change to Double image and add a tour photo if needed.*/}
-          <PostImage
-            src={old9}
-            description="Jennifer Jewell giving a talk about the future of agriculture at the Old Fort, with a screenshot of the website homepage on the introduction slide."
-          />
         </section>
+        {/*TODO Image layout not ideal, could change to Double image and add a tour photo if needed.*/}
+        <PostImage
+          src={old9}
+          description="Jennifer Jewell giving a talk about the future of agriculture at the Old Fort, with a screenshot of the website homepage on the introduction slide."
+        />
       </Double>
+      {/* TODO Check wrap*/}
     </>
   );
 }
