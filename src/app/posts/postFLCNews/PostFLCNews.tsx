@@ -8,7 +8,7 @@ import {
   PostImage,
   Triple,
 } from "../postComponents";
-import large from "./large.png";
+import news1 from "./news1.jpg";
 import news2 from "./news2.jpg";
 import news3 from "./news3.jpg";
 import news4 from "./news4.jpg";
@@ -57,7 +57,7 @@ export default function PostFLCNews() {
           to address.{" "}
         </p>
         <PostImage
-          src={large}
+          src={news1}
           description="A side-by-side comparison of the old versus new sitemaps and homepages. "
         />
       </div>
