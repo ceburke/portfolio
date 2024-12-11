@@ -9,12 +9,12 @@ import {
   Triple,
 } from "../postComponents";
 import large from "./large.png";
-import news2 from "./news2.png";
-import news3 from "./news3.png";
-import news4 from "./news4.png";
-import news5 from "./news5.png";
-import news6 from "./news6.png";
-import news7 from "./news7.png";
+import news2 from "./news2.jpg";
+import news3 from "./news3.jpg";
+import news4 from "./news4.jpg";
+import news5 from "./news5.jpg";
+import news6 from "./news6.jpg";
+import news7 from "./news7.jpg";
 
 export default function PostFLCNews() {
   return (
