@@ -1,22 +1,15 @@
-import { ToolData, toolsData } from "@/components/tools/toolsData";
-import Link from "next/link";
-import {
-  Double,
-  ExtendedPostTitle,
-  Heading2,
-  Heading3,
-  PostImage,
-  Triple,
-} from "../postComponents";
-import old1 from "./old1.jpg";
-import old2 from "./old2.jpg";
-import old3 from "./old3.jpg";
-import old4 from "./old4.jpg";
-import old5 from "./old5.jpg";
-import old6 from "./old6.jpg";
-import old7 from "./old7.jpg";
-import old8 from "./old8.jpg";
-import old9 from "./old9.jpg";
+import {ToolData, toolsData} from '@/components/tools/toolsData';
+import Link from 'next/link';
+import {Double, ExtendedPostTitle, Heading2, Heading3, PostImage, Triple} from '../postComponents';
+import old1 from './old1.jpg';
+import old2 from './old2.jpg';
+import old3 from './old3.jpg';
+import old4 from './old4.jpg';
+import old5 from './old5.jpg';
+import old6 from './old6.jpg';
+import old7 from './old7.jpg';
+import old8 from './old8.jpg';
+import old9 from './old9.jpg';
 
 export default function PostTheOldFort() {
   return (
@@ -25,24 +18,24 @@ export default function PostTheOldFort() {
         title="Organization and identity"
         description="The Old Fort is a unique research institution under Fort Lewis College, with its own distinct mission, audience, and identity. The goal of this project was to create a fresh brand and website that captured the character of the Old Fort while making its deep repository of research and historical resources easier to explore."
         roles={[
-          "Create a new brand for the Old Fort",
-          "Design and build the new site",
-          "Migrate existing content and assets",
-          "Primary stakeholder contact and project management",
+          'Create a new brand for the Old Fort',
+          'Design and build the new site',
+          'Migrate existing content and assets',
+          'Primary stakeholder contact and project management',
         ]}
         results={[
-          "Increased active users by 31% and tracked events by 330%",
-          "Reduced sitemap size by 65%, streamlining navigation and improving user experience",
-          "Rebuilt trust with stakeholders by moving project out of backlog ",
+          'Increased active users by 31% and tracked events by 330%',
+          'Reduced sitemap size by 65%, streamlining navigation and improving user experience',
+          'Rebuilt trust with stakeholders by moving project out of backlog ',
           <>
-            Explore{" "}
+            Explore{' '}
             <Link className="underline" href="https://www.fortlewis.edu/the-old-fort/">
               the Old Fort
             </Link>
           </>,
         ]}
         toolsData={
-          ["Figma", "Bootstrap", "Google Analytics", "Adobe Creative Suite"]
+          ['Figma', 'Bootstrap', 'Google Analytics', 'Adobe Creative Suite']
             .map((toolName) => toolsData.find((tool) => tool.label === toolName))
             .filter(Boolean) as ToolData[]
         }
@@ -53,8 +46,8 @@ export default function PostTheOldFort() {
         The Old Fort redesign had been stalled for nearly three years when I joined Fort Lewis
         College, leaving stakeholders frustrated and disengaged. To rebuild trust, I created an
         alternative design alongside the inherited proposal, offering options and showing my
-        commitment to their vision. The project focused on two primary goals:{" "}
-        <b>make resources accessible</b> and <b>create a distinct visual identity.</b>{" "}
+        commitment to their vision. The project focused on two primary goals:{' '}
+        <b>make resources accessible</b> and <b>create a distinct visual identity.</b>{' '}
       </p>
       <PostImage
         src={old1}
@@ -65,7 +58,7 @@ export default function PostTheOldFort() {
       <p>
         Given the constraints of building within the DNN framework, I identified a theme package
         that allowed for customization and faster development. To align the visual identity with the
-        Old Fort’s mission, I collaborated closely with FLC's photographer and videographer to
+        Old Fort’s mission, I collaborated closely with FLC‘s photographer and videographer to
         collect assets that supported the content with strong visual examples.
       </p>
       <Triple>
@@ -76,7 +69,7 @@ export default function PostTheOldFort() {
         />
         <PostImage
           src={old4}
-          description="Templated components within the Old Fort's DNN theme editing interface."
+          description="Templated components within the Old Fort‘s DNN theme editing interface."
         />
       </Triple>
 
