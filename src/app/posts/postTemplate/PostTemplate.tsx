@@ -134,7 +134,6 @@ export default function PostTemplate() {
       <div className="*:my-5">
         <Heading2>h2 Overview or step #</Heading2>
       </div>
-      {/* TODO Check wrap*/}
       <Double>
         <section className="h-full">
           <Heading3>h3</Heading3>
