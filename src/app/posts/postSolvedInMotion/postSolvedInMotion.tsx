@@ -6,19 +6,21 @@ import motion3 from "./motion3.jpg";
 export default function PostSolvedInMotion() {
   return (
     <>
-      <Heading1>Installation art experience</Heading1>
+      <Heading1>Solved in motion</Heading1>
       <p>
         <i>Solved in motion</i> was the culmination of my undergraduate Studio Art major and a
         significant departure from my printmaking concentration. Despite its novelty, my
         installation was well-acclaimed by my peers and faculty, and was a pivotal experience in my
-        development as an artist. My determination to execute, learn new skills, and successful
-        divergence from the norm enstilled a life-long confidence to tackle new challenges.
+        development as an artist. The experience of learning new skills, executing a complex
+        project, and successfully stepping outside my comfort zone instilled lasting confidence to
+        embrace and overcome new challenges.
       </p>
+      {/* TODO Fix video size and if possible, preview image*/}
       <Double>
         <iframe
           src="https://drive.google.com/file/d/1xwFl9sTI91waFM_Wtmyjx5PCh9fRt5rs/preview?start=2"
-          width="550px"
-          height="400px"
+          width="100%"
+          height="100%"
           allow="autoplay"
         ></iframe>
         <section>
