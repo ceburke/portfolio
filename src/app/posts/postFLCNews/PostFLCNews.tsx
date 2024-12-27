@@ -78,7 +78,7 @@ export default function PostFLCNews() {
       <Double>
         <PostImage
           src={news2}
-          description="I expanded specs and documentation on design files to better support the developer developer."
+          description="I expanded specs and documentation on design files to better support the development team."
         />
         <section>
           <Heading3>Improving development hand-off</Heading3>
@@ -95,8 +95,8 @@ export default function PostFLCNews() {
           A competitive audit of higher education sites informed my approach to creating a modern,
           responsive, and on-brand design. Using nvQuickTheme and Bootstrap, I developed a base
           theme with updated headers and footers. Paired with the developer’s article theme, this
-          groundwork supported seamless content migration. For all parts of the updates, I speced
-          out Figma designs per Bootstrap breakpoints, at four device sizes.
+          groundwork supported seamless content migration. For all parts of the updates, I created
+          Figma designs per Bootstrap breakpoints, at four device sizes.
         </p>
       </div>
       <PostImage src={news3} description="Full spread of Figma mocks at multiple device sizes." />
@@ -112,7 +112,7 @@ export default function PostFLCNews() {
         </section>
         <PostImage
           src={news4}
-          description="I determined an category reassigment map and the developer built out a SQL statement to migrate the articles into new categories."
+          description="I determined a category reassigment map and the developer built out a SQL statement to migrate the articles into new categories."
         />
       </Double>
       <div className="*:my-5">
@@ -121,11 +121,11 @@ export default function PostFLCNews() {
           I created a comprehensive guide for the entire Marketing and Communications team,
           including the site’s redesign history, category changes, a content map, and step-by-step
           instructions for uploading articles. This ensured the team could confidently manage the
-          updated site and its features, and appropriatey utilize the new spaces created to higlight
-          their work. In addition, I commit my changes to the article templates through a shared
-          repo on GitHub. This approach enables me to extend the template to other use cases on the
-          FLC website while maintaining version control and facilitating collaboration with the
-          developer for future adjustments.
+          updated site and its features, and appropriatey utilize the new spaces created to
+          highlight their work. In addition, I commit any changes to the article templates through a
+          shared repo on GitHub. This approach enables me to extend the template to other use cases
+          on the FLC website while maintaining version control and facilitating collaboration with
+          the developer for future adjustments.
         </p>
       </div>
       <Triple>

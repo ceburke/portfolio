@@ -62,7 +62,7 @@ export default function PostTemplate() {
               className="underline"
               href="https://www.smashingmagazine.com/2022/09/formula-roi-design-system/"
             >
-              from Smashing Magazine
+              design system ROI from Smashing Magazine
             </Link>
             ) that translated hours saved on design and development into direct monetary savings,
             putting the abstract concept of a design system into common terms.{" "}
@@ -81,9 +81,10 @@ export default function PostTemplate() {
         <p>
           Initial efforts revealed critical roadblocks, including conflicting stylesheets, outdated
           dependencies, and undocumented workflows. These challenges prompted a necessary pivot to
-          modernize the codebase with Bootstrap 5 and consolidated CSS/SCSS. This phase underscored
-          the importance of establishing a strong technical foundation for scalability and taught me
-          the value of flexibility when navigating complex projects.
+          modernize the codebase with Bootstrap 5, consolidated CSS/SCSS, and a versioned dev
+          workflow. This phase underscored the importance of establishing a strong technical
+          foundation for scalability and taught me the value of flexibility when navigating complex
+          projects.
         </p>
       </div>
 
@@ -91,7 +92,7 @@ export default function PostTemplate() {
         <PostImage src={talon2} description="Icon and factoid workshopping process." />
         <PostImage
           src={talon3}
-          description="Iconography documentation on public-facing design system website."
+          description="Iconography documentation draft on initial approach design system website."
         />
         <PostImage
           src={talon4}
@@ -101,7 +102,7 @@ export default function PostTemplate() {
       <div className="*:my-5">
         <Heading2>Building a strong foundation</Heading2>
         <p>
-          With the technical limitations of the codebase clear, I shifted focus to building a strong
+          With the technical and style limitations clear, I shifted focus to building a strong
           foundation for the design system. I revisited user research to identify core needs and
           established accessible typography, color palettes, iconography, and layout standards.
           Using Figma variables, I streamlined design workflows and ensured scalability. I developed

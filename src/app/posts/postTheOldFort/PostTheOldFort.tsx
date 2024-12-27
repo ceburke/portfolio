@@ -148,7 +148,7 @@ export default function PostTheOldFort() {
             Using Google Analytics, I analyzed success metrics including views, active users,
             events, and time on page. To account for the Old Fort’s seasonality, I compared data
             from the same time period in consecutive years (June 15 to December 1, 2023 for the old
-            site, and 2024 for the redesigned site).
+            site, and the same timeframe in 2024 for the redesigned site).
           </p>
           <ul className="mt-5 mb-5 list-disc pl-4">
             <li>
