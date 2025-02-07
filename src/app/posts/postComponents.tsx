@@ -76,7 +76,7 @@ export function ExtendedPostTitle({
       <Double>
         {roles && (
           <section className="h-full">
-            <Heading2>Roles</Heading2>
+            <Heading2>Responsibilities</Heading2>
             <ul className="mt-5 list-disc pl-6">
               {roles.map((role, i) => (
                 <li key={i}>{role}</li>

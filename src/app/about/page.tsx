@@ -45,8 +45,8 @@ export default function About() {
               >
                 Talon Design System
               </Link>
-              . As the digital accessibility coordinator, I’m also driving compliance efforts to
-              ensure an inclusive experience for all users.{" "}
+              . As a digital accessibility leader, I’m also driving compliance efforts to ensure an
+              inclusive experience for all users.{" "}
             </p>
             <p>
               My background in environmental consulting and graphic design taught me how to

@@ -120,9 +120,9 @@ export default function PostTemplate() {
         <Heading2>Identify a developer and set expectations</Heading2>
         <p>
           To implement the system across a complex website, I engaged a developer with experience in
-          DNN. I delivered a comprehensive package of design files, technical expectations, and
-          process documentation to ensure alignment. This package included annotated designs, an
-          implementation plan, and workflows to support long-term scalability.
+          DNN (the college's CMS). I delivered a comprehensive package of design files, technical
+          expectations, and process documentation to ensure alignment. This package included
+          annotated designs, an implementation plan, and workflows to support long-term scalability.
         </p>
         <p>
           I proposed a phased implementation strategy to prioritize high-impact areas like the
