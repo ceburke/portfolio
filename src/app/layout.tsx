@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 metadata.openGraph = {
   images: [
     {
-      url: "/headshot.jpg",
+      url: "./about/headshot.jpg",
       width: 800,
       height: 600,
       alt: "Claire Burke Headshot",
