@@ -21,6 +21,17 @@ export const metadata: Metadata = {
   description: "A designer and developer creating for positive impact.",
 };
 
+metadata.openGraph = {
+  images: [
+    {
+      url: "/headshot.jpg",
+      width: 800,
+      height: 600,
+      alt: "Claire Burke Headshot",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
