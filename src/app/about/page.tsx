@@ -35,8 +35,8 @@ export default function About() {
             <h1 className="text-4xl font-bold">Background and vision</h1>
             <p>
               I like helping people discover new experiences, solve problems, and improve their
-              daily lives. In my current role at Fort Lewis College, I serve as the sole designer
-              and developer, leading digital transformation projects like the{" "}
+              daily lives. In my current role at Fort Lewis College, I serve as the sole designer,
+              leading foundational projects like the{" "}
               <Link
                 className="underline hover:font-bold"
                 href="https://ceburke.github.io/portfolio/posts/talon-design-system"
@@ -50,9 +50,9 @@ export default function About() {
             </p>
             <p>
               My background in environmental consulting and graphic design taught me how to
-              understand people, meet their needs, and create accessible solutions. Transitioning
-              into UX/UI design has allowed me to focus these skills on creating meaningful,
-              user-centered experiences.{" "}
+              understand people, meet their needs, and craft elegant solutions to complex problems.
+              Transitioning into product design has allowed me to focus these skills on creating
+              meaningful, user-centered experiences.{" "}
             </p>
             <p>
               Outside of work, I love mountain biking, playing ultimate frisbee, rekindling my love
