@@ -8,9 +8,9 @@ export default function PostCollagesAndCovers() {
       <p>
         Collage has always been one of my favorite creative mediums, whether working digitally or
         with physical materials. Collage offers quick entry into endless opportunities for
-        exploration, making it a medium where imagination can truly run wild. Thanks to a fortuitous
-        stack of National Geographic magazines I stumbled upon in an alley, I was able to dive into
-        a series of collages. This series evolved into a collection of book cover designs that
+        exploration, making it a medium where my imagination can truly run wild. Thanks to a
+        fortuitous stack of National Geographic magazines I stumbled upon, I was able to dive into a
+        series of collages. This series evolved into a collection of book cover designs that
         playfully experiment with storytelling and visual balance.
       </p>
 
