@@ -15,8 +15,8 @@ export default function PostChildrensBook() {
         I collaborated with two authors to illustrate a 34-page children’s book,{" "}
         <i>The Adventures of Ashe and Cat: The Mountain Bike Flat</i>, a story about the challenges
         of mountain biking and the power of resilience. This project was a significant leap from my
-        previous experience, teaching me valuable lessons in digital publishing, expectation
-        setting, and collaborative project management. The book is published and is&nbsp;
+        previous experience, teaching me valuable lessons in digital publishing, illustration
+        process, and collaborative project management. The book is published and is&nbsp;
         <Link className="underline" href="https://the-adventures-of-ashe-and-cat.square.site/">
           available for purchase
         </Link>{" "}
