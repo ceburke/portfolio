@@ -47,7 +47,7 @@ export default function PostSolvedInMotion() {
         />
         <PostImage
           src={motion3}
-          description="An translucent print mounted in the spokes of a bike wheel, moved by a custom Arduino-controlled motor."
+          description="A translucent print mounted in the spokes of a bike wheel, rotated by a custom Arduino-controlled motor."
         />
       </Triple>
     </>
