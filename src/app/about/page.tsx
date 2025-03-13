@@ -50,9 +50,9 @@ export default function About() {
             </p>
             <p>
               My background in environmental consulting and graphic design taught me how to
-              understand people, meet their needs, and craft elegant solutions to complex problems.
-              Transitioning into product design has allowed me to focus these skills on creating
-              meaningful, user-centered experiences.{" "}
+              understand people, define their needs, and craft elegant, visual solutions to complex
+              problems. Transitioning into product design has allowed me to focus my skills on
+              creating data-driven, impactful, and innovative user experiences.{" "}
             </p>
             <p>
               Outside of work, I love mountain biking, playing ultimate frisbee, rekindling my love
