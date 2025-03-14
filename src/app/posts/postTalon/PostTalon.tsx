@@ -134,14 +134,14 @@ export default function PostTemplate() {
       </div>
 
       <Double>
-        <section className="h-full border-r border-b border-gray-300">
+        <section className="h-full p-4">
           <Heading3>Implement high-impact updates</Heading3>
           <p>
             Focus on phased improvements to the header, footer, navigation, and homepage to maximize
             immediate usability gains while minimizing disruption.{" "}
           </p>
         </section>
-        <section className="h-full border-b border-gray-300">
+        <section className="h-full p-4">
           <Heading3>Ensure developer alignment</Heading3>
           <p>
             Outline technical expectations, knowledge gaps, timelines, and process documentation to
@@ -150,14 +150,14 @@ export default function PostTemplate() {
         </section>
       </Double>
       <Double>
-        <section className="h-full border-r border-gray-300">
+        <section className="h-full p-4">
           <Heading3>Establish scalable workflows</Heading3>
           <p>
             Create a development workflow that allows Fort Lewis College to maintain and expand the
             system over time, despite limited in-house resources.
           </p>{" "}
         </section>
-        <section className="h-full">
+        <section className="h-full p-4">
           <Heading3>Lay the groundwork for full implementation</Heading3>
           <p>
             Develop a strategy for integrating the design system across all 6,000+ pages while

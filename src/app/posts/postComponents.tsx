@@ -71,17 +71,21 @@ export function ExtendedPostTitle({
 }): React.ReactNode {
   return (
     <div className="flex flex-col justify-center gap-5 pb-10 my-10">
-      <Heading1>{title}</Heading1>
-      {!!description && <p>{description}</p>}
+      <div className="flex flex-col md:flex-row justify-between items-start gap-5">
+        <Heading1>{title}</Heading1>
+        {!!description && <p className="md:ml-5">{description}</p>}
+      </div>
       <Double>
         {roles && (
           <section className="h-full">
-            <Heading2>Responsibilities</Heading2>
-            <ul className="mt-5 list-disc pl-6">
-              {roles.map((role, i) => (
-                <li key={i}>{role}</li>
-              ))}
-            </ul>
+            <>
+              <Heading2>Responsibilities</Heading2>
+              <ul className="mt-5 list-disc pl-6">
+                {roles.map((role, i) => (
+                  <li key={i}>{role}</li>
+                ))}
+              </ul>
+            </>
           </section>
         )}
         {results && (
