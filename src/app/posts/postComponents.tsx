@@ -5,7 +5,7 @@ import ExportedImage from "next-image-export-optimizer";
 import { StaticImageData } from "next/image";
 
 export function Heading1({ children }: { children: React.ReactNode }): React.ReactNode {
-  return <h1 className="text-4xl font-bold mb-1">{children}</h1>;
+  return <h1 className="text-5xl font-bold mb-1">{children}</h1>;
 }
 
 export function Heading2({ children }: { children: React.ReactNode }): React.ReactNode {
