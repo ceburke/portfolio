@@ -112,7 +112,7 @@ export default function PostFLCNews() {
         </section>
         <PostImage
           src={news4}
-          description="I determined a category reassigment map and the developer built out a SQL statement to migrate the articles into new categories."
+          description="I determined a category reassignment map and the developer built out a SQL statement to migrate the articles into new categories."
         />
       </Double>
       <div className="*:my-5">

@@ -120,7 +120,7 @@ export default function PostTemplate() {
         <Heading2>Identify a developer and set expectations</Heading2>
         <p>
           To implement the system across a complex website, I engaged a developer with experience in
-          DNN, FLC’s CMS. I delivered a comprehensive package of design files, technical
+          DNN, the College’s CMS. I delivered a comprehensive package of design files, technical
           expectations, and process documentation to ensure alignment. This package included
           annotated designs, an implementation plan, and workflows to support long-term scalability.
         </p>
@@ -134,14 +134,14 @@ export default function PostTemplate() {
       </div>
 
       <Double>
-        <section className="h-full">
+        <section className="h-full border-r border-b border-gray-300">
           <Heading3>Implement high-impact updates</Heading3>
           <p>
             Focus on phased improvements to the header, footer, navigation, and homepage to maximize
             immediate usability gains while minimizing disruption.{" "}
           </p>
         </section>
-        <section className="h-full">
+        <section className="h-full border-b border-gray-300">
           <Heading3>Ensure developer alignment</Heading3>
           <p>
             Outline technical expectations, knowledge gaps, timelines, and process documentation to
@@ -150,7 +150,7 @@ export default function PostTemplate() {
         </section>
       </Double>
       <Double>
-        <section className="h-full">
+        <section className="h-full border-r border-gray-300">
           <Heading3>Establish scalable workflows</Heading3>
           <p>
             Create a development workflow that allows Fort Lewis College to maintain and expand the
