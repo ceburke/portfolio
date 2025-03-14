@@ -174,7 +174,7 @@ export default function PostTemplate() {
         <section>
           <Heading3>Communicating accessibility</Heading3>
           <p>
-            Using
+            Using&nbsp;
             <Link
               className="underline"
               href="https://www.figma.com/community/file/1311421011482282592/web-accessibility-annotation-kit"
@@ -194,8 +194,9 @@ export default function PostTemplate() {
       />
       <div className="*:my-5">
         <p>
-          The design files and process documents are currently being reviewed by the developer. Stay
-          tuned for updates on the Talon Design System as it continues to evolve and transform.
+          The design files and process documents are currently being reviewed by the development
+          vendor. Stay tuned for updates on the Talon Design System as it continues to evolve and
+          transform.
         </p>
       </div>
     </>

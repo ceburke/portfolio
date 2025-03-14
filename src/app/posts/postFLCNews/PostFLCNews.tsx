@@ -68,10 +68,10 @@ export default function PostFLCNews() {
           Initially, I considered building the site on a separate subdomain with limited legacy data
           migration, focusing on recent articles and developing the theme independently. However,
           migration tests and competing priorities revealed this approach would delay the project.
-          Working with my director, we secured funding to hire a development vendor, 10 Pound
-          Gorilla, who focused on article templates while I handled base theme development and
-          full-spec design documentation. Ultimately, we decided that building within the existing
-          site was the best way to maintain article history.
+          Working with my director, we secured funding to hire a development vendor who focused on
+          article templates while I handled base theme development and full-spec design
+          documentation. Ultimately, we decided that building within the existing site was the best
+          way to maintain article history.
         </p>
       </div>
 
