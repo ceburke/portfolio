@@ -14,6 +14,7 @@ import talon3 from "./talon3.jpg";
 import talon4 from "./talon4.jpg";
 import talon5 from "./talon5.jpg";
 import talon6 from "./talon6.jpg";
+import talon7 from "./talon7.jpg";
 
 export default function PostTemplate() {
   return (
@@ -165,9 +166,31 @@ export default function PostTemplate() {
           </p>
         </section>
       </Double>
+      <Double>
+        <PostImage
+          src={talon7}
+          description="Accessibility annotation on the main menu component design file."
+        />
+        <section>
+          <Heading3>Communicating accessibility</Heading3>
+          <p>
+            Using
+            <Link
+              className="underline"
+              href="https://www.figma.com/community/file/1311421011482282592/web-accessibility-annotation-kit"
+            >
+              CVS Health's Web Accessiblity Annotation Kit
+            </Link>
+            , I added accessibility annotations to the design system component files to align
+            semantic HTML best practices with the development workflow - taking the guesswork out of
+            accessibility build-out.{" "}
+          </p>
+        </section>
+      </Double>
+
       <PostImage
         src={talon6}
-        description="The final mock of a complex secondary navigation component, designed to be flexible and scalable across the FLC website. This component utilizes brand logos to orient the user, and addresses navigation challenges within dense subpages on the current site."
+        description="The final mock of a secondary navigation component, designed to be flexible and scalable across the FLC website. This component utilizes brand logos to orient the user, and addresses navigation challenges within dense subpages on the current site."
       />
       <div className="*:my-5">
         <p>
