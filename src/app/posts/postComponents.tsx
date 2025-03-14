@@ -22,9 +22,17 @@ export function Heading3({ children }: { children: React.ReactNode }): React.Rea
   return <h3 className="text-xl font-bold mb-1">{children}</h3>;
 }
 
-export function Double({ children }: { children: React.ReactNode }): React.ReactNode {
+export function Double({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}): React.ReactNode {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-5 items-center justify-center">
+    <section
+      className={`grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-5 items-center justify-center ${className}`}
+    >
       {children}
     </section>
   );
@@ -77,11 +85,11 @@ export function ExtendedPostTitle({
 }): React.ReactNode {
   return (
     <div className="flex flex-col justify-center gap-5 pb-10 my-10">
-      <div className="flex flex-col lg:flex-row justify-between items-start gap-5">
+      <div className="flex flex-col lg:flex-row justify-between items-start gap-5 pb-3">
         <Heading1 className="w-full lg:w-2/5">{title}</Heading1>
         {!!description && <p className="w-full lg:w-3/5 lg:ml-5">{description}</p>}
       </div>
-      <Double>
+      <Double className="w-full lg:w-3/5">
         {roles && (
           <section className="h-full">
             <>
