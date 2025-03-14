@@ -179,7 +179,7 @@ export default function PostTemplate() {
               className="underline"
               href="https://www.figma.com/community/file/1311421011482282592/web-accessibility-annotation-kit"
             >
-              CVS Health's Web Accessiblity Annotation Kit
+              CVS Health’s Web Accessiblity Annotation Kit
             </Link>
             , I added accessibility annotations to the design system component files to align
             semantic HTML best practices with the development workflow - taking the guesswork out of
