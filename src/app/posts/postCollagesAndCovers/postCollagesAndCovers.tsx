@@ -1,10 +1,10 @@
-import { Heading1, PostImage } from "../postComponents";
+import { AltHeading1, PostImage } from "../postComponents";
 import collage1 from "./collage1.jpg";
 
 export default function PostCollagesAndCovers() {
   return (
     <>
-      <Heading1>Covers and collages</Heading1>
+      <AltHeading1>Covers and collages</AltHeading1>
       <p>
         Collage has always been one of my favorite creative mediums, whether working digitally or
         with physical materials. Collage offers quick entry into endless opportunities for

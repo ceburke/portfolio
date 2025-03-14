@@ -4,8 +4,18 @@ import ToolsList from "@/components/tools/ToolsList";
 import ExportedImage from "next-image-export-optimizer";
 import { StaticImageData } from "next/image";
 
-export function Heading1({ children }: { children: React.ReactNode }): React.ReactNode {
-  return <h1 className="text-4xl font-bold mb-1">{children}</h1>;
+export function Heading1({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}): React.ReactNode {
+  return <h1 className={`text-5xl font-bold mb-1 ${className}`}>{children}</h1>;
+}
+
+export function AltHeading1({ children }: { children: React.ReactNode }): React.ReactNode {
+  return <h1 className="text-4xl font-bold">{children}</h1>;
 }
 
 export function Heading2({ children }: { children: React.ReactNode }): React.ReactNode {
@@ -72,7 +82,7 @@ export function ExtendedPostTitle({
   return (
     <div className="flex flex-col justify-center gap-5 pb-10 my-10">
       <div className="flex flex-col md:flex-row justify-between items-start gap-5">
-        <Heading1>{title}</Heading1>
+        <Heading1 className="w-full md:w-2/5">{title}</Heading1>
         {!!description && <p className="md:ml-5">{description}</p>}
       </div>
       <Double>
