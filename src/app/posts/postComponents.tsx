@@ -86,10 +86,19 @@ export function ExtendedPostTitle({
   return (
     <div className="flex flex-col justify-center gap-5 pb-10 my-10">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-5 pb-3">
-        <Heading1 className="w-full lg:w-2/5">{title}</Heading1>
+        <div className="w-full lg:w-2/5">
+          <Heading1>{title}</Heading1>
+          {toolsData && (
+            <>
+              <Heading2>Primary Tools</Heading2>
+              <ToolsList toolsData={toolsData} />
+            </>
+          )}
+        </div>
+
         <div className="w-full lg:w-3/5 lg:ml-5">
           {!!description && <p>{description}</p>}
-          <Double className="w-full lg:w-3/5">
+          <Double>
             {roles && (
               <section className="h-full">
                 <>
@@ -113,12 +122,6 @@ export function ExtendedPostTitle({
               </section>
             )}
           </Double>
-          {toolsData && (
-            <>
-              <Heading2>Primary Tools</Heading2>
-              <ToolsList toolsData={toolsData} />
-            </>
-          )}
         </div>
       </div>
     </div>
