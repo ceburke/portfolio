@@ -87,38 +87,40 @@ export function ExtendedPostTitle({
     <div className="flex flex-col justify-center gap-5 pb-10 my-10">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-5 pb-3">
         <Heading1 className="w-full lg:w-2/5">{title}</Heading1>
-        {!!description && <p className="w-full lg:w-3/5 lg:ml-5">{description}</p>}
-      </div>
-      <Double className="w-full lg:w-3/5">
-        {roles && (
-          <section className="h-full">
+        <div className="w-full lg:w-3/5 lg:ml-5">
+          {!!description && <p>{description}</p>}
+          <Double className="w-full lg:w-3/5">
+            {roles && (
+              <section className="h-full">
+                <>
+                  <Heading2>Responsibilities</Heading2>
+                  <ul className="mt-5 list-disc pl-6">
+                    {roles.map((role, i) => (
+                      <li key={i}>{role}</li>
+                    ))}
+                  </ul>
+                </>
+              </section>
+            )}
+            {results && (
+              <section className="h-full">
+                <Heading2>Results</Heading2>
+                <ul className="mt-5 list-disc pl-6">
+                  {results.map((result, i) => (
+                    <li key={i}>{result}</li>
+                  ))}
+                </ul>
+              </section>
+            )}
+          </Double>
+          {toolsData && (
             <>
-              <Heading2>Responsibilities</Heading2>
-              <ul className="mt-5 list-disc pl-6">
-                {roles.map((role, i) => (
-                  <li key={i}>{role}</li>
-                ))}
-              </ul>
+              <Heading2>Primary Tools</Heading2>
+              <ToolsList toolsData={toolsData} />
             </>
-          </section>
-        )}
-        {results && (
-          <section className="h-full">
-            <Heading2>Results</Heading2>
-            <ul className="mt-5 list-disc pl-6">
-              {results.map((result, i) => (
-                <li key={i}>{result}</li>
-              ))}
-            </ul>
-          </section>
-        )}
-      </Double>
-      {toolsData && (
-        <>
-          <Heading2>Primary Tools</Heading2>
-          <ToolsList toolsData={toolsData} />
-        </>
-      )}
+          )}
+        </div>
+      </div>
     </div>
   );
 }
