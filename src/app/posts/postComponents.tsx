@@ -14,10 +14,6 @@ export function Heading1({
   return <h1 className={`text-5xl font-bold mb-1 ${className}`}>{children}</h1>;
 }
 
-export function AltHeading1({ children }: { children: React.ReactNode }): React.ReactNode {
-  return <h1 className="text-4xl font-bold">{children}</h1>;
-}
-
 export function Heading2({ children }: { children: React.ReactNode }): React.ReactNode {
   return <h2 className="text-2xl font-bold mb-1">{children}</h2>;
 }
@@ -81,9 +77,9 @@ export function ExtendedPostTitle({
 }): React.ReactNode {
   return (
     <div className="flex flex-col justify-center gap-5 pb-10 my-10">
-      <div className="flex flex-col md:flex-row justify-between items-start gap-5">
-        <Heading1 className="w-full md:w-2/5">{title}</Heading1>
-        {!!description && <p className="md:ml-5">{description}</p>}
+      <div className="flex flex-col lg:flex-row justify-between items-start gap-5">
+        <Heading1 className="w-full lg:w-2/5">{title}</Heading1>
+        {!!description && <p className="w-full lg:w-3/5 lg:ml-5">{description}</p>}
       </div>
       <Double>
         {roles && (
