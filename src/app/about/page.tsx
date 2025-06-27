@@ -35,24 +35,16 @@ export default function About() {
             <h1 className="text-4xl font-bold">Background and vision</h1>
             <p>
               I like helping people discover new experiences, solve problems, and improve their
-              daily lives. In my current role at Fort Lewis College, I serve as the sole designer,
-              leading foundational projects like the{" "}
-              <Link
-                className="underline hover:font-bold"
-                href="https://ceburke.github.io/portfolio/posts/talon-design-system"
-                title="Claire's LinkedIn profile"
-                target="_blank"
-              >
-                Talon Design System
-              </Link>
-              . As a digital accessibility leader, I’m also driving compliance efforts to ensure an
+              daily lives. In my current role at Osprey Packs, I am a cross-disciplinary graphic
+              designer, creating connections across marketing, product, and development. As a
+              digital accessibility leader, I’m also driving compliance efforts to ensure an
               inclusive experience for all users.{" "}
             </p>
             <p>
               My background in environmental consulting and graphic design taught me how to
               understand people, define their needs, and craft elegant, visual solutions to complex
-              problems. Transitioning into product design has allowed me to focus my skills on
-              creating data-driven, impactful, and innovative user experiences.{" "}
+              problems. Transitioning into design has allowed me to focus my skills on creating
+              data-driven, impactful, and innovative user experiences.{" "}
             </p>
             <p>
               Outside of work, I love mountain biking, playing ultimate frisbee, rekindling my love
